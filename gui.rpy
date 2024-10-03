@@ -56,7 +56,7 @@ define gui.dialogue_text_outlines = [ (5, "#00000000", 2, 2) ]
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "Optima nova LT Regular.otf"
+define gui.text_font = "Fonts/Optima nova LT Regular.otf"
 
 ## The font used for character names.
 define gui.name_text_font = "176MKSDAL.ttf"
