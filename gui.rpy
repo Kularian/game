@@ -59,10 +59,10 @@ define gui.dialogue_text_outlines = [ (5, "#00000000", 2, 2) ]
 define gui.text_font = "Fonts/Optima nova LT Regular.otf"
 
 ## The font used for character names.
-define gui.name_text_font = "176MKSDAL.ttf"
+define gui.name_text_font = "Fonts/176MKSDAL.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "176MKSDAL.ttf"
+define gui.interface_text_font = "Fonts/176MKSDAL.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 44
