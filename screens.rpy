@@ -1555,8 +1555,8 @@ screen header:
     add "gui/watch.png" ypos 0
 #    add "gui/flair.png"
 #    text "[location]" at loc
-    text "After School" font "digital-7.ttf" size 42 at phase1
-    text "09/18" font "digital-7.ttf" size 42 at phase2
+    text "After School" font "Fonts/digital-7.ttf" size 42 at phase1
+    text "09/18" font "Fonts/digital-7.ttf" size 42 at phase2
 
 ## Bottom ######################################################################
 
