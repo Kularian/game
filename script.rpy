@@ -511,9 +511,9 @@ label label000: #mark/brown choice
     $ yukinox = 700
     $ yukinoy = 550
     scene bg personagame
-    show naoyasprite downleft stand at naoyaloc
+    show naoyasprite upleft stand at naoyaloc
     show nanjosprite upright stand at nanjoloc
-    show marksprite downleft stand at markloc
+    show marksprite upleft stand at markloc
     show yukinosprite upright stand at yukinoloc
     show brownsprite downright stand at brownloc
     show ayasesprite downright stand at ayaseloc
@@ -526,11 +526,11 @@ label label000: #mark/brown choice
     hide ayase with qdis
     show ayasesprite downright stand
     show mark animated neutral smirk with qleft
-    show marksprite downleft standmove
+    show marksprite upleft standmove
     voice mark13
     mk "See?  A fat load o' nothin'.  Hehe... Looks like I win."
     hide mark with qdis
-    show marksprite downleft stand
+    show marksprite upleft stand
     show yukino animated neutral serious with qleft
     show yukinosprite upright standmove
     voice yukino2
@@ -546,11 +546,11 @@ label label000: #mark/brown choice
     hide brown with qdis
     show brownsprite downright stand
     show mark animated neutral sad with qleft
-    show marksprite downleft standmove
+    show marksprite upleft standmove
     voice mark14
     mk "Oh, you little...!  What a sore loser."
     play music opening2 fadeout 0.5
-    show marksprite downleft stand
+    show marksprite upleft stand
     hide screen header
     scene bg black with dissolve
 #    $ renpy.movie_cutscene("video/PSPCutscene1.avi")
@@ -609,13 +609,27 @@ label label000: #mark/brown choice
     ph "Now you must return to your proper time and place."
     play music "<silence .5>" fadeout 0.5
     scene bg black with dissolve
+    $ markx = 900
+    $ marky = 450
+    $ nanjox = 850
+    $ nanjoy = 500
+    $ yukinox = 800
+    $ yukinoy = 550
+    $ npc1x = 400
+    $ npc1y = 400
     "Voice" "So you guys had the same dream..."
     "Voice" "Indeed.  It's rather extraordinary."
     "Voice" "Think he's seeing it now too?"
-    scene bg infirmary with dissolve
+    scene bg infirmary
+    show marksprite downright stand at markloc
+    show nanjosprite downright stand at nanjoloc
+    show yukinosprite upright stand at yukinoloc
+    show natsumisprite downright stand at npc1loc
+    with dissolve
     $ location = "Infirmary"
     play music schooldays volume 0.4 fadein 0.5
     show screen header with dissolve
+    show natsumisprite downright standmove
     show natsumi animated neutral serious with dissolve
     nurse "Oh, Naoya, you've come around.  Ahaha, welcome to the infirmary."
     show natsumi animated neutral smirk
@@ -625,8 +639,12 @@ label label000: #mark/brown choice
     n "{color=#ebffdb}>Natsumi Yoshino\nSt. Hermelin High's nurse.  She doesn't seem to be a very good cook.{/color}"
     $ tbnarrator = 0
     hide natsumi with qdis
-    "Note to Kular: Insert Saeko here"
+    show natsumisprite downright stand
+    $ npc2x = 300
+    $ npc2y = 700
+    show saekosprite upleft standmove at npc2loc with dissolve
     show saeko animated neutral serious with qleft
+    show saekosprite upright standmove with move
     sa "Naoya!  Are you all right!?  Thank goodness you're awake, Naoya!" (name="Teacher")
     show saeko animated neutral sad
     sa "I was so scared when I heard you'd collapsed!" (name="Teacher")
@@ -635,40 +653,60 @@ label label000: #mark/brown choice
     n "{color=#ebffdb}>Saeko Takami\nHomeroom teacher for Naoya and the others.  Very popular with the students.{/color}"
     $ tbnarrator = 0
     show saeko animated neutral smirk
+    show saekosprite upleft standmove
     sa "I'm sorry you had to deal with my students, Natsumi."
+    show saekosprite upleft stand
     hide saeko with qdis
     show mark animated neutral sad with qleft
+    show marksprite downright standmove
     mk "C'mon, taking care of students is her whole job!  What's so bad about us...?"
     hide mark with qdis
+    show marksprite downright stand
     show saeko animated neutral smirk with qleft
+    show saekosprite upleft standmove
     sa "Now, now, Masao!  I want you to think about what you've done!"
     show saeko animated neutral serious
     sa "Anyway, Eriko and Ayase told me what happened."
     sa "No helping out for you today!"
+    show saekosprite upright standmove
     sa "Instead, go get yourselves checked out at {color=#800000}Mikage Hospital{/color} and head home!"
     hide saeko with qdis
+    show saekosprite upleft stand
     show yukino animated neutral smirk with qleft
+    show yukinosprite downright standmove
     yu "So you think something's wrong with us, too?"
     hide yukino with qdis
+    show yukinosprite downright stand
     show saeko animated neutral smirk with qleft
+    show saekosprite upleft standmove
     sa "Oh, not like that.  I can tell by looking at you that you're perfectly sane."
     show saeko animated neutral sad
+    show saekosprite upright standmove
     sa "But I'm worried you might have gotten hurt while collapsing, so go see the doc."
     hide saeko with qdis
+    show saekosprite upleft stand
     show yukino animated neutral serious with qleft
+    show yukinosprite downright standmove
     yu "So there is something that can faze you, Ms. Saeko... Alright, we'll go."
     hide yukino with qdis
+    show yukinosprite downright stand
     show natsumi animated neutral serious with qleft
+    show natsumisprite downright standmove
     nat "Speaking of Mikage Hospital, wasn't a student in your class staying there?"
     hide natsumi with qdis
+    show natsumisprite downright stand
     show mark animated neutral serious with qleft
+    show marksprite upleft standmove
     mk "You mean Maki, right...?"
     hide mark with qdis
+    show marksprite downleft stand
     show saeko animated neutral serious with qleft
+    show saekosprite upleft standmove
     sa "Yes, that's right.  You should visit her while you're there."
     show saeko animated neutral sad
     sa "She's been laid up there for over a year now... I'm sure she's lonesome."
     hide saeko with qdis
+    show saekosprite upleft stand
     $ tbnarrator = 1
     "You stand up, ready to go."
     $ tbnarrator = 0
