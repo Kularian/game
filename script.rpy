@@ -713,12 +713,25 @@ label label000: #mark/brown choice
 
 label label001(location="Infirmary"):
     if plotprogress == 2:
-        scene bg black with dissolve #update
         show screen header
+        $ npc1x = 400
+        $ npc1y = 400
+        $ npc2x = 500
+        $ npc2y = 400
+        $ npc3x = 1200
+        $ npc3y = 500
+        scene bg black with dissolve #update
+        show saekosprite downright stand at npc2loc
+        show natsumisprite downright stand at npc1loc
+        show setsukosprite downleft stand at npc3loc
         #play appropriate music #update
         call screen Infirmaryb
         if _return == 1:
+            $ naoyax = 450
+            $ naoyay = 450
+            show naoyasprite upleft stand at naoyaloc with dissolve
             show natsumi animated neutral serious with dissolve
+            show natsumisprite downright standmove
             nat "Maki's mother isn't badly hurt.  You can relax."
             nat "What about you, Naoya?  Got any injuries?  Let me look..."
             show bg white
@@ -726,13 +739,24 @@ label label001(location="Infirmary"):
             hide bg white
             nat "There, all better.  Be careful out there."
         elif _return == 2:
+            $ naoyax = 550
+            $ naoyay = 450
+            show naoyasprite upleft stand at naoyaloc with dissolve
             show saeko animated neutral serious with dissolve
+            show saekosprite downright standmove
             sa "Masao and Kei know about the hole in the wall, right?"
             sa "The gates are sealed, so that's the only way they'll be able to get in."
         elif _return == 3:
+            $ naoyax = 1150
+            $ naoyay = 550
+            show naoyasprite upright stand at naoyaloc with dissolve
             show setsuko at pleft2 with dissolve
+            show setsukosprite downleft standmove
             set "I don't know what to say... I've caused so much trouble for everyone."
         elif _return == 4:
+            $ naoyax = 800
+            $ naoyay = 350
+            show naoyasprite upright stand at naoyaloc with dissolve            
             ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
         elif _return == 5:
             jump callHermelinFloor1
