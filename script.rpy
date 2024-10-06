@@ -88,122 +88,122 @@ label start:
 
 label prologue:
     $ tbnarrator = "False"
-    scene bg test with dissolve
+    scene bg test with qdis
     $ location = "Maki's Room"
-    show screen header with dissolve
-    show maki with dissolve
+    show screen header with qdis
+    show maki with qdis
     stu "I'm sorry if I worried all of you..."
     "{color=#ebffdb}>Maki Sonomura (Nickname: Maki)\nA chronically ill classmate who's just been hospitalized.{/color}"
     hide ma
-    show mark animated neutral sad with dissolve
+    show mark animated neutral sad with qdis
     stu "Worried ain't the half of it.  You passed right out in Phys Ed!"
     show mark ns
     "{color=#ebffdb}>Masao Inaba (Nickname: Mark)\nThe spoiled son of Inaba Dry Cleaning's owners. Earnest and exciteable.{/color}"
     hide mark
-    show maki with dissolve
+    show maki with qdis
     ma "I'm not sure what happened...I was fine one minute and the next..."
     hide maki
-    show mark animated neutral smirk with dissolve
+    show mark animated neutral smirk with qdis
     mk "Hey, I'm just glad you're okay.  You'll be outta here soon."
     show mark ns
-    hide screen header with dissolve
+    hide screen header with qdis
     $ choicetext = "Right Naoya?"
     show nchoice at pright zorder 15 with easeinright
     show nchoice onlayer screens zorder 15 at pright
-    show fadeblack onlayer screens zorder 3 with dissolve
+    show fadeblack onlayer screens zorder 3 with qdis
     $ choice1 = "Yeah, it won't be long."
     $ choice2 = "The doctors said..."
-    call screen choices with dissolve
+    call screen choices with qdis
     if _return == 1:
-        hide screen choices with dissolve
+        hide screen choices with qdis
         hide fadeblack onlayer screens
         hide mark
         hide nchoice onlayer screens
         hide nchoice
-        with dissolve
-        show screen header with dissolve
+        with qdis
+        show screen header with qdis
         show mark animated neutral smirk
         mk "See?  Even Naoya thinks so."
         hide mark
-        show maki with dissolve
+        show maki with qdis
         ma "I don't know... the doctors couldn't figure out what was wrong."
         hide maki
     if _return == 2:
-        hide screen choices with dissolve
+        hide screen choices with qdis
         hide fadeblack onlayer screens
         hide mark
         hide nchoice onlayer screens
         hide nchoice
-        with dissolve
-        show screen header with dissolve
+        with qdis
+        show screen header with qdis
         show mark animated neutral sad
         mk "Wait what?  What'd they say?"
         hide mark
-        show maki with dissolve
+        show maki with qdis
         ma "They said they're not sure what's wrong with me..."
         hide maki
     show mark animated neutral serious
     mk "What?  How the hell do they not know?  Aren't they doctors?  That's their whole job!"
     hide mark
-    show maki with dissolve
+    show maki with qdis
     ma "But if I can get my strength back, I'll definitely be coming back to school."
     hide maki
-    show mark animated neutral smirk with dissolve
+    show mark animated neutral smirk with qdis
     mk "Of course!  But until you do, I'll come visit you as much as I can."
     hide mark
-    show maki with dissolve
+    show maki with qdis
     ma "Thank you, Masao..."
     "Maki lets out a very long yawn, her eyes fluttering closed."
     ma "I think I'm going to take a little rest.  I'll see you later?"
     hide maki
-    show mark animated neutral smirk with dissolve
+    show mark animated neutral smirk with qdis
     mk "Yeah.  I'll try to come by tomorrow.  C'mon Naoya, we should let her rest."
 
-    scene bghospital1 with dissolve
+    scene bghospital1 with qdis
     $ location = "Mikage Hospital"
-    show screen header with dissolve
-    show mark animated neutral serious with dissolve
+    show screen header with qdis
+    show mark animated neutral serious with qdis
     mk "Man.  I can't believe her mom didn't show up to help her."
     mk "I know she's busy working over at SEBEC, but c'mon.  What's more important than your kid?"
-    hide mark with dissolve
+    hide mark with qdis
     pause 0.5
-    show mark animated neutral serious with dissolve
+    show mark animated neutral serious with qdis
     mk "Anyway, we should get back to the school and tell Mrs. Ooishi the doctors got her on bed rest for awhile."
     show mark animated neutral sad
     mk "I figure they'll send something to the school, right?  Surprised Ooishi even let us first years go and check on her."
     mk "I guess she was worried when Maki's mom didn't answer any calls at work..."
-    hide mark with dissolve
+    hide mark with qdis
     pause 0.5
-    show mark animated neutral serious with dissolve
+    show mark animated neutral serious with qdis
     mk "C'mon.  Let's get outta here, Naoya."
 
-    scene courtyard with dissolve
-    show mark animated neutral serious with dissolve
+    scene courtyard with qdis
+    show mark animated neutral serious with qdis
     mk "...and that kind of explains all of that.  They dunno when she'll be out."
     hide mark
-    show ooishi at pleft with dissolve
+    show ooishi at pleft with qdis
     tea "I see...that poor girl.  We can all hope that she gets better soon."
     "{color=#ebffdb}>Principal Ooishi\nThe principal of St. Hermelin High.  She adores children and flowers.{/color}"
     oo "I'll get the teachers together and see if we can't do something for her."
     hide ooishi
-    show mark animated neutral sad with dissolve
+    show mark animated neutral sad with qdis
     mk "Cool.  Me an' Naoya are gonna try to visit her when we can, too."
     hide mark
-    show ooishi at pleft with dissolve
+    show ooishi at pleft with qdis
     oo "I think that's wonderful!  Make sure to tell the other students about it too.  Let's get as many as we can to visit her and keep her spirits up!"
     oo "You two can head home for the day.  I'll talk to your teachers about it."
     hide ooishi
-    show mmark animated neutral smirk with dissolve
+    show mmark animated neutral smirk with qdis
     mk "Even Hamya?"
     hide mark
-    show ooishi at pleft with dissolve
+    show ooishi at pleft with qdis
     oo "Masao, that's Mr. Hanya.  Please don't make me regret my decision here."
     oo "I know you've had some run-ins with the police..."
     hide ooishi
-    show mark animated neutral serious with dissolve
+    show mark animated neutral serious with qdis
     mk "Hey, Old Baldy just got mad 'cause I tagged a few walls.  It wasn't like I did anything serious."
     hide mark
-    show ooishi at pleft with dissolve
+    show ooishi at pleft with qdis
     oo "That's the Chief of Police you're talking about, Masao.  And while I support your artistry...a less controversial outlet would be better, I feel."
 
 
@@ -235,11 +235,11 @@ label intro:
     show brownsprite downright stand at brownloc
     show ayasesprite downright stand at ayaseloc
     show ellysprite upleft stand at ellyloc
-    with dissolve
+    with qdis
     $ tbnarrator = 0
     play music opening2
     $ location = "1F Empty Classroom"
-    show screen header with dissolve
+    show screen header with qdis
     show mark animated neutral serious with qleft
     show text1 at left with qright
     show text2 at bottom with qzoom
@@ -292,7 +292,7 @@ label intro:
     $ tbnarrator = 0
     hide ayase with qdis
     show ayasesprite downright stand
-    show elly animated neutral smirk with dissolve
+    show elly animated neutral smirk with qdis
     show marksprite downright stand
     show ellysprite upleft standmove
     voice elly1
@@ -342,35 +342,35 @@ label intro:
     voice mark9
     mk "Hey, who're you with? It's gotta be me, right?  C'mon, what's it gonna be?"
     show mark ns
-    hide screen header with dissolve
+    hide screen header with qdis
     $ choicetext = "Will you bet on Mark or Brown?"
     show nchoice at pright zorder 15 with easeinright
     show nchoice onlayer screens zorder 15 at pright
-    show fadeblack onlayer screens zorder 3 with dissolve
+    show fadeblack onlayer screens zorder 3 with qdis
     $ choice1 = "Bet on Mark"
     $ choice2 = "Bet on Brown"
-    call screen choices with dissolve
+    call screen choices with qdis
 label label000: #mark/brown choice
     if _return == 1:
-        hide screen choices with dissolve
+        hide screen choices with qdis
         hide fadeblack onlayer screens
         hide mark
         show marksprite upright stand
         hide nchoice onlayer screens
         hide nchoice
-        with dissolve
-        show screen header with dissolve
-        show ayase animated neutral smirk with dissolve
+        with qdis
+        show screen header with qdis
+        show ayase animated neutral smirk with qdis
         show ayasesprite downright standmove
         voice ayase2
         ay "Awww!  Just wait... you'll be sorry!"
     elif _return == 2:
-        hide screen choices with dissolve
+        hide screen choices with qdis
         hide fadeblack onlayer screens
         hide nchoice onlayer screens
         hide nchoice
-        with dissolve
-        show screen header with dissolve
+        with qdis
+        show screen header with qdis
         show mark animated neutral sad with qleft
         voice mark10
         mk "Sheesh, you too?  All y'alls crazy."
@@ -383,7 +383,7 @@ label label000: #mark/brown choice
     show marksprite upleft stand
     voice brown4
     br "Heeheehee... This'll be fun!  Awright, let's get started!"
-    scene bg black with dissolve
+    scene bg black with qdis
     $ naoyax = 800
     $ naoyay = 600
     $ markx = 100
@@ -407,7 +407,7 @@ label label000: #mark/brown choice
     show brownsprite downright stand at brownloc
     show marksprite upright stand at markloc
     show ellysprite upright stand at ellyloc
-    with dissolve
+    with qdis
     $ tbnarrator = 0
     show ayase animated neutral serious with qleft
     voice ayase3
@@ -495,7 +495,7 @@ label label000: #mark/brown choice
     show brown animated neutral sad
     voice brown9
     extend "H-Huh?"
-    scene bg black with dissolve
+    scene bg black with qdis
     $ naoyax = 1000
     $ naoyay = 400
     $ markx = 900
@@ -518,7 +518,7 @@ label label000: #mark/brown choice
     show brownsprite downright stand at brownloc
     show ayasesprite downright stand at ayaseloc
     show ellysprite upleft stand at ellyloc
-    with dissolve
+    with qdis
     show ayase animated neutral serious with qleft
     show ayasesprite downright standmove
     voice ayase4
@@ -537,7 +537,7 @@ label label000: #mark/brown choice
     yu "*Sigh* Happy now?  Hurry up and go get the teacher."
     hide yukino with qdis
     show yukinosprite upright stand
-    show brown animated neutral sad with dissolve
+    show brown animated neutral sad with qdis
     show brownsprite downright standmove
     voice brown10
     br "W-Wait!  Hold up!  One more time!  Please!?  Mark screwed it up!"
@@ -552,9 +552,9 @@ label label000: #mark/brown choice
     play music opening2 fadeout 0.5
     show marksprite upleft stand
     hide screen header
-    scene bg black with dissolve
+    scene bg black with qdis
 #    $ renpy.movie_cutscene("video/PSPCutscene1.avi")
-#    scene bg weirdgirl with dissolve
+#    scene bg weirdgirl with qdis
 #    play music ohno fadein 0.5 fadeout 0.5
 #    $ tbnarrator = 1
 #    "Behind them, the figure of a young girl in white appears."
@@ -573,7 +573,7 @@ label label000: #mark/brown choice
 #    mk "Wha-What the...!?"
 #    $ tbnarrator = 1
 #    "Wind begins to whip through the room, and lightning crashes from the ceiling."
-#    scene bg shocking with dissolve
+#    scene bg shocking with qdis
 #    "Yukino is found laying on the floor."
 #    $ tbnarrator = 0
 #    na "Yukino!"
@@ -581,18 +581,18 @@ label label000: #mark/brown choice
 #    "Nanjo runs to help Yukino, but is stopped as lightning strikes Mark, you, and him."
 #    "The remainder of the group stares at the four on the floor."
 #
-#    scene bg butterfly with dissolve
+#    scene bg butterfly with qdis
 #    play music philemon fadeout 0.5 fadein 0.5
 #    "As unconsciousness sets in, a yellow butterfly flutters onto screen."
 #    "It flies through a plethora of gears, buildings, and other objects."
 #    "The screen stops at a large platform surrounded by four pillars."
-#    scene bg philemon with dissolve
+#    scene bg philemon with qdis
 #    n "A single man, clothed in a white suit and a mask with a butterfly motif, stands in the center of the platform and takes a bow."
 #    $ tbnarrator = 0
 #    ph "Welcome.  It's a pleasure to meet you."
 #    ph "I am Philemon, a dweller between consciousness and unconsciousness."
 #    ph "And now, a simple test: can you state your name?"
-    show naoya at pleft2 with dissolve
+    show naoya at pleft2 with qdis
     mc "Naoya.  Naoya Toudou."
     ph "Splendid."
     ph "There aren't many who can remember their identity when in this domain."
@@ -608,7 +608,7 @@ label label000: #mark/brown choice
     ph "The time is soon when you will need this power."
     ph "Now you must return to your proper time and place."
     play music "<silence .5>" fadeout 0.5
-    scene bg black with dissolve
+    scene bg black with qdis
     $ markx = 900
     $ marky = 450
     $ nanjox = 850
@@ -625,12 +625,12 @@ label label000: #mark/brown choice
     show nanjosprite downright stand at nanjoloc
     show yukinosprite upright stand at yukinoloc
     show natsumisprite downright stand at npc1loc
-    with dissolve
+    with qdis
     $ location = "Infirmary"
     play music schooldays volume 0.4 fadein 0.5
-    show screen header with dissolve
+    show screen header with qdis
     show natsumisprite downright standmove
-    show natsumi animated neutral serious with dissolve
+    show natsumi animated neutral serious with qdis
     nurse "Oh, Naoya, you've come around.  Ahaha, welcome to the infirmary."
     show natsumi animated neutral smirk
     nurse "You sure look cute when you're asleep."
@@ -642,7 +642,7 @@ label label000: #mark/brown choice
     show natsumisprite downright stand
     $ npc2x = 300
     $ npc2y = 700
-    show saekosprite upleft standmove at npc2loc with dissolve
+    show saekosprite upleft standmove at npc2loc with qdis
     show saeko animated neutral serious with qleft
     show saekosprite upright standmove with move
     sa "Naoya!  Are you all right!?  Thank goodness you're awake, Naoya!" (name="Teacher")
@@ -720,7 +720,7 @@ label label001(location="Infirmary"):
         $ npc2y = 400
         $ npc3x = 1200
         $ npc3y = 500
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         show saekosprite downright stand at npc2loc
         show natsumisprite downright stand at npc1loc
         show setsukosprite downleft stand at npc3loc
@@ -729,8 +729,8 @@ label label001(location="Infirmary"):
         if _return == 1:
             $ naoyax = 450
             $ naoyay = 450
-            show naoyasprite upleft stand at naoyaloc with dissolve
-            show natsumi animated neutral serious with dissolve
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show natsumi animated neutral serious with qdis
             show natsumisprite downright standmove
             nat "Maki's mother isn't badly hurt.  You can relax."
             nat "What about you, Naoya?  Got any injuries?  Let me look..."
@@ -741,50 +741,86 @@ label label001(location="Infirmary"):
         elif _return == 2:
             $ naoyax = 550
             $ naoyay = 450
-            show naoyasprite upleft stand at naoyaloc with dissolve
-            show saeko animated neutral serious with dissolve
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show saeko animated neutral serious with qdis
             show saekosprite downright standmove
             sa "Masao and Kei know about the hole in the wall, right?"
             sa "The gates are sealed, so that's the only way they'll be able to get in."
         elif _return == 3:
             $ naoyax = 1150
             $ naoyay = 550
-            show naoyasprite upright stand at naoyaloc with dissolve
-            show setsuko at pleft2 with dissolve
+            show naoyasprite upright stand at naoyaloc with qdis
+            show setsuko at pleft2 with qdis
             show setsukosprite downleft standmove
             set "I don't know what to say... I've caused so much trouble for everyone."
         elif _return == 4:
             $ naoyax = 800
             $ naoyay = 350
-            show naoyasprite upright stand at naoyaloc with dissolve            
+            show naoyasprite upright stand at naoyaloc with qdis
             ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
         elif _return == 5:
             jump callHermelinFloor1
         jump label001
     else:
-        scene bg infirmary2 with dissolve
-        show screen header with dissolve
+        show screen header with qdis
+        scene bg infirmary2
+        $ markx = 900
+        $ marky = 450
+        $ nanjox = 850
+        $ nanjoy = 600
+        $ yukinox = 800
+        $ yukinoy = 550
+        $ npc1x = 400
+        $ npc1y = 400
+        $ npc2x = 500
+        $ npc2y = 400
+        with qdis
         play music schooldays volume 0.4 if_changed
+        show saekosprite downright stand at npc2loc
+        show natsumisprite downright stand at npc1loc
+        show marksprite downright stand at markloc
+        show nanjosprite upleft stand at nanjoloc
+        show yukinosprite downleft stand at yukinoloc
         call screen Infirmary
         if _return == 1:
+            $ naoyax = 450
+            $ naoyay = 450
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show natsumisprite downright standmove
             show natsumi animated neutral smirk with qleft
             nat "I put a new plant there.  What do you think?  Livens up the room, doesn't it?"
             nat "They say plants grow better if you talk to them.  Give it a try, Naoya."
         elif _return == 2:
+            $ naoyax = 550
+            $ naoyay = 450
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show saekosprite downright standmove
             show saeko animated neutral serious with qleft
             sa "What were you doing, anyway?  I asked you to prepare for the sports festival."
             sa "We only have a month left and nothing's ready yet."
             show saeko animated neutral sad
             sa "Should we just cancel it this year...?"
         elif _return == 3:
+            $ naoyax = 800
+            $ naoyay = 550
+            show naoyasprite downright stand at naoyaloc with qdis
+            show nanjosprite upleft standmove
             show nanjo animated neutral serious with qleft
             na "It seems we have no choice in the matter.  Best to get it over with."
         elif _return == 4:
+            $ naoyax = 750
+            $ naoyay = 600
+            show naoyasprite upright stand at naoyaloc with qdis
+            show yukinosprite downleft standmove
             show yukino animated neutral serious with qleft
             yu "I know I couldn't take being cooped up in the hospital for an entire year."
             show yukino animated neutral smirk
             yu "Let's go cheer her up!"
         elif _return == 5:
+            $ markx = 950
+            $ marky = 500
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show marksprite downright standmove
             show mark animated neutral serious with qleft
             mk "Mikage Hospital, huh?  That's kind of a long walk from school."
             mk "It's way to the southeast.  You leave the school, take the subway..."
@@ -798,29 +834,63 @@ label label001(location="Infirmary"):
 
 label label002(location="Class 1-2"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
-        #update music
+        $ npc1x = 400
+        $ npc1y = 400
+        show student1sprite downleft stand at npc1loc
+        scene bg black #update
+        with qdis
         call screen Class12b
         if _return == 1:
+            $ naoyax = 350
+            $ naoyay = 450
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "See!?  I told you so!  SEBEC really was waging biological warfare!"
         elif _return == 2:
             jump callHermelinFloor1
         jump label002
     else:
-        scene bg classroom with dissolve
+        $ yukinox = 400
+        $ yukinoy = 400
+        $ markx = 300
+        $ marky = 300
+        $ nanjox = 500
+        $ nanjoy = 500
+        $ npc1x = 200
+        $ npc2y = 200
+        scene bg classroom
+        show yukinosprite upleft stand at yukinoloc
+        show marksprite downright stand at markloc
+        show nanjosprite upright stand at nanjoloc
+        show student1sprite downleft stand at npc1loc
+        with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class12
         if _return == 1:
+            $ naoyax = 450
+            $ naoyay = 350
+            show naoyasprite downright stand at naoyaloc with qdis
+            show yukinosprite upleft standmove
             show yukino animated neutral smirk with qleft
             yu "I didn't know you were this interested in rumors and gossip."
             show yukino animated neutral serious
             yu "Here's a hot tip: We need to get to the hospital!"
         elif _return == 2:
+            $ naoyax = 150
+            $ naoyay = 250
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "This 'SEBEC curse' is a load of crap.  I bet they're making biological weapons."
         elif _return == 3:
+            $ naoyax = 350
+            $ naoyay = 350
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show marksprite downright standmove
             show mark animated neutral serious with qleft
             mk "Why's everyone so pissed at SEBEC?  It's just a regular company."
         elif _return == 4:
+            $ naoyax = 550
+            $ naoyay = 450
+            show naoyasprite downleft at naoyaloc with qdis
+            show nanjosprite upright standmove
             show nanjo animated neutral serious with qleft
             na "I can't discount it.  Kandori is a man who wouldn't hesitate to do such things."
         elif _return == 5:
@@ -829,10 +899,17 @@ label label002(location="Class 1-2"):
 
 label label003(location="Class 1-3"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        $ npc1x = 400
+        $ npc1y = 400
+        scene bg black #update
+        show student2sprite downleft stand at npc1loc
+        with qdis
         #update music
         call screen Class13b
         if _return == 1:
+            $ naoyax = 350
+            $ naoyay = 450
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "Hey, isn't this the curse of the haunted mansion at work?"
             stu "I bet the spirits are angry that SEBEC built their HQ on top of it!"
             stu "It must be the ghost of a Sengoku-era general or something!"
@@ -840,22 +917,50 @@ label label003(location="Class 1-3"):
             jump callHermelinFloor1
         jump label003
     else:
-        scene bg classroom with dissolve
+        $ yukinox = 300
+        $ yukinoy = 300
+        $ markx = 400
+        $ marky = 400
+        $ nanjox = 500
+        $ nanjoy = 500
+        $ npc1x = 200
+        $ npc1y = 200
+        scene bg classroom
+        show yukinosprite downleft stand at yukinoloc
+        show marksprite upright stand at markloc
+        show nanjosprite upleft stand at nanjoloc
+        show student2sprite downright stand at npc1loc
+        with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class13
         if _return == 1:
+            $ naoyax = 250
+            $ naoyay = 350
+            show naoyasprite upright stand with qdis
+            show yukinosprite downleft standmove
             show yukino animated neutral serious with qleft
             yu "Yeah, they tore that place down and put up the SEBEC building last year."
         elif _return == 2:
+            $ naoyax = 250
+            $ naoyay = 250
+            show naoyasprite upleft stand with qdis
             stu "Did you ever hear any of those weird rumors about the SEBEC building?"
             stu "People have heard moaning and seen red eyes peering through windows..."
             stu "It's supposed to be cursed since they leveled the haunted mansion to built it."
         elif _return == 3:
+            $ naoyax = 450
+            $ naoyay = 350
+            show naoyasprite downleft stand
+            show marksprite upright standmove
             show mark animated neutral smirk with qleft
             mk "The haunted mansion!  Man, that takes me back."
             show mark animated neutral serious
             mk "I used to go play there a lot and that old bat-- I mean my mom, got mad at me."
         elif _return == 4:
+            $ naoyax = 450
+            $ naoyay = 450
+            show naoyasprite downright stand with qdis
+            show nanjosprite upleft standmove
             show nanjo animated neutral serious with qleft
             na "Stories about SEBEC tend to be unpleasant."
             na "That aside, we should head to the hospital."
@@ -865,32 +970,68 @@ label label003(location="Class 1-3"):
 
 label label004(location="Class 1-4"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black
+        $ npc1x = 400
+        $ npc1y = 400
+        show student3sprite downleft stand at npc1loc
+        with qdis #update
         #update music
         call screen Class14b
         if _return == 1:
+            $ naoyax = 350
+            $ naoyay = 450
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "Oh, hey!  It looks like Reiji went outside a minute ago!"
             stu "Aww... that was the perfect chance for me to talk to him!"
         elif _return == 2:
             jump callHermelinFloor1
         jump label004
     else:
-        scene bg classroom with dissolve
+        scene bg classroom
+        $ yukinox = 300
+        $ yukinoy = 300
+        $ markx = 400
+        $ marky = 400
+        $ nanjox = 500
+        $ nanjoy = 500
+        $ npc1x = 200
+        $ npc1y = 200
+        with qdis
+        show yukinosprite downleft stand at yukinoloc
+        show marksprite upright stand at markloc
+        show nanjosprite upleft stand at nanjoloc
+        show student2sprite downright stand at npc1loc
+        with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class14
         if _return == 1:
+            $ naoyax = 250
+            $ naoyay = 350
+            show naoyasprite upright stand with qdis
+            show yukinosprite downleft standmove
             show yukino animated neutral serious with qleft
             yu "We don't have time to deal with this nonsense.  Let's get to the hospital."
         elif _return == 2:
+            $ naoyax = 350
+            $ naoyay = 450
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "Um, there's a guy named Reiji in your class, right?"
             stu "No matter how much I hang around your homeroom at break or after school..."
             stu "I never see him!"
             stu "How am I supposed to strike up a conversation?"
             stu "That romantic air of mystery he has... Ooooh!  But yeah..."
         elif _return == 3:
+            $ naoyax = 450
+            $ naoyay = 350
+            show naoyasprite downleft stand
+            show marksprite upright standmove
             show mark animated neutral serious with qleft
             mk "That girl's supposedly got a thing for Reiji... Not that I'm jealous or anything!"
         elif _return == 4:
+            $ naoyax = 450
+            $ naoyay = 450
+            show naoyasprite downright stand with qdis
+            show nanjosprite upleft standmove
             show nanjo animated neutral serious with qleft
             na "Reiji Kido, eh...?  He keeps to himself... I feel as though he does so deliberately."
         elif _return == 5:
@@ -899,10 +1040,17 @@ label label004(location="Class 1-4"):
 
 label label005(location="Class 1-6"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black #update
+        $ npc1x = 400
+        $ npc1y = 400
+        show student3sprite downleft stand at npc1loc
+        with qdis
         #update music
         call screen Class14b
         if _return == 1:
+            $ naoyax = 350
+            $ naoyay = 450
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "Things have really gotten out of hand.  It's even put me off gambling."
             stu "I wonder when it'll all be over..."
             stu "Hey, wanna bet on when they'll fix it?"
@@ -910,20 +1058,48 @@ label label005(location="Class 1-6"):
             jump callHermelinFloor1
         jump label005
     else:
-        scene bg classroom with dissolve
+        $ yukinox = 300
+        $ yukinoy = 300
+        $ markx = 400
+        $ marky = 400
+        $ nanjox = 500
+        $ nanjoy = 500
+        $ npc1x = 200
+        $ npc1y = 200
+        scene bg classroom
+        show yukinosprite downleft stand at yukinoloc
+        show marksprite upright stand at markloc
+        show nanjosprite upleft stand at nanjoloc
+        show student3sprite downright stand at npc1loc
+        with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class16
         if _return == 1:
+            $ naoyax = 250
+            $ naoyay = 350
+            show naoyasprite upright stand with qdis
+            show yukinosprite downleft standmove
             show yukino animated neutral serious with qleft
             yu "Let's ditch this gambling freak and go to the hospital before I lose it, okay?"
         elif _return == 2:
+            $ naoyax = 350
+            $ naoyay = 450
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "Gambling is a man's hobby.  And bunny-girls are a must for every casino!"
             stu "Slots, blackjack, Code Breaker..."
             stu "*sigh* I can't wait until I'm old enough to go."
         elif _return == 3:
+            $ naoyax = 450
+            $ naoyay = 350
+            show naoyasprite downleft stand
+            show marksprite upright standmove
             show mark animated neutral smirk with qleft
             mk "That dude got yelled at the other day for betting on Rich Man, Poor Man in class."
         elif _return == 4:
+            $ naoyax = 450
+            $ naoyay = 450
+            show naoyasprite downright stand with qdis
+            show nanjosprite upleft standmove
             show nanjo animated neutral smirk with qleft
             na "Code Breaker... Yes, I used to play that with Yamaoka when I was small."
         elif _return == 5:
@@ -932,10 +1108,17 @@ label label005(location="Class 1-6"):
 
 label label006(location="Courtyard"):
     if plotprogress >=2:
-        scene bg black with dissolve #update courtyard bg later
+        scene bg black #update courtyard bg later
+        $ npc1x = 400
+        $ npc1y = 400
+        show student4sprite downleft stand at npc1loc
+        with qdis
         #play applicable music #update
         call screen Courtyardb
         if _return == 1:
+            $ naoyax = 350
+            $ naoyay = 450
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "It's a madhouse outside, but it's so calm here... I wonder why the demons won't come here."
             stu "Could it be divine protection?"
         elif _return == 2:
@@ -948,22 +1131,57 @@ label label006(location="Courtyard"):
             jump callHermelinFloor1
         jump label006
     else:
-        scene bg courtyard with dissolve
+        $ yukinox = 300
+        $ yukinoy = 300
+        $ markx = 400
+        $ marky = 400
+        $ nanjox = 500
+        $ nanjoy = 500
+        $ npc1x = 200
+        $ npc1y = 200
+        $ npc2x = 400
+        $ npc2y = 200
+        scene bg courtyard
+        show yukinosprite downleft stand at yukinoloc
+        show marksprite upright stand at markloc
+        show nanjosprite upleft stand at nanjoloc
+        show student3sprite downright stand at npc1loc
+        show ooishisprite upright stand at npc2loc
+        with qdis
         play music schooldays volume 0.4 if_changed
         call screen Courtyard
         if _return == 1:
+            $ naoyax = 250
+            $ naoyay = 350
+            show naoyasprite upright stand with qdis
+            show yukinosprite downleft standmove
             show yukino animated neutral serious with qleft
             yu "I have part-time work today.  Let's hurry to the hospital and get this over with."
         elif _return == 2:
+            $ naoyax = 350
+            $ naoyay = 450
+            show naoyasprite upright stand at naoyaloc with qdis
             stu "Ms. Ooishi is so kind.  She loves flowers so much, she cares for them as if they were her children."
         elif _return == 3:
+            $ naoyax = 450
+            $ naoyay = 350
+            show naoyasprite downleft stand
+            show marksprite upright standmove
             show mark animated neutral serious with qleft
             mk "Our principal's a cool lady... but she can be a little too lovey-dovey."
         elif _return == 4:
+            $ naoyax = 450
+            $ naoyay = 450
+            show naoyasprite downright stand with qdis
+            show nanjosprite upleft standmove
             show nanjo animated neutral serious with qleft
             na "This megalith shard... It's a very precious cultural artifact."
             na "Who built it?  For what purpose?  It never ceases to fascinate me."
         elif _return == 5:
+            $ naoyax = 350
+            $ naoyay = 250
+            show naoyasprite upright stand
+            show ooishisprite downleft standmove
             show ooishi at pleft2 with qleft
             oo "Well, hello, Naoya!  Are you all taking a walk, too?"
             oo "It's been part of my daily routine, ever since I was a girl..."
@@ -985,17 +1203,38 @@ label label006(location="Courtyard"):
 
 label label007(location="Teacher's Lounge"):
     if plotprogress >= 2:
-        scene bg black with dissolve #Update with proper teacher lounge
+        scene bg black #Update with proper teacher lounge
+        $ npc1x = 400
+        $ npc1y = 400
+        show teacher1sprite downright stand at npc1loc
+        with qdis
         #play appropriate music #update
         call screen TeacherLoungeb
         if _return == 1:
+            $ naoyax = 450
+            $ naoyay = 450
+            show naoyasprite upleft stand at naoyalock with qdis
             tea "Oh, it's you, Naoya.  Hey, go patrol around the school!"
             tea "Me? I-I can't leave this spot... I have to sort out all the reports I get!"
         elif _return == 2:
             jump callHermelinFloor1
         jump label007
     else:
-        scene bg teacherlounge with dissolve
+        $ yukinox = 300
+        $ yukinoy = 300
+        $ markx = 400
+        $ marky = 400
+        $ nanjox = 500
+        $ nanjoy = 500
+        $ npc1x = 200
+        $ npc1y = 200
+        $ ayasex = 400
+        $ ayasey = 200
+        $ ellyx = 500
+        $ ellyy = 400
+        scene bg teacherlounge
+
+        with qdis
         play music schooldays volume 0.4 if_changed
         call screen TeacherLounge
         if _return == 1:
@@ -1033,7 +1272,7 @@ label label007(location="Teacher's Lounge"):
 
 label label008(location="Principal's Office"):
     if plotprogress >= 2:
-        scene bg black with dissolve #Update Principal office here
+        scene bg black with qdis #Update Principal office here
         #play appropriate music #update
         if plotprogress == 5:
             show ooishi at pleft2 with qleft
@@ -1087,7 +1326,7 @@ label label008(location="Principal's Office"):
             jump callHermelinFloor1
         jump label008
     else:
-        scene bg principaloffice with dissolve
+        scene bg principaloffice with qdis
         play music schooldays volume 0.4 if_changed
         call screen PrincipalOffice
         if _return == 1:
@@ -1104,7 +1343,7 @@ label label008(location="Principal's Office"):
         jump label008
 
 label label009(location="1F Passageway"):
-    scene bg 1FPassageway with dissolve
+    scene bg 1FPassageway with qdis
     play music hole
     call screen Passageway1F
     if _return == 1:
@@ -1137,7 +1376,7 @@ label label009(location="1F Passageway"):
 
 label label011(location="Gymnasium"):
     if plotprogress == 6:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         call screen Gymnasiumc
         if _return == 1:
             stu "This fuss'll die down by the time the festival starts, right?"
@@ -1148,7 +1387,7 @@ label label011(location="Gymnasium"):
             jump callSportsBuilding
     if plotprogress >= 2:
         if plotprogress =< 5:
-            scene bg black with dissolve #update
+            scene bg black with qdis #update
             #play appropriate music #update
             call screen Gymansiumb
             if _return == 1:
@@ -1158,7 +1397,7 @@ label label011(location="Gymnasium"):
                 jump callSportsBuilding
             jump label011
     else:
-        scene bg gym with dissolve
+        scene bg gym with qdis
         play music schooldays2 if_changed
         call screen Gymnasium
         if _return == 1:
@@ -1182,7 +1421,7 @@ label label011(location="Gymnasium"):
 
 label label012(location="Drama Club"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         if plotprogress == 3:
             stu "I told you, I don't know any play called 'The Snow Queen'!  Give it a rest!"
@@ -1209,7 +1448,7 @@ label label012(location="Drama Club"):
             jump callSportsBuilding
         jump label012
     if plotprogress == 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         call screen DramaClubb
         if _return == 1:
@@ -1223,7 +1462,7 @@ label label012(location="Drama Club"):
             jump callSportsBuilding
         jump label012
     else:
-        scene bg dramaclub with dissolve
+        scene bg dramaclub with qdis
         play music schooldays2 if_changed
         if dramaclub == False:
             stu "Hey, we haven't decided which play we're doing for the culture festival, have we?"
@@ -1257,7 +1496,7 @@ label label013(location="Boxing Club"):
         n "It appears to be empty.  Maybe they've all gone home?"
         jump callSportsBuilding
     else:
-        scene bg boxingclub with dissolve
+        scene bg boxingclub with qdis
         play music schooldays2 if_changed
         call screen BoxingClub
         if _return == 1:
@@ -1280,7 +1519,7 @@ label label014(location="Archery Club"):
         n "It appears to be empty.  Maybe they've all gone home?"
         jump callSportsBuilding
     else:
-        scene bg archeryclub with dissolve
+        scene bg archeryclub with qdis
         play music schooldays2 if_changed
         call screen ArcheryClub
         if _return == 1:
@@ -1300,7 +1539,7 @@ label label014(location="Archery Club"):
 
 label label015(location="Fencing Club"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #music #update
         if fencingclub == False:
             show tadashi at pleft2 with qleft
@@ -1320,7 +1559,7 @@ label label015(location="Fencing Club"):
             show tadashi at pleft2 with qleft
             td "Argh!  Stupid muscley freak!  Muscley freak, mussel fr--damn, that's hard to say."
             hide tadashi with qdis
-        call screen FencingClubb with dissolve
+        call screen FencingClubb with qdis
         if _return == 1:
             if tamakirapier == True:
                 show tamaki animated neutral smirk with qleft
@@ -1347,7 +1586,7 @@ label label015(location="Fencing Club"):
             jump callSportsBuilding
         jump label015
     else:
-        scene bg fencingclub with dissolve
+        scene bg fencingclub with qdis
         play music schooldays2 if_changed
         if fencingclub == False:
             show tamaki animated neutral serious with qleft
@@ -1380,7 +1619,7 @@ label label015(location="Fencing Club"):
             $ tbnarrator = 1
             ". . ."
             $ tbnarrator = 0
-        call screen FencingClub with dissolve
+        call screen FencingClub with qdis
         if _return == 1:
             show yukino animated neutral smirk with qleft
             yu "Leave 'em alone.  You know how some people are.  They fight 'cause they care."
@@ -1410,9 +1649,9 @@ label label016(location="Ballet Club"):
         n "It appears to be empty.  Maybe they've all gone home?"
         jump callSportsBuilding
     else:
-        scene bg balletclub with dissolve
+        scene bg balletclub with qdis
         play music schooldays2 if_changed
-        call screen BalletClub with dissolve
+        call screen BalletClub with qdis
         if _return == 1:
             show yukino animated neutral smirk with qleft
             yu "Ballet, huh...?  The Nutcracker is kinda neat, I always thought."
@@ -1441,7 +1680,7 @@ label label018(location = "Class 2-1"):
         n "It appears to be locked."
         jump callHermelinFloor2
     else:
-        scene bg classroom with dissolve
+        scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class21
         if _return == 1:
@@ -1467,7 +1706,7 @@ label label018(location = "Class 2-1"):
 
 label label019(location="Class 2-2"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         call screen Class22b
         if _return == 1:
@@ -1477,7 +1716,7 @@ label label019(location="Class 2-2"):
             jump callHermelinFloor2
         jump label019
     else:
-        scene bg classroom with dissolve
+        scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class22
         if _return == 1:
@@ -1494,26 +1733,26 @@ label label019(location="Class 2-2"):
             $ choicetext = "Do you want to hear about it?"
             show nchoice at pright zorder 15 with easeinright
             show nchoice onlayer screens zorder 15 at pright
-            show fadeblack onlayer screens zorder 3 with dissolve
+            show fadeblack onlayer screens zorder 3 with qdis
             $ choice1 = "Yes"
             $ choice2 = "No"
-            call screen choices with dissolve
+            call screen choices with qdis
             if _return == 1:
-                hide screen choices with dissolve
+                hide screen choices with qdis
                 hide fadeblack onlayer screens
                 hide nchoice onlayer screens
                 hide nchoice
-                with dissolve
+                with qdis
                 stu "It takes place in a blue room."
                 stu "I can hear a piano and singing, and there's an odd old man sitting down..."
                 stu "What do you think that means?"
                 jump label019
             if _return == 2:
-                hide screen choices with dissolve
+                hide screen choices with qdis
                 hide fadeblack onlayer screens
                 hide nchoice onlayer screens
                 hide nchoice
-                with dissolve
+                with qdis
                 stu "It was a really strange dream... like it was hinting at something that'll happen."
         elif _return == 5:
             jump callHermelinFloor2
@@ -1521,7 +1760,7 @@ label label019(location="Class 2-2"):
 
 label label020(location="Class 2-4"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         call screen Class24b
         if _return == 1:
@@ -1531,7 +1770,7 @@ label label020(location="Class 2-4"):
             jump callHermelinFloor2
         jump label020
     else:
-        scene bg classroom with dissolve
+        scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
         if Yuko == False:
             show yuko at pleft2 with qleft
@@ -1544,23 +1783,23 @@ label label020(location="Class 2-4"):
             $ choicetext = "Could you tell Maki I'll give back\nthat book next time I go visit her...?"
             show nchoice at pright zorder 15 with easeinright
             show nchoice onlayer screens zorder 15 at pright
-            show fadeblack onlayer screens zorder 3 with dissolve
+            show fadeblack onlayer screens zorder 3 with qdis
             $ choice1 = "Sure"
             $ choice2 = "No way"
-            call screen choices with dissolve
+            call screen choices with qdis
             if _return == 1:
-                hide screen choices with dissolve
+                hide screen choices with qdis
                 hide fadeblack onlayer screens
                 hide nchoice onlayer screens
                 hide nchoice
-                with dissolve
+                with qdis
                 yuko "U-um, thanks.  I'm sorry to ask you to go out of your way like that..."
             if _return == 2:
-                hide screen choices with dissolve
+                hide screen choices with qdis
                 hide fadeblack onlayer screens
                 hide nchoice onlayer screens
                 hide nchoice
-                with dissolve
+                with qdis
                 yuko "O-Oh... Um, sorry I asked... It's okay, don't worry about it...!"
                 hide yuko
                 show yukino animated neutral serious with qleft
@@ -1607,7 +1846,7 @@ label label020(location="Class 2-4"):
 
 label label021(location="Class 2-5"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #music #update
         call screen Class25b
         if _return == 1:
@@ -1620,7 +1859,7 @@ label label021(location="Class 2-5"):
             jump callHermelinFloor2
         jump label021
     else:
-        scene bg classroom with dissolve
+        scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class25
         if _return == 1:
@@ -1646,7 +1885,7 @@ label label021(location="Class 2-5"):
 
 label label022(location="Cafeteria"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         call screen Cafeteriab
         if _return == 1:
@@ -1665,7 +1904,7 @@ label label022(location="Cafeteria"):
             jump callHermelinFloor2
         jump label022
     else:
-        scene bg cafeteria with dissolve
+        scene bg cafeteria with qdis
         play music schooldays2 if_changed
         call screen Cafeteria
         if _return == 1:
@@ -1698,7 +1937,7 @@ label label023(location="Home Ec Room"):
         n "It seems to be locked."
         jump callHermelinFloor2
     else:
-        scene bg homeecroom with dissolve
+        scene bg homeecroom with qdis
         play music schooldays2 if_changed
         call screen HomeEcRoom
         if _return == 1:
@@ -1729,7 +1968,7 @@ label label024: #Empty Classroom (Reiji)
         jump callHermelinFloor2
         with pixellate
     if reijiflags == 1:
-        scene bg emptyclassroom1 with dissolve
+        scene bg emptyclassroom1 with qdis
         play music reiji fadeout 0.5 fadein 0.5
         $ location = "Empty Classroom"
         show yukino animated neutral serious with qleft
@@ -1744,7 +1983,7 @@ label label024: #Empty Classroom (Reiji)
         n "{color=#ebffdb}>Reiji Kido (Nickname: Reiji)\nA quiet loner who transferred to St. Hermelin High six months ago.{/color}"
         "Reiji leaves without saying anything further."
         $ tbnarrator = 0
-        scene bg emptyclassroom2 with dissolve
+        scene bg emptyclassroom2 with qdis
         show nanjo animated neutral serious with qleft
         na "Hmph.  The standoffish sort, I see."
         hide nanjo
@@ -1774,7 +2013,7 @@ label label026 (location="Class 3-1"):
         n "It seems to be locked."
         jump callHermelinFloor3
     else:
-        scene bg classroom with dissolve
+        scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
         if label026 == False:
             stu "Nurse Natsumi is hot as hell!  I love that mature air she has..."
@@ -1801,7 +2040,7 @@ label label026 (location="Class 3-1"):
 
 label label027 (location="Class 3-3"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         call screen Class33b
         if _return == 1:
@@ -1816,7 +2055,7 @@ label label027 (location="Class 3-3"):
             jump callHermelinFloor3
         jump label027
     else:
-        scene bg classroom with dissolve
+        scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class33
         if _return == 1:
@@ -1843,7 +2082,7 @@ label label028 (location="Class 3-6"):
         n "It seems to be locked."
         jump callHermelinFloor3
     else:
-        scene bg classroom with dissolve
+        scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
         call screen Class36
         if _return == 1:
@@ -1867,7 +2106,7 @@ label label028 (location="Class 3-6"):
 
 label label029 (location="Class 3-7"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         call screen Class37b
         if _return == 1:
@@ -1881,7 +2120,7 @@ label label029 (location="Class 3-7"):
             jump callHermelinFloor3
         jump label029
     else:
-        scene bg classroom with dissolve
+        scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
         if label029 == False:
             stu "I don't wanna go to cram school.  I just wanna stay home and sleep."
@@ -1913,7 +2152,7 @@ label label029 (location="Class 3-7"):
 
 label label030 (location="Library"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #playmusic #update
         if plotprogress == 2:
             show devilboy animated neutral serious with qleft
@@ -1957,7 +2196,7 @@ label label030 (location="Library"):
             jump callHermelinFloor3
         jump label030
     else:
-        scene bg library with dissolve
+        scene bg library with qdis
         play music schooldays2 if_changed
         call screen Library
         if _return == 1:
@@ -1997,7 +2236,7 @@ label label030 (location="Library"):
 
 label label031 (location="Student Council"):
     if plotprogress >=2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         if plotprogress == 4:
             stu "The records?  I've already gone through and sorted them.  It was no small task, you know."
@@ -2027,7 +2266,7 @@ label label031 (location="Student Council"):
             jump callHermelinFloor3
         jump label031
     else:
-        scene bg studentcouncil with dissolve
+        scene bg studentcouncil with qdis
         play music schooldays2 if_changed
         call screen StudentCouncil
         if _return == 1:
@@ -2064,7 +2303,7 @@ label label031 (location="Student Council"):
 
 label label032 (location = "Art Room"):
     if plotprogress >= 2:
-        scene bg black with dissolve #update
+        scene bg black with qdis #update
         #play music #update
         call screen ArtRoomb
         if _return == 1:
@@ -2075,7 +2314,7 @@ label label032 (location = "Art Room"):
             jump callHermelinFloor3
         jump label032
     else:
-        scene bg artroom with dissolve
+        scene bg artroom with qdis
         play music schooldays2 if_changed
         call screen ArtRoom
         if _return == 1:
@@ -2092,24 +2331,24 @@ label label032 (location = "Art Room"):
             $ choicetext = "Do you know those two?"
             show nchoice at pright zorder 15 with easeinright
             show nchoice onlayer screens zorder 15 at pright
-            show fadeblack onlayer screens zorder 3 with dissolve
+            show fadeblack onlayer screens zorder 3 with qdis
             $ choice1 = "Yeah"
             $ choice2 = "No, I don't"
-            call screen choices with dissolve
+            call screen choices with qdis
             if _return == 1:
-                hide screen choices with dissolve
+                hide screen choices with qdis
                 hide fadeblack onlayer screens
                 hide nchoice onlayer screens
                 hide nchoice
-                with dissolve
+                with qdis
                 stu "Well, Maki's pieces are incredible.  She's won several awards for them."
                 stu "Her friend Chisato isn't very good, but she's had better luck with men."
             if _return == 2:
-                hide screen choices with dissolve
+                hide screen choices with qdis
                 hide fadeblack onlayer screens
                 hide nchoice onlayer screens
                 hide nchoice
-                with dissolve
+                with qdis
                 stu "Ah, I see.  Well, the art club's going through a rough spot right now.  I dunno, maybe this club's cursed..."
         elif _return == 5:
             jump callHermelinFloor3
@@ -2170,7 +2409,7 @@ label label033 (location="Entrance Hall"):
         sa "If you could check in with him, please?"
         jump label001
     else:
-        scene bg entrancehall with dissolve
+        scene bg entrancehall with qdis
         play music schooldays volume 0.4 if_changed
         show screen header
         if yamaoka == False:
@@ -2209,7 +2448,7 @@ label label033 (location="Entrance Hall"):
             jump label033
 
 label label034 (location="Front Gate"):
-    scene bg frontgate with dissolve
+    scene bg frontgate with qdis
     play music nanjo if_changed
     show yamaoka animated neutral serious with qleft
     "Old Man" "Young Master!"
@@ -2265,7 +2504,7 @@ label label035 (location="Kaneda Mansion"):
         hide elly with qdis
         jump calloverworld
     if plotprogress == 1:
-        scene bg kanedamansion with dissolve
+        scene bg kanedamansion with qdis
         play music rich fadeout 0.5 fadein 0.5
         show screen header
         show kaneda at pleft2 with qleft
@@ -2285,7 +2524,7 @@ label label035 (location="Kaneda Mansion"):
         hide screen header
         jump calloverworld
     if plotprogress == 0:
-        scene bg kanedamansion with dissolve
+        scene bg kanedamansion with qdis
         play music rich fadeout 0.5 fadein 0.5
         show screen header
         show kaneda at pleft2 with qleft
@@ -2325,7 +2564,7 @@ label label036 (location="Himeno Residence"):
         $ tbnarrator = 0
         jump calloverworld
     elif plotprogress == 0:
-        scene bg himenoresidence with dissolve
+        scene bg himenoresidence with qdis
         play music poor fadeout 0.5 fadein 0.5
         show screen header
         show nanjo animated neutral serious with qleft
@@ -2359,7 +2598,7 @@ label label037 (location="Yin & Yan"):
         jump calloverworld
     if plotprogress == 1:
         if yyyukino2 == False:
-            scene bg yinyan with dissolve
+            scene bg yinyan with qdis
             play music yinyan fadeout 0.5 fadein 0.5 if_changed
             show screen header
             show yyclerk at pleft2 with qleft
@@ -2399,7 +2638,7 @@ label label037 (location="Yin & Yan"):
                 jump calloverworld
             jump label037
     if plotprogress == 0:
-        scene bg yinyan with dissolve
+        scene bg yinyan with qdis
         play music yinyan fadeout 0.5 fadein 0.5 if_changed
         show screen header
         if yyyukino == False:
@@ -2588,7 +2827,7 @@ label label039 (location="Esumi Clinic"):
         hide elly with qdis
         jump calloverworld
     if plotprogress == 1:
-        scene bg esumiclinic with dissolve
+        scene bg esumiclinic with qdis
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen Clinic1a
@@ -2627,7 +2866,7 @@ label label039 (location="Esumi Clinic"):
             hide screen header
             jump calloverworld
     elif plotprogress == 0:
-        scene bg esumiclinic with dissolve
+        scene bg esumiclinic with qdis
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen Clinic1
@@ -2668,11 +2907,11 @@ label label040 (location="Mikage Sun Mall"): #MikageMall
     else:
         scene bg white
         play music mikage fadeout 0.5 fadein 0.5
-        call screen MikageSunMall with dissolve
+        call screen MikageSunMall with qdis
 
 label label041 (location="Sennen Mannen-Do"): #Sennen Mannen-Do Mikage
     if plotprogress == 1:
-        scene bg sennenmannendomikage with dissolve
+        scene bg sennenmannendomikage with qdis
         play music sennen fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen SMD1a
@@ -2702,7 +2941,7 @@ label label041 (location="Sennen Mannen-Do"): #Sennen Mannen-Do Mikage
             jump label040
         jump label041
     if plotprogress == 0:
-        scene bg sennenmannendomikage with dissolve
+        scene bg sennenmannendomikage with qdis
         play music sennen fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen SMD1
@@ -2737,7 +2976,7 @@ label label042 (location="Peace Diner"): #Peace Diner Mikage
         $ tbnarrator = 0
         jump label040
     if plotprogress == 0:
-        scene bg peacediner with dissolve
+        scene bg peacediner with qdis
         play music diner fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen PD1
@@ -2769,7 +3008,7 @@ label label042 (location="Peace Diner"): #Peace Diner Mikage
 
 label label043 (location="Rosa Candida"): #Rosa Candida Mikage
     if plotprogress == 1:
-        scene bg rosacandida with dissolve
+        scene bg rosacandida with qdis
         play music rosa fadeout 0.5 fadein 0.5
         show screen header
         show mark animated neutral sad with qleft
@@ -2786,7 +3025,7 @@ label label043 (location="Rosa Candida"): #Rosa Candida Mikage
         mk "I bet she's bawlin' over her 'stories' on TV as we speak."
         mk "C'mon, let's go!"
     if plotprogress == 0:
-        scene bg rosacandida with dissolve
+        scene bg rosacandida with qdis
         play music rosa fadeout 0.5 fadein 0.5
         show screen header
         if rosacandidamark == False:
@@ -2834,7 +3073,7 @@ label label043 (location="Rosa Candida"): #Rosa Candida Mikage
 
 label label044 (location="Satomi Tadashi"): #Satomi Tadashi Mikage
     if plotprogress == 1:
-        scene bg satomitadashi with dissolve
+        scene bg satomitadashi with qdis
         play music satomi volume 0.4 fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen ST1a
@@ -2864,7 +3103,7 @@ label label044 (location="Satomi Tadashi"): #Satomi Tadashi Mikage
             jump label040
         jump label044
     if plotprogress == 0:
-        scene bg satomitadashi with dissolve
+        scene bg satomitadashi with qdis
         play music satomi volume 0.4 fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen ST1
@@ -2896,7 +3135,7 @@ label label044 (location="Satomi Tadashi"): #Satomi Tadashi Mikage
 
 label label045 (location="Judgment 1999"): #Judgment 1999 Mikage
     if plotprogress == 1:
-        scene bg judgment with dissolve
+        scene bg judgment with qdis
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen JD1a
@@ -2953,7 +3192,7 @@ label label045 (location="Judgment 1999"): #Judgment 1999 Mikage
                 jump label040
             jump label045
     if plotprogress == 0:
-        scene bg judgment with dissolve
+        scene bg judgment with qdis
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen JD1
@@ -3007,7 +3246,7 @@ label label046: #velvet room
     jump calloverworld
 
 label label047: #agastya tree mikage mall
-    scene bg agastyatree with dissolve
+    scene bg agastyatree with qdis
     play music agastya fadeout 0.5 fadein 0.5 if_changed
     $ location = "Agastya Tree"
     show screen header
@@ -3028,7 +3267,7 @@ label label048 (location="Historical Society"):
         $ tbnarrator = 0
         jump calloverworld
     if plotprogress == 0:
-        scene bg historicalsociety1 with dissolve
+        scene bg historicalsociety1 with qdis
         play music history fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen HistoricalSociety1
@@ -3060,7 +3299,7 @@ label label048 (location="Historical Society"):
         jump label048
 
 label label049: #Historical society inside
-    scene bg historicalsociety2 with dissolve
+    scene bg historicalsociety2 with qdis
     play music history fadeout 0.5 fadein 0.5 if_changed
     show screen header
     call screen HistoricalSociety2
@@ -3102,7 +3341,7 @@ label label050: #police station
         hide elly
         jump calloverworld
     elif plotprogress == 1:
-        scene bg policestation with dissolve
+        scene bg policestation with qdis
         play music police1 fadeout 0.5 fadein 0.5 if_changed
         $ location = "Police Station"
         show screen header
@@ -3135,7 +3374,7 @@ label label050: #police station
         hide screen header
         jump calloverworld
     elif plotprogress == 0:
-        scene bg policestation with dissolve
+        scene bg policestation with qdis
         play music police1 fadeout 0.5 fadein 0.5 if_changed
         $ location = "Police Station"
         show screen header
@@ -3176,7 +3415,7 @@ label label052 (location="Joy Street Mall"): #Joy Street Mall
     else:
         scene bg white
         play music joystreet fadeout 0.5 fadein 0.5
-        call screen JoyStreetMall with dissolve
+        call screen JoyStreetMall with qdis
 
 label label053 (location="Rosa Candida"): #Joy street
     if plotprogress == 1:
@@ -3185,7 +3424,7 @@ label label053 (location="Rosa Candida"): #Joy street
         $ tbnarrator = 0
         jump label053
     if plotprogress == 0:
-        scene bg rosacandida with dissolve
+        scene bg rosacandida with qdis
         play music rosa fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen RC2
@@ -3215,7 +3454,7 @@ label label053 (location="Rosa Candida"): #Joy street
 
 label label054 (location = "Sennen Mannen-Do"): #Joy Street
     if plotprogress == 1:
-        scene bg black with dissolve
+        scene bg black with qdis
         play music sennen fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen SMD2a
@@ -3250,7 +3489,7 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
             jump label052
         jump label054
     elif plotprogress == 0:
-        scene bg sennenmannendojoy with dissolve
+        scene bg sennenmannendojoy with qdis
         play music sennen fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen SMD2
@@ -3283,7 +3522,7 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
 
 label label055 (location = "Yin & Yan"): #Joy Street
     if plotprogress == 1:
-        scene bg yinyan with dissolve
+        scene bg yinyan with qdis
         play music yinyan fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen YY2a
@@ -3322,7 +3561,7 @@ label label055 (location = "Yin & Yan"): #Joy Street
             jump label052
         jump label054
     elif plotprogress == 0:
-        scene bg yinyanjoy with dissolve
+        scene bg yinyanjoy with qdis
         play music yinyan fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen YY2
@@ -3342,50 +3581,50 @@ label label055 (location = "Yin & Yan"): #Joy Street
                 $ choicetext = "His name's Reiji Kido.  Do you know him?"
                 show nchoice at pright zorder 15 with easeinright
                 show nchoice onlayer screens zorder 15 at pright
-                show fadeblack onlayer screens zorder 3 with dissolve
+                show fadeblack onlayer screens zorder 3 with qdis
                 $ choice1 = "Yeah"
                 $ choice2 = "No, I don't"
-                call screen choices with dissolve
+                call screen choices with qdis
                 if _return == 1:
-                    hide screen choices with dissolve
+                    hide screen choices with qdis
                     hide fadeblack onlayer screens
                     hide nchoice onlayer screens
                     hide nchoice
-                    with dissolve
+                    with qdis
                     "{size=-2}Reiji's Mom" "Oh, so you know him?  Ah, you're in the same class? I see..."
                     "{size=-2}Reiji's Mom" "Then you must know my son isn't very outgoing..."
                     $ lines = 2
                     $ choicetext = "It may be selfish of me to ask this, \nbut could you make friends with Reiji?"
                     show nchoice at pright zorder 15 with easeinright
                     show nchoice onlayer screens zorder 15 at pright
-                    show fadeblack onlayer screens zorder 3 with dissolve
+                    show fadeblack onlayer screens zorder 3 with qdis
                     $ choice1 = "Sure"
                     $ choice2 = "Nah"
-                    call screen choices with dissolve
+                    call screen choices with qdis
                     if _return == 1:
-                        hide screen choices with dissolve
+                        hide screen choices with qdis
                         hide fadeblack onlayer screens
                         hide nchoice onlayer screens
                         hide nchoice
-                        with dissolve
+                        with qdis
                         "{size=-2}Reiji's Mom" "Ah, truly?  Thank you!  Please feel free to come visit him at home sometime!"
                     elif _return == 2:
-                        hide screen choices with dissolve
+                        hide screen choices with qdis
                         hide fadeblack onlayer screens
                         hide nchoice onlayer screens
                         hide nchoice
-                        with dissolve
+                        with qdis
                         "{size=-2}Reiji's Mom" "I see... I'm not surprised.  He does cultivate a bizarre image..."
                         "{size=-2}Reiji's Mom" "But deep down, he's really very sweet.  That reminds me... "
                         "{size=-2}Reiji's Mom" "It's not much, but please take this.  I hope you and my son can be friends."
                         "Received a Chewing Soul!  Or you will whenever there's an inventory!"
                     $ lines = 1
                 elif _return == 2:
-                    hide screen choices with dissolve
+                    hide screen choices with qdis
                     hide fadeblack onlayer screens
                     hide nchoice onlayer screens
                     hide nchoice
-                    with dissolve
+                    with qdis
                     "{size=-2}Reiji's Mom" "Ah, I see... I'm sorry to have been so forward."
             elif reijimom == True:
                 "{size=-2}Reiji's Mom" "Oh, you're a student at St. Hermelin... Please make friends with my son."
@@ -3415,7 +3654,7 @@ label label056 (location = "Peace Diner"): #Joy Street
         $ tbnarrator = 0
         jump label052
     elif plotprogress == 0:
-        scene bg peacediner with dissolve
+        scene bg peacediner with qdis
         play music diner fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen PD2
@@ -3451,7 +3690,7 @@ label label056 (location = "Peace Diner"): #Joy Street
 
 label label057 (location = "Satomi Tadashi"): #Joy Street
     if plotprogress == 1:
-        scene bg satomitadashi with dissolve
+        scene bg satomitadashi with qdis
         play music satomi volume 0.4 fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen ST2a
@@ -3488,7 +3727,7 @@ label label057 (location = "Satomi Tadashi"): #Joy Street
             jump label052
         jump label054
     elif plotprogress == 0:
-        scene bg satomitadashi with dissolve
+        scene bg satomitadashi with qdis
         play music satomi volume 0.4 fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen ST2
@@ -3519,7 +3758,7 @@ label label057 (location = "Satomi Tadashi"): #Joy Street
 
 label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
     if plotprogress == 1:
-        scene bg esumiclinic with dissolve
+        scene bg esumiclinic with qdis
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen Clinic2a
@@ -3549,7 +3788,7 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
             jump label052
         jump label058
     elif plotprogress == 0:
-        scene bg esumiclinic with dissolve
+        scene bg esumiclinic with qdis
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen Clinic2
@@ -3584,7 +3823,7 @@ label label059: #velvet room joy street
     jump calloverworld
 
 label label060 (location = "Agastya Tree"): #joy street
-    scene bg agastyatree with dissolve
+    scene bg agastyatree with qdis
     play music agastya fadeout 0.5 fadein 0.5
     show screen header
     ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
@@ -3593,7 +3832,7 @@ label label060 (location = "Agastya Tree"): #joy street
 
 label label061 (location = "Judgment 1999"): # Joy Street
     if plotprogress == 1:
-        scene bg judgment with dissolve
+        scene bg judgment with qdis
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen JD2a
@@ -3646,7 +3885,7 @@ label label061 (location = "Judgment 1999"): # Joy Street
             jump label052
         jump label061
     elif plotprogress == 0:
-        scene bg judgment with dissolve
+        scene bg judgment with qdis
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen JD2
@@ -3708,7 +3947,7 @@ label label062 (location = "SEBEC Building"):
         if reijisebec == False:
             #Play BGM: Appearance! (or similar)
             #Reiji outside Sebec building
-            scene bg black with dissolve
+            scene bg black with qdis
             show elly animated serious with qleft
             el "Mm? Isn't he that transfer student?"
             hide elly
@@ -3772,7 +4011,7 @@ label label062 (location = "SEBEC Building"):
     elif plotprogress == 0:
         play music sebec2 fadeout 0.5 fadein 0.5
         if Sebec1 == False:
-            scene bg sebecreception with dissolve
+            scene bg sebecreception with qdis
             show screen header
             show takeda at pleft2 with qleft
             "Man" "What do you kids want?  This ain't a playground for brats like you.  Hey, toss these kids out!"
@@ -3833,7 +4072,7 @@ label label062 (location = "SEBEC Building"):
             hide screen header
             jump calloverworld
         if Sebec1 == True:
-            scene bg sebecreception2 with dissolve
+            scene bg sebecreception2 with qdis
             $ location = "SEBEC Building"
             man "Excuse me, do you have an appointment?"
             man "I'm sorry, but if you don't have one, I must ask you to leave."
@@ -3848,7 +4087,7 @@ label label063 (location = "Abandoned Factory"):
         hide elly with qdis
         jump calloverworld
     if plotprogress == 1:
-        scene bg factoryreiji with dissolve
+        scene bg factoryreiji with qdis
         play music reiji fadeout 0.5 fadein 0.5
         $ location = "Abandoned Factory"
         show screen header
@@ -3866,7 +4105,7 @@ label label063 (location = "Abandoned Factory"):
         if reijimom == True:
             $ reijicheck += 1
         if reijicheck == 5:
-            scene bg factoryreiji with dissolve
+            scene bg factoryreiji with qdis
             play music reiji fadeout 0.5 fadein 0.5
             $ location = "Abandoned Factory"
             show screen header
@@ -3894,12 +4133,12 @@ label label063 (location = "Abandoned Factory"):
             jump calloverworld
         else:
             play music mark fadeout 0.5 fadein 0.5
-            scene bg factory with dissolve
+            scene bg factory with qdis
             show screen header
             show mark animated neutral serious with qleft
             mk "You got business at our studio today, man?"
             mk "Don't think anyone's here today..."
-            hide mark with dissolve
+            hide mark with qdis
             hide screen header
             $ reijicheck = 0
             jump calloverworld
@@ -3913,7 +4152,7 @@ label label064 (location = "Esumi Clinic"): #Ward 2 Clinic
         hide elly with qdis
         jump calloverworld
     if plotprogress == 1:
-        scene bg esumiclinic with dissolve
+        scene bg esumiclinic with qdis
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen Clinic3a
@@ -3945,7 +4184,7 @@ label label064 (location = "Esumi Clinic"): #Ward 2 Clinic
             jump calloverworld
         jump label064
     elif plotprogress == 0:
-        scene bg esumiclinic with dissolve
+        scene bg esumiclinic with qdis
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         call screen Clinic3
@@ -3996,7 +4235,7 @@ label label065: #Arcade
         jump calloverworld
 
 label label066 (location = "Agastya Tree"): #Agastya Ward 2
-    scene bg agastyatree with dissolve
+    scene bg agastyatree with qdis
     play music agastya fadeout 0.5 fadein 0.5
     show screen header
     ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
@@ -4016,7 +4255,7 @@ label hospitalcheck:
         jump label067
 
 label label067 (location = "Mikage Hospital"): #Reception
-    scene bg hospital1 with dissolve
+    scene bg hospital1 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     show screen header
     if hospitalscene == 0:
@@ -4077,14 +4316,14 @@ label label067 (location = "Mikage Hospital"): #Reception
     jump label067
 
 label label068: #Examination Room
-    scene bg hospital2 with dissolve
+    scene bg hospital2 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     nurse "Hey!  You have to wait your turn just like everyone else!"
     nurse "Now please leave!"
     jump HospitalNav
 
 label label069: #2F Lobby
-    scene bg hospital3 with dissolve
+    scene bg hospital3 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     call screen Hospital3
     if _return == 1:
@@ -4103,23 +4342,23 @@ label label069: #2F Lobby
         $ choicetext = "Listen to the Old Man?"
         show nchoice at pright zorder 15 with easeinright
         show nchoice onlayer screens zorder 15 at pright
-        show fadeblack onlayer screens zorder 3 with dissolve
+        show fadeblack onlayer screens zorder 3 with qdis
         $ choice1 = "Don't Listen"
         $ choice2 = "Listen"
-        call screen choices with dissolve
+        call screen choices with qdis
         if _return == 1:
-            hide screen choices with dissolve
+            hide screen choices with qdis
             hide fadeblack onlayer screens
             hide nchoice onlayer screens
             hide nchoice
-            with dissolve
+            with qdis
             "Old Man" "I see.  I'm glad to hear you're enjoying school."
         elif _return == 2:
-            hide screen choices with dissolve
+            hide screen choices with qdis
             hide fadeblack onlayer screens
             hide nchoice onlayer screens
             hide nchoice
-            with dissolve
+            with qdis
             "Old Man" "Now you listen here, Hiroshi.  A man's soul is a complex thing."
             "Old Man" "The things a person shows to the outside world isn't necessarily what he thinks."
             "Old Man" "You have to dig deep to find out the truth they're hiding..."
@@ -4130,7 +4369,7 @@ label label069: #2F Lobby
     jump label069
 
 label label070: #2F Nurse's Station
-    scene bg hospital4 with dissolve
+    scene bg hospital4 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     nurse "Hm? Aren't you Maki Sonomura's friend?"
     show mark animated neutral serious with qleft
@@ -4146,7 +4385,7 @@ label label070: #2F Nurse's Station
     jump HospitalNav
 
 label label071: #3F Waiting Room
-    scene bg hospital5 with dissolve
+    scene bg hospital5 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     call screen Hospital5
     if _return == 1:
@@ -4168,7 +4407,7 @@ label label071: #3F Waiting Room
     jump label071
 
 label label072: #3F Nurse's Station
-    scene bg hospital6 with dissolve
+    scene bg hospital6 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     call screen Hospital6
     if _return == 1:
@@ -4192,7 +4431,7 @@ label label072: #3F Nurse's Station
     jump label072
 
 label label073: #Maki's Room
-    scene bg hospitalmaki1 with dissolve
+    scene bg hospitalmaki1 with qdis
     play music maki0 fadeout 0.5 fadein 0.5
     show doctor at pleft2 with qleft
     doctor "I have to go...but you should try to get some fresh air sometimes."
@@ -4207,8 +4446,8 @@ label label073: #Maki's Room
     hide maki
     show doctor at pleft2 with qleft
     doctor "Oho, it seems your real medication has arrived.  I'll leave you kids be."
-    scene bg black with dissolve
-    scene bg hospitalmaki2 with dissolve
+    scene bg black with qdis
+    scene bg hospitalmaki2 with qdis
     play music maki1 fadeout 0.5 fadein 0.5
     show maki animated sick smirk with qleft
     ma "Naoya... you all came... Thank you."
@@ -4277,8 +4516,8 @@ label label073: #Maki's Room
     show yukino animated neutral sad with qleft
     yu "This isn't good! Call a doctor!"
     hide screen header
-    scene bg black with dissolve
-    scene bg icu1 with dissolve
+    scene bg black with qdis
+    scene bg icu1 with qdis
     play music maki0 fadeout 0.5 fadein 0.5
     $ tbnarrator = 1
     "The group waits outside the ICU, with Maki just inside after the doctors had taken her within."
@@ -4288,12 +4527,12 @@ label label073: #Maki's Room
     $ tbnarrator = 1
     "As the group waits, the building starts to rumble."
     $ tbnarrator = 0
-    scene bg icu2 with dissolve
+    scene bg icu2 with qdis
     na "Hm? An earthquake?"
     $ tbnarrator = 1
     "The benches shake and the items on the wall rattle before one falls to the ground, shattering."
     $ tbnarrator = 0
-    scene bg icu3 with dissolve
+    scene bg icu3 with qdis
     play music uhoh fadeout 0.5 fadein 0.5
     mk "Woah! It's a big one!"
     yu "The hell!?  Hold on!"
@@ -4304,14 +4543,14 @@ label label073: #Maki's Room
     $ tbnarrator = 1
     "Fearing for Maki, Mark rushes to the ICU doors."
     $ tbnarrator = 0
-    scene bg icu4 with dissolve
+    scene bg icu4 with qdis
     mk "Maki!"
     $ tbnarrator = 1
     "After pushing the door open, Mark finds there's just a wall behind the door."
     $ tbnarrator = 0
     mk "Whoa! Wh-what the hell!? Where'd the room go?"
     na "What...How is that...?  No, I was positive that was the ICU a moment ago!"
-    scene bg icu5 with dissolve
+    scene bg icu5 with qdis
     $ tbnarrator = 1
     "In the distance, a woman screams, and everyone turns to face the source."
     $ tbnarrator = 0
@@ -4319,8 +4558,8 @@ label label073: #Maki's Room
     $ tbnarrator = 1
     "Everyone darts downstairs after the source of the scream."
     $ tbnarrator = 0
-    scene bg black with dissolve
-    scene bg awakening with dissolve
+    scene bg black with qdis
+    scene bg awakening with qdis
     play music hospital1 fadeout 0.5 fadein 0.5
     show screen header
     $ location = "Mikage Hospital?"
@@ -4333,11 +4572,11 @@ label label073: #Maki's Room
     $ tbnarrator = 1
     "The nurse panicks and runs off."
     $ tbnarrator = 0
-#    scene bg awakening2 with dissolve
+#    scene bg awakening2 with qdis
     show mark animated neutral serious with qleft
     mk "What!?  These guys were dead?  Is this for real!?"
     hide mark
-#    scene bg awakening3 with dissolve
+#    scene bg awakening3 with qdis
     show nanjo animated neutral sad with qleft
     na "Y...Yamaoka...?  Yamaoka!"
     show nanjo animated neutral serious
@@ -4378,7 +4617,7 @@ label label073: #Maki's Room
     "Lastly, Nanjo himself summons one, reddish energy surrounding the last undead before it too, vanishes."
     $ tbnarrator = 0
 #    hide awakening8 with zoomout
-    scene bg nanjoyamaoka with dissolve
+    scene bg nanjoyamaoka with qdis
     play music ohno fadeout 0.5 fadein 0.5
 #    show nanjo animated neutral sad with qleft
     na "Yamaoka... Don't go... You wouldn't leave me behind, right? Right, Yamaoka?"
@@ -4404,7 +4643,7 @@ label label073: #Maki's Room
 #    show nanjo animated neutral sad with qleft
     na "Yamaoka?  Hey!  Answer me... I'm begging you... Yamaoka!"
 #    hide nanjo
-    scene bg awakening with dissolve
+    scene bg awakening with qdis
     show yukino animated neutral sad with qleft
     yu "Nanjo..."
     hide yukino
@@ -4429,7 +4668,7 @@ label label073: #Maki's Room
     yu "...I have a bad feeling about this. Let's go."
 
 label label074: #Ideal 2F Waiting Room
-    scene bg idealhospital0 with dissolve
+    scene bg idealhospital0 with qdis
     play music hospital2 fadeout 0.5 fadein 0.5
     call screen IHospital0
     if _return == 1:
@@ -4454,7 +4693,7 @@ label label074: #Ideal 2F Waiting Room
     jump label074
 
 label label075: #Ideal Hospital Room 1
-    scene bg idealhospital1 with dissolve
+    scene bg idealhospital1 with qdis
     play music hospital2 fadeout 0.5 fadein 0.5
     call screen IHospital1
     if _return == 1:
@@ -4475,7 +4714,7 @@ label label075: #Ideal Hospital Room 1
         nurse "I'd treat your wounds at the examination room, but... I can't find it!"
         nurse "Nothing in this hospital is where I remember it!"
     elif _return == 7:
-        scene black with dissolve
+        scene black with qdis
         play music hospital1 fadeout 0.5 fadein 0.5
         $ tbnarrator = 1
         "After the stop in the nurse's office, Naoya and his allies move further into the Hospital."
@@ -4486,7 +4725,7 @@ label label075: #Ideal Hospital Room 1
     jump label075
 
 label label076 (location = "Agastya Tree"):
-    scene bg agastyatree with dissolve
+    scene bg agastyatree with qdis
     play music agastya fadeout 0.5 fadein 0.5
     show screen header
     ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
@@ -4500,7 +4739,7 @@ label label076 (location = "Agastya Tree"):
     jump label077
 
 label label077 (location = "Mikage Hospital?"):
-    scene bg idealhospital2 with dissolve
+    scene bg idealhospital2 with qdis
     play music hospital2 fadeout 0.5 fadein 0.5
     call screen IHospital2
     if _return == 1:
@@ -4522,7 +4761,7 @@ label label077 (location = "Mikage Hospital?"):
         "Old Man" "If you do... you'll arrive at the truth come what may."
         "Old Man" "Say, Akiko?  Is lunch ready yet?"
     elif _return == 6:
-        scene black with dissolve
+        scene black with qdis
         play music hospital1 fadeout 0.5 fadein 0.5
         $ tbnarrator = 1
         n "After leaving the room with the nurse and the old man, the group navigate the twisted hallways of the hospital."
@@ -4533,7 +4772,7 @@ label label077 (location = "Mikage Hospital?"):
     jump label077
 
 label label078: #Maki's Room (Ideal Hospital)
-    scene bg idealhospital3 with dissolve
+    scene bg idealhospital3 with qdis
     play music maki0 fadeout 0.5 fadein 0.5 if_changed
     call screen IHospital3
     if _return == 1:
@@ -4551,7 +4790,7 @@ label label078: #Maki's Room (Ideal Hospital)
         ">You can sense Maki's pain just by looking at it..."
         $ tbnarrator = 0
     elif _return == 5:
-        scene black with dissolve
+        scene black with qdis
         play music hospital1 fadeout 0.5 fadein 0.5
         $ tbnarrator = 1
         n "Leaving Maki's room with heavy hearts, the group passes by a set of stairs down, and Nanjo seems to regain some of his usual airs as they walk."
@@ -4561,7 +4800,7 @@ label label078: #Maki's Room (Ideal Hospital)
     jump label078
 
 label label079: #2nd Floor Waiting Room (Ideal Hospital)
-    scene bg idealhospital4 with dissolve
+    scene bg idealhospital4 with qdis
     play music hospital2 fadeout 0.5 fadein 0.5
     call screen IHospital4
     if _return == 1:
@@ -4577,7 +4816,7 @@ label label079: #2nd Floor Waiting Room (Ideal Hospital)
         "Old Man" "I'm prepared for the worst, but I'm worried about my little grandson..."
         "Old Man" "He should be at school... I hope nothing's happened there."
     elif _return == 5:
-        scene black with dissolve
+        scene black with qdis
         play music hospital1 fadeout 0.5 fadein 0.5
         $ tbnarrator = 1
         n "Now concerned about their school as well, the group sets back down the stairs they'd passed by before as there is no other path."
@@ -4587,11 +4826,11 @@ label label079: #2nd Floor Waiting Room (Ideal Hospital)
     jump label079
 
 label label080 (location = "Agastya Tree"):
-    scene bg agastyatree with dissolve
+    scene bg agastyatree with qdis
     play music agastya fadeout 0.5 fadein 0.5
     show screen header
     ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
-    scene bg black with dissolve
+    scene bg black with qdis
     $ location = "Mikage Hospital?"
     play music hospital1 fadeout 0.5 fadein 0.5
     $ tbnarrator = 1
@@ -4602,7 +4841,7 @@ label label080 (location = "Agastya Tree"):
     jump label081
 
 label label081 (location = "Mikage Hospital?"):
-    scene bg idealhospital5 with dissolve
+    scene bg idealhospital5 with qdis
     play music hospital2 fadeout 0.5 fadein 0.5
     call screen IHospital5
     if _return == 1:
@@ -4625,7 +4864,7 @@ label label081 (location = "Mikage Hospital?"):
         $ tbnarrator = 0
         doctor "Try not to push yourself too hard."
     elif _return == 6:
-        scene black with dissolve
+        scene black with qdis
         play music hospital1 fadeout 0.5 fadein 0.5
         $ tbnarrator = 1
         n "With only one path left to follow once they leave, the group makes their way through the twisted passages of the hospital."
@@ -4635,7 +4874,7 @@ label label081 (location = "Mikage Hospital?"):
     jump label081
 
 label label082 (location="Hospital Entrance"): #iHospital Entrance
-    scene bg idealhospital6a with dissolve
+    scene bg idealhospital6a with qdis
     play music uhoh fadeout 0.5 fadein 0.5
     show yukino animated neutral serious with qleft
     yu "Naoya! This one's still alive!  Gimme a hand here!"
@@ -4653,24 +4892,24 @@ label label082 (location="Hospital Entrance"): #iHospital Entrance
     $ choicetext = "I could really use a hand, Naoya!"
     show nchoice at pright zorder 15 with easeinright
     show nchoice onlayer screens zorder 15 at pright
-    show fadeblack onlayer screens zorder 3 with dissolve
+    show fadeblack onlayer screens zorder 3 with qdis
     $ choice1 = "Help Her"
     $ choice2 = "Don't Help Her"
-    call screen choices with dissolve
+    call screen choices with qdis
     if _return == 1:
-        hide screen choices with dissolve
+        hide screen choices with qdis
         hide fadeblack onlayer screens
         hide nchoice onlayer screens
         hide nchoice
-        with dissolve
+        with qdis
         show yukino animated neutral smirk
         yu "Okay, you take that side!"
     elif _return == 2:
-        hide screen choices with dissolve
+        hide screen choices with qdis
         hide fadeblack onlayer screens
         hide nchoice onlayer screens
         hide nchoice
-        with dissolve
+        with qdis
         show yukino animated neutral serious
         yu "Are you serious!?  But she's still alive!"
         yu "You're telling me to abandon her!?"
@@ -4681,31 +4920,31 @@ label label082 (location="Hospital Entrance"): #iHospital Entrance
         $ choicetext = "We have to go!"
         show nchoice at pright zorder 15 with easeinright
         show nchoice onlayer screens zorder 15 at pright
-        show fadeblack onlayer screens zorder 3 with dissolve
+        show fadeblack onlayer screens zorder 3 with qdis
         $ choice1 = "Don't Leave"
         $ choice2 = "Leave"
-        call screen choices with dissolve
+        call screen choices with qdis
         if _return == 1:
-            hide screen choices with dissolve
+            hide screen choices with qdis
             hide fadeblack onlayer screens
             hide nchoice onlayer screens
             hide nchoice
-            with dissolve
+            with qdis
             show nanjo animated neutral serious
             na "Tsk... Don't blame me when you end up part of the problem instead of the solution."
         if _return == 2:
-            hide screen choices with dissolve
+            hide screen choices with qdis
             hide fadeblack onlayer screens
             hide nchoice onlayer screens
             hide nchoice
-            with dissolve
+            with qdis
             show nanjo animated neutral serious
             na "Yukino!  Masao!  Let's go!"
     hide yukino
     hide nanjo
     show mark animated neutral serious with qleft
     mk "It's no good!  They're coming!"
-    scene bg idealhospital6b with dissolve
+    scene bg idealhospital6b with qdis
     play music elly fadeout 0.5 fadein 0.5
     show elly animated neutral smirk with qleft
     el "Oh, good day."
@@ -4732,7 +4971,7 @@ label label082 (location="Hospital Entrance"): #iHospital Entrance
     n "Her persona manifests, unleashing a wave of energy toward the remaining zombie, searing it with bright light and vanquishing it."
     $ tbnarrator = 0
     hide idealhospital6c with zoomout
-    scene bg idealhospital6 with dissolve
+    scene bg idealhospital6 with qdis
     play music hospital1 fadeout 0.5 fadein 0.5
     show elly animated neutral serious with qleft
     el "Was that Nike...?  The Greek goddess of victory... It's me... and I'm it..."
@@ -4790,7 +5029,7 @@ label label082 (location="Hospital Entrance"): #iHospital Entrance
     mk "What!?  Dude, why didn't you say so before!?  C'mon Naoya, let's go!"
 
 label label083: #Hospital Reception
-    scene bg idealhospital6 with dissolve
+    scene bg idealhospital6 with qdis
     play music hospital2 fadeout 0.5 fadein 0.5
     call screen IHospital6
     $ plotprogress = 1
@@ -4809,7 +5048,7 @@ label label083: #Hospital Reception
         el "Alaya Shrine isn't far from the school.  We should have no problems."
     elif _return == 5:
         jump calloverworld
-        #scene black with dissolve
+        #scene black with qdis
         #"End of the demo~!"
         #$ MainMenu(confirm=False)()
         $ plotprogress = 1
@@ -4820,12 +5059,12 @@ label label083: #Hospital Reception
 label calloverworld:
     if ward == 1:
         play music overworld1 if_changed
-        show bg wardone with dissolve
-        call screen OverworldMap1(_with_none=False) with dissolve
+        show bg wardone with qdis
+        call screen OverworldMap1(_with_none=False) with qdis
     if ward == 2:
         play music overworld2 if_changed
-        show bg wardtwo with dissolve
-        call screen OverworldMap2(_with_none=False) with dissolve
+        show bg wardtwo with qdis
+        call screen OverworldMap2(_with_none=False) with qdis
 
 label wardonetotwo:
     $ ward = 2
@@ -4847,7 +5086,7 @@ label callHermelinFloor1:
         "You move to the first floor of the school"
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "First Floor"
         $ floor = 1
         show hf1 zorder 0 with moveinbottom
@@ -4858,7 +5097,7 @@ label callHermelinFloor1:
         "You move to the first floor of the school"
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "First Floor"
         $ floor = 1
         show hf1 zorder 0 with moveinleft
@@ -4869,12 +5108,12 @@ label callHermelinFloor1:
         "You move back into the hallway."
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "First Floor"
         $ floor = 1
-        show hf1 with dissolve
+        show hf1 with qdis
         $ tbnarrator = 0
-        call screen HermelinFloor1(_with_none=False) with dissolve
+        call screen HermelinFloor1(_with_none=False) with qdis
 
 label callSportsBuilding:
     hide hf1
@@ -4885,7 +5124,7 @@ label callSportsBuilding:
         "You move to the Sports Building of the school"
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "Sports Building"
         $ floor = 4
         show hs zorder 0 with moveinright
@@ -4896,10 +5135,10 @@ label callSportsBuilding:
         "You move back into the hallway."
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "Sports Building"
         $ floor = 4
-        show hs with dissolve
+        show hs with qdis
         $ tbnarrator = 0
         call screen HermelinSportsBuilding(_with_none=False)
 label callHermelinFloor2:
@@ -4912,7 +5151,7 @@ label callHermelinFloor2:
         "You move to the second floor of the school."
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "Second Floor"
         $ floor = 2
         show hf2 zorder 0 with moveintop
@@ -4923,7 +5162,7 @@ label callHermelinFloor2:
         "You move to the second floor of the school."
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "Second Floor"
         $ floor = 2
         show hf2 zorder 0 with moveinbottom
@@ -4934,10 +5173,10 @@ label callHermelinFloor2:
         "You move back into the hallway."
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "Second Floor"
         $ floor = 2
-        show hf2 with dissolve
+        show hf2 with qdis
         $ tbnarrator = 0
         call screen HermelinFloor2(_with_none=False)
 label callHermelinFloor3:
@@ -4949,7 +5188,7 @@ label callHermelinFloor3:
         "You move to the third floor of the school."
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "Third Floor"
         $ floor = 3
         show hf3 zorder 0 with moveintop
@@ -4960,15 +5199,15 @@ label callHermelinFloor3:
         "You move back into the hallway."
         window hide
         hide screen header
-        show fadeblack with dissolve
+        show fadeblack with qdis
         $ location = "Third Floor"
         $ floor = 3
-        show hf3 zorder 0 with dissolve
+        show hf3 zorder 0 with qdis
         $ tbnarrator = 0
         call screen HermelinFloor3(_with_none=False)
 
 label HospitalNav:
-    show fadeblack with dissolve
+    show fadeblack with qdis
     show hn with moveinleft
     call screen HospitalNav(_with_none=False)
 
