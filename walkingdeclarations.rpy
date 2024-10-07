@@ -68,12 +68,12 @@ transform newloc:
     xpos newlocx
     ypos newlocy
 
-#Standing Declarations
+#PC Standing Declarations
 
 image naoyasprite downleft stand = "naoya/walking/DLStanding1.png"
 image naoyasprite downright stand = "naoya/walking/DRStanding1.png"
 image naoyasprite upleft stand = "naoya/walking/ULStanding1.png"
-image naoyasprite upright stand = "naoya/walking/URStanding1.png"
+image naoyasprite upright stand = "naoya/walking/DLStanding1.png"
 
 image marksprite downleft stand = "mark/walking/DLStanding1.png"
 image marksprite downright stand = "mark/walking/DRStanding1.png"
@@ -115,32 +115,64 @@ image ellysprite downright stand = "elly/walking/DRStanding1.png"
 image ellysprite upleft stand = "elly/walking/ULStanding1.png"
 image ellysprite upright stand = "elly/walking/URStanding1.png"
 
-#Moving-Standing Declarations
+#NPC Standing Declarations
+
+image hanyasprite downleft stand = "hanya/walking/DLStanding1.png"
+image hanyasprite downright stand = "hanya/walking/DRStanding1.png"
+image hanyasprite upleft stand = "hanya/walking/ULStanding1.png"
+image hanyasprite upright stand = "hanya/walking/URStanding1.png"
+
+image natsumisprite downleft stand = "natsumi/walking/DLStanding1.png"
+image natsumisprite downright stand = "natsumi/walking/DRStanding1.png"
+image natsumisprite upleft stand = "natsumi/walking/ULStanding1.png"
+image natsumisprite upright stand = "natsumi/walking/URStanding1.png"
+
+image ooishisprite downleft stand = "ooishi/walking/DLStanding1.png"
+image ooishisprite downright stand = "ooishi/walking/DRStanding1.png"
+image ooishisprite upleft stand = "ooishi/walking/ULStanding1.png"
+image ooishisprite upright stand = "ooishi/walking/URStanding1.png"
+
+image saekosprite downleft stand = "saeko/walking/DLStanding1.png"
+image saekosprite downright stand = "saeko/walking/DRStanding1.png"
+image saekosprite upleft stand = "saeko/walking/ULStanding1.png"
+image saekosprite upright stand = "saeko/walking/URStanding1.png"
+
+image snowqueensprite downleft stand = "snowqueen/walking/DLStanding1.png"
+image snowqueensprite downright stand = "snowqueen/walking/DRStanding1.png"
+image snowqueensprite upleft stand = "snowqueen/walking/ULStanding1.png"
+image snowqueensprite upright stand = "snowqueen/walking/URStanding1.png"
+
+image tsutomusprite downleft stand = "tsutomu/walking/DLStanding1.png"
+image tsutomusprite downright stand = "tsutomu/walking/DRStanding1.png"
+image tsutomusprite upleft stand = "tsutomu/walking/ULStanding1.png"
+image tsutomusprite upright stand = "tsutomu/walking/URStanding1.png"
+
+#PC Moving-Standing Declarations
 #Naoya
 image naoyasprite downleft standmove:
     Image("naoya/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("naoya/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image naoyasprite downright standmove:
     Image("naoya/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("naoya/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image naoyasprite upleft standmove:
     Image("naoya/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("naoya/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image naoyasprite upright standmove:
     Image("naoya/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("naoya/walking/URStanding2.png")
     pause 1.75
     repeat
@@ -148,28 +180,28 @@ image naoyasprite upright standmove:
 #Mark
 image marksprite downleft standmove:
     Image("mark/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("mark/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image marksprite downright standmove:
     Image("mark/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("mark/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image marksprite upleft standmove:
     Image("mark/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("mark/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image marksprite upright standmove:
     Image("mark/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("mark/walking/URStanding2.png")
     pause 1.75
     repeat
@@ -177,28 +209,28 @@ image marksprite upright standmove:
 #Nanjo
 image nanjosprite downleft standmove:
     Image("nanjo/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("nanjo/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image nanjosprite downright standmove:
     Image("nanjo/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("nanjo/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image nanjosprite upleft standmove:
     Image("nanjo/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("nanjo/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image nanjosprite upright standmove:
     Image("nanjo/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("nanjo/walking/URStanding2.png")
     pause 1.75
     repeat
@@ -206,28 +238,28 @@ image nanjosprite upright standmove:
 #yukino
 image yukinosprite downleft standmove:
     Image("yukino/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("yukino/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image yukinosprite downright standmove:
     Image("yukino/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("yukino/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image yukinosprite upleft standmove:
     Image("yukino/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("yukino/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image yukinosprite upright standmove:
     Image("yukino/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("yukino/walking/URStanding2.png")
     pause 1.75
     repeat
@@ -235,28 +267,28 @@ image yukinosprite upright standmove:
 #ayase
 image ayasesprite downleft standmove:
     Image("ayase/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("ayase/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image ayasesprite downright standmove:
     Image("ayase/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("ayase/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image ayasesprite upleft standmove:
     Image("ayase/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("ayase/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image ayasesprite upright standmove:
     Image("ayase/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("ayase/walking/URStanding2.png")
     pause 1.75
     repeat
@@ -264,28 +296,28 @@ image ayasesprite upright standmove:
 #brown
 image brownsprite downleft standmove:
     Image("brown/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("brown/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image brownsprite downright standmove:
     Image("brown/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("brown/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image brownsprite upleft standmove:
     Image("brown/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("brown/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image brownsprite upright standmove:
     Image("brown/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("brown/walking/URStanding2.png")
     pause 1.75
     repeat
@@ -293,28 +325,28 @@ image brownsprite upright standmove:
 #elly
 image ellysprite downleft standmove:
     Image("elly/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("elly/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image ellysprite downright standmove:
     Image("elly/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("elly/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image ellysprite upleft standmove:
     Image("elly/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("elly/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image ellysprite upright standmove:
     Image("elly/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("elly/walking/URStanding2.png")
     pause 1.75
     repeat
@@ -322,28 +354,28 @@ image ellysprite upright standmove:
 #reiji
 image reijisprite downleft standmove:
     Image("reiji/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("reiji/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image reijisprite downright standmove:
     Image("reiji/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("reiji/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image reijisprite upleft standmove:
     Image("reiji/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("reiji/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image reijisprite upright standmove:
     Image("reiji/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("reiji/walking/URStanding2.png")
     pause 1.75
     repeat
@@ -351,29 +383,205 @@ image reijisprite upright standmove:
 #maki
 image makisprite downleft standmove:
     Image("maki/walking/DLStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("maki/walking/DLStanding2.png")
     pause 1.75
     repeat
 
 image makisprite downright standmove:
     Image("maki/walking/DRStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("maki/walking/DRStanding2.png")
     pause 1.75
     repeat
 
 image makisprite upleft standmove:
     Image("maki/walking/ULStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("maki/walking/ULStanding2.png")
     pause 1.75
     repeat
 
 image makisprite upright standmove:
     Image("maki/walking/URStanding1.png")
-    pause 3.25
+    pause 2.25
     Image("maki/walking/URStanding2.png")
+    pause 1.75
+    repeat
+
+#NPC Moving-Standing Declarations
+
+#tsutomu
+image tsutomusprite downleft standmove:
+    Image("tsutomu/walking/DLStanding1.png")
+    pause 2.25
+    Image("tsutomu/walking/DLStanding2.png")
+    pause 1.75
+    repeat
+
+image tsutomusprite downright standmove:
+    Image("tsutomu/walking/DRStanding1.png")
+    pause 2.25
+    Image("tsutomu/walking/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image tsutomusprite upleft standmove:
+    Image("tsutomu/walking/ULStanding1.png")
+    pause 2.25
+    Image("tsutomu/walking/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image tsutomusprite upright standmove:
+    Image("tsutomu/walking/URStanding1.png")
+    pause 2.25
+    Image("tsutomu/walking/URStanding2.png")
+    pause 1.75
+    repeat
+
+#Snowqueen
+image snowqueensprite downleft standmove:
+    Image("snowqueen/walking/DLStanding1.png")
+    pause 2.25
+    Image("snowqueen/walking/DLStanding2.png")
+    pause 1.75
+    repeat
+
+image snowqueensprite downright standmove:
+    Image("snowqueen/walking/DRStanding1.png")
+    pause 2.25
+    Image("snowqueen/walking/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image snowqueensprite upleft standmove:
+    Image("snowqueen/walking/ULStanding1.png")
+    pause 2.25
+    Image("snowqueen/walking/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image snowqueensprite upright standmove:
+    Image("snowqueen/walking/URStanding1.png")
+    pause 2.25
+    Image("snowqueen/walking/URStanding2.png")
+    pause 1.75
+    repeat
+
+#Saeko
+image saekosprite downleft standmove:
+    Image("saeko/walking/DLStanding1.png")
+    pause 2.25
+    Image("saeko/walking/DLStanding2.png")
+    pause 1.75
+    repeat
+
+image saekosprite downright standmove:
+    Image("saeko/walking/DRStanding1.png")
+    pause 2.25
+    Image("saeko/walking/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image saekosprite upleft standmove:
+    Image("saeko/walking/ULStanding1.png")
+    pause 2.25
+    Image("saeko/walking/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image saekosprite upright standmove:
+    Image("saeko/walking/URStanding1.png")
+    pause 2.25
+    Image("saeko/walking/URStanding2.png")
+    pause 1.75
+    repeat
+
+#Ooishi
+image ooishisprite downleft standmove:
+    Image("ooishi/walking/DLStanding1.png")
+    pause 2.25
+    Image("ooishi/walking/DLStanding2.png")
+    pause 1.75
+    repeat
+
+image ooishisprite downright standmove:
+    Image("ooishi/walking/DRStanding1.png")
+    pause 2.25
+    Image("ooishi/walking/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image ooishisprite upleft standmove:
+    Image("ooishi/walking/ULStanding1.png")
+    pause 2.25
+    Image("ooishi/walking/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image ooishisprite upright standmove:
+    Image("ooishi/walking/URStanding1.png")
+    pause 2.25
+    Image("ooishi/walking/URStanding2.png")
+    pause 1.75
+    repeat
+
+#natsumi
+image natsumisprite downleft standmove:
+    Image("natsumi/walking/DLStanding1.png")
+    pause 2.25
+    Image("natsumi/walking/DLStanding2.png")
+    pause 1.75
+    repeat
+
+image natsumisprite downright standmove:
+    Image("natsumi/walking/DRStanding1.png")
+    pause 2.25
+    Image("natsumi/walking/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image natsumisprite upleft standmove:
+    Image("natsumi/walking/ULStanding1.png")
+    pause 2.25
+    Image("natsumi/walking/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image natsumisprite upright standmove:
+    Image("natsumi/walking/URStanding1.png")
+    pause 2.25
+    Image("natsumi/walking/URStanding2.png")
+    pause 1.75
+    repeat
+
+#hanya
+image hanyasprite downleft standmove:
+    Image("hanya/walking/DLStanding1.png")
+    pause 2.25
+    Image("hanya/walking/DLStanding2.png")
+    pause 1.75
+    repeat
+
+image hanyasprite downright standmove:
+    Image("hanya/walking/DRStanding1.png")
+    pause 2.25
+    Image("hanya/walking/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image hanyasprite upleft standmove:
+    Image("hanya/walking/ULStanding1.png")
+    pause 2.25
+    Image("hanya/walking/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image hanyasprite upright standmove:
+    Image("hanya/walking/URStanding1.png")
+    pause 2.25
+    Image("hanya/walking/URStanding2.png")
     pause 1.75
     repeat
 
