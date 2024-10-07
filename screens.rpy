@@ -1751,679 +1751,679 @@ screen HospitalNav:
 ## Interactions #############################################################
 
 screen Infirmary:
-    imagebutton xpos 355 ypos 450 idle "text/GreyLeft.png" hover "text/NatsumiLeft.png" action Return(1) #Natsumi
-    imagebutton xpos 725 ypos 440 idle "text/GreyRight.png" hover "text/SaekoRight.png" action Return(2) #Saeko
-    imagebutton xpos 1100 ypos 460 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1265 ypos 625 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(4) #Yukino
-    imagebutton xpos 1430 ypos 500 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(5) #Mark
-    imagebutton xpos 885 ypos 120 idle "text/GreyRight.png" hover "text/AgastyaRight.png" action Return(6) #Agastya
-    imagebutton xpos 1400 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #Leave
+    imagebutton xpos 650 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Natsumi
+    imagebutton xpos 750 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Saeko
+    imagebutton xpos 800 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1050 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Yukino
+    imagebutton xpos 850 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Mark
+    imagebutton xpos 825 ypos 225 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Agastya
+    imagebutton xpos 1200 ypos 750 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #Leave
 
 screen Class12:
-    imagebutton xpos 440 ypos 420 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(1) #Yukino
-    imagebutton xpos 660 ypos 430 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(2) #Student
-    imagebutton xpos 850 ypos 330 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 630 ypos 340 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(4) #Nanjo
-    imagebutton xpos 1500 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 440 ypos 420 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 660 ypos 430 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 850 ypos 330 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 630 ypos 340 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class13:
-    imagebutton xpos 870 ypos 550 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(1) #Yukino
-    imagebutton xpos 460 ypos 500 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(2) #Student
-    imagebutton xpos 650 ypos 580 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 1260 ypos 130 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(4) #Nanjo
-    imagebutton xpos 1500 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 870 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 460 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 650 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 1260 ypos 130 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class14:
-    imagebutton xpos 840 ypos 560 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(1) #Yukino
-    imagebutton xpos 840 ypos 170 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #Student
-    imagebutton xpos 1390 ypos 430 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 1410 ypos 230 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(4) #Nanjo
-    imagebutton xpos 1500 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 840 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 840 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 1390 ypos 430 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 1410 ypos 230 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class16:
-    imagebutton xpos 1090 ypos 560 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(1) #Yukino
-    imagebutton xpos 520 ypos 230 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #Student
-    imagebutton xpos 1390 ypos 370 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 1400 ypos 170 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(4) #Nanjo
-    imagebutton xpos 1450 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 1090 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 520 ypos 230 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 1390 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 1400 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 1450 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Courtyard:
-    imagebutton xpos 210 ypos 680 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(1) #Yukino
-    imagebutton xpos 300 ypos 380 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #Student
-    imagebutton xpos 830 ypos 260 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 1080 ypos 260 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(4) #Nanjo
-    imagebutton xpos 1360 ypos 180 idle "text/GreyRight.png" hover "text/OoishiRight.png" action Return(5) #Ooishi
-    imagebutton xpos 1600 ypos 280 idle "text/GreyRight.png" hover "text/PurpRight.png" action Return(6) #Sign
-    imagebutton xpos 0 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #Leave
+    imagebutton xpos 210 ypos 680 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 300 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 830 ypos 260 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 1080 ypos 260 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 1360 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Ooishi
+    imagebutton xpos 1600 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Sign
+    imagebutton xpos 0 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #Leave
 
 screen TeacherLounge:
-    imagebutton xpos 560 ypos 720 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(1) #Yukino
-    imagebutton xpos 315 ypos 370 idle "text/GreyRight.png" hover "text/TeacherRight.png" action Return(2) #Teacher
-    imagebutton xpos 1280 ypos 20 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(3) #Mark
-    imagebutton xpos 1510 ypos 270 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(4) #Nanjo
-    imagebutton xpos 950 ypos 0 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(5) #Elly
-    imagebutton xpos 730 ypos 0 idle "text/GreyRight.png" hover "text/AyaseRight.png" action Return(6) #Ayase
-    imagebutton xpos 1280 ypos 740 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #Leave
+    imagebutton xpos 560 ypos 720 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 315 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Teacher
+    imagebutton xpos 1280 ypos 20 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 1510 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 950 ypos 0 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Elly
+    imagebutton xpos 730 ypos 0 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Ayase
+    imagebutton xpos 1280 ypos 740 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #Leave
 
 screen PrincipalOffice:
-    imagebutton xpos 1350 ypos 130 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(1) #Yukino
-    imagebutton xpos 840 ypos 140 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(2) #Mark
-    imagebutton xpos 1310 ypos 400 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1600 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(4) #Leave
+    imagebutton xpos 1350 ypos 130 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 840 ypos 140 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Mark
+    imagebutton xpos 1310 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1600 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #Leave
 
 screen Passageway1F:
-    imagebutton xpos 950 ypos 420 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(1) #Yukino
-    imagebutton xpos 1410 ypos 130 idle "text/GreyLeft.png" hover "text/HanyaLeft.png" action Return(2) #Hanya
-    imagebutton xpos 660 ypos 370 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(3) #Mark
-    imagebutton xpos 950 ypos 250 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(4) #Nanjo
-    imagebutton xpos 350 ypos 350 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveSchool
-    imagebutton xpos 1220 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveSports
+    imagebutton xpos 950 ypos 420 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 1410 ypos 130 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Hanya
+    imagebutton xpos 660 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 950 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 350 ypos 350 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveSchool
+    imagebutton xpos 1220 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveSports
 
 screen Gymnasium:
-    imagebutton xpos 460 ypos 620 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(1) #Yukino
-    imagebutton xpos 1530 ypos 170 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(5) #Student1
-    imagebutton xpos 145 ypos 380 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 160 ypos 470 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(4) #Nanjo
-    imagebutton xpos 350 ypos 100 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #Student2
-    imagebutton xpos 1500 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveSports
+    imagebutton xpos 460 ypos 620 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 1530 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student1
+    imagebutton xpos 145 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 160 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 350 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student2
+    imagebutton xpos 1500 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveSports
 
 screen DramaClub:
-    imagebutton xpos 1620 ypos 350 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(1) #Yukino
-    imagebutton xpos 770 ypos 280 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(2) #Club Leader
-    imagebutton xpos 1170 ypos 490 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 890 ypos 560 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(4) #Nanjo
-    imagebutton xpos 950 ypos 330 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #ClubMember1
-    imagebutton xpos 1170 ypos 300 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(6) #ClubMember2
-    imagebutton xpos 1500 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #Leave
+    imagebutton xpos 1620 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 770 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Club Leader
+    imagebutton xpos 1170 ypos 490 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 890 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 950 ypos 330 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #ClubMember1
+    imagebutton xpos 1170 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #ClubMember2
+    imagebutton xpos 1500 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #Leave
 
 screen BoxingClub:
-    imagebutton xpos 1530 ypos 310 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(1) #Yukino
-    imagebutton xpos 550 ypos 280 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(2) #Student
-    imagebutton xpos 1060 ypos 450 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 790 ypos 530 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(4) #Nanjo
-    imagebutton xpos 1420 ypos 650 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveSports
+    imagebutton xpos 1530 ypos 310 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 550 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 1060 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 790 ypos 530 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 1420 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveSports
 
 screen ArcheryClub:
-    imagebutton xpos 1430 ypos 420 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(1) #Yukino
-    imagebutton xpos 450 ypos 380 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(2) #Student
-    imagebutton xpos 960 ypos 550 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(3) #Mark
-    imagebutton xpos 670 ypos 630 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(4) #Nanjo
-    imagebutton xpos 1320 ypos 750 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveSports
+    imagebutton xpos 1430 ypos 420 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 450 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 960 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
+    imagebutton xpos 670 ypos 630 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
+    imagebutton xpos 1320 ypos 750 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveSports
 
 screen FencingClub:
-    imagebutton xpos 1420 ypos 350 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(1) #Yukino
-    imagebutton xpos 1510 ypos 240 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(2) #Mark
-    imagebutton xpos 1070 ypos 430 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 880 ypos 120 idle "text/GreyLeft.png" hover "text/TamakiLeft.png" action Return(4) #Tamaki
-    imagebutton xpos 1260 ypos 180 idle "text/GreyRight.png" hover "text/TadashiRight.png" action Return(5) #Tadashi
-    imagebutton xpos 420 ypos 320 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(6) #ClubMember1
-    imagebutton xpos 520 ypos 210 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(7) #ClubMember2
-    imagebutton xpos 1550 ypos 650 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(8) #Leave
+    imagebutton xpos 1420 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 1510 ypos 240 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Mark
+    imagebutton xpos 1070 ypos 430 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 880 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Tamaki
+    imagebutton xpos 1260 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Tadashi
+    imagebutton xpos 420 ypos 320 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #ClubMember1
+    imagebutton xpos 520 ypos 210 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #ClubMember2
+    imagebutton xpos 1550 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(8) #Leave
 
 screen BalletClub:
-    imagebutton xpos 1520 ypos 300 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(1) #Yukino
-    imagebutton xpos 1050 ypos 440 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(2) #Mark
-    imagebutton xpos 790 ypos 530 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 950 ypos 210 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(4) #ClubMember1
-    imagebutton xpos 560 ypos 220 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(5) #ClubMember2
-    imagebutton xpos 1400 ypos 650 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1520 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
+    imagebutton xpos 1050 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Mark
+    imagebutton xpos 790 ypos 530 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 950 ypos 210 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #ClubMember1
+    imagebutton xpos 560 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #ClubMember2
+    imagebutton xpos 1400 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen Class21:
-    imagebutton xpos 645 ypos 410 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 650 ypos 30 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1300 ypos 140 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 365 ypos 380 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(4) #Student
-    imagebutton xpos 1100 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 645 ypos 410 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 650 ypos 30 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1300 ypos 140 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 365 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 1100 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class22:
-    imagebutton xpos 760 ypos 500 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1380 ypos 460 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 250 ypos 450 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 460 ypos 560 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(4) #Student
-    imagebutton xpos 1300 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 760 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1380 ypos 460 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 250 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 460 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 1300 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class25:
-    imagebutton xpos 970 ypos 570 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1430 ypos 260 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 260 ypos 600 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 940 ypos 0 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(4) #Student 1
-    imagebutton xpos 890 ypos 280 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(5) #Student 2
-    imagebutton xpos 1300 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 970 ypos 570 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1430 ypos 260 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 260 ypos 600 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 940 ypos 0 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student 1
+    imagebutton xpos 890 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student 2
+    imagebutton xpos 1300 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen EmptyClass:
-    imagebutton xpos 1230 ypos 240 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 1140 ypos 350 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1460 ypos 360 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 950 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(4) #Leave
+    imagebutton xpos 1230 ypos 240 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1140 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1460 ypos 360 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 950 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #Leave
 
 screen Cafeteria:
-    imagebutton xpos 1300 ypos 290 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 1180 ypos -10 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 675 ypos 530 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 340 ypos 550 idle "text/GreyRight.png" hover "text/ToroRight.png" action Return(4) #Toro
-    imagebutton xpos 520 ypos 100 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #Student 2
-    imagebutton xpos 1340 ypos 770 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1300 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1180 ypos -10 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 675 ypos 530 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 340 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Toro
+    imagebutton xpos 520 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student 2
+    imagebutton xpos 1340 ypos 770 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen HomeEcRoom:
-    imagebutton xpos 1600 ypos 250 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 680 ypos 490 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1300 ypos 280 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 640 ypos 230 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(4) #Students
-    imagebutton xpos 1340 ypos 770 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 1600 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 680 ypos 490 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1300 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 640 ypos 230 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Students
+    imagebutton xpos 1340 ypos 770 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class31:
-    imagebutton xpos 760 ypos 450 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 580 ypos 650 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1610 ypos 170 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 250 ypos 220 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(4) #Student
-    imagebutton xpos 530 ypos 190 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #Student
-    imagebutton xpos 1340 ypos 770 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 760 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 580 ypos 650 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1610 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 250 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 530 ypos 190 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student
+    imagebutton xpos 1340 ypos 770 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen Class33:
-    imagebutton xpos 1260 ypos 350 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 990 ypos 520 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1295 ypos 140 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 250 ypos 220 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(4) #Student
-    imagebutton xpos 630 ypos 160 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #Student
-    imagebutton xpos 1340 ypos 770 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1260 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 990 ypos 520 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1295 ypos 140 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 250 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 630 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student
+    imagebutton xpos 1340 ypos 770 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen Class36:
-    imagebutton xpos 830 ypos 350 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1080 ypos 420 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1515 ypos 410 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 670 ypos 420 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(4) #Student
-    imagebutton xpos 1450 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 830 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1080 ypos 420 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1515 ypos 410 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 670 ypos 420 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 1450 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class37:
-    imagebutton xpos 1385 ypos 440 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 730 ypos -10 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 880 ypos 130 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 90 ypos 160 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(4) #Student
-    imagebutton xpos 160 ypos 270 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #Student
-    imagebutton xpos 980 ypos 830 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1385 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 730 ypos -10 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 880 ypos 130 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 90 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 160 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student
+    imagebutton xpos 980 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen Library:
-    imagebutton xpos 900 ypos 300 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1370 ypos 580 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1610 ypos 160 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1630 ypos 300 idle "text/GreyLeft.png" hover "text/DevilboyLeft.png" action Return(4) #Devilboy
-    imagebutton xpos -30 ypos 470 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #Student1
-    imagebutton xpos 100 ypos 450 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(6) #Student2
-    imagebutton xpos 560 ypos 530 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(7) #Student3
-    imagebutton xpos 1700 ypos 870 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(8) #Leave
+    imagebutton xpos 900 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1370 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1610 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1630 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Devilboy
+    imagebutton xpos -30 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student1
+    imagebutton xpos 100 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Student2
+    imagebutton xpos 560 ypos 530 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Student3
+    imagebutton xpos 1700 ypos 870 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(8) #Leave
 
 screen StudentCouncil:
-    imagebutton xpos 1280 ypos 470 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 855 ypos 550 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 990 ypos 500 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1275 ypos 160 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(4) #SC President
-    imagebutton xpos 645 ypos 265 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #Student1
-    imagebutton xpos 1280 ypos 290 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(7) #Student2
-    imagebutton xpos 355 ypos 320 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(6) #Student3
-    imagebutton xpos 1700 ypos 600 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(8) #Leave
+    imagebutton xpos 1280 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 855 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 990 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1275 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #SC President
+    imagebutton xpos 645 ypos 265 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student1
+    imagebutton xpos 1280 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Student2
+    imagebutton xpos 355 ypos 320 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Student3
+    imagebutton xpos 1700 ypos 600 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(8) #Leave
 
 screen ArtRoom:
-    imagebutton xpos 965 ypos 570 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 980 ypos 270 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1380 ypos 240 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1090 ypos 100 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(4) #Student
-    imagebutton xpos 950 ypos 880 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 965 ypos 570 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 980 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1380 ypos 240 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1090 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 950 ypos 880 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Entryway:
-    imagebutton xpos 1060 ypos 0 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 960 ypos 450 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 885 ypos 190 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 220 ypos 420 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(4) #Student1
-    imagebutton xpos 1390 ypos 250 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #Student2
-    imagebutton xpos 600 ypos 150 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveCity
-    imagebutton xpos 1450 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #LeaveSchool
+    imagebutton xpos 1060 ypos 0 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 960 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 885 ypos 190 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 220 ypos 420 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student1
+    imagebutton xpos 1390 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student2
+    imagebutton xpos 600 ypos 150 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveCity
+    imagebutton xpos 1450 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #LeaveSchool
 
 ###### MIKAGE-CHO WARD ONE ###########
 
 screen YY1: #Worldmap
-    imagebutton xpos 980 ypos 580 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 960 ypos 300 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 625 ypos 220 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1095 ypos 180 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(4) #Clerk
-    imagebutton xpos 1450 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveCity
+    imagebutton xpos 980 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 960 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 625 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1095 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Clerk
+    imagebutton xpos 1450 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveCity
 
 screen Clinic1: #worldmap
-    imagebutton xpos 1590 ypos 440 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1190 ypos 580 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1375 ypos 440 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 830 ypos 280 idle "text/GreyRight.png" hover "text/DoctorRight.png" action Return(4) #Doctor
-    imagebutton xpos 350 ypos 400 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(5) #Nurse
-    imagebutton xpos 1660 ypos 830 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveCity
+    imagebutton xpos 1590 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1190 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1375 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 830 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Doctor
+    imagebutton xpos 350 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Nurse
+    imagebutton xpos 1660 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveCity
 
 #### MIKAGE MALL ####
 
 screen SMD1: #Mikage Mall
-    imagebutton xpos 1600 ypos 220 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 1140 ypos 260 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 200 ypos 270 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1370 ypos 70 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(4) #Clerk
-    imagebutton xpos 620 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 1600 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1140 ypos 260 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 200 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1370 ypos 70 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Clerk
+    imagebutton xpos 620 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen PD1: #Mikage Mall
-    imagebutton xpos 730 ypos 60 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1305 ypos 160 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 640 ypos 400 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1370 ypos 70 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 460 ypos 230 idle "text/GreyLeft.png" hover "text/GirlLeft.png" action Return(4) #Girl
-    imagebutton xpos 100 ypos 750 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 730 ypos 60 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1305 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 640 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1370 ypos 70 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 460 ypos 230 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Girl
+    imagebutton xpos 100 ypos 750 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen ST1: #Mikage Mall
-    imagebutton xpos 1170 ypos 340 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1405 ypos 290 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 415 ypos 225 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1290 ypos 120 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 980 ypos 160 idle "text/GreyLeft.png" hover "text/GirlLeft.png" action Return(4) #Girl
-    imagebutton xpos 650 ypos 680 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1170 ypos 340 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1405 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 415 ypos 225 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1290 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 980 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Girl
+    imagebutton xpos 650 ypos 680 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen JD1: #Mikage Mall
-    imagebutton xpos 850 ypos 290 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 780 ypos 50 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 965 ypos 570 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 980 ypos 160 idle "text/GreyLeft.png" hover "text/GuyLeft.png" action Return(4) #Guy
-    imagebutton xpos 10 ypos 350 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(5) #Student
-    imagebutton xpos 1620 ypos 150 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(6) #Clerk
-    imagebutton xpos 1090 ypos -30 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(7) #Clerk
-    imagebutton xpos 1780 ypos 650 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(8) #Leave
+    imagebutton xpos 850 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 780 ypos 50 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 965 ypos 570 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 980 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Guy
+    imagebutton xpos 10 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student
+    imagebutton xpos 1620 ypos 150 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Clerk
+    imagebutton xpos 1090 ypos -30 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Clerk
+    imagebutton xpos 1780 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(8) #Leave
 
 #### MIKAGE-CHO ####
 
 screen HistoricalSociety1: #Historical Society Outer
-    imagebutton xpos 640 ypos 570 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 840 ypos 300 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 420 ypos 340 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 980 ypos 160 idle "text/GreyLeft.png" hover "text/GirlLeft.png" action Return(4) #Guy
-    imagebutton xpos 1400 ypos 300 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveInner
-    imagebutton xpos 1730 ypos 630 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveCity
+    imagebutton xpos 640 ypos 570 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 840 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 420 ypos 340 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 980 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Guy
+    imagebutton xpos 1400 ypos 300 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveInner
+    imagebutton xpos 1730 ypos 630 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveCity
 
 screen HistoricalSociety2: #Historical Society Inner
-    imagebutton xpos 1600 ypos 160 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 780 ypos 320 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 650 ypos 470 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 560 ypos 120 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(4) #Student
-    imagebutton xpos 10 ypos 350 idle "text/GreyRight.png" hover "text/GirlRight.png" action Return(5) #Student
-    imagebutton xpos 1600 ypos 650 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1600 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 780 ypos 320 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 650 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 560 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 10 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student
+    imagebutton xpos 1600 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 #### JOY STREET MALL ####
 
 screen RC2: #Joystreet Mall
-    imagebutton xpos 140 ypos 390 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1070 ypos 30 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 570 ypos 420 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1600 ypos 220 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(4) #Clerk
-    imagebutton xpos 1730 ypos 570 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 140 ypos 390 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1070 ypos 30 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 570 ypos 420 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1600 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Clerk
+    imagebutton xpos 1730 ypos 570 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen SMD2: #Joystreet Mall
-    imagebutton xpos 780 ypos 100 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 1480 ypos 360 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 420 ypos 470 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1050 ypos 70 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(4) #Customer
-    imagebutton xpos 1300 ypos 70 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 510 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 780 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1480 ypos 360 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 420 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1050 ypos 70 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Customer
+    imagebutton xpos 1300 ypos 70 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 510 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen YY2: #Joystreet Mall
-    imagebutton xpos 840 ypos 550 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 0 ypos 270 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 425 ypos 200 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1400 ypos 100 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 970 ypos -10 idle "text/GreyLeft.png" hover "text/GirlLeft.png" action Return(4) #Girl
-    imagebutton xpos 1770 ypos 480 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveCity
+    imagebutton xpos 840 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 0 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 425 ypos 200 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1400 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 970 ypos -10 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Girl
+    imagebutton xpos 1770 ypos 480 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveCity
 
 screen PD2: #Joystreet Mall
-    imagebutton xpos 750 ypos 380 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 890 ypos 90 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 220 ypos 200 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1360 ypos 70 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 730 ypos 50 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(4) #Student
-    imagebutton xpos 100 ypos 750 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 750 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 890 ypos 90 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 220 ypos 200 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1360 ypos 70 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 730 ypos 50 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Student
+    imagebutton xpos 100 ypos 750 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen ST2: #Joystreet Mall
-    imagebutton xpos 1100 ypos 360 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 660 ypos 255 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1405 ypos 320 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1400 ypos 150 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 1080 ypos 180 idle "text/GreyLeft.png" hover "text/GuyLeft.png" action Return(4) #Girl
-    imagebutton xpos 680 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1100 ypos 360 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 660 ypos 255 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1405 ypos 320 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1400 ypos 150 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 1080 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Girl
+    imagebutton xpos 680 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen Clinic2: #Joystreet Mall
-    imagebutton xpos 1590 ypos 440 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1190 ypos 580 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1375 ypos 440 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 830 ypos 280 idle "text/GreyRight.png" hover "text/DoctorRight.png" action Return(5) #Doctor
-    imagebutton xpos 350 ypos 400 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(4) #Nurse
-    imagebutton xpos 1660 ypos 830 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveCity
+    imagebutton xpos 1590 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1190 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1375 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 830 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Doctor
+    imagebutton xpos 350 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nurse
+    imagebutton xpos 1660 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveCity
 
 screen JD2: #Joystreet Mall
-    imagebutton xpos 830 ypos 330 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 150 ypos 370 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1465 ypos 400 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 930 ypos 290 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(4) #Guy
-    imagebutton xpos 1130 ypos 290 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(5) #Guy
-    imagebutton xpos 1150 ypos 100 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(6) #Guy
-    imagebutton xpos 1700 ypos 250 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(7) #Clerk
-    imagebutton xpos 1400 ypos 150 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(8) #Clerk
-    imagebutton xpos 1780 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(9) #Leave
+    imagebutton xpos 830 ypos 330 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 150 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1465 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 930 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Guy
+    imagebutton xpos 1130 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Guy
+    imagebutton xpos 1150 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Guy
+    imagebutton xpos 1700 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Clerk
+    imagebutton xpos 1400 ypos 150 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(8) #Clerk
+    imagebutton xpos 1780 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(9) #Leave
 
 #### MIKAGE-CHO ####
 
 screen Clinic3: #Overworld
-    imagebutton xpos 1590 ypos 440 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1190 ypos 580 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1375 ypos 440 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 830 ypos 280 idle "text/GreyRight.png" hover "text/DoctorRight.png" action Return(5) #Doctor
-    imagebutton xpos 350 ypos 400 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(4) #Nurse
-    imagebutton xpos 1660 ypos 830 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveCity
+    imagebutton xpos 1590 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1190 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1375 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 830 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Doctor
+    imagebutton xpos 350 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nurse
+    imagebutton xpos 1660 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveCity
 
 screen Hospital1: #reception
-    imagebutton xpos 1500 ypos 270 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 1170 ypos 200 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1610 ypos 170 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1370 ypos 90 idle "text/GreyRight.png" hover "text/GirlRight.png" action Return(5) #Secretary2
-    imagebutton xpos 1440 ypos 540 idle "text/GreyLeft.png" hover "text/GuyLeft.png" action Return(7) #Guy
-    imagebutton xpos 1700 ypos 450 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(6) #Student
-    imagebutton xpos 990 ypos 580 idle "text/GreyLeft.png" hover "text/GuyLeft.png" action Return(8) #Guy
-    imagebutton xpos 1270 ypos 550 idle "text/GreyRight.png" hover "text/GirlRight.png" action Return(9) #Girl
-    imagebutton xpos 0 ypos 470 idle "text/GreyRight.png" hover "text/YamaokaRight.png" action Return(10) #Yamaoka
-    imagebutton xpos 300 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(11) #LeaveOutside
-    imagebutton xpos 600 ypos 350 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(12) #LeaveInside
+    imagebutton xpos 1500 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1170 ypos 200 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1610 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1370 ypos 90 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Secretary2
+    imagebutton xpos 1440 ypos 540 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Guy
+    imagebutton xpos 1700 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Student
+    imagebutton xpos 990 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(8) #Guy
+    imagebutton xpos 1270 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(9) #Girl
+    imagebutton xpos 0 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(10) #Yamaoka
+    imagebutton xpos 300 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(11) #LeaveOutside
+    imagebutton xpos 600 ypos 350 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(12) #LeaveInside
 
 screen Hospital3: #2f waiting room
-    imagebutton xpos 550 ypos 650 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 990 ypos 650 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 150 ypos 640 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1280 ypos 180 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(5) #Nurse
-    imagebutton xpos 1600 ypos 140 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(4) #Guy
-    imagebutton xpos 400 ypos 390 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveOutside
+    imagebutton xpos 550 ypos 650 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 990 ypos 650 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 150 ypos 640 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1280 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Nurse
+    imagebutton xpos 1600 ypos 140 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Guy
+    imagebutton xpos 400 ypos 390 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveOutside
 
 screen Hospital5: #3f waiting room
-    imagebutton xpos 860 ypos 490 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 460 ypos 430 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 570 ypos 510 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1160 ypos 130 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(4) #Guy
-    imagebutton xpos 0 ypos 400 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveOutside
+    imagebutton xpos 860 ypos 490 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 460 ypos 430 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 570 ypos 510 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1160 ypos 130 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Guy
+    imagebutton xpos 0 ypos 400 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveOutside
 
 screen Hospital6: #3f Nurse Station
-    imagebutton xpos 860 ypos 550 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1200 ypos 470 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 470 ypos 540 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 660 ypos 370 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(5) #Nurse
-    imagebutton xpos 950 ypos 350 idle "text/GreyRight.png" hover "text/NurseRight.png" action Return(4) #Nurse
-    imagebutton xpos 1250 ypos 790 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveOutside
+    imagebutton xpos 860 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1200 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 470 ypos 540 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 660 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Nurse
+    imagebutton xpos 950 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nurse
+    imagebutton xpos 1250 ypos 790 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveOutside
 
 screen IHospital0: #2F Lobby
-    imagebutton xpos 1050 ypos 150 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 750 ypos 250 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 400 ypos 370 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 0 ypos 400 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(4) #LeaveOutside
+    imagebutton xpos 1050 ypos 150 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 750 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 400 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 0 ypos 400 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #LeaveOutside
 
 screen IHospital1: #Nurse 2F
-    imagebutton xpos 775 ypos 440 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 700 ypos 550 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1260 ypos 400 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 560 ypos 450 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(6) #Nurse
-    imagebutton xpos 650 ypos 300 idle "text/GreyRight.png" hover "text/NurseRight.png" action Return(5) #Nurse
-    imagebutton xpos 150 ypos 440 idle "text/GreyLeft.png" hover "text/DoctorLeft.png" action Return(4) #Doctor
-    imagebutton xpos 1350 ypos 820 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #LeaveOutside
+    imagebutton xpos 775 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 700 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1260 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 560 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Nurse
+    imagebutton xpos 650 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Nurse
+    imagebutton xpos 150 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Doctor
+    imagebutton xpos 1350 ypos 820 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #LeaveOutside
 
 screen IHospital2: #Nurse 3F
-    imagebutton xpos 1380 ypos 390 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 980 ypos 590 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1200 ypos 290 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 230 ypos 300 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(4) #Nurse
-    imagebutton xpos 420 ypos 160 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(5) #Patient
-    imagebutton xpos 1450 ypos 790 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveOutside
+    imagebutton xpos 1380 ypos 390 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 980 ypos 590 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1200 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 230 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nurse
+    imagebutton xpos 420 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Patient
+    imagebutton xpos 1450 ypos 790 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveOutside
 
 screen IHospital3: #Maki's Room
-    imagebutton xpos 1370 ypos 260 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1100 ypos 380 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 710 ypos 500 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1400 ypos 170 idle "text/GreyLeft.png" hover "text/PurpLeft.png" action Return(4) #Painting
-    imagebutton xpos 1350 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveOutside
+    imagebutton xpos 1370 ypos 260 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1100 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 710 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1400 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Painting
+    imagebutton xpos 1350 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveOutside
 
 screen IHospital4: #Waiting Room 2F
-    imagebutton xpos 1060 ypos 410 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1210 ypos 630 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 450 ypos 540 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 1450 ypos 80 idle "text/GreyLeft.png" hover "text/GuyLeft.png" action Return(4) #Patient
-    imagebutton xpos 750 ypos 250 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveOutside
+    imagebutton xpos 1060 ypos 410 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1210 ypos 630 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 450 ypos 540 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1450 ypos 80 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Patient
+    imagebutton xpos 750 ypos 250 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveOutside
 
 screen IHospital5: #ExamRoom
-    imagebutton xpos 860 ypos 540 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1070 ypos 550 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 570 ypos 570 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 20 ypos 420 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(4) #Nurse
-    imagebutton xpos 640 ypos 400 idle "text/GreyRight.png" hover "text/DoctorRight.png" action Return(5) #Doctor
-    imagebutton xpos 1340 ypos 780 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveOutside
+    imagebutton xpos 860 ypos 540 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1070 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 570 ypos 570 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 20 ypos 420 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nurse
+    imagebutton xpos 640 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Doctor
+    imagebutton xpos 1340 ypos 780 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveOutside
 
 screen IHospital6: #Reception
-    imagebutton xpos 1160 ypos 180 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1280 ypos 290 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 575 ypos 300 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 850 ypos 220 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(4) #Elly
-    imagebutton xpos 150 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveOutside
+    imagebutton xpos 1160 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1280 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 575 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 850 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 150 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveOutside
 
 ##########################Post-Hospital Mikage-Cho With Demons##################################################
 
 screen Sebec2: #ReijiEncounter
-    imagebutton xpos 1160 ypos 180 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1280 ypos 290 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 575 ypos 300 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 850 ypos 220 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(4) #Elly
-    imagebutton xpos 150 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #LeaveOutside
+    imagebutton xpos 1160 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1280 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 575 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 850 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 150 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveOutside
 
 screen SMD2a: #Joystreet Sennen Mannen Do after demons
-    imagebutton xpos 1160 ypos 180 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1280 ypos 290 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 575 ypos 300 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 850 ypos 220 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(4) #Elly
-    imagebutton xpos 600 ypos 500 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 800 ypos 500 idle "text/GreyLeft.png" hover "text/ManLeft.png" action Return(6) #Customer
-    imagebutton xpos 150 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #LeaveOutside
+    imagebutton xpos 1160 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1280 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 575 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 850 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 600 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 800 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Customer
+    imagebutton xpos 150 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #LeaveOutside
 
 screen ST2a: #Joystreet Satomi Tadashi after demons
-    imagebutton xpos 1160 ypos 180 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1280 ypos 290 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 575 ypos 300 idle "text/GreyLeft.png" hover "text/NanjoLeft.png" action Return(3) #Nanjo
-    imagebutton xpos 850 ypos 220 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(4) #Elly
-    imagebutton xpos 600 ypos 500 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 800 ypos 500 idle "text/GreyLeft.png" hover "text/ManLeft.png" action Return(6) #Customer
-    imagebutton xpos 150 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #LeaveOutside
+    imagebutton xpos 1160 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1280 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 575 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 850 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 600 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 800 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Customer
+    imagebutton xpos 150 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #LeaveOutside
 
 screen YY2a: #Joystreet Yin-Yan after demons
-    imagebutton xpos 840 ypos 550 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 0 ypos 270 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 425 ypos 200 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1400 ypos 100 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 970 ypos -10 idle "text/GreyLeft.png" hover "text/EllyLeft.png" action Return(4) #Elly
-    imagebutton xpos 970 ypos 100 idle "text/GreyLeft.png" hover "text/GuyLeft.png" action Return(6) #Man
-    imagebutton xpos 970 ypos 250 idle "text/GreyLeft.png" hover "text/GuyLeft.png" action Return(7) #Man
-    imagebutton xpos 1770 ypos 480 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(8) #LeaveCity
+    imagebutton xpos 840 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 0 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 425 ypos 200 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1400 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 970 ypos -10 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 970 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Man
+    imagebutton xpos 970 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Man
+    imagebutton xpos 1770 ypos 480 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(8) #LeaveCity
 
 screen Clinic2a: #Joystreet Esumi Clinic after demons
-    imagebutton xpos 1590 ypos 440 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1190 ypos 580 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1375 ypos 440 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 830 ypos 280 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(4) #Elly
-    imagebutton xpos 350 ypos 400 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(5) #Nurse
-    imagebutton xpos 450 ypos 400 idle "text/GreyLeft.png" hover "text/DoctorLeft.png" action Return(6) #Doctor
-    imagebutton xpos 1660 ypos 830 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #LeaveCity
+    imagebutton xpos 1590 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1190 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1375 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 830 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 350 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Nurse
+    imagebutton xpos 450 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Doctor
+    imagebutton xpos 1660 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #LeaveCity
 
 screen JD2a: #Joystreet Mall Judgment after demons
-    imagebutton xpos 830 ypos 330 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 150 ypos 370 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 1465 ypos 400 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 930 ypos 290 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(4) #Elly
-    imagebutton xpos 1130 ypos 290 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(5) #Guy
-    imagebutton xpos 1150 ypos 100 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(6) #Guy
-    imagebutton xpos 1700 ypos 250 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(7) #Clerk
-    imagebutton xpos 1400 ypos 150 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(8) #Clerk
-    imagebutton xpos 1780 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(9) #Leave
+    imagebutton xpos 830 ypos 330 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 150 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1465 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 930 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 1130 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Guy
+    imagebutton xpos 1150 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Guy
+    imagebutton xpos 1700 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Clerk
+    imagebutton xpos 1400 ypos 150 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(8) #Clerk
+    imagebutton xpos 1780 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(9) #Leave
 
 screen Clinic3a: #Overworld after demons
-    imagebutton xpos 1590 ypos 440 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1190 ypos 580 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1375 ypos 440 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 830 ypos 280 idle "text/GreyRight.png" hover "text/DoctorRight.png" action Return(5) #Doctor
-    imagebutton xpos 350 ypos 400 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(6) #Nurse
-    imagebutton xpos 450 ypos 600 idle "text/GreyLeft.png" hover "text/EllyLeft.png" action Return(4) #Elly
-    imagebutton xpos 1660 ypos 830 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #LeaveCity
+    imagebutton xpos 1590 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1190 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1375 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 830 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Doctor
+    imagebutton xpos 350 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Nurse
+    imagebutton xpos 450 ypos 600 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 1660 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #LeaveCity
 
 screen SMD1a: #Mikage Mall SMD after demons
-    imagebutton xpos 1600 ypos 220 idle "text/GreyLeft.png" hover "text/MarkLeft.png" action Return(1) #Mark
-    imagebutton xpos 1140 ypos 260 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 200 ypos 270 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 600 ypos 270 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(4) #Elly
-    imagebutton xpos 1370 ypos 70 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 620 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1600 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1140 ypos 260 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 200 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 600 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 1370 ypos 70 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 620 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen ST1a: #Mikage Mall Satomi Tadashi after demons
-    imagebutton xpos 1170 ypos 340 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1405 ypos 290 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 415 ypos 225 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1290 ypos 120 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(5) #Clerk
-    imagebutton xpos 980 ypos 160 idle "text/GreyLeft.png" hover "text/EllyLeft.png" action Return(4) #Elly
-    imagebutton xpos 650 ypos 680 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #Leave
+    imagebutton xpos 1170 ypos 340 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1405 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 415 ypos 225 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1290 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+    imagebutton xpos 980 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 650 ypos 680 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen JD1a: #Mikage Mall
-    imagebutton xpos 850 ypos 290 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 780 ypos 50 idle "text/GreyLeft.png" hover "text/YukinoLeft.png" action Return(2) #Yukino
-    imagebutton xpos 965 ypos 570 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 980 ypos 160 idle "text/GreyLeft.png" hover "text/EllyLeft.png" action Return(4) #Elly
-    imagebutton xpos 10 ypos 350 idle "text/GreyRight.png" hover "text/GuyRight.png" action Return(5) #Student
-    imagebutton xpos 1620 ypos 150 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(6) #Clerk
-    imagebutton xpos 1090 ypos -30 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(7) #Clerk
-    imagebutton xpos 1780 ypos 650 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(8) #Leave
+    imagebutton xpos 850 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 780 ypos 50 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 965 ypos 570 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 980 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 10 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student
+    imagebutton xpos 1620 ypos 150 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Clerk
+    imagebutton xpos 1090 ypos -30 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Clerk
+    imagebutton xpos 1780 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(8) #Leave
 
 screen YY1a: #World Map
-    imagebutton xpos 980 ypos 580 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 960 ypos 300 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 625 ypos 220 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 1095 ypos 180 idle "text/GreyLeft.png" hover "text/ClerkLeft.png" action Return(4) #Clerk
-    imagebutton xpos 700 ypos 500 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(5) #Elly
-    imagebutton xpos 1450 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(6) #LeaveCity
+    imagebutton xpos 980 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 960 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 625 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 1095 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Clerk
+    imagebutton xpos 700 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Elly
+    imagebutton xpos 1450 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveCity
 
 screen Clinic1a: #worldmap
-    imagebutton xpos 1590 ypos 440 idle "text/GreyRight.png" hover "text/MarkRight.png" action Return(1) #Mark
-    imagebutton xpos 1190 ypos 580 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 1375 ypos 440 idle "text/GreyRight.png" hover "text/NanjoRight.png" action Return(3) #Nanjo
-    imagebutton xpos 900 ypos 600 idle "text/GreyLeft.png" hover "text/EllyLeft.png" action Return(4) #Elly
-    imagebutton xpos 830 ypos 280 idle "text/GreyRight.png" hover "text/DoctorRight.png" action Return(5) #Doctor
-    imagebutton xpos 350 ypos 400 idle "text/GreyLeft.png" hover "text/NurseLeft.png" action Return(6) #Nurse
-    imagebutton xpos 1660 ypos 830 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(7) #LeaveCity
+    imagebutton xpos 1590 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
+    imagebutton xpos 1190 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 1375 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
+    imagebutton xpos 900 ypos 600 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
+    imagebutton xpos 830 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Doctor
+    imagebutton xpos 350 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Nurse
+    imagebutton xpos 1660 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #LeaveCity
 
 screen AlayaShrineb: #World Map
-    imagebutton xpos 980 ypos 580 idle "text/GreyRight.png" hover "text/EllyRight.png" action Return(1) #Elly
-    imagebutton xpos 960 ypos 300 idle "text/GreyRight.png" hover "text/YukinoRight.png" action Return(2) #Yukino
-    imagebutton xpos 625 ypos 220 idle "text/GreyRight.png" hover "text/PurpRight.png" action Return(3) #Butterfly
-    imagebutton xpos 1095 ypos 180 idle "text/GreyLeft.png" hover "text/PurpLeft.png" action Return(4) #Setsuko
-    imagebutton xpos 1450 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 980 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Elly
+    imagebutton xpos 960 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos 625 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Butterfly
+    imagebutton xpos 1095 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Setsuko
+    imagebutton xpos 1450 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 #=========================School Post-Hospital=========================#
 
 screen Infirmaryb:
-    imagebutton xpos 355 ypos 450 idle "text/GreyLeft.png" hover "text/NatsumiLeft.png" action Return(1) #Natsumi
-    imagebutton xpos 725 ypos 440 idle "text/GreyRight.png" hover "text/SaekoRight.png" action Return(2) #Saeko
-    imagebutton xpos 1430 ypos 500 idle "text/GreyLeft.png" hover "text/WomanLeft.png" action Return(3) #Setsuko
-    imagebutton xpos 885 ypos 120 idle "text/GreyRight.png" hover "text/AgastyaRight.png" action Return(4) #Agastya
-    imagebutton xpos 1400 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 355 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Natsumi
+    imagebutton xpos 725 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Saeko
+    imagebutton xpos 1430 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Setsuko
+    imagebutton xpos 885 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Agastya
+    imagebutton xpos 1400 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen PrincipalOfficeb:
-    imagebutton xpos 1350 ypos 130 idle "text/GreyRight.png" hover "text/WomanRight.png" action Return(1) #Ooishi
-    imagebutton xpos 840 ypos 140 idle "text/GreyRight.png" hover "text/ManRight.png" action Return(2) #Hanya
-    imagebutton xpos 1600 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(4) #Leave
+    imagebutton xpos 1350 ypos 130 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Ooishi
+    imagebutton xpos 840 ypos 140 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Hanya
+    imagebutton xpos 1600 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #Leave
 
 screen TeacherLoungeb:
-    imagebutton xpos 315 ypos 370 idle "text/GreyRight.png" hover "text/TeacherRight.png" action Return(1) #Teacher
-    imagebutton xpos 1280 ypos 740 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 315 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Teacher
+    imagebutton xpos 1280 ypos 740 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Courtyardb:
-    imagebutton xpos 300 ypos 380 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(1) #Student
-    imagebutton xpos 1600 ypos 280 idle "text/GreyRight.png" hover "text/PurpRight.png" action Return(2) #Sign
-    imagebutton xpos 0 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(3) #Leave
+    imagebutton xpos 300 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 1600 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Sign
+    imagebutton xpos 0 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Class12b:
-    imagebutton xpos 660 ypos 430 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Student
-    imagebutton xpos 1500 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 660 ypos 430 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Class13b:
-    imagebutton xpos 460 ypos 500 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Student
-    imagebutton xpos 1500 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 460 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Class14b:
-    imagebutton xpos 840 ypos 170 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(1) #Student
-    imagebutton xpos 1500 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 840 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Class16b:
-    imagebutton xpos 520 ypos 230 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(1) #Student
-    imagebutton xpos 1450 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 520 ypos 230 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 1450 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Gymnasiumb:
-    imagebutton xpos 1530 ypos 170 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Student1
-    imagebutton xpos 1500 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 1530 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student1
+    imagebutton xpos 1500 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen DramaClubb:
-    imagebutton xpos 770 ypos 280 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Club Leader
-    imagebutton xpos 950 ypos 330 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #ClubMember1
-    imagebutton xpos 1170 ypos 300 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(3) #ClubMember2
-    imagebutton xpos 1500 ypos 700 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(4) #Leave
+    imagebutton xpos 770 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Club Leader
+    imagebutton xpos 950 ypos 330 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #ClubMember1
+    imagebutton xpos 1170 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #ClubMember2
+    imagebutton xpos 1500 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #Leave
 
 screen FencingClubb:
-    imagebutton xpos 880 ypos 120 idle "text/GreyLeft.png" hover "text/TamakiLeft.png" action Return(1) #Tamaki
-    imagebutton xpos 1260 ypos 180 idle "text/GreyRight.png" hover "text/TadashiRight.png" action Return(2) #Tadashi
-    imagebutton xpos 420 ypos 320 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(3) #ClubMember1
-    imagebutton xpos 520 ypos 210 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(4) #ClubMember2
-    imagebutton xpos 1550 ypos 650 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(5) #Leave
+    imagebutton xpos 880 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Tamaki
+    imagebutton xpos 1260 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Tadashi
+    imagebutton xpos 420 ypos 320 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #ClubMember1
+    imagebutton xpos 520 ypos 210 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #ClubMember2
+    imagebutton xpos 1550 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class22b:
-    imagebutton xpos 460 ypos 560 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Student
-    imagebutton xpos 1300 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 460 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 1300 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Class24b:
-    imagebutton xpos 460 ypos 560 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Student
-    imagebutton xpos 1300 ypos 850 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 460 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 1300 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Cafeteriab:
-    imagebutton xpos 340 ypos 550 idle "text/GreyRight.png" hover "text/ToroRight.png" action Return(1) #Toro
-    imagebutton xpos 520 ypos 100 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #Student 2
-    imagebutton xpos 1340 ypos 770 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(3) #Leave
+    imagebutton xpos 340 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Toro
+    imagebutton xpos 520 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student 2
+    imagebutton xpos 1340 ypos 770 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Class25b:
-    imagebutton xpos 940 ypos 0 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(1) #Student 1
-    imagebutton xpos 890 ypos 280 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(2) #Student 2
-    imagebutton xpos 1300 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(3) #Leave
+    imagebutton xpos 940 ypos 0 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student 1
+    imagebutton xpos 890 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student 2
+    imagebutton xpos 1300 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Class33b:
-    imagebutton xpos 250 ypos 220 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Student
-    imagebutton xpos 630 ypos 160 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #Student
-    imagebutton xpos 1340 ypos 770 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(3) #Leave
+    imagebutton xpos 250 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 630 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 1340 ypos 770 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Class37b:
-    imagebutton xpos 90 ypos 160 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(1) #Student
-    imagebutton xpos 160 ypos 270 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #Student
-    imagebutton xpos 980 ypos 830 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(3) #Leave
+    imagebutton xpos 90 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 160 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    imagebutton xpos 980 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen ArtRoomb:
-    imagebutton xpos 1090 ypos 100 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Student
-    imagebutton xpos 950 ypos 880 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #Leave
+    imagebutton xpos 1090 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos 950 ypos 880 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen StudentCouncilb:
-    imagebutton xpos 1280 ypos 290 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(1) #Student2
-    imagebutton xpos 355 ypos 320 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(2) #Student3
-    imagebutton xpos 1700 ypos 600 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(3) #Leave
+    imagebutton xpos 1280 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student2
+    imagebutton xpos 355 ypos 320 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student3
+    imagebutton xpos 1700 ypos 600 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Libraryb:
-    imagebutton xpos 1630 ypos 300 idle "text/GreyLeft.png" hover "text/DevilboyLeft.png" action Return(1) #Devilboy
-    imagebutton xpos -30 ypos 470 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(2) #Student1
-    imagebutton xpos 100 ypos 450 idle "text/GreyRight.png" hover "text/StudentRight.png" action Return(3) #Student2
-    imagebutton xpos 1700 ypos 870 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(4) #Leave
+    imagebutton xpos 1630 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Devilboy
+    imagebutton xpos -30 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student1
+    imagebutton xpos 100 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Student2
+    imagebutton xpos 1700 ypos 870 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #Leave
 
 screen Gymnasiumc:
-    imagebutton xpos 1530 ypos 170 idle "text/GreyLeft.png" hover "text/StudentLeft.png" action Return(1) #Student1
-    imagebutton xpos 1700 ypos 150 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(2) #SQQ
-    imagebutton xpos 1500 ypos 800 idle "text/GreyMove.png" hover "text/PurpMove.png" action Return(3) #Leave
+    imagebutton xpos 1530 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student1
+    imagebutton xpos 1700 ypos 150 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #SQQ
+    imagebutton xpos 1500 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 #=========================Snow Queen Quest School=========================#

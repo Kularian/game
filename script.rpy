@@ -486,6 +486,7 @@ label label000: #mark/brown choice
     show yukinosprite downleft stand
     show brown animated neutral smirk with qleft
     window show
+    window auto
     show brownsprite upright standmove
     voice brown7
     br "Alright! Here it comes!"
@@ -609,14 +610,14 @@ label label000: #mark/brown choice
     ph "Now you must return to your proper time and place."
     play music "<silence .5>" fadeout 0.5
     scene bg black with qdis
-    $ markx = 900
+    $ markx = 1000
     $ marky = 450
-    $ nanjox = 850
-    $ nanjoy = 500
-    $ yukinox = 800
+    $ nanjox = 925
+    $ nanjoy = 425
+    $ yukinox = 900
     $ yukinoy = 550
-    $ npc1x = 400
-    $ npc1y = 400
+    $ npc1x = 700
+    $ npc1y = 500
     "Voice" "So you guys had the same dream..."
     "Voice" "Indeed.  It's rather extraordinary."
     "Voice" "Think he's seeing it now too?"
@@ -640,8 +641,8 @@ label label000: #mark/brown choice
     $ tbnarrator = 0
     hide natsumi with qdis
     show natsumisprite downright stand
-    $ npc2x = 300
-    $ npc2y = 700
+    $ npc2x = 1200
+    $ npc2y = 600
     show saekosprite upleft standmove at npc2loc with qdis
     show saeko animated neutral serious with qleft
     show saekosprite upright standmove with move
@@ -692,14 +693,19 @@ label label000: #mark/brown choice
     show yukinosprite downright stand
     show natsumi animated neutral serious with qleft
     show natsumisprite downright standmove
+    show nanjosprite downleft stand
+    show marksprite downleft stand
+    show yukinosprite upleft stand
     nat "Speaking of Mikage Hospital, wasn't a student in your class staying there?"
     hide natsumi with qdis
     show natsumisprite downright stand
     show mark animated neutral serious with qleft
-    show marksprite upleft standmove
+    show marksprite downleft standmove
     mk "You mean Maki, right...?"
     hide mark with qdis
-    show marksprite downleft stand
+    show nanjosprite downright stand
+    show marksprite downright stand
+    show yukinosprite downright stand
     show saeko animated neutral serious with qleft
     show saekosprite upleft standmove
     sa "Yes, that's right.  You should visit her while you're there."
@@ -768,12 +774,12 @@ label label001(location="Infirmary"):
         $ marky = 450
         $ nanjox = 850
         $ nanjoy = 600
-        $ yukinox = 800
+        $ yukinox = 1100
         $ yukinoy = 550
-        $ npc1x = 400
-        $ npc1y = 400
-        $ npc2x = 500
-        $ npc2y = 400
+        $ npc1x = 700
+        $ npc1y = 500
+        $ npc2x = 800
+        $ npc2y = 450
         with qdis
         play music schooldays volume 0.4 if_changed
         show saekosprite downright stand at npc2loc
@@ -1233,35 +1239,63 @@ label label007(location="Teacher's Lounge"):
         $ ellyx = 500
         $ ellyy = 400
         scene bg teacherlounge
-
+        show yukinosprite downleft stand at yukinoloc
+        show marksprite upright stand at markloc
+        show nanjosprite upleft stand at nanjoloc
+        show teachersprite downright stand at npc1loc
+        show ayasesprite upright stand at ayaseloc
+        show ellysprite upleft stand at ellyloc
         with qdis
         play music schooldays volume 0.4 if_changed
         call screen TeacherLounge
         if _return == 1:
+            $ naoyax = 250
+            $ naoyay = 350
+            show naoyasprite upright stand with qdis
+            show yukinosprite downleft standmove
             show yukino animated neutral sad with qleft
             yu "Eriko and Yuka didn't faint, so they don't need to go to the hospital. Why were we the only ones...?"
             show yukino animated neutral serious
             yu "Thinking about it, the ones who didn't faint had played 'Persona' before..."
             yu "Meaning Yuka, Eriko, and Hidehiko."
         elif _return == 2:
+            $ naoyax = 250
+            $ naoyay = 250
+            show naoyasprite upleft stand with qdis
             tea "Oh, it's you, Naoya."
             tea "Hey, I hear someone keeps coming in and out of the open room on the second floor."
             tea "Are you the one doing it?  Hmm?"
             if reijiflags == 0:
                 $ reijiflags = 1
         elif _return == 3:
+            $ naoyax = 450
+            $ naoyay = 350
+            show naoyasprite downleft stand
+            show marksprite upright standmove
             show mark animated neutral serious with qleft
             mk "A guy who keeps goin' into the open classroom on the second floor..."
             mk "You know anyone like that?"
         elif _return == 4:
+            $ naoyax = 450
+            $ naoyay = 450
+            show naoyasprite downright stand with qdis
+            show nanjosprite upleft standmove
             show nanjo animated neutral smirk with qleft
             na "It seems you're being mistaken for someone else, Naoya."
         elif _return == 5:
+            $ naoyax = 450
+            $ naoyay = 350
+            show naoyasprite downright stand with qdis
+            show ellysprite upleft standmove
             show elly animated neutral serious with qleft
             el "I told Ms. Saeko about what happened.  Brown seems to have already gone home..."
             show elly animated neutral smirk
             el "And I don't think Ayase could explain it coherently, do you?"
         elif _return == 6:
+            $ naoyax = 450
+            $ naoyay = 150
+            show naoyasprite downleft stand
+            show ayasesprite upright standmove
             show ayase animated neutral serious with qleft
             ay "Hidehiko took off, so me and Eriko explained everything to the teach!"
             show ayase animated neutral sad
@@ -3242,6 +3276,7 @@ label label046: #velvet room
     $ tbnarrator = 1
     "The store is closed..."
     window hide
+    window auto
     $ tbnarrator = 0
     jump calloverworld
 
@@ -3293,6 +3328,7 @@ label label048 (location="Historical Society"):
             $ tbnarrator = 1
             "You go back out into Mikage-Cho."
             window hide
+            window auto
             $ tbnarrator = 0
             hide screen header
             jump calloverworld
@@ -3324,6 +3360,7 @@ label label049: #Historical society inside
         $ tbnarrator = 1
         "You head back into the reception area."
         window hide
+        window auto
         $ tbnarrator = 0
         jump label048
     jump label049
@@ -3448,6 +3485,7 @@ label label053 (location="Rosa Candida"): #Joy street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label053
@@ -3485,6 +3523,7 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label054
@@ -3516,6 +3555,7 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label054
@@ -3557,6 +3597,7 @@ label label055 (location = "Yin & Yan"): #Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label054
@@ -3634,6 +3675,7 @@ label label055 (location = "Yin & Yan"): #Joy Street
             $ tbnarrator = 1
             "Naoya perused the shop but ultimately bought nothing."
             window hide
+            window auto
             $ tbnarrator = 0
             #shop here later
         elif _return == 6:
@@ -3641,6 +3683,7 @@ label label055 (location = "Yin & Yan"): #Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label055
@@ -3651,6 +3694,7 @@ label label056 (location = "Peace Diner"): #Joy Street
         $ tbnarrator = 1
         "The diner is closed..."
         window hide
+        window auto
         $ tbnarrator = 0
         jump label052
     elif plotprogress == 0:
@@ -3684,6 +3728,7 @@ label label056 (location = "Peace Diner"): #Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label056
@@ -3723,6 +3768,7 @@ label label057 (location = "Satomi Tadashi"): #Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label054
@@ -3752,6 +3798,7 @@ label label057 (location = "Satomi Tadashi"): #Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label057
@@ -3784,6 +3831,7 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label058
@@ -3811,6 +3859,7 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label058
@@ -3819,6 +3868,7 @@ label label059: #velvet room joy street
     $ tbnarrator = 1
     "The store is closed..."
     window hide
+    window auto
     $ tbnarrator = 0
     jump calloverworld
 
@@ -3881,6 +3931,7 @@ label label061 (location = "Judgment 1999"): # Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label061
@@ -3932,6 +3983,7 @@ label label061 (location = "Judgment 1999"): # Joy Street
             $ tbnarrator = 1
             "You head back into the mall."
             window hide
+            window auto
             $ tbnarrator = 0
             jump label052
         jump label061
@@ -4005,6 +4057,7 @@ label label062 (location = "SEBEC Building"):
                 $ tbnarrator = 1
                 "You go back out into Mikage-Cho."
                 window hide
+                window auto
                 $ tbnarrator = 0
                 jump calloverworld
             jump label062a
@@ -4067,6 +4120,7 @@ label label062 (location = "SEBEC Building"):
             $ tbnarrator = 1
             "You return back to the streets of Mikage-Cho."
             window hide
+            window auto
             $ tbnarrator = 0
             $ Sebec1 = True
             hide screen header
@@ -4180,6 +4234,7 @@ label label064 (location = "Esumi Clinic"): #Ward 2 Clinic
             $ tbnarrator = 1
             "You go back out into Mikage-Cho."
             window hide
+            window auto
             $ tbnarrator = 0
             jump calloverworld
         jump label064
@@ -4209,6 +4264,7 @@ label label064 (location = "Esumi Clinic"): #Ward 2 Clinic
             $ tbnarrator = 1
             "You go back out into Mikage-Cho."
             window hide
+            window auto
             $ tbnarrator = 0
             jump calloverworld
         jump label064
@@ -5085,6 +5141,7 @@ label callHermelinFloor1:
         $ tbnarrator = 1
         "You move to the first floor of the school"
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "First Floor"
@@ -5096,6 +5153,7 @@ label callHermelinFloor1:
         $ tbnarrator = 1
         "You move to the first floor of the school"
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "First Floor"
@@ -5107,6 +5165,7 @@ label callHermelinFloor1:
         $ tbnarrator = 1
         "You move back into the hallway."
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "First Floor"
@@ -5123,6 +5182,7 @@ label callSportsBuilding:
         $ tbnarrator = 1
         "You move to the Sports Building of the school"
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "Sports Building"
@@ -5134,6 +5194,7 @@ label callSportsBuilding:
         $ tbnarrator = 1
         "You move back into the hallway."
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "Sports Building"
@@ -5150,6 +5211,7 @@ label callHermelinFloor2:
         $ tbnarrator = 1
         "You move to the second floor of the school."
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "Second Floor"
@@ -5161,6 +5223,7 @@ label callHermelinFloor2:
         $ tbnarrator = 1
         "You move to the second floor of the school."
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "Second Floor"
@@ -5172,6 +5235,7 @@ label callHermelinFloor2:
         $ tbnarrator = 1
         "You move back into the hallway."
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "Second Floor"
@@ -5187,6 +5251,7 @@ label callHermelinFloor3:
         $ tbnarrator = 1
         "You move to the third floor of the school."
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "Third Floor"
@@ -5198,6 +5263,7 @@ label callHermelinFloor3:
         $ tbnarrator = 1
         "You move back into the hallway."
         window hide
+        window auto
         hide screen header
         show fadeblack with qdis
         $ location = "Third Floor"
