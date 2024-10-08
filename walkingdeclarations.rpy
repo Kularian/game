@@ -147,6 +147,16 @@ image tsutomusprite downright stand = "tsutomu/walking/DRStanding1.png"
 image tsutomusprite upleft stand = "tsutomu/walking/ULStanding1.png"
 image tsutomusprite upright stand = "tsutomu/walking/URStanding1.png"
 
+image yukosprite downleft stand = "yuko/walking/DLStanding1.png"
+image yukosprite downright stand = "yuko/walking/DRStanding1.png"
+image yukosprite upleft stand = "yuko/walking/ULStanding1.png"
+image yukosprite upright stand = "yuko/walking/URStanding1.png"
+
+image npcsprite downleft stand = "students/walking/DLStanding1.png"
+image npcsprite downright stand = "students/walking/DRStanding1.png"
+image npcsprite upleft stand = "students/walking/ULStanding1.png"
+image npcsprite upright stand = "students/walking/URStanding1.png"
+
 #Emotion Indicators
 
 image exclamation = "gui/talking/surprised.png"
@@ -586,6 +596,35 @@ image hanyasprite upright standmove:
     Image("hanya/walking/URStanding1.png")
     pause 2.25
     Image("hanya/walking/URStanding2.png")
+    pause 1.75
+    repeat
+
+#yuko
+image yukosprite downleft standmove:
+    Image("yuko/walking/DLStanding1.png")
+    pause 2.25
+    Image("yuko/walking/DLStanding2.png")
+    pause 1.75
+    repeat
+
+image yukosprite downright standmove:
+    Image("yuko/walking/DRStanding1.png")
+    pause 2.25
+    Image("yuko/walking/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image yukosprite upleft standmove:
+    Image("yuko/walking/ULStanding1.png")
+    pause 2.25
+    Image("yuko/walking/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image yukosprite upright standmove:
+    Image("yuko/walking/URStanding1.png")
+    pause 2.25
+    Image("yuko/walking/URStanding2.png")
     pause 1.75
     repeat
 
