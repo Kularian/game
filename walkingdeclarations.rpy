@@ -147,6 +147,10 @@ image tsutomusprite downright stand = "tsutomu/walking/DRStanding1.png"
 image tsutomusprite upleft stand = "tsutomu/walking/ULStanding1.png"
 image tsutomusprite upright stand = "tsutomu/walking/URStanding1.png"
 
+#Emotion Indicators
+
+image exclamation = "gui/talking/surprised.png"
+
 #PC Moving-Standing Declarations
 #Naoya
 image naoyasprite downleft standmove:

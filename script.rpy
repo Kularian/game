@@ -25,7 +25,7 @@ label Introcutscenes:
         $ introcutscene = False
     call screen pre_menu
 
-label start:
+label start2:
     $ style.say_dialogue = style.say_dialogue
     default ooishiintro = False
     default hanyaintro = False
@@ -782,61 +782,108 @@ label label001(location="Infirmary"):
         $ npc2y = 450
         with qdis
         play music schooldays volume 0.4 if_changed
-        show saekosprite downright stand at npc2loc
-        show natsumisprite downright stand at npc1loc
-        show marksprite downright stand at markloc
-        show nanjosprite upleft stand at nanjoloc
-        show yukinosprite downleft stand at yukinoloc
-        call screen Infirmary
-        if _return == 1:
-            $ naoyax = 450
-            $ naoyay = 450
-            show naoyasprite upleft stand at naoyaloc with qdis
-            show natsumisprite downright standmove
-            show natsumi animated neutral smirk with qleft
-            nat "I put a new plant there.  What do you think?  Livens up the room, doesn't it?"
-            nat "They say plants grow better if you talk to them.  Give it a try, Naoya."
-        elif _return == 2:
-            $ naoyax = 550
-            $ naoyay = 450
-            show naoyasprite upleft stand at naoyaloc with qdis
-            show saekosprite downright standmove
-            show saeko animated neutral serious with qleft
-            sa "What were you doing, anyway?  I asked you to prepare for the sports festival."
-            sa "We only have a month left and nothing's ready yet."
-            show saeko animated neutral sad
-            sa "Should we just cancel it this year...?"
-        elif _return == 3:
-            $ naoyax = 800
-            $ naoyay = 550
-            show naoyasprite downright stand at naoyaloc with qdis
-            show nanjosprite upleft standmove
-            show nanjo animated neutral serious with qleft
-            na "It seems we have no choice in the matter.  Best to get it over with."
-        elif _return == 4:
-            $ naoyax = 750
-            $ naoyay = 600
-            show naoyasprite upright stand at naoyaloc with qdis
-            show yukinosprite downleft standmove
-            show yukino animated neutral serious with qleft
-            yu "I know I couldn't take being cooped up in the hospital for an entire year."
-            show yukino animated neutral smirk
-            yu "Let's go cheer her up!"
-        elif _return == 5:
-            $ markx = 950
-            $ marky = 500
-            show naoyasprite upleft stand at naoyaloc with qdis
-            show marksprite downright standmove
-            show mark animated neutral serious with qleft
-            mk "Mikage Hospital, huh?  That's kind of a long walk from school."
-            mk "It's way to the southeast.  You leave the school, take the subway..."
-            mk "And go all the way to the 2nd ward."
-            mk "Eh, if we just wander around, we'll get there sooner or later."
-        elif _return == 6:
-            ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
-        elif _return == 7:
-            jump callHermelinFloor1
-        jump label001
+        label label001TalkA:
+            show screen Infirmary
+            hide marksprite
+            hide natsumisprite
+            hide saekosprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen Infirmary
+            if _return == 1:
+                $ naoyax = 750
+                $ naoyay = 530
+                show yukinosprite downleft stand at yukinoloc
+                show marksprite downright stand at markloc
+                show nanjosprite upleft stand at nanjoloc
+                show saekosprite downright stand at npc2loc
+                show natsumisprite downright standmove at npc1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show natsumi animated neutral smirk with qleft
+                nat "I put a new plant there.  What do you think?  Livens up the room, doesn't it?"
+                nat "They say plants grow better if you talk to them.  Give it a try, Naoya."
+                show natsumisprite downright stand
+                hide natsumi
+                hide naoyasprite
+                with qdis
+                $ label001natsumi = 1
+            elif _return == 2:
+                $ naoyax = 850
+                $ naoyay = 480
+                show yukinosprite downleft stand at yukinoloc
+                show marksprite downright stand at markloc
+                show nanjosprite upleft stand at nanjoloc
+                show saekosprite downright standmove at npc2loc
+                show natsumisprite downright stand at npc1loc
+                show naoyasprite upleft stand behind nanjosprite at naoyaloc with qdis
+                show saeko animated neutral serious with qleft
+                sa "What were you doing, anyway?  I asked you to prepare for the sports festival."
+                sa "We only have a month left and nothing's ready yet."
+                show saeko animated neutral sad
+                sa "Should we just cancel it this year...?"
+                show saekosprite downright stand
+                hide saeko
+                hide naoyasprite
+                with qdis
+                $ label001saeko = 1
+            elif _return == 3:
+                $ naoyax = 800
+                $ naoyay = 570
+                show yukinosprite downleft stand at yukinoloc
+                show marksprite downright stand at markloc
+                show nanjosprite upleft standmove at nanjoloc
+                show saekosprite downright stand at npc2loc
+                show natsumisprite downright stand at npc1loc
+                show naoyasprite downright stand at naoyaloc
+                show nanjo animated neutral serious with qleft
+                na "It seems we have no choice in the matter.  Best to get it over with."
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label001nanjo = 1
+            elif _return == 4:
+                $ naoyax = 1050
+                $ naoyay = 580
+                show yukinosprite downleft standmove at yukinoloc
+                show marksprite downright stand at markloc
+                show nanjosprite upleft stand at nanjoloc
+                show saekosprite downright stand at npc2loc
+                show natsumisprite downright stand at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "I know I couldn't take being cooped up in the hospital for an entire year."
+                show yukino animated neutral smirk
+                yu "Let's go cheer her up!"
+                show yukinosprite downleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label001yukino = 1
+            elif _return == 5:
+                $ naoyax = 1350
+                $ naoyay = 530
+                show yukinosprite downleft stand at yukinoloc
+                show nanjosprite upleft stand at nanjoloc
+                show marksprite downright standmove at markloc
+                show saekosprite downright stand at npc2loc
+                show natsumisprite downright stand at npc1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "Mikage Hospital, huh?  That's kind of a long walk from school."
+                mk "It's way to the southeast.  You leave the school, take the subway..."
+                mk "And go all the way to the 2nd ward."
+                mk "Eh, if we just wander around, we'll get there sooner or later."
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label001mark = 1
+            elif _return == 6:
+                ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
+            elif _return == 7:
+                jump callHermelinFloor1
+            jump label001TalkA
 
 label label002(location="Class 1-2"):
     if plotprogress >= 2:

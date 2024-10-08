@@ -1751,11 +1751,21 @@ screen HospitalNav:
 ## Interactions #############################################################
 
 screen Infirmary:
-    imagebutton xpos 650 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Natsumi
-    imagebutton xpos 750 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Saeko
-    imagebutton xpos 800 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
-    imagebutton xpos 1050 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Yukino
-    imagebutton xpos 850 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Mark
+    if label001nanjo == 0:
+        imagebutton xpos 850 ypos 550 idle "exclamation" hover "exclamation" action Return(3)
+    if label001natsumi == 0:
+        imagebutton xpos 700 ypos 450 idle "exclamation" hover "exclamation" action Return(1)
+    if label001saeko == 0:
+        imagebutton xpos 800 ypos 400 idle "exclamation" hover "exclamation" action Return(2)
+    if label001yukino == 0:
+        imagebutton xpos 1100 ypos 500 idle "exclamation" hover "exclamation" action Return(4)
+    if label001mark == 0:
+        imagebutton xpos 1300 ypos 450 idle "exclamation" hover "exclamation" action Return(5)
+    imagebutton xpos 700 ypos 500 idle "natsumi/walking/DRStanding1.png" hover "natsumi/walking/DRStanding2.png" action Return(1) #Natsumi
+    imagebutton xpos 800 ypos 450 idle "saeko/walking/DRStanding1.png" hover "saeko/walking/DRStanding2.png" action Return(2) #Saeko
+    imagebutton xpos 850 ypos 600 idle "nanjo/walking/ULStanding1.png" hover "nanjo/walking/ULStanding2.png" action Return(3) #Nanjo
+    imagebutton xpos 1100 ypos 550 idle "yukino/walking/DLStanding1.png" hover "yukino/walking/DLStanding2.png" action Return(4) #Yukino
+    imagebutton xpos 1300 ypos 500 idle "mark/walking/DRStanding1.png" hover "mark/walking/DRStanding2.png" action Return(5) #Mark
     imagebutton xpos 840 ypos 225 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Agastya
     imagebutton xpos 1200 ypos 750 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #Leave
 
