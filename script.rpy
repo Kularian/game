@@ -385,19 +385,19 @@ label label000: #mark/brown choice
     br "Heeheehee... This'll be fun!  Awright, let's get started!"
     scene bg black with qdis
     $ naoyax = 800
-    $ naoyay = 600
-    $ markx = 100
-    $ marky = 550
+    $ naoyay = 450
+    $ markx = 200
+    $ marky = 500
     $ nanjox = 900
-    $ nanjoy = 550
+    $ nanjoy = 400
     $ brownx = 1000
-    $ browny = 150
-    $ ayasex = 1800
-    $ ayasey = 450
-    $ ellyx = 825
-    $ ellyy = 825
+    $ browny = 200
+    $ ayasex = 1600
+    $ ayasey = 400
+    $ ellyx = 800
+    $ ellyy = 700
     $ yukinox = 900
-    $ yukinoy = 650
+    $ yukinoy = 500
     $ tbnarrator = 1
     scene bg personagame
     show naoyasprite upright stand at naoyaloc
@@ -412,19 +412,19 @@ label label000: #mark/brown choice
     show ayase animated neutral serious with qleft
     voice ayase3
     $ newlocx = 1060
-    $ newlocy = 200
+    $ newlocy = 240
     ay "'Kay!  Here goes!  Umm.  Persona!  Persona!  Please come here!"
     hide ayase with moveoutleft
     window hide
-    show ayasesprite upleft walk at newloc with MoveTransition(3.5)
+    show ayasesprite upleft walk at newloc with MoveTransition(2.5)
     $ ayasex = 1060
-    $ ayasey = 200
+    $ ayasey = 240
     show ayasesprite upleft stand at ayaseloc
     window show
     show brown animated neutral serious with qleft
     voice brown5
-    $ newlocx = 150
-    $ newlocy = 500
+    $ newlocx = 275
+    $ newlocy = 475
     br "My turn!  Persona!  Persona!  Come here!"
     hide brown with moveoutleft
     window hide
@@ -433,8 +433,8 @@ label label000: #mark/brown choice
     show nanjosprite upleft stand
     show yukinosprite upleft stand
     show brownsprite downleft walk at newloc with MoveTransition(3.5)
-    $ brownx = 150
-    $ browny = 500
+    $ brownx = 275
+    $ browny = 475
     show brownsprite downleft stand at brownloc
     show mark animated neutral sad with qleft
     window show
@@ -451,8 +451,8 @@ label label000: #mark/brown choice
     show brownsprite downleft stand
     show mark animated neutral serious with qleft
     voice mark12
-    $ newlocx = 775
-    $ newlocy = 775
+    $ newlocx = 750
+    $ newlocy = 670
     mk "Okay, okay... Persona, Persona.  C'mere... I guess."
     hide mark with moveoutleft
     window hide
@@ -461,14 +461,14 @@ label label000: #mark/brown choice
     show nanjosprite downleft stand
     show yukinosprite downleft stand
     show marksprite downright walk at newloc with MoveTransition(3.5)
-    $ markx = 775
-    $ marky = 775
+    $ markx = 750
+    $ marky = 670
     show marksprite downright stand at markloc
     show elly animated neutral serious with qleft
     window show
     voice elly2
-    $ newlocx = 1750
-    $ newlocy = 475
+    $ newlocx = 1600
+    $ newlocy = 425
     el "Well, then... Persona, Persona!  Please come to us..."
     hide elly with moveoutleft
     window hide
@@ -478,8 +478,8 @@ label label000: #mark/brown choice
     show yukinosprite downright stand
     show marksprite upright stand
     show ellysprite upright walk at newloc with MoveTransition(3.5)
-    $ ellyx = 1750
-    $ ellyy = 475
+    $ ellyx = 1600
+    $ ellyy = 425
     show ellysprite upleft stand at ellyloc
     show naoyasprite downleft stand
     show nanjosprite downleft stand
@@ -770,8 +770,8 @@ label label001(location="Infirmary"):
     else:
         show screen header with qdis
         scene bg infirmary2
-        $ markx = 900
-        $ marky = 450
+        $ markx = 1300
+        $ marky = 500
         $ nanjox = 850
         $ nanjoy = 600
         $ yukinox = 1100

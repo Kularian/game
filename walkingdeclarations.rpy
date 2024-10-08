@@ -73,7 +73,7 @@ transform newloc:
 image naoyasprite downleft stand = "naoya/walking/DLStanding1.png"
 image naoyasprite downright stand = "naoya/walking/DRStanding1.png"
 image naoyasprite upleft stand = "naoya/walking/ULStanding1.png"
-image naoyasprite upright stand = "naoya/walking/DLStanding1.png"
+image naoyasprite upright stand = "naoya/walking/URStanding1.png"
 
 image marksprite downleft stand = "mark/walking/DLStanding1.png"
 image marksprite downright stand = "mark/walking/DRStanding1.png"

@@ -1756,7 +1756,7 @@ screen Infirmary:
     imagebutton xpos 800 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
     imagebutton xpos 1050 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Yukino
     imagebutton xpos 850 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Mark
-    imagebutton xpos 825 ypos 225 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Agastya
+    imagebutton xpos 840 ypos 225 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Agastya
     imagebutton xpos 1200 ypos 750 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #Leave
 
 screen Class12:
