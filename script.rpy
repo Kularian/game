@@ -790,13 +790,15 @@ label label001(location="Infirmary"):
             hide nanjosprite
             hide yukinosprite
             call screen Infirmary
+            if _return > 0:
+                show yukinosprite downleft stand at yukinoloc
+                show marksprite downright stand at markloc
+                show nanjosprite upleft standmove at nanjoloc
+                show saekosprite downright stand at npc2loc
+                show natsumisprite downright stand at npc1loc
             if _return == 1:
                 $ naoyax = 750
                 $ naoyay = 530
-                show yukinosprite downleft stand at yukinoloc
-                show marksprite downright stand at markloc
-                show nanjosprite upleft stand at nanjoloc
-                show saekosprite downright stand at npc2loc
                 show natsumisprite downright standmove at npc1loc
                 show naoyasprite upleft stand at naoyaloc with qdis
                 show natsumi animated neutral smirk with qleft
@@ -810,11 +812,7 @@ label label001(location="Infirmary"):
             elif _return == 2:
                 $ naoyax = 850
                 $ naoyay = 480
-                show yukinosprite downleft stand at yukinoloc
-                show marksprite downright stand at markloc
-                show nanjosprite upleft stand at nanjoloc
                 show saekosprite downright standmove at npc2loc
-                show natsumisprite downright stand at npc1loc
                 show naoyasprite upleft stand behind nanjosprite at naoyaloc with qdis
                 show saeko animated neutral serious with qleft
                 sa "What were you doing, anyway?  I asked you to prepare for the sports festival."
@@ -829,11 +827,7 @@ label label001(location="Infirmary"):
             elif _return == 3:
                 $ naoyax = 800
                 $ naoyay = 570
-                show yukinosprite downleft stand at yukinoloc
-                show marksprite downright stand at markloc
                 show nanjosprite upleft standmove at nanjoloc
-                show saekosprite downright stand at npc2loc
-                show natsumisprite downright stand at npc1loc
                 show naoyasprite downright stand at naoyaloc
                 show nanjo animated neutral serious with qleft
                 na "It seems we have no choice in the matter.  Best to get it over with."
@@ -846,10 +840,6 @@ label label001(location="Infirmary"):
                 $ naoyax = 1050
                 $ naoyay = 580
                 show yukinosprite downleft standmove at yukinoloc
-                show marksprite downright stand at markloc
-                show nanjosprite upleft stand at nanjoloc
-                show saekosprite downright stand at npc2loc
-                show natsumisprite downright stand at npc1loc
                 show naoyasprite upright stand at naoyaloc with qdis
                 show yukino animated neutral serious with qleft
                 yu "I know I couldn't take being cooped up in the hospital for an entire year."
@@ -863,11 +853,7 @@ label label001(location="Infirmary"):
             elif _return == 5:
                 $ naoyax = 1350
                 $ naoyay = 530
-                show yukinosprite downleft stand at yukinoloc
-                show nanjosprite upleft stand at nanjoloc
                 show marksprite downright standmove at markloc
-                show saekosprite downright stand at npc2loc
-                show natsumisprite downright stand at npc1loc
                 show naoyasprite upleft stand at naoyaloc with qdis
                 show mark animated neutral serious with qleft
                 mk "Mikage Hospital, huh?  That's kind of a long walk from school."
@@ -920,15 +906,16 @@ label label002(location="Class 1-2"):
             hide nanjosprite
             hide yukinosprite
             call screen Class12
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite downright stand at yukinoloc
+                show npcsprite downleft stand at npc1loc
+                show marksprite downright stand at markloc
             if _return == 1:
                 $ naoyax = yukinox+60
                 $ naoyay = yukinoy+25
-                show nanjosprite upleft stand at nanjoloc
                 show yukinosprite downright standmove at yukinoloc
-                show npcsprite downleft stand at npc1loc
-                show marksprite downright stand at markloc
                 show naoyasprite upleft stand at naoyaloc with qdis
-                show yukinosprite downright standmove
                 show yukino animated neutral smirk with qleft
                 yu "I didn't know you were this interested in rumors and gossip."
                 show yukino animated neutral serious
@@ -941,10 +928,6 @@ label label002(location="Class 1-2"):
             elif _return == 2:
                 $ naoyax = npc1x-60
                 $ naoyay = npc1y+25
-                show nanjosprite upleft stand at nanjoloc
-                show yukinosprite downright stand at yukinoloc
-                show npcsprite downleft stand at npc1loc
-                show marksprite downright stand at markloc
                 show naoyasprite upright stand at naoyaloc with qdis
                 stu "This 'SEBEC curse' is a load of crap.  I bet they're making biological weapons."
                 hide naoyasprite with qdis
@@ -952,9 +935,6 @@ label label002(location="Class 1-2"):
             elif _return == 3:
                 $ naoyax = markx+60
                 $ naoyay = marky+25
-                show nanjosprite upleft stand at nanjoloc
-                show yukinosprite downright stand at yukinoloc
-                show npcsprite downleft stand at npc1loc
                 show marksprite downright standmove at markloc
                 show naoyasprite upleft stand at naoyaloc with qdis
                 show mark animated neutral serious with qleft
@@ -968,9 +948,6 @@ label label002(location="Class 1-2"):
                 $ naoyax = nanjox-60
                 $ naoyay = nanjoy+25
                 show nanjosprite downleft standmove at nanjoloc
-                show yukinosprite downright stand at yukinoloc
-                show npcsprite downleft stand at npc1loc
-                show marksprite downright stand at markloc
                 show naoyasprite upright stand at naoyaloc with qdis
                 show nanjo animated neutral serious with qleft
                 na "I can't discount it.  Kandori is a man who wouldn't hesitate to do such things."
@@ -1021,13 +998,15 @@ label label003(location="Class 1-3"):
             hide nanjosprite
             hide yukinosprite
             call screen Class13
+            if _return > 0:
+                show nanjosprite downright stand at nanjoloc
+                show yukinosprite downleft stand at yukinoloc
+                show npcsprite downleft stand at npc1loc
+                show marksprite upright stand at markloc
             if _return == 1:
                 $ naoyax = yukinox-60
                 $ naoyay = yukinoy+25
-                show nanjosprite downright stand at nanjoloc
                 show yukinosprite downleft standmove at yukinoloc
-                show npcsprite downleft stand at npc1loc
-                show marksprite upright stand at markloc
                 show naoyasprite upright stand at naoyaloc with qdis
                 show yukino animated neutral serious
                 yu "Yeah, they tore that place down and put up the SEBEC building last year."
@@ -1039,10 +1018,6 @@ label label003(location="Class 1-3"):
             elif _return == 2:
                 $ naoyax = npc1x-60
                 $ naoyay = npc1y+25
-                show nanjosprite downright stand at nanjoloc
-                show yukinosprite downleft stand at yukinoloc
-                show npcsprite downleft stand at npc1loc
-                show marksprite upright stand at markloc
                 show naoyasprite upright stand at naoyaloc with qdis
                 stu "Did you ever hear any of those weird rumors about the SEBEC building?"
                 stu "People have heard moaning and seen red eyes peering through windows..."
@@ -1052,9 +1027,6 @@ label label003(location="Class 1-3"):
             elif _return == 3:
                 $ naoyax = markx+60
                 $ naoyay = marky-25
-                show nanjosprite downright stand at nanjoloc
-                show yukinosprite downleft stand at yukinoloc
-                show npcsprite downleft stand at npc1loc
                 show marksprite upright standmove at markloc
                 show naoyasprite downleft stand at naoyaloc with qdis
                 show mark animated neutral smirk with qleft
@@ -1070,9 +1042,6 @@ label label003(location="Class 1-3"):
                 $ naoyax = nanjox+60
                 $ naoyay = nanjoy+25
                 show nanjosprite downright standmove at nanjoloc
-                show yukinosprite downleft stand at yukinoloc
-                show npcsprite downleft stand at npc1loc
-                show marksprite upright stand at markloc
                 show naoyasprite upleft stand at naoyaloc with qdis
                 show nanjo animated neutral serious with qleft
                 na "Stories about SEBEC tend to be unpleasant."
@@ -1107,14 +1076,14 @@ label label004(location="Class 1-4"):
     else:
         show screen header with qdis
         scene bg classroom with qdis
-        $ yukinox = 840
-        $ yukinoy = 560
-        $ markx = 1390
-        $ marky = 430
-        $ nanjox = 1410
-        $ nanjoy = 130
-        $ npc1x = 875
-        $ npc1y = 220
+        $ yukinox = 875
+        $ yukinoy = 575
+        $ markx = 1075
+        $ marky = 575
+        $ nanjox = 1450
+        $ nanjoy = 300
+        $ npc1x = 275
+        $ npc1y = 500
         play music schooldays volume 0.4 if_changed
         label label004TalkA:
             show screen Class14
@@ -1122,18 +1091,20 @@ label label004(location="Class 1-4"):
             hide npcsprite
             hide nanjosprite
             hide yukinosprite
-            call screen Class13
-            if _return == 1:
-                $ naoyax = yukinox-60
-                $ naoyay = yukinoy+25
+            call screen Class14
+            if _return > 0:
                 show nanjosprite downright stand at nanjoloc
-                show yukinosprite downleft standmove at yukinoloc
-                show npcsprite downleft stand at npc1loc
+                show yukinosprite downright stand at yukinoloc
+                show npcsprite downright stand at npc1loc
                 show marksprite upright stand at markloc
-                show naoyasprite upright stand at naoyaloc with qdis
+            if _return == 1:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy+25
+                show yukinosprite downright standmove at yukinoloc
+                show naoyasprite upleft stand at naoyaloc with qdis
                 show yukino animated neutral serious
                 yu "We don't have time to deal with this nonsense.  Let's get to the hospital."
-                show yukinosprite downleft stand
+                show yukinosprite downright stand
                 hide yukino
                 hide naoyasprite
                 with qdis
@@ -1141,11 +1112,7 @@ label label004(location="Class 1-4"):
             elif _return == 2:
                 $ naoyax = npc1x+60
                 $ naoyay = npc1y+25
-                show nanjosprite downright stand at nanjoloc
-                show yukinosprite downleft stand at yukinoloc
-                show npcsprite downright stand at npc1loc
-                show marksprite upright stand at markloc
-                show naoyasprite upright stand at naoyaloc with qdis
+                show naoyasprite upleft stand at naoyaloc with qdis
                 stu "Um, there's a guy named Reiji in your class, right?"
                 stu "No matter how much I hang around your homeroom at break or after school..."
                 stu "I never see him!"
@@ -1156,14 +1123,11 @@ label label004(location="Class 1-4"):
             elif _return == 3:
                 $ naoyax = markx+60
                 $ naoyay = marky-25
-                show nanjosprite downright stand at nanjoloc
-                show yukinosprite downleft stand at yukinoloc
-                show npcsprite downleft stand at npc1loc
                 show marksprite upright standmove at markloc
                 show naoyasprite downleft stand at naoyaloc with qdis
                 show mark animated neutral serious
                 mk "That girl's supposedly got a thing for Reiji... Not that I'm jealous or anything!"
-                show marksprite downright stand
+                show marksprite upright stand
                 hide mark
                 hide naoyasprite
                 with qdis
@@ -1172,9 +1136,6 @@ label label004(location="Class 1-4"):
                 $ naoyax = nanjox+60
                 $ naoyay = nanjoy+25
                 show nanjosprite downright standmove at nanjoloc
-                show yukinosprite downleft stand at yukinoloc
-                show npcsprite downleft stand at npc1loc
-                show marksprite upright stand at markloc
                 show naoyasprite upleft stand at naoyaloc with qdis
                 show nanjo animated neutral serious with qleft
                 na "Reiji Kido, eh...?  He keeps to himself... I feel as though he does so deliberately."
@@ -1195,7 +1156,7 @@ label label005(location="Class 1-6"):
         show student3sprite downleft stand at npc1loc
         with qdis
         #update music
-        call screen Class14b
+        call screen Class16b
         if _return == 1:
             $ naoyax = 350
             $ naoyay = 450
@@ -1207,53 +1168,77 @@ label label005(location="Class 1-6"):
             jump callHermelinFloor1
         jump label005
     else:
-        $ yukinox = 300
-        $ yukinoy = 300
-        $ markx = 400
+        show screen header with qdis
+        scene bg classroom with qdis
+        $ yukinox = 1700
+        $ yukinoy = 400
+        $ markx = 1350
         $ marky = 400
-        $ nanjox = 500
-        $ nanjoy = 500
-        $ npc1x = 200
-        $ npc1y = 200
-        scene bg classroom
-        show yukinosprite downleft stand at yukinoloc
-        show marksprite upright stand at markloc
-        show nanjosprite upleft stand at nanjoloc
-        show student3sprite downright stand at npc1loc
-        with qdis
+        $ nanjox = 1250
+        $ nanjoy = 250
+        $ npc1x = 700
+        $ npc1y = 280
         play music schooldays volume 0.4 if_changed
-        call screen Class16
-        if _return == 1:
-            $ naoyax = 250
-            $ naoyay = 350
-            show naoyasprite upright stand with qdis
-            show yukinosprite downleft standmove
-            show yukino animated neutral serious with qleft
-            yu "Let's ditch this gambling freak and go to the hospital before I lose it, okay?"
-        elif _return == 2:
-            $ naoyax = 350
-            $ naoyay = 450
-            show naoyasprite upright stand at naoyaloc with qdis
-            stu "Gambling is a man's hobby.  And bunny-girls are a must for every casino!"
-            stu "Slots, blackjack, Code Breaker..."
-            stu "*sigh* I can't wait until I'm old enough to go."
-        elif _return == 3:
-            $ naoyax = 450
-            $ naoyay = 350
-            show naoyasprite downleft stand
-            show marksprite upright standmove
-            show mark animated neutral smirk with qleft
-            mk "That dude got yelled at the other day for betting on Rich Man, Poor Man in class."
-        elif _return == 4:
-            $ naoyax = 450
-            $ naoyay = 450
-            show naoyasprite downright stand with qdis
-            show nanjosprite upleft standmove
-            show nanjo animated neutral smirk with qleft
-            na "Code Breaker... Yes, I used to play that with Yamaoka when I was small."
-        elif _return == 5:
-            jump callHermelinFloor1
-        jump label005
+        label label005TalkA:
+            show screen Class16
+            hide marksprite
+            hide npcsprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen Class16
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite downleft stand at yukinoloc
+                show npcsprite downright stand at npc1loc
+                show marksprite downright stand at markloc
+            if _return == 1:
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy+25
+                show yukinosprite downleft stand at yukinoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Let's ditch this gambling freak and go to the hospital before I lose it, okay?"
+                show yukinosprite downleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label005yukino = 1
+            elif _return == 2:
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y+25
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "Gambling is a man's hobby.  And bunny-girls are a must for every casino!"
+                stu "Slots, blackjack, Code Breaker..."
+                stu "*sigh* I can't wait until I'm old enough to go."
+                hide naoyasprite with qdis
+                $ label005astudent = 1
+            elif _return == 3:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral smirk with qleft
+                mk "That dude got yelled at the other day for betting on Rich Man, Poor Man in class."
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label005mark = 1
+            elif _return == 4:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy-25
+                show nanjosprite upleft standmove at nanjoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show nanjo animated neutral smirk with qleft
+                na "Code Breaker... Yes, I used to play that with Yamaoka when I was small."
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label005nanjo = 1
+            elif _return == 5:
+                jump callHermelinFloor1
+            jump label005TalkA
 
 label label006(location="Courtyard"):
     if plotprogress >=2:
@@ -1280,75 +1265,111 @@ label label006(location="Courtyard"):
             jump callHermelinFloor1
         jump label006
     else:
-        $ yukinox = 300
-        $ yukinoy = 300
-        $ markx = 400
-        $ marky = 400
-        $ nanjox = 500
-        $ nanjoy = 500
-        $ npc1x = 200
-        $ npc1y = 200
-        $ npc2x = 400
-        $ npc2y = 200
-        scene bg courtyard
-        show yukinosprite downleft stand at yukinoloc
-        show marksprite upright stand at markloc
-        show nanjosprite upleft stand at nanjoloc
-        show student3sprite downright stand at npc1loc
-        show ooishisprite upright stand at npc2loc
-        with qdis
+        show screen header with qdis
+        scene bg courtyard with qdis
+        $ yukinox = 600
+        $ yukinoy = 600
+        $ markx = 830
+        $ marky = 350
+        $ nanjox = 1550
+        $ nanjoy = 420
+        $ npc1x = 700
+        $ npc1y = 450
+        $ npc2x = 1250
+        $ npc2y = 460
         play music schooldays volume 0.4 if_changed
-        call screen Courtyard
-        if _return == 1:
-            $ naoyax = 250
-            $ naoyay = 350
-            show naoyasprite upright stand with qdis
-            show yukinosprite downleft standmove
-            show yukino animated neutral serious with qleft
-            yu "I have part-time work today.  Let's hurry to the hospital and get this over with."
-        elif _return == 2:
-            $ naoyax = 350
-            $ naoyay = 450
-            show naoyasprite upright stand at naoyaloc with qdis
-            stu "Ms. Ooishi is so kind.  She loves flowers so much, she cares for them as if they were her children."
-        elif _return == 3:
-            $ naoyax = 450
-            $ naoyay = 350
-            show naoyasprite downleft stand
-            show marksprite upright standmove
-            show mark animated neutral serious with qleft
-            mk "Our principal's a cool lady... but she can be a little too lovey-dovey."
-        elif _return == 4:
-            $ naoyax = 450
-            $ naoyay = 450
-            show naoyasprite downright stand with qdis
-            show nanjosprite upleft standmove
-            show nanjo animated neutral serious with qleft
-            na "This megalith shard... It's a very precious cultural artifact."
-            na "Who built it?  For what purpose?  It never ceases to fascinate me."
-        elif _return == 5:
-            $ naoyax = 350
-            $ naoyay = 250
-            show naoyasprite upright stand
-            show ooishisprite downleft standmove
-            show ooishi at pleft2 with qleft
-            oo "Well, hello, Naoya!  Are you all taking a walk, too?"
-            oo "It's been part of my daily routine, ever since I was a girl..."
-            oo "Praying to the guardian deity that everyone grows up into fine adults."
-            if ooishiintro == False:
+        label label006TalkA:
+            show screen Courtyard
+            hide marksprite
+            hide npcsprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen Courtyard
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite downleft stand at yukinoloc
+                show npcsprite downright stand at npc1loc
+                show marksprite downright stand at markloc
+                show ooishisprite upright stand at npc2loc
+            if _return == 1:
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy+25
+                show yukinosprite downleft standmove at yukinoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "I have part-time work today.  Let's hurry to the hospital and get this over with."
+                show yukinosprite downleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label006yukino = 1
+            elif _return == 2:
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y+25
+                show npcsprite downright stand at npc1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "Ms. Ooishi is so kind.  She loves flowers so much, she cares for them as if they were her children."
+                hide naoyasprite with qdis
+                $ label006astudent = 1
+            elif _return == 3:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "Our principal's a cool lady... but she can be a little too lovey-dovey."
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label006mark = 1
+            elif _return == 4:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy+25
+                show nanjosprite downleft standmove at nanjoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "This megalith shard... It's a very precious cultural artifact."
+                na "Who built it?  For what purpose?  It never ceases to fascinate me."
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label006nanjo = 1
+            elif _return == 5:
+                $ naoyax = npc2x-60
+                $ naoyay = npc2y+25
+                show ooishisprite downleft standmove
+                show naoyasprite upright stand at naoyaloc with qdis
+                show ooishi at pleft2 with qleft
+                oo "Well, hello, Naoya!  Are you all taking a walk, too?"
+                oo "It's been part of my daily routine, ever since I was a girl..."
+                oo "Praying to the guardian deity that everyone grows up into fine adults."
+                if ooishiintro == False:
+                    $ tbnarrator = 1
+                    n "{color=#ebffdb}>Principal Ooishi\nThe principal of St. Hermelin High.  She adores children and flowers.{/color}"
+                    $ tbnarrator = 0
+                    $ ooishiintro = True
+                show ooishisprite upright stand
+                hide ooishi
+                hide naoyasprite
+                with qdis
+                $ label006ooishi = 1
+            elif _return == 6:
+                $ naoyax = npc2x+60
+                $ naoyay = npc2y+25
+                show naoyasprite upright stand at naoyaloc with qdis
                 $ tbnarrator = 1
-                n "{color=#ebffdb}>Principal Ooishi\nThe principal of St. Hermelin High.  She adores children and flowers.{/color}"
+                n "{color=#ebffdb}>Hiremon Stone\nThis megalith was excavated when the school was first built in 1963."
+                n "{color=#ebffdb}It's made of thamatite and possesses an abnormal magnetism.{/color}"
+                n "{color=#ebffdb}Legend has it that a heavenly being known as Hiremon dropped it from the sky to be  Mikage-cho's guardian stone.{/color}"
                 $ tbnarrator = 0
-                $ ooishiintro = True
-        elif _return == 6:
-            $ tbnarrator = 1
-            n "{color=#ebffdb}>Hiremon Stone\nThis megalith was excavated when the school was first built in 1963."
-            n "{color=#ebffdb}It's made of thamatite and possesses an abnormal magnetism.{/color}"
-            n "{color=#ebffdb}Legend has it that a heavenly being known as Hiremon dropped it from the sky to be  Mikage-cho's guardian stone.{/color}"
-            $ tbnarrator = 0
-        elif _return == 7:
-            jump callHermelinFloor1
-        jump label006
+                hide naoyasprite
+                with qdis
+                $ label006hiremon = 1
+            elif _return == 7:
+                jump callHermelinFloor1
+            jump label006TalkA
 
 label label007(location="Teacher's Lounge"):
     if plotprogress >= 2:
@@ -1369,83 +1390,121 @@ label label007(location="Teacher's Lounge"):
             jump callHermelinFloor1
         jump label007
     else:
-        $ yukinox = 300
-        $ yukinoy = 300
-        $ markx = 400
-        $ marky = 400
-        $ nanjox = 500
-        $ nanjoy = 500
-        $ npc1x = 200
-        $ npc1y = 200
-        $ ayasex = 400
-        $ ayasey = 200
-        $ ellyx = 500
-        $ ellyy = 400
-        scene bg teacherlounge
-        show yukinosprite downleft stand at yukinoloc
-        show marksprite upright stand at markloc
-        show nanjosprite upleft stand at nanjoloc
-        show teachersprite downright stand at npc1loc
-        show ayasesprite upright stand at ayaseloc
-        show ellysprite upleft stand at ellyloc
-        with qdis
+        show screen header with qdis
+        scene bg teacherlounge with qdis
+        $ yukinox = 450
+        $ yukinoy = 520
+        $ markx = 840
+        $ marky = 640
+        $ nanjox = 1450
+        $ nanjoy = 410
+        $ npc1x = 670
+        $ npc1y = 520
+        $ ellyx = 1150
+        $ ellyy = 320
+        $ ayasex = 1000
+        $ ayasey = 300
         play music schooldays volume 0.4 if_changed
-        call screen TeacherLounge
-        if _return == 1:
-            $ naoyax = 250
-            $ naoyay = 350
-            show naoyasprite upright stand with qdis
-            show yukinosprite downleft standmove
-            show yukino animated neutral sad with qleft
-            yu "Eriko and Yuka didn't faint, so they don't need to go to the hospital. Why were we the only ones...?"
-            show yukino animated neutral serious
-            yu "Thinking about it, the ones who didn't faint had played 'Persona' before..."
-            yu "Meaning Yuka, Eriko, and Hidehiko."
-        elif _return == 2:
-            $ naoyax = 250
-            $ naoyay = 250
-            show naoyasprite upleft stand with qdis
-            tea "Oh, it's you, Naoya."
-            tea "Hey, I hear someone keeps coming in and out of the open room on the second floor."
-            tea "Are you the one doing it?  Hmm?"
-            if reijiflags == 0:
-                $ reijiflags = 1
-        elif _return == 3:
-            $ naoyax = 450
-            $ naoyay = 350
-            show naoyasprite downleft stand
-            show marksprite upright standmove
-            show mark animated neutral serious with qleft
-            mk "A guy who keeps goin' into the open classroom on the second floor..."
-            mk "You know anyone like that?"
-        elif _return == 4:
-            $ naoyax = 450
-            $ naoyay = 450
-            show naoyasprite downright stand with qdis
-            show nanjosprite upleft standmove
-            show nanjo animated neutral smirk with qleft
-            na "It seems you're being mistaken for someone else, Naoya."
-        elif _return == 5:
-            $ naoyax = 450
-            $ naoyay = 350
-            show naoyasprite downright stand with qdis
-            show ellysprite upleft standmove
-            show elly animated neutral serious with qleft
-            el "I told Ms. Saeko about what happened.  Brown seems to have already gone home..."
-            show elly animated neutral smirk
-            el "And I don't think Ayase could explain it coherently, do you?"
-        elif _return == 6:
-            $ naoyax = 450
-            $ naoyay = 150
-            show naoyasprite downleft stand
-            show ayasesprite upright standmove
-            show ayase animated neutral serious with qleft
-            ay "Hidehiko took off, so me and Eriko explained everything to the teach!"
-            show ayase animated neutral sad
-            ay "Man, Hidehiko sure works fast at times like these."
-        elif _return == 7:
-            jump callHermelinFloor1
-        jump label007
+        label label007TalkA:
+            show screen TeacherLounge
+            hide marksprite
+            hide npcsprite
+            hide nanjosprite
+            hide yukinosprite
+            hide ellysprite
+            hide ayasesprite
+            call screen TeacherLounge
+            if _return > 0:
+                show nanjosprite downleft stand at nanjoloc
+                show yukinosprite downright stand at yukinoloc
+                show npcsprite downleft stand at npc1loc
+                show marksprite upright stand at markloc
+                show ellysprite downleft stand at ellyloc
+                show ayasesprite downright stand at ayaseloc
+            if _return == 1:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy+25
+                show yukinosprite downright standmove at yukinoloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show yukino animated neutral sad with qleft
+                yu "Eriko and Yuka didn't faint, so they don't need to go to the hospital. Why were we the only ones...?"
+                show yukino animated neutral serious
+                yu "Thinking about it, the ones who didn't faint had played 'Persona' before..."
+                yu "Meaning Yuka, Eriko, and Hidehiko."
+                show yukinosprite downright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label007yukino = 1
+            elif _return == 2:
+                $ naoyax = npc1x-60
+                $ naoyay = npc1y+25
+                show npcsprite downleft stand at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                tea "Oh, it's you, Naoya."
+                tea "Hey, I hear someone keeps coming in and out of the open room on the second floor."
+                tea "Are you the one doing it?  Hmm?"
+                hide naoyasprite with qdis
+                if reijiflags == 0:
+                    $ reijiflags = 1
+                    hide naoyasprite with qdis
+                    $ label007ateacher = 1
+            elif _return == 3:
+                $ naoyax = markx+60
+                $ naoyay = marky-25
+                show marksprite upright standmove at markloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "A guy who keeps goin' into the open classroom on the second floor..."
+                mk "You know anyone like that?"
+                show marksprite upright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label007mark = 1
+            elif _return == 4:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy+25
+                show nanjosprite downleft standmove at nanjoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show nanjo animated neutral smirk with qleft
+                na "It seems you're being mistaken for someone else, Naoya."
+                show nanjosprite downleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label007nanjo = 1
+            elif _return == 5:
+                $ naoyax = ellyx-60
+                $ naoyay = ellyy+20
+                show ellysprite downleft standmove
+                show naoyasprite upright stand at naoyaloc with qdis
+                show elly animated neutral serious with qleft
+                el "I told Ms. Saeko about what happened.  Brown seems to have already gone home..."
+                show elly animated neutral smirk
+                el "And I don't think Ayase could explain it coherently, do you?"
+                show ellysprite downleft stand
+                hide elly
+                hide naoyasprite
+                with qdis
+                $ label007elly = 1
+            elif _return == 6:
+                $ naoyax = ayasex+60
+                $ naoyay = ayasey+25
+                show ayasesprite downright stand at ayaseloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show ayase animated neutral serious with qleft
+                ay "Hidehiko took off, so me and Eriko explained everything to the teach!"
+                show ayase animated neutral sad
+                ay "Man, Hidehiko sure works fast at times like these."
+                show ayasesprite downright stand
+                hide ayase
+                hide naoyasprite
+                with qdis
+                $ label007ayase = 1
+            elif _return == 7:
+                jump callHermelinFloor1
+            jump label007TalkA
 
 label label008(location="Principal's Office"):
     if plotprogress >= 2:
@@ -1503,53 +1562,153 @@ label label008(location="Principal's Office"):
             jump callHermelinFloor1
         jump label008
     else:
+        show screen header with qdis
         scene bg principaloffice with qdis
+        $ yukinox = 1110
+        $ yukinoy = 420
+        $ markx = 490
+        $ marky = 440
+        $ nanjox = 1410
+        $ nanjoy = 500
         play music schooldays volume 0.4 if_changed
-        call screen PrincipalOffice
-        if _return == 1:
-            show yukino animated neutral serious with qleft
-            yu "Wow, these flowers are beautiful... So it's true about the principal, huh?"
-        elif _return == 2:
-            show mark animated neutral serious with qleft
-            mk "Looks like the principal isn't here.  She's probably in the courtyard again..."
-        elif _return == 3:
-            show nanjo animated neutral serious with qleft
-            na "Snooping around is all well and good, but let's not forget the hospital."
-        elif _return == 4:
-            jump callHermelinFloor1
-        jump label008
+        label label008TalkA:
+            show screen PrincipalOffice
+            hide marksprite
+            hide npcsprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen PrincipalOffice
+            if _return > 0:
+                show nanjosprite downleft stand at nanjoloc
+                show yukinosprite upright stand at yukinoloc
+                show marksprite downright stand at markloc
+            if _return == 1:
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy+25
+                show yukinosprite downleft stand at yukinoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Wow, these flowers are beautiful... So it's true about the principal, huh?"
+                show yukinosprite downleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label008yukino = 1
+            elif _return == 2:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "Looks like the principal isn't here.  She's probably in the courtyard again..."
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label008mark = 1
+            elif _return == 3:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy+25
+                show nanjosprite downleft standmove at nanjoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "Snooping around is all well and good, but let's not forget the hospital."
+                show nanjosprite downleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label008nanjo = 1
+            elif _return == 4:
+                jump callHermelinFloor1
+            jump label008TalkA
 
 label label009(location="1F Passageway"):
-    scene bg 1FPassageway with qdis
-    play music hole
-    call screen Passageway1F
-    if _return == 1:
-        show yukino animated neutral serious with qleft
-        yu "Tch... Isn't there one decent teacher here besides Ms. Saeko and the principal?"
-    elif _return == 2:
-        show hanya at pleft2 with qleft
-        ha "Who told you kids that you could go through here?"
-        ha "If you want to get outside, the school gates are there for a reason!"
-        ha "Our school's swarming with degenerates like you!"
-        ha "Ooishi is far too lenient!  Now get outta here!"
-        ha "I'm going to call a specialist and have this blocked off!"
-        if hanyaintro == False:
-            $ tbnarrator = 1
-            n "{color=#ebffdb}>Vice-Principal Hanya\nKnown as 'Hamya' among the students, who despise his extreme strictness.{/color}"
-            $ tbnarrator = 0
-            $ hanyaintro = True
-    elif _return == 3:
-        show mark animated neutral serious with qleft
-        mk "Urgh, it's Hamya.  I hate that guy... Cheese it, Naoya!"
-    elif _return == 4:
-        show nanjo animated neutral serious with qleft
-        na "What's the matter?  Are the school gates closed?"
-        na "If we don't hurry, visiting hours at the hospital might end."
-    elif _return == 5:
-        jump callHermelinFloor1
-    elif _return == 6:
-        jump callSportsBuilding
-    jump label009
+        show screen header with qdis
+        scene bg 1FPassageway with qdis
+        $ yukinox = 720
+        $ yukinoy = 670
+        $ markx = 540
+        $ marky = 590
+        $ nanjox = 980
+        $ nanjoy = 620
+        $ npc1x = 1200
+        $ npc1y = 480
+        play music schooldays volume 0.4 if_changed
+        label label009TalkA:
+            show screen Passageway1F
+            hide marksprite
+            hide npcsprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen Passageway1F
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite upright stand at yukinoloc
+                show marksprite downright stand at markloc
+                show hanyasprite upright stand at npc1loc
+            if _return == 1:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy-25
+                show yukinosprite upright stand at yukinoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Tch... Isn't there one decent teacher here besides Ms. Saeko and the principal?"
+                show yukinosprite upright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label009yukino = 1
+            elif _return == 2:
+                $ naoyax = npc1x-60
+                $ naoyay = npc1y+25
+                show hanyasprite downleft standmove at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show hanya at pleft2 with qleft
+                ha "Who told you kids that you could go through here?"
+                ha "If you want to get outside, the school gates are there for a reason!"
+                ha "Our school's swarming with degenerates like you!"
+                ha "Ooishi is far too lenient!  Now get outta here!"
+                ha "I'm going to call a specialist and have this blocked off!"
+                if hanyaintro == False:
+                            $ tbnarrator = 1
+                            n "{color=#ebffdb}>Vice-Principal Hanya\nKnown as 'Hamya' among the students, who despise his extreme strictness.{/color}"
+                            $ tbnarrator = 0
+                            $ hanyaintro = True
+                show hanyasprite downleft stand
+                hide hanya
+                hide naoyasprite
+                with qdis
+                $ label009hanya= 1
+            elif _return == 3:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "Urgh, it's Hamya.  I hate that guy... Cheese it, Naoya!"
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label009mark = 1
+            elif _return == 4:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy-25
+                show nanjosprite upleft standmove at nanjoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "What's the matter?  Are the school gates closed?"
+                na "If we don't hurry, visiting hours at the hospital might end."
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label009nanjo = 1
+            elif _return == 5:
+                jump callHermelinFloor1
+            elif _return == 6:
+                jump callSportsBuilding
+            jump label009TalkA
 
 label label011(location="Gymnasium"):
     if plotprogress == 6:
@@ -5323,7 +5482,7 @@ label callSportsBuilding:
     play music schooldays volume 0.4 if_changed
     if floor == 1:
         $ tbnarrator = 1
-        "You move to the Sports Building of the school"
+        "You move to the Sports Building of the school."
         window hide
         window auto
         hide screen header
