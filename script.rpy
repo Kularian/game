@@ -1733,27 +1733,93 @@ label label011(location="Gymnasium"):
                 jump callSportsBuilding
             jump label011
     else:
+        show screen header with qdis
         scene bg gym with qdis
-        play music schooldays2 if_changed
-        call screen Gymnasium
-        if _return == 1:
-            show yukino animated neutral serious with qleft
-            yu "Can we hurry and get to the hospital yet?"
-        elif _return == 2:
-            stu "I heard a second-year named Yosuke went missing along with his girlfriend..."
-            stu "It's SEBEC's doing, if you ask me!\nHuh?  Proof...?  It's just male intuition!"
-        elif _return == 3:
-            show mark animated neutral smirk with qleft
-            mk "This place would be great for practicin' dance moves if it had a big mirror."
-        elif _return == 4:
-            show nanjo animated neutral serious with qleft
-            na "I don't have many ties with the gym, of course.  I suppose I can let it slide."
-        elif _return == 5:
-            stu "The sound system's all good to go in the new gym!  The concert's gonna be bitchin'!"
-            stu "I'm gonna skip Sports Day and hole up in the studio to practice!"
-        elif _return == 6:
-            jump callSportsBuilding
-        jump label011
+        $ yukinox = 760
+        $ yukinoy = 850
+        $ markx = 810
+        $ marky = 580
+        $ nanjox = 600
+        $ nanjoy = 770
+        $ npc1x = 1500
+        $ npc1y = 370
+        $ npc2x = 550
+        $ npc2y = 430
+        play music schooldays volume 0.4 if_changed
+        label label011TalkA:
+            show screen Gymnasium
+            hide marksprite
+            hide npcsprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen Gymnasium
+            if _return > 0:
+                show nanjosprite upright stand at nanjoloc
+                show yukinosprite upright stand at yukinoloc
+                show marksprite downright stand at markloc
+                show npcsprite downleft stand at npc1loc
+                show reijisprite downright stand at npc2loc
+            if _return == 1:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy-25
+                show yukinosprite upright stand at yukinoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Can we hurry and get to the hospital yet?"
+                show yukinosprite upright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label011yukino = 1
+            elif _return == 2:
+                $ naoyax = npc2x+60
+                $ naoyay = npc2y+25
+                show reijisprite downright stand at npc2loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "I heard a second-year named Yosuke went missing along with his girlfriend..."
+                stu "It's SEBEC's doing, if you ask me!\nHuh?  Proof...?  It's just male intuition!"
+                show reijisprite downright stand
+                hide naoyasprite
+                with qdis
+                $ label011astudent2 = 1
+            elif _return == 3:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral smirk with qleft
+                mk "This place would be great for practicin' dance moves if it had a big mirror."
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label011mark = 1
+            elif _return == 4:
+                $ naoyax = nanjox+60
+                $ naoyay = nanjoy-25
+                show nanjosprite upright standmove at nanjoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "I don't have many ties with the gym, of course.  I suppose I can let it slide."
+                show nanjosprite upright stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label011nanjo = 1
+            elif _return == 5:
+                $ naoyax = npc1x-60
+                $ naoyay = npc1y+25
+                show npcsprite downleft stand at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                stu "The sound system's all good to go in the new gym!  The concert's gonna be bitchin'!"
+                stu "I'm gonna skip Sports Day and hole up in the studio to practice!"
+                show npcsprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label011astudent1 = 1
+            elif _return == 6:
+                jump callSportsBuilding
+            jump label011TalkA
 
 label label012(location="Drama Club"):
     if plotprogress >= 2:
@@ -1798,34 +1864,108 @@ label label012(location="Drama Club"):
             jump callSportsBuilding
         jump label012
     else:
+        show screen header with qdis
         scene bg dramaclub with qdis
-        play music schooldays2 if_changed
-        if dramaclub == False:
-            stu "Hey, we haven't decided which play we're doing for the culture festival, have we?"
-            stu "I heard there was a traditional play we used to perform..."
-            stu "Why not do that?  I think it was called The Snow--"
-            stu "Absolutely not!  That one's off limits.  I'll decide soon... Give me some time."
-            $ dramaclub = True
-        call screen DramaClub
-        if _return == 1:
-            show yukino animated neutral serious with qleft
-            yu "The school has a traditional play?  News to me."
-        elif _return == 2:
-            stu "Hm?  Are you interested in joining the club?  If not, please leave.  You're in our eye lines."
-        elif _return == 3:
-            show mark animated neutral smirk with qleft
-            mk "Who needs a play?  Just lemme bust a move up on stage!"
-        elif _return == 4:
-            show nanjo animated neutral serious with qleft
-            na "Snow...?  Was he going to suggest The Snow Queen?"
-        elif _return == 5:
-            stu "St. Hermelin won the drama concours nine years ago, too... But the trophy from that year is missing."
-            stu "I wonder what happened to it."
-        elif _return == 6:
-            stu "The president seemed a little touchy... Why did she get so upset?"
-        elif _return == 7:
-            jump callSportsBuilding
-        jump label012
+        $ yukinox = 1620
+        $ yukinoy = 350
+        $ markx = 1170
+        $ marky = 490
+        $ nanjox = 890
+        $ nanjoy = 560
+        $ npc1x = 770
+        $ npc1y = 280
+        $ npc2x = 950
+        $ npc2y = 330
+        $ npc3x = 1170
+        $ npc3y = 300
+        play music schooldays volume 0.4 if_changed
+        label label012TalkA:
+            show screen DramaClub
+            hide marksprite
+            hide makisprite
+            hide reijisprite
+            hide yukosprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen DramaClub
+            if _return > 0:
+                show nanjosprite upright stand at nanjoloc
+                show yukinosprite downleft stand at yukinoloc
+                show marksprite downright stand at markloc
+                show yukosprite downright stand at npc1loc
+                show makisprite upright stand at npc2loc
+                show reijisprite downright stand at npc3loc
+            if _return == 1:
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy+25
+                show yukinosprite downleft stand at yukinoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "The school has a traditional play?  News to me."
+                show yukinosprite downleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label012yukino = 1
+            elif _return == 2:
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y+25
+                show yukosprite downright standmove at npc1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "Hm?  Are you interested in joining the club?  If not, please leave.  You're in our eye lines."
+                show npcsprite downright stand
+                hide naoyasprite
+                with qdis
+                $ label012astudent1 = 1
+            elif _return == 3:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral smirk with qleft
+                mk "Who needs a play?  Just lemme bust a move up on stage!"
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label012mark = 1
+            elif _return == 4:
+                $ naoyax = nanjox+60
+                $ naoyay = nanjoy-25
+                show nanjosprite upright standmove at nanjoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "Snow...?  Was he going to suggest The Snow Queen?"
+                show nanjosprite upright stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label012nanjo = 1
+            elif _return == 5:
+                $ naoyax = npc2x-60
+                $ naoyay = npc2y+25
+                show makisprite downleft standmove at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                stu "St. Hermelin won the drama concours nine years ago, too... But the trophy from that year is missing."
+                stu "I wonder what happened to it."
+                show makisprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label012astudent2 = 1
+            elif _return == 6:
+                $ naoyax = npc3x+60
+                $ naoyay = npc3y+25
+                show reijisprite downright standmove at npc3loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "St. Hermelin won the drama concours nine years ago, too... But the trophy from that year is missing."
+                stu "I wonder what happened to it."
+                show reijisprite downright stand
+                hide naoyasprite
+                with qdis
+                $ label012astudent3 = 1
+            elif _return == 7:
+                jump callSportsBuilding
+            jump label012TalkA
 
 label label013(location="Boxing Club"):
     if plotprogress >= 2:

@@ -1864,7 +1864,7 @@ screen TeacherLounge:
     if label007ayase == 0:
         imagebutton xpos ayasex ypos ayasey-50 idle "exclamation" hover "exclamation" action Return(6)
     imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/DRStanding1.png" hover "yukino/walking/DRStanding2.png" action Return(1) #Yukino
-    imagebutton xpos npc1x ypos npc1y idle "npcsprite downleft stand" hover "npcsprite downleft stand" action Return(2) #Student
+    imagebutton xpos npc1x ypos npc1y idle "npcsprite downleft stand" hover "npcsprite downleft stand" action Return(2) #Teacher
     imagebutton xpos markx ypos marky idle "mark/walking/URStanding1.png" hover "mark/walking/URStanding2.png" action Return(3) #Mark
     imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/DLStanding1.png" hover "nanjo/walking/DLStanding2.png" action Return(4) #Nanjo
     imagebutton xpos ellyx ypos ellyy idle "elly/walking/DLStanding1.png" hover "elly/walking/DLStanding2.png" action Return(5) #Elly
@@ -1900,21 +1900,43 @@ screen Passageway1F:
     imagebutton xpos 900 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen Gymnasium:
-    imagebutton xpos 460 ypos 620 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
-    imagebutton xpos 1530 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Student1
-    imagebutton xpos 145 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
-    imagebutton xpos 160 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
-    imagebutton xpos 350 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student2
-    imagebutton xpos 1500 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveSports
+    if label011nanjo == 0:
+        imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(4)
+    if label011astudent1 == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(5)
+    if label011astudent2 == 0:
+        imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
+    if label011yukino == 0:
+        imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(1)
+    if label011mark == 0:
+        imagebutton xpos markx ypos marky-50 idle "exclamation" hover "exclamation" action Return(3)
+    imagebutton xpos npc1x ypos npc1y idle "npcsprite downleft stand" hover "npcsprite downleft stand" action Return(5) #Student1
+    imagebutton xpos npc2x ypos npc2y idle "reiji/walking/DRStanding1.png" hover "reiji/walking/DRStanding2.png" action Return(2) #Student2
+    imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/URStanding1.png" hover "nanjo/walking/URStanding2.png" action Return(4) #Nanjo
+    imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/URStanding1.png" hover "yukino/walking/URStanding2.png" action Return(1) #Yukino
+    imagebutton xpos markx ypos marky idle "mark/walking/DRStanding1.png" hover "mark/walking/DRStanding2.png" action Return(3) #Mark
+    imagebutton xpos 1350 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen DramaClub:
-    imagebutton xpos 1620 ypos 350 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino
-    imagebutton xpos 770 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Club Leader
-    imagebutton xpos 1170 ypos 490 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Mark
-    imagebutton xpos 890 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Nanjo
-    imagebutton xpos 950 ypos 330 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #ClubMember1
-    imagebutton xpos 1170 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #ClubMember2
-    imagebutton xpos 1500 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #Leave
+    if label012nanjo == 0:
+        imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(4)
+    if label012astudent2 == 0:
+        imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
+    if label012astudent1 == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(2)
+    if label012astudent3 == 0:
+        imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(6)
+    if label012yukino == 0:
+        imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(1)
+    if label012mark == 0:
+        imagebutton xpos markx ypos marky-50 idle "exclamation" hover "exclamation" action Return(3)
+    imagebutton xpos npc2x ypos npc2y idle "maki/walking/DLStanding1.png" hover "maki/walking/DLStanding2.png" action Return(6) #Student2
+    imagebutton xpos npc1x ypos npc1y idle "yuko/walking/DRStanding1.png" hover "yuko/walking/DRStanding2.png" action Return(2) #Student1
+    imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/URStanding1.png" hover "nanjo/walking/URStanding2.png" action Return(4) #Nanjo
+    imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/DLStanding1.png" hover "yukino/walking/DLStanding2.png" action Return(1) #Yukino
+    imagebutton xpos markx ypos marky idle "mark/walking/DRStanding1.png" hover "mark/walking/DRStanding2.png" action Return(3) #Mark
+    imagebutton xpos npc3x ypos npc3y idle "reiji/walking/DRStanding1.png" hover "reiji/walking/DRStanding2.png" action Return(5) #Student3
+    imagebutton xpos 1350 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #Leave
 
 screen BoxingClub:
     imagebutton xpos 1530 ypos 310 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Yukino

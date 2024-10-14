@@ -50,4 +50,17 @@ label start:
     default label009yukino = 0
     default label009hanya = 0
 
+    default label011nanjo = 0
+    default label011mark = 0
+    default label011yukino = 0
+    default label011astudent1 = 0
+    default label011astudent2 = 0
+
+    default label012nanjo = 0
+    default label012mark = 0
+    default label012yukino = 0
+    default label012astudent1 = 0
+    default label012astudent2 = 0
+    default label012astudent3 = 0
+
     jump start2
