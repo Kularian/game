@@ -157,6 +157,56 @@ image npcsprite downright stand = "students/walking/DRStanding1.png"
 image npcsprite upleft stand = "students/walking/ULStanding1.png"
 image npcsprite upright stand = "students/walking/URStanding1.png"
 
+image student1 downleft stand = "students/1/DLStanding1.png"
+image student1 downright stand = "students/1/DRStanding1.png"
+image student1 upleft stand = "students/1/ULStanding1.png"
+image student1 upright stand = "students/1/URStanding1.png"
+
+image student0 downleft stand = "students/0/DLStanding1.png"
+image student0 downright stand = "students/0/DRStanding1.png"
+image student0 upleft stand = "students/0/ULStanding1.png"
+image student0 upright stand = "students/0/URStanding1.png"
+
+image student2 downleft stand = "students/2/DLStanding1.png"
+image student2 downright stand = "students/2/DRStanding1.png"
+image student2 upleft stand = "students/2/ULStanding1.png"
+image student2 upright stand = "students/2/URStanding1.png"
+
+image student3 downleft stand = "students/3/DLStanding1.png"
+image student3 downright stand = "students/3/DRStanding1.png"
+image student3 upleft stand = "students/3/ULStanding1.png"
+image student3 upright stand = "students/3/URStanding1.png"
+
+image student4 downleft stand = "students/4/DLStanding1.png"
+image student4 downright stand = "students/4/DRStanding1.png"
+image student4 upleft stand = "students/4/ULStanding1.png"
+image student4 upright stand = "students/4/URStanding1.png"
+
+image student5 downleft stand = "students/5/DLStanding1.png"
+image student5 downright stand = "students/5/DRStanding1.png"
+image student5 upleft stand = "students/5/ULStanding1.png"
+image student5 upright stand = "students/5/URStanding1.png"
+
+image student6 downleft stand = "students/6/DLStanding1.png"
+image student6 downright stand = "students/6/DRStanding1.png"
+image student6 upleft stand = "students/6/ULStanding1.png"
+image student6 upright stand = "students/6/URStanding1.png"
+
+image student7 downleft stand = "students/7/DLStanding1.png"
+image student7 downright stand = "students/7/DRStanding1.png"
+image student7 upleft stand = "students/7/ULStanding1.png"
+image student7 upright stand = "students/7/URStanding1.png"
+
+image student8 downleft stand = "students/8/DLStanding1.png"
+image student8 downright stand = "students/8/DRStanding1.png"
+image student8 upleft stand = "students/8/ULStanding1.png"
+image student8 upright stand = "students/8/URStanding1.png"
+
+image student9 downleft stand = "students/9/DLStanding1.png"
+image student9 downright stand = "students/9/DRStanding1.png"
+image student9 upleft stand = "students/9/ULStanding1.png"
+image student9 upright stand = "students/9/URStanding1.png"
+
 #Emotion Indicators
 
 image exclamation = "gui/talking/surprised.png"
@@ -625,6 +675,296 @@ image yukosprite upright standmove:
     Image("yuko/walking/URStanding1.png")
     pause 2.25
     Image("yuko/walking/URStanding2.png")
+    pause 1.75
+    repeat
+
+#Student0
+image student0 upright standmove:
+    Image("students/0/URStanding1.png")
+    pause 2.25
+    Image("students/0/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student0 upleft standmove:
+    Image("students/0/ULStanding1.png")
+    pause 2.25
+    Image("students/0/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student0 downright standmove:
+    Image("students/0/DRStanding1.png")
+    pause 2.25
+    Image("students/0/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student0 downleft standmove:
+    Image("students/0/DLStanding1.png")
+    pause 2.25
+    Image("students/0/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student1
+image student1 upright standmove:
+    Image("students/1/URStanding1.png")
+    pause 2.25
+    Image("students/1/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student1 upleft standmove:
+    Image("students/1/ULStanding1.png")
+    pause 2.25
+    Image("students/1/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student1 downright standmove:
+    Image("students/1/DRStanding1.png")
+    pause 2.25
+    Image("students/1/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student1 downleft standmove:
+    Image("students/1/DLStanding1.png")
+    pause 2.25
+    Image("students/1/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student2
+image student2 upright standmove:
+    Image("students/2/URStanding1.png")
+    pause 2.25
+    Image("students/2/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student2 upleft standmove:
+    Image("students/2/ULStanding1.png")
+    pause 2.25
+    Image("students/2/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student2 downright standmove:
+    Image("students/2/DRStanding1.png")
+    pause 2.25
+    Image("students/2/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student2 downleft standmove:
+    Image("students/2/DLStanding1.png")
+    pause 2.25
+    Image("students/2/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student3
+image student3 upright standmove:
+    Image("students/3/URStanding1.png")
+    pause 2.25
+    Image("students/3/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student3 upleft standmove:
+    Image("students/3/ULStanding1.png")
+    pause 2.25
+    Image("students/3/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student3 downright standmove:
+    Image("students/3/DRStanding1.png")
+    pause 2.25
+    Image("students/3/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student3 downleft standmove:
+    Image("students/3/DLStanding1.png")
+    pause 2.25
+    Image("students/3/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student4
+image student4 upright standmove:
+    Image("students/4/URStanding1.png")
+    pause 2.25
+    Image("students/4/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student4 upleft standmove:
+    Image("students/4/ULStanding1.png")
+    pause 2.25
+    Image("students/4/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student4 downright standmove:
+    Image("students/4/DRStanding1.png")
+    pause 2.25
+    Image("students/4/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student4 downleft standmove:
+    Image("students/4/DLStanding1.png")
+    pause 2.25
+    Image("students/4/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student5
+image student5 upright standmove:
+    Image("students/5/URStanding1.png")
+    pause 2.25
+    Image("students/5/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student5 upleft standmove:
+    Image("students/5/ULStanding1.png")
+    pause 2.25
+    Image("students/5/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student5 downright standmove:
+    Image("students/5/DRStanding1.png")
+    pause 2.25
+    Image("students/5/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student5 downleft standmove:
+    Image("students/5/DLStanding1.png")
+    pause 2.25
+    Image("students/5/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student6
+image student6 upright standmove:
+    Image("students/6/URStanding1.png")
+    pause 2.25
+    Image("students/6/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student6 upleft standmove:
+    Image("students/6/ULStanding1.png")
+    pause 2.25
+    Image("students/6/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student6 downright standmove:
+    Image("students/6/DRStanding1.png")
+    pause 2.25
+    Image("students/6/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student6 downleft standmove:
+    Image("students/6/DLStanding1.png")
+    pause 2.25
+    Image("students/6/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student7
+image student7 upright standmove:
+    Image("students/7/URStanding1.png")
+    pause 2.25
+    Image("students/7/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student7 upleft standmove:
+    Image("students/7/ULStanding1.png")
+    pause 2.25
+    Image("students/7/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student7 downright standmove:
+    Image("students/7/DRStanding1.png")
+    pause 2.25
+    Image("students/7/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student7 downleft standmove:
+    Image("students/7/DLStanding1.png")
+    pause 2.25
+    Image("students/7/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student8
+image student8 upright standmove:
+    Image("students/8/URStanding1.png")
+    pause 2.25
+    Image("students/8/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student8 upleft standmove:
+    Image("students/8/ULStanding1.png")
+    pause 2.25
+    Image("students/8/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student8 downright standmove:
+    Image("students/8/DRStanding1.png")
+    pause 2.25
+    Image("students/8/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student8 downleft standmove:
+    Image("students/8/DLStanding1.png")
+    pause 2.25
+    Image("students/8/DLStanding2.png")
+    pause 1.75
+    repeat
+
+#Student9
+image student9 upright standmove:
+    Image("students/9/URStanding1.png")
+    pause 2.25
+    Image("students/9/URStanding2.png")
+    pause 1.75
+    repeat
+
+image student9 upleft standmove:
+    Image("students/9/ULStanding1.png")
+    pause 2.25
+    Image("students/9/ULStanding2.png")
+    pause 1.75
+    repeat
+
+image student9 downright standmove:
+    Image("students/9/DRStanding1.png")
+    pause 2.25
+    Image("students/9/DRStanding2.png")
+    pause 1.75
+    repeat
+
+image student9 downleft standmove:
+    Image("students/9/DLStanding1.png")
+    pause 2.25
+    Image("students/9/DLStanding2.png")
     pause 1.75
     repeat
 
