@@ -63,4 +63,9 @@ label start:
     default label012astudent2 = 0
     default label012astudent3 = 0
 
+    default label013nanjo = 0
+    default label013mark = 0
+    default label013yukino = 0
+    default label013astudent1 = 0
+
     jump start2

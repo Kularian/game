@@ -26,6 +26,7 @@ label Introcutscenes:
     call screen pre_menu
 
 label start2:
+    define config.developer = True
     $ style.say_dialogue = style.say_dialogue
     default ooishiintro = False
     default hanyaintro = False
@@ -1874,17 +1875,17 @@ label label012(location="Drama Club"):
         jump label012
     else:
         $ yukinox = 1320
-        $ yukinoy = 530
-        $ markx = 370
+        $ yukinoy = 500
+        $ markx = 550
         $ marky = 520
-        $ nanjox = 850
-        $ nanjoy = 670
+        $ nanjox = 880
+        $ nanjoy = 640
         $ npc1x = 820
         $ npc1y = 450
-        $ npc2x = 950
-        $ npc2y = 430
-        $ npc3x = 750
-        $ npc3y = 500
+        $ npc2x = 940
+        $ npc2y = 460
+        $ npc3x = 760
+        $ npc3y = 520
         scene bg dramaclub with qdis
         play music schooldays volume 0.4 if_changed
         if dramaclub == False:
@@ -1967,7 +1968,7 @@ label label012(location="Drama Club"):
             elif _return == 5:
                 $ naoyax = npc2x-60
                 $ naoyay = npc2y+25
-                show student6 downleft standmove at npc3loc
+                show student6 downleft standmove at npc2loc
                 show naoyasprite upright stand at naoyaloc with qdis
                 stu "St. Hermelin won the drama concours nine years ago, too... But the trophy from that year is missing."
                 stu "I wonder what happened to it."
@@ -1994,23 +1995,78 @@ label label013(location="Boxing Club"):
         n "It appears to be empty.  Maybe they've all gone home?"
         jump callSportsBuilding
     else:
+        $ yukinox = 1320
+        $ yukinoy = 500
+        $ markx = 1100
+        $ marky = 400
+        $ nanjox = 880
+        $ nanjoy = 640
+        $ npc1x = 950
+        $ npc1y = 400
         scene bg boxingclub with qdis
-        play music schooldays2 if_changed
-        call screen BoxingClub
-        if _return == 1:
-            show yukino animated neutral sad with qleft
-            yu "...I could lose some weight myself..."
-        elif _return == 2:
-            stu "I'm trying to lose weight.  Even the boxing gloves are starting to look like candy..."
-        elif _return == 3:
-            show mark animated neutral smirk with qleft
-            mk "Boxing is so cool!  It looks like it would hurt, though."
-        elif _return == 4:
-            show nanjo animated neutral serious with qleft
-            na "You want to join the boxing club?  Well, let's get examined before that."
-        elif _return == 5:
-            jump callSportsBuilding
-        jump label013
+        play music schooldays volume 0.4 if_changed
+        show screen header with qdis
+        label label013TalkA:
+            show screen BoxingClub
+            hide marksprite
+            hide nanjosprite
+            hide student7
+            hide yukinosprite
+            call screen BoxingClub
+            if _return > 0:
+                show nanjosprite upright stand at nanjoloc
+                show yukinosprite upleft stand at yukinoloc
+                show marksprite upright stand at markloc
+                show student7 downright stand at npc1loc
+            if _return == 1:
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy-25
+                show yukinosprite upleft stand at yukinoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show yukino animated neutral sad with qleft
+                yu "...I could lose some weight myself..."
+                show yukinosprite upleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label013yukino = 1
+            elif _return == 2:
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y+25
+                show student7 downright standmove at npc1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "I'm trying to lose weight.  Even the boxing gloves are starting to look like candy..."
+                show student7 downright stand
+                hide naoyasprite
+                with qdis
+                $ label013astudent1 = 1
+            elif _return == 3:
+                $ naoyax = markx-60
+                $ naoyay = marky+25
+                show marksprite downleft standmove at markloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show mark animated neutral smirk with qleft
+                mk "Boxing is so cool!  It looks like it would hurt, though."
+                show marksprite downleft stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label013mark = 1
+            elif _return == 4:
+                $ naoyax = nanjox+60
+                $ naoyay = nanjoy-25
+                show nanjosprite upright standmove at nanjoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "You want to join the boxing club?  Well, let's get examined before that."
+                show nanjosprite upright stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label013nanjo = 1
+            elif _return == 5:
+                jump callSportsBuilding
+            jump label013TalkA
 
 label label014(location="Archery Club"):
     if plotprogress >= 2:

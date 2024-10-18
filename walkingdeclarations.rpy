@@ -214,262 +214,262 @@ image exclamation = "gui/talking/surprised.png"
 #PC Moving-Standing Declarations
 #Naoya
 image naoyasprite downleft standmove:
-    Image("naoya/walking/DLStanding1.png")
-    pause 2.25
     Image("naoya/walking/DLStanding2.png")
+    pause 2.25
+    Image("naoya/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image naoyasprite downright standmove:
-    Image("naoya/walking/DRStanding1.png")
-    pause 2.25
     Image("naoya/walking/DRStanding2.png")
+    pause 2.25
+    Image("naoya/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image naoyasprite upleft standmove:
-    Image("naoya/walking/ULStanding1.png")
-    pause 2.25
     Image("naoya/walking/ULStanding2.png")
+    pause 2.25
+    Image("naoya/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image naoyasprite upright standmove:
-    Image("naoya/walking/URStanding1.png")
-    pause 2.25
     Image("naoya/walking/URStanding2.png")
+    pause 2.25
+    Image("naoya/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #Mark
 image marksprite downleft standmove:
-    Image("mark/walking/DLStanding1.png")
-    pause 2.25
     Image("mark/walking/DLStanding2.png")
+    pause 2.25
+    Image("mark/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image marksprite downright standmove:
-    Image("mark/walking/DRStanding1.png")
-    pause 2.25
     Image("mark/walking/DRStanding2.png")
+    pause 2.25
+    Image("mark/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image marksprite upleft standmove:
-    Image("mark/walking/ULStanding1.png")
-    pause 2.25
     Image("mark/walking/ULStanding2.png")
+    pause 2.25
+    Image("mark/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image marksprite upright standmove:
-    Image("mark/walking/URStanding1.png")
-    pause 2.25
     Image("mark/walking/URStanding2.png")
+    pause 2.25
+    Image("mark/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #Nanjo
 image nanjosprite downleft standmove:
-    Image("nanjo/walking/DLStanding1.png")
-    pause 2.25
     Image("nanjo/walking/DLStanding2.png")
+    pause 2.25
+    Image("nanjo/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image nanjosprite downright standmove:
-    Image("nanjo/walking/DRStanding1.png")
-    pause 2.25
     Image("nanjo/walking/DRStanding2.png")
+    pause 2.25
+    Image("nanjo/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image nanjosprite upleft standmove:
-    Image("nanjo/walking/ULStanding1.png")
-    pause 2.25
     Image("nanjo/walking/ULStanding2.png")
+    pause 2.25
+    Image("nanjo/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image nanjosprite upright standmove:
-    Image("nanjo/walking/URStanding1.png")
-    pause 2.25
     Image("nanjo/walking/URStanding2.png")
+    pause 2.25
+    Image("nanjo/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #yukino
 image yukinosprite downleft standmove:
-    Image("yukino/walking/DLStanding1.png")
-    pause 2.25
     Image("yukino/walking/DLStanding2.png")
+    pause 2.25
+    Image("yukino/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image yukinosprite downright standmove:
-    Image("yukino/walking/DRStanding1.png")
-    pause 2.25
     Image("yukino/walking/DRStanding2.png")
+    pause 2.25
+    Image("yukino/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image yukinosprite upleft standmove:
-    Image("yukino/walking/ULStanding1.png")
-    pause 2.25
     Image("yukino/walking/ULStanding2.png")
+    pause 2.25
+    Image("yukino/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image yukinosprite upright standmove:
-    Image("yukino/walking/URStanding1.png")
-    pause 2.25
     Image("yukino/walking/URStanding2.png")
+    pause 2.25
+    Image("yukino/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #ayase
 image ayasesprite downleft standmove:
-    Image("ayase/walking/DLStanding1.png")
-    pause 2.25
     Image("ayase/walking/DLStanding2.png")
+    pause 2.25
+    Image("ayase/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image ayasesprite downright standmove:
-    Image("ayase/walking/DRStanding1.png")
-    pause 2.25
     Image("ayase/walking/DRStanding2.png")
+    pause 2.25
+    Image("ayase/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image ayasesprite upleft standmove:
-    Image("ayase/walking/ULStanding1.png")
-    pause 2.25
     Image("ayase/walking/ULStanding2.png")
+    pause 2.25
+    Image("ayase/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image ayasesprite upright standmove:
-    Image("ayase/walking/URStanding1.png")
-    pause 2.25
     Image("ayase/walking/URStanding2.png")
+    pause 2.25
+    Image("ayase/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #brown
 image brownsprite downleft standmove:
-    Image("brown/walking/DLStanding1.png")
-    pause 2.25
     Image("brown/walking/DLStanding2.png")
+    pause 2.25
+    Image("brown/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image brownsprite downright standmove:
-    Image("brown/walking/DRStanding1.png")
-    pause 2.25
     Image("brown/walking/DRStanding2.png")
+    pause 2.25
+    Image("brown/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image brownsprite upleft standmove:
-    Image("brown/walking/ULStanding1.png")
-    pause 2.25
     Image("brown/walking/ULStanding2.png")
+    pause 2.25
+    Image("brown/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image brownsprite upright standmove:
-    Image("brown/walking/URStanding1.png")
-    pause 2.25
     Image("brown/walking/URStanding2.png")
+    pause 2.25
+    Image("brown/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #elly
 image ellysprite downleft standmove:
-    Image("elly/walking/DLStanding1.png")
-    pause 2.25
     Image("elly/walking/DLStanding2.png")
+    pause 2.25
+    Image("elly/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image ellysprite downright standmove:
-    Image("elly/walking/DRStanding1.png")
-    pause 2.25
     Image("elly/walking/DRStanding2.png")
+    pause 2.25
+    Image("elly/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image ellysprite upleft standmove:
-    Image("elly/walking/ULStanding1.png")
-    pause 2.25
     Image("elly/walking/ULStanding2.png")
+    pause 2.25
+    Image("elly/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image ellysprite upright standmove:
-    Image("elly/walking/URStanding1.png")
-    pause 2.25
     Image("elly/walking/URStanding2.png")
+    pause 2.25
+    Image("elly/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #reiji
 image reijisprite downleft standmove:
-    Image("reiji/walking/DLStanding1.png")
-    pause 2.25
     Image("reiji/walking/DLStanding2.png")
+    pause 2.25
+    Image("reiji/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image reijisprite downright standmove:
-    Image("reiji/walking/DRStanding1.png")
-    pause 2.25
     Image("reiji/walking/DRStanding2.png")
+    pause 2.25
+    Image("reiji/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image reijisprite upleft standmove:
-    Image("reiji/walking/ULStanding1.png")
-    pause 2.25
     Image("reiji/walking/ULStanding2.png")
+    pause 2.25
+    Image("reiji/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image reijisprite upright standmove:
-    Image("reiji/walking/URStanding1.png")
-    pause 2.25
     Image("reiji/walking/URStanding2.png")
+    pause 2.25
+    Image("reiji/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #maki
 image makisprite downleft standmove:
-    Image("maki/walking/DLStanding1.png")
-    pause 2.25
     Image("maki/walking/DLStanding2.png")
+    pause 2.25
+    Image("maki/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image makisprite downright standmove:
-    Image("maki/walking/DRStanding1.png")
-    pause 2.25
     Image("maki/walking/DRStanding2.png")
+    pause 2.25
+    Image("maki/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image makisprite upleft standmove:
-    Image("maki/walking/ULStanding1.png")
-    pause 2.25
     Image("maki/walking/ULStanding2.png")
+    pause 2.25
+    Image("maki/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image makisprite upright standmove:
-    Image("maki/walking/URStanding1.png")
-    pause 2.25
     Image("maki/walking/URStanding2.png")
+    pause 2.25
+    Image("maki/walking/URStanding1.png")
     pause 1.75
     repeat
 
@@ -477,494 +477,494 @@ image makisprite upright standmove:
 
 #tsutomu
 image tsutomusprite downleft standmove:
-    Image("tsutomu/walking/DLStanding1.png")
-    pause 2.25
     Image("tsutomu/walking/DLStanding2.png")
+    pause 2.25
+    Image("tsutomu/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image tsutomusprite downright standmove:
-    Image("tsutomu/walking/DRStanding1.png")
-    pause 2.25
     Image("tsutomu/walking/DRStanding2.png")
+    pause 2.25
+    Image("tsutomu/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image tsutomusprite upleft standmove:
-    Image("tsutomu/walking/ULStanding1.png")
-    pause 2.25
     Image("tsutomu/walking/ULStanding2.png")
+    pause 2.25
+    Image("tsutomu/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image tsutomusprite upright standmove:
-    Image("tsutomu/walking/URStanding1.png")
-    pause 2.25
     Image("tsutomu/walking/URStanding2.png")
+    pause 2.25
+    Image("tsutomu/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #Snowqueen
 image snowqueensprite downleft standmove:
-    Image("snowqueen/walking/DLStanding1.png")
-    pause 2.25
     Image("snowqueen/walking/DLStanding2.png")
+    pause 2.25
+    Image("snowqueen/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image snowqueensprite downright standmove:
-    Image("snowqueen/walking/DRStanding1.png")
-    pause 2.25
     Image("snowqueen/walking/DRStanding2.png")
+    pause 2.25
+    Image("snowqueen/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image snowqueensprite upleft standmove:
-    Image("snowqueen/walking/ULStanding1.png")
-    pause 2.25
     Image("snowqueen/walking/ULStanding2.png")
+    pause 2.25
+    Image("snowqueen/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image snowqueensprite upright standmove:
-    Image("snowqueen/walking/URStanding1.png")
-    pause 2.25
     Image("snowqueen/walking/URStanding2.png")
+    pause 2.25
+    Image("snowqueen/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #Saeko
 image saekosprite downleft standmove:
-    Image("saeko/walking/DLStanding1.png")
-    pause 2.25
     Image("saeko/walking/DLStanding2.png")
+    pause 2.25
+    Image("saeko/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image saekosprite downright standmove:
-    Image("saeko/walking/DRStanding1.png")
-    pause 2.25
     Image("saeko/walking/DRStanding2.png")
+    pause 2.25
+    Image("saeko/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image saekosprite upleft standmove:
-    Image("saeko/walking/ULStanding1.png")
-    pause 2.25
     Image("saeko/walking/ULStanding2.png")
+    pause 2.25
+    Image("saeko/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image saekosprite upright standmove:
-    Image("saeko/walking/URStanding1.png")
-    pause 2.25
     Image("saeko/walking/URStanding2.png")
+    pause 2.25
+    Image("saeko/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #Ooishi
 image ooishisprite downleft standmove:
-    Image("ooishi/walking/DLStanding1.png")
-    pause 2.25
     Image("ooishi/walking/DLStanding2.png")
+    pause 2.25
+    Image("ooishi/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image ooishisprite downright standmove:
-    Image("ooishi/walking/DRStanding1.png")
-    pause 2.25
     Image("ooishi/walking/DRStanding2.png")
+    pause 2.25
+    Image("ooishi/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image ooishisprite upleft standmove:
-    Image("ooishi/walking/ULStanding1.png")
-    pause 2.25
     Image("ooishi/walking/ULStanding2.png")
+    pause 2.25
+    Image("ooishi/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image ooishisprite upright standmove:
-    Image("ooishi/walking/URStanding1.png")
-    pause 2.25
     Image("ooishi/walking/URStanding2.png")
+    pause 2.25
+    Image("ooishi/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #natsumi
 image natsumisprite downleft standmove:
-    Image("natsumi/walking/DLStanding1.png")
-    pause 2.25
     Image("natsumi/walking/DLStanding2.png")
+    pause 2.25
+    Image("natsumi/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image natsumisprite downright standmove:
-    Image("natsumi/walking/DRStanding1.png")
-    pause 2.25
     Image("natsumi/walking/DRStanding2.png")
+    pause 2.25
+    Image("natsumi/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image natsumisprite upleft standmove:
-    Image("natsumi/walking/ULStanding1.png")
-    pause 2.25
     Image("natsumi/walking/ULStanding2.png")
+    pause 2.25
+    Image("natsumi/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image natsumisprite upright standmove:
-    Image("natsumi/walking/URStanding1.png")
-    pause 2.25
     Image("natsumi/walking/URStanding2.png")
+    pause 2.25
+    Image("natsumi/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #hanya
 image hanyasprite downleft standmove:
-    Image("hanya/walking/DLStanding1.png")
-    pause 2.25
     Image("hanya/walking/DLStanding2.png")
+    pause 2.25
+    Image("hanya/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image hanyasprite downright standmove:
-    Image("hanya/walking/DRStanding1.png")
-    pause 2.25
     Image("hanya/walking/DRStanding2.png")
+    pause 2.25
+    Image("hanya/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image hanyasprite upleft standmove:
-    Image("hanya/walking/ULStanding1.png")
-    pause 2.25
     Image("hanya/walking/ULStanding2.png")
+    pause 2.25
+    Image("hanya/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image hanyasprite upright standmove:
-    Image("hanya/walking/URStanding1.png")
-    pause 2.25
     Image("hanya/walking/URStanding2.png")
+    pause 2.25
+    Image("hanya/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #yuko
 image yukosprite downleft standmove:
-    Image("yuko/walking/DLStanding1.png")
-    pause 2.25
     Image("yuko/walking/DLStanding2.png")
+    pause 2.25
+    Image("yuko/walking/DLStanding1.png")
     pause 1.75
     repeat
 
 image yukosprite downright standmove:
-    Image("yuko/walking/DRStanding1.png")
-    pause 2.25
     Image("yuko/walking/DRStanding2.png")
+    pause 2.25
+    Image("yuko/walking/DRStanding1.png")
     pause 1.75
     repeat
 
 image yukosprite upleft standmove:
-    Image("yuko/walking/ULStanding1.png")
-    pause 2.25
     Image("yuko/walking/ULStanding2.png")
+    pause 2.25
+    Image("yuko/walking/ULStanding1.png")
     pause 1.75
     repeat
 
 image yukosprite upright standmove:
-    Image("yuko/walking/URStanding1.png")
-    pause 2.25
     Image("yuko/walking/URStanding2.png")
+    pause 2.25
+    Image("yuko/walking/URStanding1.png")
     pause 1.75
     repeat
 
 #Student0
 image student0 upright standmove:
-    Image("students/0/URStanding1.png")
-    pause 2.25
     Image("students/0/URStanding2.png")
+    pause 2.25
+    Image("students/0/URStanding1.png")
     pause 1.75
     repeat
 
 image student0 upleft standmove:
-    Image("students/0/ULStanding1.png")
-    pause 2.25
     Image("students/0/ULStanding2.png")
+    pause 2.25
+    Image("students/0/ULStanding1.png")
     pause 1.75
     repeat
 
 image student0 downright standmove:
-    Image("students/0/DRStanding1.png")
-    pause 2.25
     Image("students/0/DRStanding2.png")
+    pause 2.25
+    Image("students/0/DRStanding1.png")
     pause 1.75
     repeat
 
 image student0 downleft standmove:
-    Image("students/0/DLStanding1.png")
-    pause 2.25
     Image("students/0/DLStanding2.png")
+    pause 2.25
+    Image("students/0/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student1
 image student1 upright standmove:
-    Image("students/1/URStanding1.png")
-    pause 2.25
     Image("students/1/URStanding2.png")
+    pause 2.25
+    Image("students/1/URStanding1.png")
     pause 1.75
     repeat
 
 image student1 upleft standmove:
-    Image("students/1/ULStanding1.png")
-    pause 2.25
     Image("students/1/ULStanding2.png")
+    pause 2.25
+    Image("students/1/ULStanding1.png")
     pause 1.75
     repeat
 
 image student1 downright standmove:
-    Image("students/1/DRStanding1.png")
-    pause 2.25
     Image("students/1/DRStanding2.png")
+    pause 2.25
+    Image("students/1/DRStanding1.png")
     pause 1.75
     repeat
 
 image student1 downleft standmove:
-    Image("students/1/DLStanding1.png")
-    pause 2.25
     Image("students/1/DLStanding2.png")
+    pause 2.25
+    Image("students/1/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student2
 image student2 upright standmove:
-    Image("students/2/URStanding1.png")
-    pause 2.25
     Image("students/2/URStanding2.png")
+    pause 2.25
+    Image("students/2/URStanding1.png")
     pause 1.75
     repeat
 
 image student2 upleft standmove:
-    Image("students/2/ULStanding1.png")
-    pause 2.25
     Image("students/2/ULStanding2.png")
+    pause 2.25
+    Image("students/2/ULStanding1.png")
     pause 1.75
     repeat
 
 image student2 downright standmove:
-    Image("students/2/DRStanding1.png")
-    pause 2.25
     Image("students/2/DRStanding2.png")
+    pause 2.25
+    Image("students/2/DRStanding1.png")
     pause 1.75
     repeat
 
 image student2 downleft standmove:
-    Image("students/2/DLStanding1.png")
-    pause 2.25
     Image("students/2/DLStanding2.png")
+    pause 2.25
+    Image("students/2/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student3
 image student3 upright standmove:
-    Image("students/3/URStanding1.png")
-    pause 2.25
     Image("students/3/URStanding2.png")
+    pause 2.25
+    Image("students/3/URStanding1.png")
     pause 1.75
     repeat
 
 image student3 upleft standmove:
-    Image("students/3/ULStanding1.png")
-    pause 2.25
     Image("students/3/ULStanding2.png")
+    pause 2.25
+    Image("students/3/ULStanding1.png")
     pause 1.75
     repeat
 
 image student3 downright standmove:
-    Image("students/3/DRStanding1.png")
-    pause 2.25
     Image("students/3/DRStanding2.png")
+    pause 2.25
+    Image("students/3/DRStanding1.png")
     pause 1.75
     repeat
 
 image student3 downleft standmove:
-    Image("students/3/DLStanding1.png")
-    pause 2.25
     Image("students/3/DLStanding2.png")
+    pause 2.25
+    Image("students/3/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student4
 image student4 upright standmove:
-    Image("students/4/URStanding1.png")
-    pause 2.25
     Image("students/4/URStanding2.png")
+    pause 2.25
+    Image("students/4/URStanding1.png")
     pause 1.75
     repeat
 
 image student4 upleft standmove:
-    Image("students/4/ULStanding1.png")
-    pause 2.25
     Image("students/4/ULStanding2.png")
+    pause 2.25
+    Image("students/4/ULStanding1.png")
     pause 1.75
     repeat
 
 image student4 downright standmove:
-    Image("students/4/DRStanding1.png")
-    pause 2.25
     Image("students/4/DRStanding2.png")
+    pause 2.25
+    Image("students/4/DRStanding1.png")
     pause 1.75
     repeat
 
 image student4 downleft standmove:
-    Image("students/4/DLStanding1.png")
-    pause 2.25
     Image("students/4/DLStanding2.png")
+    pause 2.25
+    Image("students/4/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student5
 image student5 upright standmove:
-    Image("students/5/URStanding1.png")
-    pause 2.25
     Image("students/5/URStanding2.png")
+    pause 2.25
+    Image("students/5/URStanding1.png")
     pause 1.75
     repeat
 
 image student5 upleft standmove:
-    Image("students/5/ULStanding1.png")
-    pause 2.25
     Image("students/5/ULStanding2.png")
+    pause 2.25
+    Image("students/5/ULStanding1.png")
     pause 1.75
     repeat
 
 image student5 downright standmove:
-    Image("students/5/DRStanding1.png")
-    pause 2.25
     Image("students/5/DRStanding2.png")
+    pause 2.25
+    Image("students/5/DRStanding1.png")
     pause 1.75
     repeat
 
 image student5 downleft standmove:
-    Image("students/5/DLStanding1.png")
-    pause 2.25
     Image("students/5/DLStanding2.png")
+    pause 2.25
+    Image("students/5/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student6
 image student6 upright standmove:
-    Image("students/6/URStanding1.png")
-    pause 2.25
     Image("students/6/URStanding2.png")
+    pause 2.25
+    Image("students/6/URStanding1.png")
     pause 1.75
     repeat
 
 image student6 upleft standmove:
-    Image("students/6/ULStanding1.png")
-    pause 2.25
     Image("students/6/ULStanding2.png")
+    pause 2.25
+    Image("students/6/ULStanding1.png")
     pause 1.75
     repeat
 
 image student6 downright standmove:
-    Image("students/6/DRStanding1.png")
-    pause 2.25
     Image("students/6/DRStanding2.png")
+    pause 2.25
+    Image("students/6/DRStanding1.png")
     pause 1.75
     repeat
 
 image student6 downleft standmove:
-    Image("students/6/DLStanding1.png")
-    pause 2.25
     Image("students/6/DLStanding2.png")
+    pause 2.25
+    Image("students/6/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student7
 image student7 upright standmove:
-    Image("students/7/URStanding1.png")
-    pause 2.25
     Image("students/7/URStanding2.png")
+    pause 2.25
+    Image("students/7/URStanding1.png")
     pause 1.75
     repeat
 
 image student7 upleft standmove:
-    Image("students/7/ULStanding1.png")
-    pause 2.25
     Image("students/7/ULStanding2.png")
+    pause 2.25
+    Image("students/7/ULStanding1.png")
     pause 1.75
     repeat
 
 image student7 downright standmove:
-    Image("students/7/DRStanding1.png")
-    pause 2.25
     Image("students/7/DRStanding2.png")
+    pause 2.25
+    Image("students/7/DRStanding1.png")
     pause 1.75
     repeat
 
 image student7 downleft standmove:
-    Image("students/7/DLStanding1.png")
-    pause 2.25
     Image("students/7/DLStanding2.png")
+    pause 2.25
+    Image("students/7/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student8
 image student8 upright standmove:
-    Image("students/8/URStanding1.png")
-    pause 2.25
     Image("students/8/URStanding2.png")
+    pause 2.25
+    Image("students/8/URStanding1.png")
     pause 1.75
     repeat
 
 image student8 upleft standmove:
-    Image("students/8/ULStanding1.png")
-    pause 2.25
     Image("students/8/ULStanding2.png")
+    pause 2.25
+    Image("students/8/ULStanding1.png")
     pause 1.75
     repeat
 
 image student8 downright standmove:
-    Image("students/8/DRStanding1.png")
-    pause 2.25
     Image("students/8/DRStanding2.png")
+    pause 2.25
+    Image("students/8/DRStanding1.png")
     pause 1.75
     repeat
 
 image student8 downleft standmove:
-    Image("students/8/DLStanding1.png")
-    pause 2.25
     Image("students/8/DLStanding2.png")
+    pause 2.25
+    Image("students/8/DLStanding1.png")
     pause 1.75
     repeat
 
 #Student9
 image student9 upright standmove:
-    Image("students/9/URStanding1.png")
-    pause 2.25
     Image("students/9/URStanding2.png")
+    pause 2.25
+    Image("students/9/URStanding1.png")
     pause 1.75
     repeat
 
 image student9 upleft standmove:
-    Image("students/9/ULStanding1.png")
-    pause 2.25
     Image("students/9/ULStanding2.png")
+    pause 2.25
+    Image("students/9/ULStanding1.png")
     pause 1.75
     repeat
 
 image student9 downright standmove:
-    Image("students/9/DRStanding1.png")
-    pause 2.25
     Image("students/9/DRStanding2.png")
+    pause 2.25
+    Image("students/9/DRStanding1.png")
     pause 1.75
     repeat
 
 image student9 downleft standmove:
-    Image("students/9/DLStanding1.png")
-    pause 2.25
     Image("students/9/DLStanding2.png")
+    pause 2.25
+    Image("students/9/DLStanding1.png")
     pause 1.75
     repeat
 
