@@ -152,10 +152,15 @@ image yukosprite downright stand = "yuko/walking/DRStanding1.png"
 image yukosprite upleft stand = "yuko/walking/ULStanding1.png"
 image yukosprite upright stand = "yuko/walking/URStanding1.png"
 
-image npcsprite downleft stand = "students/walking/DLStanding1.png"
-image npcsprite downright stand = "students/walking/DRStanding1.png"
-image npcsprite upleft stand = "students/walking/ULStanding1.png"
-image npcsprite upright stand = "students/walking/URStanding1.png"
+image tamakisprite downleft stand = "tamaki/walking/DLStanding1.png"
+image tamakisprite downright stand = "tamaki/walking/DRStanding1.png"
+image tamakisprite upleft stand = "tamaki/walking/ULStanding1.png"
+image tamakisprite upright stand = "tamaki/walking/URStanding1.png"
+
+image tadashisprite downleft stand = "tadashi/walking/DLStanding1.png"
+image tadashisprite downright stand = "tadashi/walking/DRStanding1.png"
+image tadashisprite upleft stand = "tadashi/walking/ULStanding1.png"
+image tadashisprite upright stand = "tadashi/walking/URStanding1.png"
 
 image student1 downleft stand = "students/1/DLStanding1.png"
 image student1 downright stand = "students/1/DRStanding1.png"
@@ -675,6 +680,64 @@ image yukosprite upright standmove:
     Image("yuko/walking/URStanding2.png")
     pause 2.25
     Image("yuko/walking/URStanding1.png")
+    pause 1.75
+    repeat
+
+#tadashi
+image tadashisprite downleft standmove:
+    Image("tadashi/walking/DLStanding2.png")
+    pause 2.25
+    Image("tadashi/walking/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image tadashisprite downright standmove:
+    Image("tadashi/walking/DRStanding2.png")
+    pause 2.25
+    Image("tadashi/walking/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image tadashisprite upleft standmove:
+    Image("tadashi/walking/ULStanding2.png")
+    pause 2.25
+    Image("tadashi/walking/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image tadashisprite upright standmove:
+    Image("tadashi/walking/URStanding2.png")
+    pause 2.25
+    Image("tadashi/walking/URStanding1.png")
+    pause 1.75
+    repeat
+
+#tamaki
+image tamakisprite downleft standmove:
+    Image("tamaki/walking/DLStanding2.png")
+    pause 2.25
+    Image("tamaki/walking/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image tamakisprite downright standmove:
+    Image("tamaki/walking/DRStanding2.png")
+    pause 2.25
+    Image("tamaki/walking/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image tamakisprite upleft standmove:
+    Image("tamaki/walking/ULStanding2.png")
+    pause 2.25
+    Image("tamaki/walking/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image tamakisprite upright standmove:
+    Image("tamaki/walking/URStanding2.png")
+    pause 2.25
+    Image("tamaki/walking/URStanding1.png")
     pause 1.75
     repeat
 

@@ -794,7 +794,7 @@ label label001(location="Infirmary"):
             if _return > 0:
                 show yukinosprite downleft stand at yukinoloc
                 show marksprite downright stand at markloc
-                show nanjosprite upleft standmove at nanjoloc
+                show nanjosprite upleft stand at nanjoloc
                 show saekosprite downright stand at npc2loc
                 show natsumisprite downright stand at npc1loc
             if _return == 1:
@@ -1906,7 +1906,7 @@ label label012(location="Drama Club"):
         label label012TalkA:
             show screen DramaClub
             hide marksprite
-            hide makisprite
+            hide nanjosprite
             hide student4
             hide student6
             hide student3
@@ -2073,24 +2073,78 @@ label label014(location="Archery Club"):
         n "It appears to be empty.  Maybe they've all gone home?"
         jump callSportsBuilding
     else:
+        $ yukinox = 980
+        $ yukinoy = 450
+        $ markx = 590
+        $ marky = 490
+        $ nanjox = 1400
+        $ nanjoy = 500
+        $ npc1x = 1050
+        $ npc1y = 400
         scene bg archeryclub with qdis
-        play music schooldays2 if_changed
-        call screen ArcheryClub
-        if _return == 1:
-            show yukino animated neutral smirk with qleft
-            yu "Bows and arrows aren't my thing.  I prefer razor blades."
-        elif _return == 2:
-            stu "Archery is an intelligent, mature sport!  Don't have a bow? We'll lend you one!"
-        elif _return == 3:
-            show mark animated neutral serious with qleft
-            mk "I heard there's a bunch of bows here.  I think I'll borrow one and mess around with it next time."
-        elif _return == 4:
-            show nanjo animated neutral serious with qleft
-            na "I agree, archery is interesting... But don't forget to go to the hospital."
-        elif _return == 5:
-            jump callSportsBuilding
-        jump label014
-
+        play music schooldays volume 0.4 if_changed
+        show screen header with qdis
+        label label014TalkA:
+            show screen ArcheryClub
+            hide marksprite
+            hide nanjosprite
+            hide student8
+            hide yukinosprite
+            call screen ArcheryClub
+            if _return > 0:
+                show nanjosprite downleft stand at nanjoloc
+                show yukinosprite downleft stand at yukinoloc
+                show marksprite upleft stand at markloc
+                show student8 downright stand at npc1loc
+            if _return == 1:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy+25
+                show yukinosprite downright stand at yukinoloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show yukino animated neutral smirk with qleft
+                yu "Bows and arrows aren't my thing.  I prefer razor blades."
+                show yukinosprite downright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label014yukino = 1
+            elif _return == 2:
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y+25
+                show student8 downright standmove at npc1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "Archery is an intelligent, mature sport!  Don't have a bow? We'll lend you one!"
+                show student8 downright stand
+                hide naoyasprite
+                with qdis
+                $ label014astudent1 = 1
+            elif _return == 3:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral smirk with qleft
+                mk "There's a bunch of bows and arrows here.  I think I'll borrow one and mess around with it next time."
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label014mark = 1
+            elif _return == 4:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy+25
+                show nanjosprite downleft standmove at nanjoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "I agree, archery is interesting... But don't forget to go to the hospital."
+                show nanjosprite downleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label014nanjo = 1
+            elif _return == 5:
+                jump callSportsBuilding
+            jump label014TalkA
 label label015(location="Fencing Club"):
     if plotprogress >= 2:
         scene bg black with qdis #update
@@ -2140,63 +2194,175 @@ label label015(location="Fencing Club"):
             jump callSportsBuilding
         jump label015
     else:
+        $ yukinox = 1320
+        $ yukinoy = 500
+        $ markx = 550
+        $ marky = 520
+        $ nanjox = 880
+        $ nanjoy = 640
+        $ npc1x = 820
+        $ npc1y = 450
+        $ npc2x = 940
+        $ npc2y = 460
+        $ npc3x = 760
+        $ npc3y = 520
+        $ npc4x = 350
+        $ npc4y = 500
         scene bg fencingclub with qdis
-        play music schooldays2 if_changed
+        play music schooldays volume 0.4 if_changed
         if fencingclub == False:
+            show nanjosprite upright stand at nanjoloc
+            show yukinosprite upleft stand at yukinoloc
+            show marksprite upleft stand at markloc
+            show tamakisprite downright standmove at npc1loc
+            show tadashisprite upleft stand at npc2loc
+            show student1 downright stand at npc3loc
+            show student2 downright stand at npc4loc
             show tamaki animated neutral serious with qleft
             tm "Tadashi, you idiot! Why do you keep messing up the club room!?"
             show tamaki ns
+            show tamakisprite downright stand
             $ tbnarrator = 1
             n "{color=#ebffdb}>Tamaki\nA transfer student who joined the Fencing Club.  She's always arguing with Tadashi.{/color}"
             $ tbnarrator = 0
             hide tamaki
+            show tadashisprite downright standmove
             show tadashi at pleft2 with qleft
             td "Laa la laa!  I'm not listeniiiiing!  We can do whatever we want."
+            show tadashisprite upleft standmove
             td "Sheesh, Tamaki, who pissed in your cornflakes this morning?"
+            show tadashisprite upleft stand
             $ tbnarrator = 1
             n "{color=#ebffdb}>Tadashi\nA lazy member of the Fencing Club who quarrels with Tamaki every day.{/color}"
             $ tbnarrator = 0
             hide tadashi
+            show tamakisprite downright standmove
             show tamaki animated neutral serious with qleft
             tm "What did you say!?  I'm gonna rip this trash off the walls right now!"
             hide tamaki
+            show tamakisprite downright stand
+            show tadashisprite upleft standmove
             show tadashi at pleft2 with qleft
             td "Hey!  What're you doing to my goddess!?"
             hide tadashi
+            show tamakisprite downright standmove
+            show tadashisprite upleft stand
             show tamaki animated neutral serious with qleft
             tm "'Goddess' my ass, you pervert!  You're the perviest pervert to ever perv!"
             hide tamaki
+            show tamakisprite downright stand
+            show tadashisprite upleft standmove
             show tadashi at pleft2 with qleft
             td "Arrrgh!  You hag!  You're a haggity hag who hags all hagging day!"
+            show tadashisprite upleft stand
             $ fencingclub = True
             hide tadashi
             $ tbnarrator = 1
             ". . ."
             $ tbnarrator = 0
-        call screen FencingClub with qdis
-        if _return == 1:
-            show yukino animated neutral smirk with qleft
-            yu "Leave 'em alone.  You know how some people are.  They fight 'cause they care."
-        elif _return == 2:
-            show mark animated neutral serious with qleft
-            mk "What a half-ass job... If you're gonna bomb a wall, you gotta do it with more style."
-        elif _return == 3:
-            show nanjo animated neutral serious with qleft
-            na "Honestly, the idiots populating our sports club... It's all a bit much."
-        elif _return == 4:
-            show tamaki animated neutral serious with qleft
-            tm "*gasp* *gasp* What is it?  I'm a little busy here."
-        elif _return == 5:
-            show tadashi at pleft2 with qleft
-            td "*gasp* *gasp* Yeah?  I'm kinda busy here."
-        elif _return == 6:
-            stu "Tamaki's a transfer student, but she's good enough to place in tournaments."
-            stu "But she never wants to talk about her last school... Did something happen?."
-        elif _return == 7:
-            stu "*sigh* These two are like this every day.  I'm surprised they're not tired of it."
-        elif _return == 8:
-            jump callSportsBuilding
-        jump label015
+        show screen header with qdis
+        label label015TalkA:
+            show screen FencingClub
+            hide marksprite
+            hide nanjosprite
+            hide student1
+            hide student2
+            hide tamakisprite
+            hide tadashisprite
+            hide yukinosprite
+            call screen FencingClub
+            if _return > 0:
+                show nanjosprite upright stand at nanjoloc
+                show yukinosprite upleft stand at yukinoloc
+                show marksprite upleft stand at markloc
+                show tamakisprite downright standmove at npc1loc
+                show tadashisprite upleft stand at npc2loc
+                show student1 downright stand at npc3loc
+                show student2 downright stand at npc4loc
+            if _return == 1:
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy-25
+                show yukinosprite upleft stand at yukinoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "The school has a traditional play?  News to me."
+                show yukinosprite upleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label015yukino = 1
+            elif _return == 2:
+                $ naoyax = markx-60
+                $ naoyay = marky-25
+                show marksprite upleft standmove at markloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "What a half-ass job... If you're gonna bomb a wall, you gotta do it with more style."
+                show marksprite upleft stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label015mark = 1
+            elif _return == 3:
+                $ naoyax = nanjox+60
+                $ naoyay = nanjoy-25
+                show nanjosprite upright standmove at nanjoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "Honestly, the idiots populating our sports club... It's all a bit much."
+                show nanjosprite upright stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label015nanjo = 1
+            elif _return == 4:
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y-25
+                show tamakisprite upright standmove at npc1loc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show tamaki animated neutral serious with qleft
+                tm "*gasp* *gasp* What is it?  I'm a little busy here."
+                show tamakisprite upright stand
+                hide tamaki
+                hide naoyasprite
+                with qdis
+                $ label015atamaki = 1
+            elif _return == 5:
+                $ naoyax = npc2x+60
+                $ naoyay = npc2y-25
+                show tadashisprite upright standmove at npc2loc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show tadashi at pleft2 with qleft
+                td "*gasp* *gasp* Yeah?  I'm kinda busy here."
+                show tadashisprite upright stand
+                hide tadashi
+                hide naoyasprite
+                with qdis
+                $ label015atadashi = 1
+            elif _return == 6:
+                $ naoyax = npc3x+60
+                $ naoyay = npc3y+25
+                show student1 downright standmove at npc3loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "Tamaki's a transfer student, but she's good enough to place in tournaments."
+                stu "But she never wants to talk about her last school... Did something happen?"
+                show student1 downright stand
+                hide naoyasprite
+                with qdis
+                $ label015astudent1 = 1
+            elif _return == 7:
+                $ naoyax = npc4x+60
+                $ naoyay = npc4y+25
+                show student2 downright standmove at npc3loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "*sigh* These two are like this every day.  I'm surprised they're not tired of it."
+                show student2 downright stand
+                hide naoyasprite
+                with qdis
+                $ label015astudent2 = 1
+            elif _return == 8:
+                jump callSportsBuilding
+            jump label015TalkA
 
 label label016(location="Ballet Club"):
     if plotprogress >= 2:
