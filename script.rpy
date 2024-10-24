@@ -2677,25 +2677,26 @@ label label020(location="Class 2-4"):
             jump callHermelinFloor2
         jump label020
     else:
-        $ yukinox = 1320
-        $ yukinoy = 500
-        $ markx = 550
-        $ marky = 520
-        $ nanjox = 880
-        $ nanjoy = 640
-        $ npc1x = 820
+        $ yukinox = 1550
+        $ yukinoy = 350
+        $ markx = 1420
+        $ marky = 320
+        $ nanjox = 1500
+        $ nanjoy = 425
+        $ npc1x = 1375
         $ npc1y = 450
-        $ naoyax = 600
-        $ naoyay = 600
+        $ naoyax = 1600
+        $ naoyay = 400
         scene bg classroom with qdis
         play music schooldays volume 0.4 if_changed
+        show nanjosprite upleft stand at nanjoloc
+        show yukinosprite downleft stand at yukinoloc
+        show marksprite downright stand at markloc
+        show yukosprite upright stand at npc1loc
+        show naoyasprite downleft stand at naoyaloc
+        show yuko at pleft2 with qleft
+        show yukosprite upright standmove
         if Yuko == False:
-            show nanjosprite upright stand at nanjoloc
-            show yukinosprite downleft stand at yukinoloc
-            show marksprite downright stand at markloc
-            show yukosprite upright stand at npc1loc
-            show naoyasprite downleft stand at naoyaloc
-            show yuko at pleft2 with qleft
             stu "Um...Naoya?  You're going to the hospital, right..?"
             $ tbnarrator = 1
             n "{color=#ebffdb}>Yuko Himeno\nMaki's friend.  She works part-time to support her family.{/color}"
@@ -2723,47 +2724,85 @@ label label020(location="Class 2-4"):
                 hide nchoice
                 with qdis
                 yuko "O-Oh... Um, sorry I asked... It's okay, don't worry about it...!"
+                show yukosprite upright stand
                 hide yuko
+                show yukinosprite downright standmove
                 show yukino animated neutral serious with qleft
                 yu "Naoya!  Don't be such an asshole!"
                 hide yukino
+                show yukinosprite downleft stand
             show yuko at pleft2 with qleft
+            show yukosprite upright standmove
             yuko "It was a really good book, so I wanted to read it again before I return it..."
             hide naoya
             hide yuko
+            show yukosprite upright stand
             show mark animated neutral smirk with qleft
+            show marksprite downleft standmove
             mk "That good, huh?  What's it called?"
             hide mark
+            show marksprite downleft stand
+            show yukosprite upright standmove
             show yuko at pleft2 with qleft
             yuko "U-Um, 'Gate to Paradise'..."
             hide yuko
+            show yukosprite upright stand
             show mark animated neutral serious with qleft
+            show marksprite downleft standmove
             mk "Whoa, that's deep!  I didn't know Maki was into that kinda thing..."
             hide mark
+            show marksprite downright stand
+            show nanjosprite downleft standmove
             show nanjo animated neutral serious with qleft
             na "If you enjoyed it that much, why not simply buy your own copy?"
             hide nanjo
+            show nanjosprite downleft stand
+            show yukosprite upright standmove
             show yuko at pleft2 with qleft
             yuko "W-Well... It's kind of expensive... and my brothers and sisters need new clothes."
             hide yuko
+            show nanjosprite upright stand
+            show naoyasprite upleft stand
+            show yukinosprite downleft standmove
             show yukino animated neutral serious with qleft
             yu "Nanjo, you moron!  Don't you know she works part-time to help her family out?"
             hide yukino
+            show yukinosprite downleft stand
+            show naoyasprite downleft stand
+            show nanjosprite downleft stand
+            show marksprite downleft standmove
             show mark animated neutral serious with qleft
             mk "Alright, well, we gotta get goin', but we'll be sure to pass on your message!"
             $ Yuko = True
             $ lines = 1
             hide mark with qdis
+            hide nanjosprite
+            hide yukosprite
+            hide yukinosprite
+            hide marksprite
+            hide naoyasprite
+            with qdis
             jump callHermelinFloor2
         else:
             show yuko at pleft2 with qleft
+            show yukosprite upright standmove
             yuko "U-Um... Did you tell Maki...?"
             hide yuko
+            show yukosprite upright stand
             show yukino animated neutral sad with qleft
+            show yukinosprite downleft standmove
             yu "Uh, sorry, not yet.  But we're going soon, promise."
             show yukino animated neutral serious
+            show yukinosprite downright standmove
+            show naoyasprite upleft stand
             yu "...Hey, Naoya! Let's get to the hospital already!"
             hide yukino with qdis
+            hide nanjosprite
+            hide yukosprite
+            hide yukinosprite
+            hide marksprite
+            hide naoyasprite
+            with qdis
             jump callHermelinFloor2
 
 label label021(location="Class 2-5"):
@@ -2781,29 +2820,96 @@ label label021(location="Class 2-5"):
             jump callHermelinFloor2
         jump label021
     else:
+        show screen header with qdis
         scene bg classroom with qdis
+        $ yukinox = 1130
+        $ yukinoy = 220
+        $ markx = 1100
+        $ marky = 530
+        $ nanjox = 1180
+        $ nanjoy = 400
+        $ npc1x = 880
+        $ npc1y = 350
+        $ npc2x = 450
+        $ npc2y = 550
         play music schooldays volume 0.4 if_changed
-        call screen Class25
-        if _return == 1:
-            show mark animated neutral sad with qleft
-            mk "Hey Naoya, we're still going to the hospital, right?"
-        elif _return == 2:
-            show yukino animated neutral serious with qleft
-            yu "Yuka seems like an airhead, but I think sometimes she's working at it."
-        elif _return == 3:
-            show nanjo animated neutral serious with qleft
-            na "Does this woman never stop running her mouth...?"
-        elif _return == 4:
-            stu "Hey, where's Ayase?  Wasn't she with you?  She promised to go out, but she totally ditched."
-            stu "I'm thinking I might like, just go ahead on my own."
-            stu "It's really weird, though!  She seemed totally into it!  Ayase gets like this sometimes..."
-            stu "She acts all, like, cynical and stuff.  I don't understand that girl."
-        elif _return == 5:
-            stu "Are you guys going to the hospital on the Second Ward?"
-            stu "It's a pretty long walk... Good luck with that."
-        elif _return == 6:
-            jump callHermelinFloor2
-        jump label021
+        label label021TalkA:
+            show screen Class25
+            hide marksprite
+            hide student0
+            hide student9
+            hide nanjosprite
+            hide yukinosprite
+            call screen Class25
+            if _return > 0:
+                show nanjosprite upright stand at nanjoloc
+                show yukinosprite downleft stand at yukinoloc
+                show marksprite downleft stand at markloc
+                show student0 downright stand at npc1loc
+                show student9 downright stand at npc2loc
+            if _return == 1:
+                $ naoyax = markx-60
+                $ naoyay = marky+25
+                show marksprite downleft standmove at markloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show mark animated neutral sad with qleft
+                mk "Hey Naoya, we're still going to the hospital, right?"
+                show marksprite downleft stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label021mark = 1
+            elif _return == 2:
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy+25
+                show yukinosprite downleft stand at yukinoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Yuka seems like an airhead, but I think sometimes she's working at it."
+                show yukinosprite downleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label021yukino = 1
+            elif _return == 3:
+                $ naoyax = nanjox+60
+                $ naoyay = nanjoy-25
+                show nanjosprite upright standmove at nanjoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "Does this woman never stop running her mouth...?"
+                show nanjosprite upright stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label021nanjo = 1
+            elif _return == 4:
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y+25
+                show student0 downright standmove at npc1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "Hey, where's Ayase?  Wasn't she with you?  She promised to go out, but she totally ditched."
+                stu "I'm thinking I might like, just go ahead on my own."
+                stu "It's really weird, though!  She seemed totally into it!  Ayase gets like this sometimes..."
+                stu "She acts all, like, cynical and stuff.  I don't understand that girl."
+                show student0 downright stand
+                hide naoyasprite
+                with qdis
+                $ label021astudent1 = 1
+            elif _return == 5:
+                $ naoyax = npc2x+60
+                $ naoyay = npc2y+25
+                show student9 downright standmove at npc2loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "Are you guys going to the hospital on the Second Ward?"
+                stu "It's a pretty long walk... Good luck with that."
+                show student9 downright stand
+                hide naoyasprite
+                with qdis
+                $ label021astudent2 = 1
+            elif _return == 6:
+                jump callHermelinFloor2
+            jump label021TalkA
 
 label label022(location="Cafeteria"):
     if plotprogress >= 2:

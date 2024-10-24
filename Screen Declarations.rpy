@@ -97,4 +97,10 @@ label start:
     default label019yukino = 0
     default label019astudent1 = 0
 
+    default label021nanjo = 0
+    default label021mark = 0
+    default label021yukino = 0
+    default label021astudent1 = 0
+    default label021astudent2 = 0
+
     jump start2
