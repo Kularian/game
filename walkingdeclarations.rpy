@@ -162,6 +162,11 @@ image tadashisprite downright stand = "tadashi/walking/DRStanding1.png"
 image tadashisprite upleft stand = "tadashi/walking/ULStanding1.png"
 image tadashisprite upright stand = "tadashi/walking/URStanding1.png"
 
+image torosprite downleft stand = "toro/walking/DLStanding1.png"
+image torosprite downright stand = "toro/walking/DRStanding1.png"
+image torosprite upleft stand = "toro/walking/ULStanding1.png"
+image torosprite upright stand = "toro/walking/URStanding1.png"
+
 image student1 downleft stand = "students/1/DLStanding1.png"
 image student1 downright stand = "students/1/DRStanding1.png"
 image student1 upleft stand = "students/1/ULStanding1.png"
@@ -738,6 +743,35 @@ image tamakisprite upright standmove:
     Image("tamaki/walking/URStanding2.png")
     pause 2.25
     Image("tamaki/walking/URStanding1.png")
+    pause 1.75
+    repeat
+
+#toro
+image torosprite downleft standmove:
+    Image("toro/walking/DLStanding2.png")
+    pause 2.25
+    Image("toro/walking/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image torosprite downright standmove:
+    Image("toro/walking/DRStanding2.png")
+    pause 2.25
+    Image("toro/walking/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image torosprite upleft standmove:
+    Image("toro/walking/ULStanding2.png")
+    pause 2.25
+    Image("toro/walking/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image torosprite upright standmove:
+    Image("toro/walking/URStanding2.png")
+    pause 2.25
+    Image("toro/walking/URStanding1.png")
     pause 1.75
     repeat
 
