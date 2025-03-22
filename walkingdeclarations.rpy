@@ -167,6 +167,11 @@ image torosprite downright stand = "toro/walking/DRStanding1.png"
 image torosprite upleft stand = "toro/walking/ULStanding1.png"
 image torosprite upright stand = "toro/walking/URStanding1.png"
 
+image yamaokasprite downleft stand = "yamaoka/walking/DLStanding1.png"
+image yamaokasprite downright stand = "yamaoka/walking/DRStanding1.png"
+image yamaokasprite upleft stand = "yamaoka/walking/ULStanding1.png"
+image yamaokasprite upright stand = "yamaoka/walking/URStanding1.png"
+
 image student1 downleft stand = "students/1/DLStanding1.png"
 image student1 downright stand = "students/1/DRStanding1.png"
 image student1 upleft stand = "students/1/ULStanding1.png"
@@ -216,6 +221,51 @@ image student9 downleft stand = "students/9/DLStanding1.png"
 image student9 downright stand = "students/9/DRStanding1.png"
 image student9 upleft stand = "students/9/ULStanding1.png"
 image student9 upright stand = "students/9/URStanding1.png"
+
+image kanedasprite downleft stand = "kaneda/walking/DLStanding1.png"
+image kanedasprite downright stand = "kaneda/walking/DRStanding1.png"
+image kanedasprite upleft stand = "kaneda/walking/ULStanding1.png"
+image kanedasprite upright stand = "kaneda/walking/URStanding1.png"
+
+image physiciansprite downleft stand = "hospital/physician/DLStanding1.png"
+image physiciansprite downright stand = "hospital/physician/DRStanding1.png"
+image physiciansprite upleft stand = "hospital/physician/ULStanding1.png"
+image physiciansprite upright stand = "hospital/physician/URStanding1.png"
+
+image nurse2sprite downleft stand = "hospital/nurse2/DLStanding1.png"
+image nurse2sprite downright stand = "hospital/nurse2/DRStanding1.png"
+image nurse2sprite upleft stand = "hospital/nurse2/ULStanding1.png"
+image nurse2sprite upright stand = "hospital/nurse2/URStanding1.png"
+
+image woman1sprite downleft stand = "townies/woman1/DLStanding1.png"
+image woman1sprite downright stand = "townies/woman1/DRStanding1.png"
+image woman1sprite upleft stand = "townies/woman1/ULStanding1.png"
+image woman1sprite upright stand = "townies/woman1/URStanding1.png"
+
+image woman2sprite downleft stand = "townies/woman2/DLStanding1.png"
+image woman2sprite downright stand = "townies/woman2/DRStanding1.png"
+image woman2sprite upleft stand = "townies/woman2/ULStanding1.png"
+image woman2sprite upright stand = "townies/woman2/URStanding1.png"
+
+image yinyansprite downleft stand1 = "merchants/yinyan/stand1.png"
+image yinyansprite downleft stand2 = "merchants/yinyan/stand2.png"
+
+image smdsprite downleft stand1 = "merchants/smd/stand1.png"
+image smdsprite downleft stand2 = "merchants/smd/stand2.png"
+
+image pdsprite downleft stand1 = "merchants/pd/stand1.png"
+image pdsprite downleft stand2 = "merchants/pd/stand2.png"
+
+image rcsprite downleft stand1 = "merchants/rc/stand1.png"
+image rcsprite downleft stand2 = "merchants/rc/stand2.png"
+
+image stsprite downleft stand1 = "merchants/st/stand1.png"
+image stsprite downleft stand2 = "merchants/st/stand2.png"
+
+image markmomsprite downleft stand = "townies/markmom/DLStanding1.png"
+image markmomsprite downright stand = "townies/markmom/DRStanding1.png"
+image markmomsprite upleft stand = "townies/markmom/ULStanding1.png"
+image markmomsprite upright stand = "townies/markmom/URStanding1.png"
 
 #Emotion Indicators
 
@@ -775,6 +825,35 @@ image torosprite upright standmove:
     pause 1.75
     repeat
 
+#Yamaoka
+image yamaokasprite downleft standmove:
+    Image("yamaoka/walking/DLStanding2.png")
+    pause 2.25
+    Image("yamaoka/walking/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image yamaokasprite downright standmove:
+    Image("yamaoka/walking/DRStanding2.png")
+    pause 2.25
+    Image("yamaoka/walking/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image yamaokasprite upleft standmove:
+    Image("yamaoka/walking/ULStanding2.png")
+    pause 2.25
+    Image("yamaoka/walking/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image yamaokasprite upright standmove:
+    Image("yamaoka/walking/URStanding2.png")
+    pause 2.25
+    Image("yamaoka/walking/URStanding1.png")
+    pause 1.75
+    repeat
+
 #Student0
 image student0 upright standmove:
     Image("students/0/URStanding2.png")
@@ -1062,6 +1141,218 @@ image student9 downleft standmove:
     Image("students/9/DLStanding2.png")
     pause 2.25
     Image("students/9/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Kaneda
+image kanedasprite upright standmove:
+    Image("kaneda/walking/URStanding2.png")
+    pause 2.25
+    Image("kaneda/walking/URStanding1.png")
+    pause 1.75
+    repeat
+
+image kanedasprite upleft standmove:
+    Image("kaneda/walking/ULStanding2.png")
+    pause 2.25
+    Image("kaneda/walking/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image kanedasprite downright standmove:
+    Image("kaneda/walking/DRStanding2.png")
+    pause 2.25
+    Image("kaneda/walking/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image kanedasprite downleft standmove:
+    Image("kaneda/walking/DLStanding2.png")
+    pause 2.25
+    Image("kaneda/walking/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Mark's Mom
+image markmomsprite upright standmove:
+    Image("townies/markmom/URStanding2.png")
+    pause 2.25
+    Image("townies/markmom/URStanding1.png")
+    pause 1.75
+    repeat
+
+image markmomsprite upleft standmove:
+    Image("townies/markmom/ULStanding2.png")
+    pause 2.25
+    Image("townies/markmom/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image markmomsprite downright standmove:
+    Image("townies/markmom/DRStanding2.png")
+    pause 2.25
+    Image("townies/markmom/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image markmomsprite downleft standmove:
+    Image("townies/markmom/DLStanding2.png")
+    pause 2.25
+    Image("townies/markmom/DLStanding1.png")
+    pause 1.75
+    repeat
+
+##################Generic NPCs###################
+image woman1sprite upright standmove:
+    Image("townies/woman1/URStanding2.png")
+    pause 2.25
+    Image("townies/woman1/URStanding1.png")
+    pause 1.75
+    repeat
+
+image woman1sprite upleft standmove:
+    Image("townies/woman1/ULStanding2.png")
+    pause 2.25
+    Image("townies/woman1/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image woman1sprite downright standmove:
+    Image("townies/woman1/DRStanding2.png")
+    pause 2.25
+    Image("townies/woman1/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image woman1sprite downleft standmove:
+    Image("townies/woman1/DLStanding2.png")
+    pause 2.25
+    Image("townies/woman1/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image woman2sprite upright standmove:
+    Image("townies/woman2/URStanding2.png")
+    pause 2.25
+    Image("townies/woman2/URStanding1.png")
+    pause 1.75
+    repeat
+
+image woman2sprite upleft standmove:
+    Image("townies/woman2/ULStanding2.png")
+    pause 2.25
+    Image("townies/woman2/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image woman2sprite downright standmove:
+    Image("townies/woman2/DRStanding2.png")
+    pause 2.25
+    Image("townies/woman2/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image woman2sprite downleft standmove:
+    Image("townies/woman2/DLStanding2.png")
+    pause 2.25
+    Image("townies/woman2/DLStanding1.png")
+    pause 1.75
+    repeat
+
+####################Shop NPCs####################
+
+#Physician
+image physiciansprite upright standmove:
+    Image("Hospital/Physician/URStanding2.png")
+    pause 2.25
+    Image("Hospital/Physician/URStanding1.png")
+    pause 1.75
+    repeat
+
+image physiciansprite upleft standmove:
+    Image("Hospital/Physician/ULStanding2.png")
+    pause 2.25
+    Image("Hospital/Physician/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image physiciansprite downright standmove:
+    Image("Hospital/Physician/DRStanding2.png")
+    pause 2.25
+    Image("Hospital/Physician/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image physiciansprite downleft standmove:
+    Image("Hospital/Physician/DLStanding2.png")
+    pause 2.25
+    Image("Hospital/Physician/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Nurse2
+image nurse2sprite upright standmove:
+    Image("Hospital/nurse2/URStanding2.png")
+    pause 2.25
+    Image("Hospital/nurse2/URStanding1.png")
+    pause 1.75
+    repeat
+
+image nurse2sprite upleft standmove:
+    Image("Hospital/nurse2/ULStanding2.png")
+    pause 2.25
+    Image("Hospital/nurse2/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image nurse2sprite downright standmove:
+    Image("Hospital/nurse2/DRStanding2.png")
+    pause 2.25
+    Image("Hospital/nurse2/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image nurse2sprite downleft standmove:
+    Image("Hospital/nurse2/DLStanding2.png")
+    pause 2.25
+    Image("Hospital/nurse2/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Merchants
+
+image yinyansprite downleft standmove:
+    Image("merchants/yinyan/Stand1.png")
+    pause 2.25
+    Image("merchants/yinyan/Stand2.png")
+    pause 1.75
+    repeat
+
+image smdsprite downleft standmove:
+    Image("merchants/smd/Stand1.png")
+    pause 2.25
+    Image("merchants/smd/Stand2.png")
+    pause 1.75
+    repeat
+
+image pdsprite downleft standmove:
+    Image("merchants/pd/Stand1.png")
+    pause 2.25
+    Image("merchants/pd/Stand2.png")
+    pause 1.75
+    repeat
+
+image rcsprite downleft standmove:
+    Image("merchants/rc/Stand1.png")
+    pause 2.25
+    Image("merchants/rc/Stand2.png")
+    pause 1.75
+    repeat
+
+image stsprite downleft standmove:
+    Image("merchants/st/Stand1.png")
+    pause 2.25
+    Image("merchants/st/Stand2.png")
     pause 1.75
     repeat
 
@@ -1451,5 +1742,83 @@ image ellysprite upleft walk:
     Image("elly/walking/ULWalkR2.png")
     pause 0.15
     Image("elly/walking/ULWalkR1.png")
+    pause 0.15
+    repeat
+
+
+#reiji
+image reijisprite downleft walk:
+    Image("reiji/walking/DLStanding1.png")
+    pause 0.15
+    Image("reiji/walking/DLWalkL1.png")
+    pause 0.15
+    Image("reiji/walking/DLWalkL2.png")
+    pause 0.15
+    Image("reiji/walking/DLWalkL1.png")
+    pause 0.15
+    Image("reiji/walking/DLStanding1.png")
+    pause 0.15
+    Image("reiji/walking/DLWalkR1.png")
+    pause 0.15
+    Image("reiji/walking/DLWalkR2.png")
+    pause 0.15
+    Image("reiji/walking/DLWalkR1.png")
+    pause 0.15
+    repeat
+
+image reijisprite downright walk:
+    Image("reiji/walking/DRStanding1.png")
+    pause 0.15
+    Image("reiji/walking/DRWalkL1.png")
+    pause 0.15
+    Image("reiji/walking/DRWalkL2.png")
+    pause 0.15
+    Image("reiji/walking/DRWalkL1.png")
+    pause 0.15
+    Image("reiji/walking/DRStanding1.png")
+    pause 0.15
+    Image("reiji/walking/DRWalkR1.png")
+    pause 0.15
+    Image("reiji/walking/DRWalkR2.png")
+    pause 0.15
+    Image("reiji/walking/DRWalkR1.png")
+    pause 0.15
+    repeat
+
+image reijisprite upright walk:
+    Image("reiji/walking/URStanding1.png")
+    pause 0.15
+    Image("reiji/walking/URWalkL1.png")
+    pause 0.15
+    Image("reiji/walking/URWalkL2.png")
+    pause 0.15
+    Image("reiji/walking/URWalkL1.png")
+    pause 0.15
+    Image("reiji/walking/URStanding1.png")
+    pause 0.15
+    Image("reiji/walking/URWalkR1.png")
+    pause 0.15
+    Image("reiji/walking/URWalkR2.png")
+    pause 0.15
+    Image("reiji/walking/URWalkR1.png")
+    pause 0.15
+    repeat
+
+image reijisprite upleft walk:
+    Image("reiji/walking/ULStanding1.png")
+    pause 0.15
+    Image("reiji/walking/ULWalkL1.png")
+    pause 0.15
+    Image("reiji/walking/ULWalkL2.png")
+    pause 0.15
+    Image("reiji/walking/ULWalkL1.png")
+    pause 0.15
+    Image("reiji/walking/ULStanding1.png")
+    pause 0.15
+    Image("reiji/walking/ULWalkR1.png")
+    pause 0.15
+    Image("reiji/walking/ULWalkR2.png")
+    pause 0.15
+    Image("reiji/walking/ULWalkR1.png")
     pause 0.15
     repeat

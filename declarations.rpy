@@ -159,22 +159,22 @@ image brown eyes = "brown/neutral/serious e.png"
 image brown base = "brown/neutral/base.png"
 image elly = "elly/neutral/serious.png"
 image elly base = "elly/neutral/base.png"
-image reiji = "reiji/neutral/serious.png"
+image reiji ns = "reiji/neutral/serious.png"
 image natsumi = "natsumi/neutral/smirk.png"
 image saeko = "saeko/neutral/serious.png"
 image ooishi = "ooishi.png"
-image hanya = "hanya.png"
+image hanya ns = "hanya/neutrtal/serious.png"
 image tamaki ns = "tamaki/neutral/smirk.png"
 image tadashi = "tadashi.png"
 image yuko = "yuko.png"
-image toro = "toro.png"
-image devilboy ns = "tsutomu/smirk.png"
-image yamaoka = "yamaoka/neutral/serious.png"
+image toro ns = "toro/neutral/serious.png"
+image devilboy ns = "tsutomu/neutral/smirk.png"
+image yamaoka ns = "yamaoka/neutral/serious.png"
 image kaneda = "kaneda.png"
 image yyclerk = "yinyanworker.png"
 image doctor = "doctor.png"
 image sennenmannendo 1 = "sennenmannendo1.png"
-image sennenmannendo 2 = "snnenmanendo2.png"
+image sennenmannendo 2 = "sennenmannendo2.png"
 image pdclerk = "peacedinerclerk.png"
 image stclerk = "satomi.png"
 image jclerk 1 = "judgmentclerk1.png"
@@ -1363,5 +1363,171 @@ image devilboy animated neutral sad:
     Image("tsutomu/neutral/sad.png", xalign=0, yalign=1.0)
     pause 0.27
     Image("tsutomu/neutral/t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    repeat
+
+#toro
+
+image toro animated neutral serious:
+    Image("toro/neutral/serious.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/serious et1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/serious t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/serious t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/serious t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/serious.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/serious t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/serious et1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/serious.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/serious t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/serious.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/serious t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    repeat
+
+image toro animated neutral smirk:
+    Image("toro/neutral/smirk.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/smirk et2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/smirk.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/smirk.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/smirk et1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/smirk.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    repeat
+
+image toro animated neutral angry:
+    Image("toro/neutral/angry.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/angry t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/angry t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/angry t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/angry t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/angry e.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/angry t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/angry t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/angry.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/angry et1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("toro/neutral/angry.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("toro/neutral/angry t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    repeat
+
+#hanya
+
+image hanya animated neutral serious:
+    Image("hanya/neutral/serious.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/serious et1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/serious t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/serious t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/serious t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/serious.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/serious t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/serious et1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/serious.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/serious t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/serious.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/serious t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    repeat
+
+image hanya animated neutral smirk:
+    Image("hanya/neutral/smirk.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/smirk et2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/smirk.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/smirk.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/smirk et1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/smirk.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    repeat
+
+image hanya animated neutral angry:
+    Image("hanya/neutral/angry.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/angry t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/angry t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/angry t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/angry t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/angry e.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/angry t2.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/angry t1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/angry.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/angry et1.png", xalign=0, yalign=1.0)
+    pause 0.16
+    Image("hanya/neutral/angry.png", xalign=0, yalign=1.0)
+    pause 0.27
+    Image("hanya/neutral/angry t2.png", xalign=0, yalign=1.0)
     pause 0.16
     repeat
