@@ -222,6 +222,11 @@ image student9 downright stand = "students/9/DRStanding1.png"
 image student9 upleft stand = "students/9/ULStanding1.png"
 image student9 upright stand = "students/9/URStanding1.png"
 
+image studentifm downleft stand = "students/ifm/DLStanding1.png"
+image studentifm downright stand = "students/ifm/DRStanding1.png"
+image studentifm upleft stand = "students/ifm/ULStanding1.png"
+image studentifm upright stand = "students/ifm/URStanding1.png"
+
 image kanedasprite downleft stand = "kaneda/walking/DLStanding1.png"
 image kanedasprite downright stand = "kaneda/walking/DRStanding1.png"
 image kanedasprite upleft stand = "kaneda/walking/ULStanding1.png"
@@ -247,6 +252,11 @@ image woman2sprite downright stand = "townies/woman2/DRStanding1.png"
 image woman2sprite upleft stand = "townies/woman2/ULStanding1.png"
 image woman2sprite upright stand = "townies/woman2/URStanding1.png"
 
+image man1sprite downleft stand = "townies/man1/DLStanding1.png"
+image man1sprite downright stand = "townies/man1/DRStanding1.png"
+image man1sprite upleft stand = "townies/man1/ULStanding1.png"
+image man1sprite upright stand = "townies/man1/URStanding1.png"
+
 image yinyansprite downleft stand1 = "merchants/yinyan/stand1.png"
 image yinyansprite downleft stand2 = "merchants/yinyan/stand2.png"
 
@@ -261,6 +271,15 @@ image rcsprite downleft stand2 = "merchants/rc/stand2.png"
 
 image stsprite downleft stand1 = "merchants/st/stand1.png"
 image stsprite downleft stand2 = "merchants/st/stand2.png"
+
+image jd1sprite downleft stand1 = "merchants/jd1/stand1.png"
+image jd1sprite downleft stand2 = "merchants/jd1/stand2.png"
+
+image jd2sprite downleft stand1 = "merchants/jd2/stand1.png"
+image jd2sprite downleft stand2 = "merchants/jd2/stand2.png"
+
+image hssprite downleft stand1 = "merchants/hs/stand1.png"
+image hssprite downleft stand2 = "merchants/hs/stand2.png"
 
 image markmomsprite downleft stand = "townies/markmom/DLStanding1.png"
 image markmomsprite downright stand = "townies/markmom/DRStanding1.png"
@@ -1144,6 +1163,35 @@ image student9 downleft standmove:
     pause 1.75
     repeat
 
+#Student IF Male
+image studentifm upright standmove:
+    Image("students/ifm/URStanding2.png")
+    pause 2.25
+    Image("students/ifm/URStanding1.png")
+    pause 1.75
+    repeat
+
+image studentifm upleft standmove:
+    Image("students/ifm/ULStanding2.png")
+    pause 2.25
+    Image("students/ifm/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image studentifm downright standmove:
+    Image("students/ifm/DRStanding2.png")
+    pause 2.25
+    Image("students/ifm/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image studentifm downleft standmove:
+    Image("students/ifm/DLStanding2.png")
+    pause 2.25
+    Image("students/ifm/DLStanding1.png")
+    pause 1.75
+    repeat
+
 #Kaneda
 image kanedasprite upright standmove:
     Image("kaneda/walking/URStanding2.png")
@@ -1259,6 +1307,34 @@ image woman2sprite downleft standmove:
     pause 1.75
     repeat
 
+image wan1sprite upright standmove:
+    Image("townies/man1/URStanding2.png")
+    pause 2.25
+    Image("townies/man1/URStanding1.png")
+    pause 1.75
+    repeat
+
+image man1sprite upleft standmove:
+    Image("townies/man1/ULStanding2.png")
+    pause 2.25
+    Image("townies/man1/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image man1sprite downright standmove:
+    Image("townies/man1/DRStanding2.png")
+    pause 2.25
+    Image("townies/man1/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image man1sprite downleft standmove:
+    Image("townies/man1/DLStanding2.png")
+    pause 2.25
+    Image("townies/man1/DLStanding1.png")
+    pause 1.75
+    repeat
+
 ####################Shop NPCs####################
 
 #Physician
@@ -1353,6 +1429,27 @@ image stsprite downleft standmove:
     Image("merchants/st/Stand1.png")
     pause 2.25
     Image("merchants/st/Stand2.png")
+    pause 1.75
+    repeat
+
+image jd1sprite downleft standmove:
+    Image("merchants/jd1/Stand1.png")
+    pause 2.25
+    Image("merchants/jd1/Stand2.png")
+    pause 1.75
+    repeat
+
+image jd2sprite downleft standmove:
+    Image("merchants/jd2/Stand1.png")
+    pause 2.25
+    Image("merchants/jd2/Stand2.png")
+    pause 1.75
+    repeat
+
+image hssprite downleft standmove:
+    Image("merchants/hs/Stand1.png")
+    pause 2.25
+    Image("merchants/hs/Stand2.png")
     pause 1.75
     repeat
 

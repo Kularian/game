@@ -4654,10 +4654,6 @@ label label037 (location="Yin & Yan"):
         $ nanjoy = 350
         $ npc1x = 1335
         $ npc1y = 245
-#        show nanjosprite upleft stand at nanjoloc
-#        show yukinosprite downright stand at yukinoloc
-#        show marksprite upleft stand at markloc
-#        show yinyansprite downleft stand1 at npc1loc
     label label037TalkA:
         show screen YY1
         $ yukinox = 1350
@@ -5619,48 +5615,150 @@ label label045 (location="Judgment 1999"): #Judgment 1999 Mikage
         scene bg judgment with qdis
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
-        call screen JD1
-        if _return == 1:
-            show mark animated neutral serious with qleft
-            mk "Elly's pretty well-known, huh?  But then again, it's not that surprising."
-            show mark animated neutral smirk
-            mk "She's pretty awesome."
-        elif _return == 2:
-            show yukino animated neutral serious with qleft
-            yu "Do what you want, but can it wait until after we've been to the hospital?"
-        elif _return == 3:
-            show nanjo animated neutral smirk with qleft
-            na "I wasn't aware you were a gambler.  Looks can be evidently be deceiving."
-        elif _return == 4:
-            "Man" "Hey, do you all go to St. Hermelin?  Then you must know that girl..."
-            "Man" "She has long hair and a knockout figure.  I think her name's Sally or Mary..."
-            "Man" "Whatever it is, she's gorgeous!"
-            "Man" "C'mon, next time she's here, introduce us!"
-        elif _return == 5:
-            stu  "Aw, c'mon!  I lost all my coins again!"
-            stu "I pumped in lots of coins, so whoever wins next will hit it big."
-            stu "Hey, are you up next!?  Urgh... This ain't fair!"
-        elif _return == 6:
-            show jclerk 1 at pleft2 with qleft
-            jclerk "Hiiii!  SO nice to see you!"
-            jclerk "If you're looking to exchange money for coins, I'm your man."
-            jclerk "Won't you purchase some coins?  Hmmmm?"
-            $ tbnarrator = 1
-            "After some consideration, Naoya decided against it."
-            $ tbnarrator = 0
-            #coin purchase for gambling
-        elif _return == 7:
-            show jclerk 2 at pleft2 with qleft
-            jclerk "I can exchange your coins for items, if that's what ou're in the mood for..."
-            jclerk "Wanna see what I've got?"
-            $ tbnarrator = 1
-            "After some consideration, Naoya decided against it."
-            $ tbnarrator = 0
-            #coin exchange for gambling
-        elif _return == 8:
-            hide screen header
-            jump label040
-        jump label045
+        $ yukinox = 800
+        $ yukinoy = 560
+        $ markx = 960
+        $ marky = 160
+        $ nanjox = 1170
+        $ nanjoy = 570
+        $ npc2x = 560
+        $ npc2y = 310
+        $ npc1x = 1100
+        $ npc1y = 350
+        $ npc3x = 1530
+        $ npc3y = 315
+        $ npc4x = 1230
+        $ npc4y = 192
+        label label045TalkA:
+            show screen JD1
+            hide marksprite
+            hide jd1sprite
+            hide jd2sprite
+            hide nanjosprite
+            hide yukinosprite
+            hide man1sprite
+            hide studentifm
+            call screen JD1
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite downright stand at yukinoloc
+                show marksprite downright stand at markloc
+                show man1sprite downleft stand at npc1loc
+                show studentifm downright stand at npc2loc
+                show jd1sprite downleft stand1 at npc3loc
+                show jd2sprite downleft stand1 at npc4loc
+            if _return == 1:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "Elly's pretty well-known, huh?  But then again, it's not that surprising."
+                show mark animated neutral smirk
+                mk "She's pretty awesome."
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label045mark = 1
+            elif _return == 2:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy+25
+                show yukinosprite downright stand at yukinoloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Do what you want, but can it wait until after we've been to the hospital?"
+                show yukinosprite downright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label045yukino = 1
+            elif _return == 3:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy-25
+                show nanjosprite upleft standmove at nanjoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show nanjo animated neutral smirk with qleft
+                na "I wasn't aware you were a gambler.  Looks can be evidently be deceiving."
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label045nanjo = 1
+            elif _return == 4:
+                $ naoyax = npc1x-60
+                $ naoyay = npc1y+25
+                show man1sprite downleft standmove at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                "Man" "Hey, do you all go to St. Hermelin?  Then you must know that girl..."
+                "Man" "She has long hair and a knockout figure.  I think her name's Sally or Mary..."
+                "Man" "Whatever it is, she's gorgeous!"
+                "Man" "C'mon, next time she's here, introduce us!"
+                show man1sprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label045man1 = 1
+            elif _return == 5:
+                $ naoyax = npc2x+60
+                $ naoyay = npc2y+25
+                show studentifm downright standmove at npc2loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu  "Aw, c'mon!  I lost all my coins again!"
+                stu "I pumped in lots of coins, so whoever wins next will hit it big."
+                stu "Hey, are you up next!?  Urgh... This ain't fair!"
+                show studentifm downright stand
+                hide naoyasprite
+                with qdis
+                $ label045student = 1
+            elif _return == 6:
+                $ naoyax = npc3x-60
+                $ naoyay = npc3y+55
+                show jd1sprite downleft standmove at npc3loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show jclerk 2 at pleft2 with qleft
+                jclerk "Hiiii!  SO nice to see you!"
+                jclerk "If you're looking to exchange money for coins, I'm your man."
+                jclerk "Won't you purchase some coins?  Hmmmm?"
+                hide jclerk 2 with qdis
+                $ tbnarrator = 1
+                "After some consideration, Naoya decided against it."
+                $ tbnarrator = 0
+                #coin purchase for gambling
+                show jd1sprite downleft stand1
+                hide naoyasprite
+                with qdis
+                $ label045jd1 = 1
+            elif _return == 7:
+                $ naoyax = npc4x-70
+                $ naoyay = npc4y+65
+                show jd2sprite downleft standmove at npc4loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show jclerk 1 at pleft2 with qleft
+                jclerk "I can exchange your coins for items, if that's what you're in the mood for..."
+                jclerk "Wanna see what I've got?"
+                hide jclerk 1 with qdis
+                $ tbnarrator = 1
+                "After some consideration, Naoya decided against it."
+                $ tbnarrator = 0
+                #coin exchange for gambling
+                show jd2sprite downleft stand1
+                hide naoyasprite
+                with qdis
+                $ label045jd2 = 1
+            elif _return == 8:
+                hide nanjosprite
+                hide naoyasprite
+                hide marksprite
+                hide yukinosprite
+                hide jd1sprite
+                hide jd2sprite
+                hide man1sprite
+                hide studentifm
+                with qdis
+                hide screen header
+                "You head back out into the mall."
+                jump label040
+            jump label045TalkA
 
 label label046: #velvet room
     $ tbnarrator = 1
@@ -5686,12 +5784,12 @@ label label048 (location="Historical Society"):
         el "We must hurry and bring Maki's mother to the school!"
         hide elly with qdis
         jump calloverworld
-    if plotprogress == 1:
+    elif plotprogress == 1:
         $ tbnarrator = 1
         "The Historical Society seems to be closed..."
         $ tbnarrator = 0
         jump calloverworld
-    if plotprogress == 0:
+    elif plotprogress == 0:
         scene bg historicalsociety1 with qdis
         play music history fadeout 0.5 fadein 0.5 if_changed
         show screen header

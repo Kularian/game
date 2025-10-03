@@ -196,4 +196,12 @@ label start:
     default label044st = 0
     default label044woman = 0
 
+    default label045nanjo = 0
+    default label045mark = 0
+    default label045yukino = 0
+    default label045jd1 = 0
+    default label045jd2 = 0
+    default label045man1 = 0
+    default label045student = 0
+
     jump start2
