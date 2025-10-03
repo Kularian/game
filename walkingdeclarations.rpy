@@ -257,6 +257,14 @@ image man1sprite downright stand = "townies/man1/DRStanding1.png"
 image man1sprite upleft stand = "townies/man1/ULStanding1.png"
 image man1sprite upright stand = "townies/man1/URStanding1.png"
 
+image oldman1sprite downleft stand = "townies/oldman1/DLStanding1.png"
+image oldman1sprite downright stand = "townies/oldman1/DRStanding1.png"
+
+image girl1sprite downleft stand = "townies/girl1/DLStanding1.png"
+image girl1sprite downright stand = "townies/girl1/DRStanding1.png"
+image girl1sprite upleft stand = "townies/girl1/ULStanding1.png"
+image girl1sprite upright stand = "townies/girl1/URStanding1.png"
+
 image yinyansprite downleft stand1 = "merchants/yinyan/stand1.png"
 image yinyansprite downleft stand2 = "merchants/yinyan/stand2.png"
 
@@ -278,8 +286,8 @@ image jd1sprite downleft stand2 = "merchants/jd1/stand2.png"
 image jd2sprite downleft stand1 = "merchants/jd2/stand1.png"
 image jd2sprite downleft stand2 = "merchants/jd2/stand2.png"
 
-image hssprite downleft stand1 = "merchants/hs/stand1.png"
-image hssprite downleft stand2 = "merchants/hs/stand2.png"
+image hssprite downright stand1 = "merchants/hs/stand1.png"
+image hssprite downright stand2 = "merchants/hs/stand2.png"
 
 image markmomsprite downleft stand = "townies/markmom/DLStanding1.png"
 image markmomsprite downright stand = "townies/markmom/DRStanding1.png"
@@ -1307,7 +1315,7 @@ image woman2sprite downleft standmove:
     pause 1.75
     repeat
 
-image wan1sprite upright standmove:
+image man1sprite upright standmove:
     Image("townies/man1/URStanding2.png")
     pause 2.25
     Image("townies/man1/URStanding1.png")
@@ -1332,6 +1340,48 @@ image man1sprite downleft standmove:
     Image("townies/man1/DLStanding2.png")
     pause 2.25
     Image("townies/man1/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image oldman1sprite downright standmove:
+    Image("townies/oldman1/DRStanding2.png")
+    pause 2.25
+    Image("townies/oldman1/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image oldman1sprite downleft standmove:
+    Image("townies/oldman1/DLStanding2.png")
+    pause 2.25
+    Image("townies/oldman1/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image girl1sprite upright standmove:
+    Image("townies/girl1/URStanding2.png")
+    pause 2.25
+    Image("townies/girl1/URStanding1.png")
+    pause 1.75
+    repeat
+
+image girl1sprite upleft standmove:
+    Image("townies/girl1/ULStanding2.png")
+    pause 2.25
+    Image("townies/girl1/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image girl1sprite downright standmove:
+    Image("townies/girl1/DRStanding2.png")
+    pause 2.25
+    Image("townies/girl1/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image girl1sprite downleft standmove:
+    Image("townies/girl1/DLStanding2.png")
+    pause 2.25
+    Image("townies/girl1/DLStanding1.png")
     pause 1.75
     repeat
 
@@ -1446,7 +1496,7 @@ image jd2sprite downleft standmove:
     pause 1.75
     repeat
 
-image hssprite downleft standmove:
+image hssprite downright standmove:
     Image("merchants/hs/Stand1.png")
     pause 2.25
     Image("merchants/hs/Stand2.png")

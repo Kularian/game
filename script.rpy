@@ -5793,65 +5793,197 @@ label label048 (location="Historical Society"):
         scene bg historicalsociety1 with qdis
         play music history fadeout 0.5 fadein 0.5 if_changed
         show screen header
-        call screen HistoricalSociety1
-        if _return == 1:
-            show mark animated neutral smirk with qleft
-            mk "Mmmm... receptionists."
-            show mark animated neutral serious
-            mk "Er, uh..."
-        elif _return == 2:
-            show yukino animated neutral serious with qleft
-            yu "You're doing social studies research before we go to the hospital?"
-            show yukino animated neutral smirk
-            yu "Whatever, weirdo..."
-        elif _return == 3:
-            show nanjo animated neutral serious with qleft
-            na "The historical society seems to be past here.  Are we going inside?"
-        elif _return == 4:
-            "Woman" "Welcome to the Mikage Historical Society!"
-            "Woman" "We have many interesting exhibits here that shed light on the area's history."
-        elif _return == 5:
-            jump label049
-        elif _return == 6:
-            $ tbnarrator = 1
-            "You go back out into Mikage-Cho."
-            window hide
-            window auto
-            $ tbnarrator = 0
-            hide screen header
-            jump calloverworld
-        jump label048
+        $ yukinox = 470
+        $ yukinoy = 550
+        $ markx = 760
+        $ marky = 420
+        $ nanjox = 1400
+        $ nanjoy = 470
+        $ npc1x = 1015
+        $ npc1y = 403
+        label label048TalkA:
+            show screen HistoricalSociety1
+            hide marksprite
+            hide hssprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen HistoricalSociety1
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite downright stand at yukinoloc
+                show marksprite downright stand at markloc
+                show hssprite downright stand1 at npc1loc
+            if _return == 1:
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral smirk with qleft
+                mk "Mmmm... receptionists."
+                show mark animated neutral serious
+                mk "Er, uh..."
+                show marksprite downright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label048mark = 1
+            elif _return == 2:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy+25
+                show yukinosprite downright stand at yukinoloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "You're doing social studies research before we go to the hospital?"
+                show yukino animated neutral smirk
+                yu "Whatever, weirdo..."
+                show yukinosprite downright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label048yukino = 1
+            elif _return == 3:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy-15
+                show nanjosprite upleft standmove at nanjoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "The historical society seems to be past here.  Are we going inside?"
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label048nanjo = 1
+            elif _return == 4:
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y+25
+                show hssprite standmove at npc1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                "Woman" "Welcome to the Mikage Historical Society!"
+                "Woman" "We have many interesting exhibits here that shed light on the area's history."
+                show hssprite downright stand1
+                hide naoyasprite
+                with qdis
+                $ label048woman1 = 1
+            elif _return == 5:
+                "You go further within."
+                jump label049
+            elif _return == 6:
+                hide nanjosprite
+                hide naoyasprite
+                hide marksprite
+                hide yukinosprite
+                hide hssprite
+                with qdis
+                "You head back out into the city."
+                window hide
+                window auto
+                $ tbnarrator = 0
+                hide screen header
+                jump calloverworld
+            jump label048TalkA
 
 label label049: #Historical society inside
     scene bg historicalsociety2 with qdis
     play music history fadeout 0.5 fadein 0.5 if_changed
     show screen header
-    call screen HistoricalSociety2
-    if _return == 1:
-        show mark animated neutral serious with qleft
-        mk "You're awfully studious all of a sudden."
-        show mark animated neutral smirk
-        mk "Is Hell about to freeze over?"
-    elif _return == 2:
-        show yukino animated neutral serious with qleft
-        yu "It's musty in here, but kinda nice.  Maybe it's the mirror's influence."
-    elif _return == 3:
-        show nanjo animated neutral serious with qleft
-        na "It's long been said that mirrors have mystical powers... Is this one of them?"
-    elif _return == 4:
-        "Man" "I came to see the {color=#800000}Expel Mirror{/color} display.  It's as divine as they say..."
-    elif _return == 5:
-        "Girl" "The Expel Mirror was all they found in the ruins six months ago."
-        "Girl" "My teacher said it's boring in those ruins 'cause there's nothing else there."
-    elif _return == 6:
-        hide screen header
-        $ tbnarrator = 1
-        "You head back into the reception area."
-        window hide
-        window auto
-        $ tbnarrator = 0
-        jump label048
-    jump label049
+    $ yukinox = 700
+    $ yukinoy = 650
+    $ markx = 1190
+    $ marky = 560
+    $ nanjox = 1600
+    $ nanjoy = 420
+    $ npc1x = 760
+    $ npc1y = 380
+    $ npc2x = 450
+    $ npc2y = 450
+    label label049TalkA:
+        show screen HistoricalSociety2
+        hide marksprite
+        hide hssprite
+        hide nanjosprite
+        hide yukinosprite
+        call screen HistoricalSociety2
+        if _return > 0:
+            show nanjosprite downleft stand at nanjoloc
+            show yukinosprite upright stand at yukinoloc
+            show marksprite upleft stand at markloc
+            show studentifm downright stand at npc1loc
+            show girl1sprite upleft stand at npc2loc
+        if _return == 1:
+            $ naoyax = markx-60
+            $ naoyay = marky-25
+            show marksprite upleft standmove at markloc
+            show naoyasprite downright stand at naoyaloc with qdis
+            show mark animated neutral serious with qleft
+            mk "You're awfully studious all of a sudden."
+            show mark animated neutral smirk
+            mk "Is Hell about to freeze over?"
+            show marksprite upleft stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label049mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox+60
+            $ naoyay = yukinoy-25
+            show yukinosprite upright stand at yukinoloc
+            show naoyasprite downleft stand at naoyaloc with qdis
+            show yukino animated neutral serious with qleft
+            yu "It's musty in here, but kinda nice.  Maybe it's the mirror's influence."
+            show yukinosprite upright stand
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label049yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox-60
+            $ naoyay = nanjoy+25
+            show nanjosprite downleft standmove at nanjoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show nanjo animated neutral serious with qleft
+            na "It's long been said that mirrors have mystical powers... Is this one of them?"
+            show nanjosprite downleft stand
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label049nanjo = 1
+        elif _return == 4:
+            $ naoyax = npc1x+60
+            $ naoyay = npc1y-25
+            show studentifm upright standmove at npc1loc
+            show naoyasprite downleft stand at naoyaloc with qdis
+            stu "I came to see the {color=#800000}Expel Mirror{/color} display.  It's as divine as they say..."
+            show studentifm downright stand
+            hide naoyasprite
+            with qdis
+            $ label049ifstu1 = 1
+        elif _return == 5:
+            $ naoyax = npc2x-60
+            $ naoyay = npc2y+15
+            show girl1sprite downleft standmove at npc2loc
+            show naoyasprite upright stand at naoyaloc with qdis
+            "Girl" "The Expel Mirror was all they found in the ruins six months ago."
+            "Girl" "My teacher said it's boring in those ruins 'cause there's nothing else there."
+            show girl1sprite upleft stand at npc2loc
+            hide naoyasprite
+            with qdis
+            $ label049girl1 = 1
+        elif _return == 6:
+            hide nanjosprite
+            hide naoyasprite
+            hide marksprite
+            hide yukinosprite
+            hide girl1sprite
+            hide studentifm
+            with qdis
+            "You return to the reception area."
+            window hide
+            window auto
+            $ tbnarrator = 0
+            hide screen header
+            jump label048
+        jump label049TalkA
+
 
 label label050: #police station
     if plotprogress == 2:
@@ -5952,31 +6084,91 @@ label label053 (location="Rosa Candida"): #Joy street
         scene bg rosacandida with qdis
         play music rosa fadeout 0.5 fadein 0.5 if_changed
         show screen header
-        call screen RC2
-        if _return == 1:
-            show mark animated neutral smirk with qleft
-            mk "Speaking of clothes, what's with Nanjo's scarf?  He's always wearing that thing."
-        elif _return == 2:
-            show yukino animated neutral serious with qleft
-            yu "Tch, did Yuka ask you to go shopping for her?"
-            yu "Well, once you're done here, we're going straight to the hospital!"
-        elif _return == 3:
-            show nanjo animated neutral serious with qleft
-            na "The only clothing I require is this uniform... and my scarf, of course."
-        elif _return == 4:
-            show rcclerk at pleft2 with qleft
-            rcclerk "The people in this town have such bad fashion sense!"
-            rcclerk "The only one with a shred of taste is this brown-haired boy I see sometimes..."
-            rcclerk "He's got these cool goggles on, and he's really cute!"
-        elif _return == 5:
-            hide screen header
-            $ tbnarrator = 1
-            "You head back into the mall."
-            window hide
-            window auto
-            $ tbnarrator = 0
-            jump label052
-        jump label053
+        $ yukinox = 970
+        $ yukinoy = 680
+        $ markx = 1000
+        $ marky = 300
+        $ nanjox = 600
+        $ nanjoy = 430
+        $ npc1x = 1460
+        $ npc1y = 408
+        label label053TalkA:
+            show screen RC2
+            hide marksprite
+            hide rcsprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen RC2
+            if _return > 0:
+                show nanjosprite downleft stand at nanjoloc
+                show yukinosprite upright stand at yukinoloc
+                show marksprite downleft stand at markloc
+                show rcsprite downleft stand1 at npc1loc
+            if _return == 1:
+                $ naoyax = markx-60
+                $ naoyay = marky+25
+                show marksprite downleft standmove at markloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show mark animated neutral smirk with qleft
+                mk "Speaking of clothes, what's with Nanjo's scarf?  He's always wearing that thing."
+                show marksprite downleft stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label053mark = 1
+            elif _return == 2:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy-25
+                show yukinosprite upright stand at yukinoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Tch, did Yuka ask you to go shopping for her?"
+                yu "Well, once you're done here, we're going straight to the hospital!"
+                show yukinosprite upright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label053yukino = 1
+            elif _return == 3:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy+25
+                show nanjosprite downleft standmove at nanjoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "The only clothing I require is this uniform... and my scarf, of course."
+                show nanjosprite downleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label053nanjo = 1
+            elif _return == 4:
+                $ naoyax = npc1x-80
+                $ naoyay = npc1y+55
+                show rcsprite standmove at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show rcclerk at pleft2 with qleft
+                rcclerk "The people in this town have such bad fashion sense!"
+                rcclerk "The only one with a shred of taste is this brown-haired boy I see sometimes..."
+                rcclerk "He's got these cool goggles on, and he's really cute!"
+                show rcsprite downleft stand1
+                hide rcclerk
+                hide naoyasprite
+                with qdis
+                $ label053rc1 = 1
+            elif _return == 5:
+                hide nanjosprite
+                hide naoyasprite
+                hide marksprite
+                hide yukinosprite
+                hide rcsprite
+                with qdis
+                "You return to the mall area."
+                window hide
+                window auto
+                $ tbnarrator = 0
+                hide screen header
+                jump label052
+            jump label053TalkA
 
 label label054 (location = "Sennen Mannen-Do"): #Joy Street
     if plotprogress == 1:
@@ -6019,34 +6211,102 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
         scene bg sennenmannendojoy with qdis
         play music sennen fadeout 0.5 fadein 0.5 if_changed
         show screen header
-        call screen SMD2
-        if _return == 1:
-            show mark animated neutral serious with qleft
-            mk "Music...?  Like, pianos and singing?  Huh?  I think I've heard somethin' like that somewhere too..."
-        elif _return == 2:
-            show yukino animated neutral serious with qleft
-            yu "A weird store?  What do you think's in it...?"
-        elif _return == 3:
-            show nanjo animated neutral serious with qleft
-            na "Well then, where to next?  We can go anywhere you please..."
-            show nanjo animated neutral smirk
-            na "Just so long as the hospital is in our plans at some point."
-        elif _return == 4:
-            "Customer" "There's this one strange store in this here mall..."
-            "Customer" "Whenever I go take a gander, it's closed, and I've never seen anyone go in or out."
-            "Customer" "But every now and then, you can hear music from in there... It's a funny old world, isn't it?"
-        elif _return == 5:
-            show sennenmannendo 1 at pleft2 with qleft
-            smd "My, I'm grateful you came all this way.  Well, feel free to look around."
-        elif _return == 6:
-            hide screen header
-            $ tbnarrator = 1
-            "You head back into the mall."
-            window hide
-            window auto
-            $ tbnarrator = 0
-            jump label052
-        jump label054
+        $ yukinox = 590
+        $ yukinoy = 630
+        $ markx = 540
+        $ marky = 520
+        $ nanjox = 1120
+        $ nanjoy = 550
+        $ npc1x = 1230
+        $ npc1y = 375
+        $ npc2x = 440
+        $ npc2y = 520
+        label label054TalkA:
+            show screen SMD2
+            hide marksprite
+            hide smdsprite
+            hide nanjosprite
+            hide yukinosprite
+            hide oldman1sprite
+            call screen SMD2
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite upright stand at yukinoloc
+                show marksprite downleft stand at markloc
+                show smdsprite downleft stand1 at npc1loc
+                show oldman1sprite downright stand at npc2loc
+            if _return == 1:
+                $ naoyax = markx-60
+                $ naoyay = marky+25
+                show marksprite downleft standmove at markloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "Music...?  Like, pianos and singing?  Huh?  I think I've heard somethin' like that somewhere too..."
+                show marksprite downleft stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label054mark = 1
+            elif _return == 2:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy-25
+                show yukinosprite upright stand at yukinoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "A weird store?  What do you think's in it...?"
+                show yukinosprite upright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label054yukino = 1
+            elif _return == 3:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy-15
+                show nanjosprite upleft standmove at nanjoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "Well then, where to next?  We can go anywhere you please..."
+                show nanjo animated neutral smirk
+                na "Just so long as the hospital is in our plans at some point."
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label054nanjo = 1
+            elif _return == 4:
+                $ naoyax = npc1x-90
+                $ naoyay = npc1y+20
+                show smdsprite downleft standmove at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show sennenmannendo 1 at pleft2 with qleft
+                "Clerk" "My, I'm grateful you came all this way.  Well, feel free to look around."
+                $ tbnarrator = 1
+                "Naoya persues the sweets, but ultimately decides against it."
+                $ tbnarrator = 0
+                #shop here later
+                show smdsprite downleft stand1
+                hide sennenmannendo
+                hide naoyasprite
+                with qdis
+                $ label054smd = 1
+            elif _return == 5:
+                $ naoyax = npc2x+50
+                $ naoyay = npc2y+25
+                show oldman1sprite downright standmove at npc2loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                "Customer" "There's this one strange store in this here mall..."
+                "Customer" "Whenever I go take a gander, it's closed, and I've never seen anyone go in or out."
+                "Customer" "But every now and then, you can hear music from in there... It's a funny old world, isn't it?"
+                show oldman1sprite downright stand
+                hide naoyasprite
+                with qdis
+                $ label054oldman1 = 1
+            elif _return == 6:
+                scene bg sennenmannendojoy with qdis
+                hide screen header
+                "You head back out into the mall."
+                jump label052
+            jump label054TalkA
 
 label label055 (location = "Yin & Yan"): #Joy Street
     if plotprogress == 1:
