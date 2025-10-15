@@ -1734,7 +1734,7 @@ label label011(location="Gymnasium"):
         if plotprogress =< 5:
             scene bg black with qdis #update
             #play appropriate music #update
-            call screen Gymansiumb
+            call screen Gymnasiumb
             if _return == 1:
                 stu "This fuss'll die down by the time the festival starts, right?"
                 stu "It'd suck if the school festival was cancelled in all this chaos!"
@@ -8026,3 +8026,4 @@ label HospitalNav:
     call screen HospitalNav(_with_none=False)
 
 return
+
