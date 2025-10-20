@@ -294,6 +294,11 @@ image markmomsprite downright stand = "townies/markmom/DRStanding1.png"
 image markmomsprite upleft stand = "townies/markmom/ULStanding1.png"
 image markmomsprite upright stand = "townies/markmom/URStanding1.png"
 
+image reijimomsprite downleft stand = "townies/reijimom/DLStanding1.png"
+image reijimomsprite downright stand = "townies/reijimom/DRStanding1.png"
+image reijimomsprite upleft stand = "townies/reijimom/ULStanding1.png"
+image reijimomsprite upright stand = "townies/reijimom/URStanding1.png"
+
 #Emotion Indicators
 
 image exclamation = "gui/talking/surprised.png"
@@ -1255,6 +1260,35 @@ image markmomsprite downleft standmove:
     Image("townies/markmom/DLStanding2.png")
     pause 2.25
     Image("townies/markmom/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Reiji's Mom
+image reijimomsprite upright standmove:
+    Image("townies/reijimom/URStanding2.png")
+    pause 2.25
+    Image("townies/reijimom/URStanding1.png")
+    pause 1.75
+    repeat
+
+image reijimomsprite upleft standmove:
+    Image("townies/reijimom/ULStanding2.png")
+    pause 2.25
+    Image("townies/reijimom/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image reijimomsprite downright standmove:
+    Image("townies/reijimom/DRStanding2.png")
+    pause 2.25
+    Image("townies/reijimom/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image reijimomsprite downleft standmove:
+    Image("townies/reijimom/DLStanding2.png")
+    pause 2.25
+    Image("townies/reijimom/DLStanding1.png")
     pause 1.75
     repeat
 

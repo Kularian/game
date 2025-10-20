@@ -10,34 +10,34 @@ label start:
     default label002nanjo = 0
     default label002mark = 0
     default label002yukino = 0
-    default label002astudent = 0
+    default label002student = 0
 
     default label003nanjo = 0
     default label003mark = 0
     default label003yukino = 0
-    default label003astudent = 0
+    default label003student = 0
 
     default label004nanjo = 0
     default label004mark = 0
     default label004yukino = 0
-    default label004astudent = 0
+    default label004student = 0
 
     default label005nanjo = 0
     default label005mark = 0
     default label005yukino = 0
-    default label005astudent = 0
+    default label005student = 0
 
     default label006nanjo = 0
     default label006mark = 0
     default label006yukino = 0
-    default label006astudent = 0
+    default label006student = 0
     default label006ooishi = 0
     default label006hiremon = 0
 
     default label007nanjo = 0
     default label007mark = 0
     default label007yukino = 0
-    default label007ateacher = 0
+    default label007teacher = 0
     default label007elly = 0
     default label007ayase = 0
 
@@ -59,9 +59,9 @@ label start:
     default label012nanjo = 0
     default label012mark = 0
     default label012yukino = 0
-    default label012astudent1 = 0
-    default label012astudent2 = 0
-    default label012astudent3 = 0
+    default label012student1 = 0
+    default label012student2 = 0
+    default label012student3 = 0
 
     default label013nanjo = 0
     default label013mark = 0
@@ -76,10 +76,10 @@ label start:
     default label015nanjo = 0
     default label015mark = 0
     default label015yukino = 0
-    default label015atadashi = 0
-    default label015atamaki = 0
-    default label015astudent1 = 0
-    default label015astudent2 = 0
+    default label015tadashi = 0
+    default label015tamaki = 0
+    default label015student1 = 0
+    default label015student2 = 0
 
     default label016nanjo = 0
     default label016mark = 0
@@ -230,6 +230,7 @@ label start:
     default label055mark = 0
     default label055yukino = 0
     default label055yy = 0
+    default label055reijimom = 0
 
     default label056nanjo = 0
     default label056mark = 0
@@ -346,7 +347,7 @@ label start:
     default label057ayukino = 0
     default label057aelly = 0
     default label057ast1 = 0
-    default label057acustomer1 = 0    
+    default label057acustomer1 = 0
 
     default label055ananjo = 0
     default label055amark = 0
@@ -361,7 +362,7 @@ label start:
     default label058ayukino = 0
     default label058aelly = 0
     default label058adoctor = 0
-    default label058anurse = 0   
+    default label058anurse = 0
 
     default label061ananjo = 0
     default label061amark = 0
@@ -377,7 +378,7 @@ label start:
     default label064ayukino = 0
     default label064aelly = 0
     default label064adoctor = 0
-    default label064anurse = 0   
+    default label064anurse = 0
 
     default label041ananjo = 0
     default label041amark = 0
@@ -410,7 +411,7 @@ label start:
     default label039ayukino = 0
     default label039aelly = 0
     default label039adoctor = 0
-    default label039anurse = 0   
+    default label039anurse = 0
 
     default label038ayukino = 0
     default label038aelly = 0
