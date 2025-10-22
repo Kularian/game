@@ -6803,7 +6803,7 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
         $ npc1y = 410
         $ npc2x = 650
         $ npc2y = 500
-        label label039TalkA:
+        label label052TalkA:
             show screen Clinic1
             hide marksprite
             hide physiciansprite
@@ -6883,9 +6883,8 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
                 window hide
                 window auto
                 $ tbnarrator = 0
-                jump label052
+                jump label052TalkA
             jump label058
-
 
 label label059: #velvet room joy street
     $ tbnarrator = 1
@@ -6962,52 +6961,151 @@ label label061 (location = "Judgment 1999"): # Joy Street
         scene bg judgment with qdis
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
-        call screen JD2
+        $ yukinox = 1250
+        $ yukinoy = 520
+        $ markx = 1050
+        $ marky = 650
+        $ nanjox = 1100
+        $ nanjoy = 500
+        $ npc1x = 760
+        $ npc1y = 410
+        $ npc2x = 650
+        $ npc2y = 500
+        $ npc3x = 500
+        $ npc3y = 600
+        $ npc4x = 750
+        $ npc4y = 500
+        $ npc5x = 1000
+        $ npc5y = 350
+        show screen jd2
+        hide marksprite
+        hide man1sprite
+        hide studentifm
+        hide student9
+        hide jd1sprite
+        hide jd2sprite
+        hide nanjosprite
+        hide yukinosprite
+        call screen jd2
+        if _return > 0:
+            show nanjosprite upleft stand at nanjoloc
+            show yukinosprite upleft stand at yukinoloc
+            show marksprite upleft stand at markloc
+            show man1sprite downright stand at npc1loc
+            show studentifm downright stand at npc2loc
+            show student9 downright stand at npc3loc
+            show jd1sprite downleft stand at npc4loc
+            show jd2sprite downleft stand at npc5loc
         if _return == 1:
+            $ naoyax = markx-60
+            $ naoyay = marky-25
+            show marksprite upleft standmove at markloc
+            show naoyasprite downright stand at naoyaloc with qdis
             show mark animated neutral serious with qleft
             mk "You know, I like the slots too, but we should play after our checkup!"
+            show marksprite upleft stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label061mark = 1
         elif _return == 2:
+            $ naoyax = yukinox-60
+            $ naoyay = yukinoy-25
+            show yukinosprite upleft stand at yukinoloc
+            show naoyasprite downright stand at naoyaloc with qdis
             show yukino animated neutral serious with qleft
             yu "Masao's pals are weird as ever."
+            show yukinosprite upleft stand
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label061yukino = 1
         elif _return == 3:
+            $ naoyax = nanjox-60
+            $ naoyay = nanjoy-25
+            show nanjosprite upleft standmove at nanjoloc
+            show naoyasprite downright stand at naoyaloc with qdis
             show nanjo animated neutral serious with qleft
             na "What's the matter, Naoya?  Have you suddenly cottoned to gambling?"
+            show nanjosprite upleft stand
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label061nanjo = 1
         elif _return == 4:
+            $ naoyax = npc1x-60
+            $ naoyay = npc1y+25
+            show man1sprite downleft stand at npc1loc
+            show naoyasprite upright stand at naoyaloc with qdis
             "Man" "Ya know, there's been this outsider lately hangin' around our place."
             "Man" "Dude supposedly has a scar on his head.  He shouldn't mess with the Tailors!"
             show mark animated neutral serious with qleft
             mk "Just ignore those guys.  They'll get bored and wander off before too long."
             $ reijicasino = True
+            hide naoyasprite
+            with qdis
+            $ label061guy1 = 1
         elif _return == 5:
+            $ naoyax = npc2x+60
+            $ naoyay = npc2y+25
+            show studentifm downright stand at npc2loc
+            show naoyasprite upleft stand at naoyaloc with qdis
             "Man" "Heehee... You guysh are Mark'sh friendsh?  Heeheeheeeeee!"
             "Man" "Looksh like you guysh ain't the onesh!"
+            show studentifm downright stand
+            hide naoyasprite
+            with qdis
+            $ label061guy2 = 1
         elif _return == 6:
+            $ naoyax = npc3x+60
+            $ naoyay = npc3y+25
+            show student9 downright stand at npc2loc
+            show naoyasprite upleft stand at naoyaloc with qdis
             "Addict" "Dammit!  I'm broke again!  After all my losses, the next one who plays this machine oughtta win big..."
             "Addict" "Wait, are you up next?  Aww, this sucks!"
+            show student9 downright stand
+            hide naoyasprite
+            with qdis
+            $ label061guy3 = 1
         elif _return == 7:
-            show jclerk 1 at pleft2 with qleft
+            $ naoyax = npc4x-60
+            $ naoyay = npc4y+55
+            show jd1sprite downleft standmove at npc4loc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show jclerk 2 at pleft2 with qleft
             jclerk "Hiiii!  SO nice to see you!"
             jclerk "If you're looking to exchange money for coins, I'm your man."
             jclerk "Won't you purchase some coins?  Hmmmm?"
+            hide jclerk 2 with qdis
             $ tbnarrator = 1
             "After some consideration, Naoya decided against it."
             $ tbnarrator = 0
             #coin purchase for gambling
+            show jd1sprite downleft stand1
+            hide naoyasprite
+            with qdis
+            $ label061jd1 = 1
         elif _return == 8:
-            show jclerk 2 at pleft2 with qleft
+            $ naoyax = npc5x-70
+            $ naoyay = npc5y+65
+            show jd2sprite downleft standmove at npc5loc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show jclerk 1 at pleft2 with qleft
             jclerk "I can exchange your coins for items, if that's what you're in the mood for..."
             jclerk "Wanna see what I've got?"
+            hide jclerk 1 with qdis
             $ tbnarrator = 1
             "After some consideration, Naoya decided against it."
             $ tbnarrator = 0
             #coin exchange for gambling
+            show jd2sprite downleft stand1
+            hide naoyasprite
+            with qdis
+            $ label061jd2 = 1
         elif _return == 9:
+            scene bg judgment with qdis
             hide screen header
-            $ tbnarrator = 1
-            "You head back into the mall."
-            window hide
-            window auto
-            $ tbnarrator = 0
+            "You head back out into the mall."
             jump label052
         jump label061
 
@@ -7086,60 +7184,115 @@ label label062 (location = "SEBEC Building"):
             jump label062a
     elif plotprogress == 0:
         play music sebec2 fadeout 0.5 fadein 0.5
+        $ naoyax = 1000
+        $ naoyay = 600
+        $ yukinox = 1250
+        $ yukinoy = 520
+        $ markx = 1050
+        $ marky = 650
+        $ nanjox = 1100
+        $ nanjoy = 500
+        $ npc2x = 650
+        $ npc2y = 500
         if Sebec1 == False:
             scene bg sebecreception with qdis
             show screen header
+            $ npc1x = 760
+            $ npc1y = 410
+            $ npc3x = 500
+            $ npc3y = 600
+            show naoyasprite upright stand at naoyaloc
+            show marksprite upright stand at markloc
+            show yukinosprite upright stand at yukinoloc
+            show nanjosprite upright stand at nanjoloc
+            show takedasprite downleft stand at npc1loc
+            show sebecsecsprite downleft stand1 at npc2loc
             show takeda at pleft2 with qleft
+            show takedasprite downleft standmove
             "Man" "What do you kids want?  This ain't a playground for brats like you.  Hey, toss these kids out!"
+            show takedasprite downleft stand
             $ tbnarrator = 1
             n "{color=#0ff}>Takeda\nKandori's right-hand man who carries out SEBEC's illegal operations.{/color}"
             $ tbnarrator = 0
             hide takeda
             man "Takeda?  What's this disturbance about?"
-            $ tbnarrator = 1
-            "A well-dressed man steps into the room, and Nanjo confronts him immediately."
-            $ tbnarrator = 0
+#            $ tbnarrator = 1
+#            "A well-dressed man steps into the room, and Nanjo confronts him immediately."
+#            $ tbnarrator = 0
+            show kandorispritea upleft standmove at npc3loc
+            window hide
+            $ newlocx = 600
+            $ newlocy = 520
+            show nanjosprite upright walk at newloc with MoveTransition(1.5)
+            $ nanjox = 600
+            $ nanjoy = 520
             show nanjo animated neutral serious with qleft
             na "Kandori..."
             hide nanjo
+            show bg black with qdis
+            $ npc3x = 400
+            $ npc3y = 500
+            window auto
+            show kandorispritea downleft stand at npcloc
+            hide bg black with qdis
             play music kandori0 fadeout 0.5 fadein 0.5
+            show kandorispritea downleft standmove
             show kandori animated neutral smirk with qleft
             kan "My, what a rare pleasure.  What business does the scion of the Nanjo family have with us?"
+            show kandorispritea downleft stand
             show kandori
             $ tbnarrator = 1
             n "{color=#0ff}>Takahisa Kandori\nThe ambitious branch president of SEBEC.  Sinister rumors circulate abouthim...{/color}"
             $ tbnarrator = 0
             hide kandori
+            show nanjosprite upright standmove
             show nanjo animated neutral serious with qleft
             na "I didn't come here for you.  I'm only tagging along with these people."
+            show nanjosprite upright stand
             hide nanjo
+            show kandorispritea downleft standmove
             show kandori animated neutral serious with qleft
             kan "Aha... Then these must be the young master's school friends."
             show kandori animated neutral smirk
             kan "You accompanied them to a sordid place like this?  Quite a friendship indeed..."
+            show kandorispritea downleft stand
             hide kandori
+            show nanjosprite upright standmove
             show nanjo animated neutral serious with qleft
             na "Cease calling me 'young master.'  I never gave you permission to use that name."
+            show nanjosprite upright stand
             hide nanjo
+            show takedasprite downleft standmove
             show takeda at pleft2 with qleft
             tak "You little--!"
+            show takedasprite downleft stand
             hide takeda
+            show kandorispritea downleft standmove
             show kandori animated neutral serious with qleft
             kan "Stand down, Takeda.  It seems the Nanjo family lacks discipline...Well, I'll allow it."
             kan "But Nanjo... I will teach you the proper form of address to your betters."
+            show kandorispritea downleft stand
             hide kandori
+            show marksprite upright standmove
             show mark animated neutral serious with qleft
             mk "Nanjo's an insufferable dick, but you're a hell of a lot worse...!"
+            show marksprite upright stand
             hide mark
             show takeda at pleft2 with qleft
+            show takedasprite downleft standmove
             tak "Tch... It's almost time, Mr. Kandori."
+            show takedasprite downleft stand
             hide takeda
             show kandori animated neutral serious with qleft
+            show kandorispritea downleft standmove
             kan "Yes, I'll be right there.  Now then, the time has come for me to ask you all to leave."
+            show kandorispritea downleft stand
             hide kandori
             show mark animated neutral smirk with qleft
+            show marksprite upright standmove
             mk "Heh!  Let's go, Naoya."
             hide mark with qdis
+            show marksprite upright stand
             $ tbnarrator = 1
             "You return back to the streets of Mikage-Cho."
             window hide
@@ -7151,8 +7304,18 @@ label label062 (location = "SEBEC Building"):
         if Sebec1 == True:
             scene bg sebecreception2 with qdis
             $ location = "SEBEC Building"
-            man "Excuse me, do you have an appointment?"
-            man "I'm sorry, but if you don't have one, I must ask you to leave."
+            show naoyasprite upright stand at naoyaloc
+            show marksprite upright stand at markloc
+            show yukinosprite upright stand at yukinoloc
+            show nanjosprite upright stand at nanjoloc
+            show sebecsecsprite downleft stand1 at npc2loc
+            "Secretary" "Excuse me, do you have an appointment?"
+            "Secretary" "I'm sorry, but if you don't have one, I must ask you to leave."
+            $ tbnarrator = 1
+            "You return back to the streets of Mikage-Cho."
+            window hide
+            window auto
+            $ tbnarrator = 0
             hide screen header
             jump calloverworld
 

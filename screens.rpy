@@ -2527,15 +2527,16 @@ screen JD2: #Joystreet Mall
         imagebutton xpos npc4x ypos npc4y-50 idle "exclamation" hover "exclamation" action Return(7)
     if label061jd2 == 0:
         imagebutton xpos npc5x ypos npc5y-50 idle "exclamation" hover "exclamation" action Return(8)
-    imagebutton xpos 830 ypos 330 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
-    imagebutton xpos 150 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
-    imagebutton xpos 1465 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
-    imagebutton xpos 930 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Guy
-    imagebutton xpos 1130 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Guy
-    imagebutton xpos 1150 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Guy
-    imagebutton xpos 1700 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Clerk
-    imagebutton xpos 1400 ypos 150 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(8) #Clerk
-    imagebutton xpos 1780 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(9) #Leave
+
+    imagebutton xpos markx ypos marky idle "mark/walking/DRStanding1.png" hover "mark/walking/DRStanding2.png" action Return(1) #Mark
+    imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/DRStanding1.png" hover "yukino/walking/DRStanding2.png" action Return(2) #Yukino
+    imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/ULStanding1.png" hover "nanjo/walking/ULStanding2.png" action Return(3) #Nanjo
+    imagebutton xpos npc1x ypos npc1y idle "townies/man1/DLStanding1.png" hover "townies/man1/DLStanding2.png" action Return(4) #man
+    imagebutton xpos npc2x ypos npc2y idle "students/ifm/DRStanding1.png" hover "students/ifm/DRStanding2.png" action Return(5) #student
+    imagebutton xpos npc3x ypos npc3y idle "students/9/DRStanding1.png" hover "students/9/DRStanding2.png" action Return(6) #student
+    imagebutton xpos npc4x ypos npc4y idle "merchants/jd1/Stand1.png" hover "merchants/jd1/Stand2.png" action Return(7) #jd1
+    imagebutton xpos npc5x ypos npc5y idle "merchants/jd2/Stand1.png" hover "merchants/jd2/Stand2.png" action Return(8) #jd2
+    imagebutton xpos 770 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(9) #Leave
 
 #### MIKAGE-CHO ####
 

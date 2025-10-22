@@ -289,6 +289,9 @@ image jd2sprite downleft stand2 = "merchants/jd2/stand2.png"
 image hssprite downright stand1 = "merchants/hs/stand1.png"
 image hssprite downright stand2 = "merchants/hs/stand2.png"
 
+image sebecsecsprite downleft stand1 = "merchants/sebec/stand1.png"
+image sebecsecsprite downleft stand2 = "merchants/sebec/stand2.png"
+
 image markmomsprite downleft stand = "townies/markmom/DLStanding1.png"
 image markmomsprite downright stand = "townies/markmom/DRStanding1.png"
 image markmomsprite upleft stand = "townies/markmom/ULStanding1.png"
@@ -298,6 +301,21 @@ image reijimomsprite downleft stand = "townies/reijimom/DLStanding1.png"
 image reijimomsprite downright stand = "townies/reijimom/DRStanding1.png"
 image reijimomsprite upleft stand = "townies/reijimom/ULStanding1.png"
 image reijimomsprite upright stand = "townies/reijimom/URStanding1.png"
+
+image kandorispritea downleft stand = "kandori/walking/DLStanding1a.png"
+image kandorispritea downright stand = "kandori/walking/DRStanding1a.png"
+image kandorispritea upleft stand = "kandori/walking/ULStanding1a.png"
+image kandorispritea upright stand = "kandori/walking/URStanding1a.png"
+
+image kandorispriteb downleft stand = "kandori/walking/DLStanding1b.png"
+image kandorispriteb downright stand = "kandori/walking/DRStanding1b.png"
+image kandorispriteb upleft stand = "kandori/walking/ULStanding1b.png"
+image kandorispriteb upright stand = "kandori/walking/URStanding1b.png"
+
+image takedasprite downleft stand = "takeda/walking/DLStanding1.png"
+image takedasprite downright stand = "takeda/walking/DRStanding1.png"
+image takedasprite upleft stand = "takeda/walking/ULStanding1.png"
+image takedasprite upright stand = "takeda/walking/URStanding1.png"
 
 #Emotion Indicators
 
@@ -1292,6 +1310,92 @@ image reijimomsprite downleft standmove:
     pause 1.75
     repeat
 
+#Takeda
+image takedasprite upright standmove:
+    Image("takeda/walking/URStanding2.png")
+    pause 2.25
+    Image("takeda/walking/URStanding1.png")
+    pause 1.75
+    repeat
+
+image takedasprite upleft standmove:
+    Image("takeda/walking/ULStanding2.png")
+    pause 2.25
+    Image("takeda/walking/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image takedasprite downright standmove:
+    Image("takeda/walking/DRStanding2.png")
+    pause 2.25
+    Image("takeda/walking/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image takedasprite downleft standmove:
+    Image("takeda/walking/DLStanding2.png")
+    pause 2.25
+    Image("takeda/walking/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Kandori
+image kandorispritea downleft standmove:
+    Image("kandori/walking/DLStanding2a.png")
+    pause 2.25
+    Image("kandori/walking/DLStanding1a.png")
+    pause 1.75
+    repeat
+
+image kandorispritea downright standmove:
+    Image("kandori/walking/DRStanding2a.png")
+    pause 2.25
+    Image("kandori/walking/DRStanding1a.png")
+    pause 1.75
+    repeat
+
+image kandorispritea upleft standmove:
+    Image("kandori/walking/ULStanding2a.png")
+    pause 2.25
+    Image("kandori/walking/ULStanding1a.png")
+    pause 1.75
+    repeat
+
+image kandorispritea upright standmove:
+    Image("kandori/walking/URStanding2a.png")
+    pause 2.25
+    Image("kandori/walking/URStanding1a.png")
+    pause 1.75
+    repeat
+
+image kandorispriteb downleft standmove:
+    Image("kandori/walking/DLStanding2b.png")
+    pause 2.25
+    Image("kandori/walking/DLStanding1b.png")
+    pause 1.75
+    repeat
+
+image kandorispriteb downright standmove:
+    Image("kandori/walking/DRStanding2b.png")
+    pause 2.25
+    Image("kandori/walking/DRStanding1b.png")
+    pause 1.75
+    repeat
+
+image kandorispriteb upleft standmove:
+    Image("kandori/walking/ULStanding2b.png")
+    pause 2.25
+    Image("kandori/walking/ULStanding1b.png")
+    pause 1.75
+    repeat
+
+image kandorispriteb upright standmove:
+    Image("kandori/walking/URStanding2b.png")
+    pause 2.25
+    Image("kandori/walking/URStanding1b.png")
+    pause 1.75
+    repeat
+
 ##################Generic NPCs###################
 image woman1sprite upright standmove:
     Image("townies/woman1/URStanding2.png")
@@ -1534,6 +1638,13 @@ image hssprite downright standmove:
     Image("merchants/hs/Stand1.png")
     pause 2.25
     Image("merchants/hs/Stand2.png")
+    pause 1.75
+    repeat
+
+image sebecsecsprite downleft standmove:
+    Image("merchants/sebec/Stand1.png")
+    pause 2.25
+    Image("merchants/sebec/Stand2.png")
     pause 1.75
     repeat
 
