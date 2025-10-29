@@ -3025,8 +3025,8 @@ screen AlayaShrineb: #World Map
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(4)
     imagebutton xpos ellyx ypos ellyy idle "elly/walking/DRStanding1.png" hover "elly/walkering/DRStanding2.png" action Return(4) #Elly
     imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/ULStanding1.png" hover "yukino/walking/ULStanding2.png" action Return(2) #Yukino
-    imagebutton xpos 625 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Butterfly
-    imagebutton xpos 1095 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Setsuko
+    imagebutton xpos npc1x ypos npc1y idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Butterfly
+    imagebutton xpos npc2x ypos npc2y idle "Setsuko/Walking/DLStanding1.png" hover "Setsuko/Walking/DLStanding2.png" action Return(4) #Setsuko
     imagebutton xpos 1450 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 #=========================School Post-Hospital=========================#
@@ -3040,9 +3040,9 @@ screen Infirmaryb:
         imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(3)
     if label001aagastya == 0:
         imagebutton xpos npc4x ypos npc4y-50 idle "exclamation" hover "exclamation" action Return(4)
-    imagebutton xpos 355 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Natsumi
-    imagebutton xpos 725 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Saeko
-    imagebutton xpos 1430 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Setsuko
+    imagebutton xpos npc1x ypos npc1y idle "Natsumi/Walking/DLStanding1.png" hover "Natsumi/Walking/DLStanding2.png" action Return(1) #Natsumi
+    imagebutton xpos npc2x ypos npc2y idle "Saeko/Walking/DLStanding1.png" hover "Saeko/Walking/DLStanding2.png" action Return(2) #Saeko
+    imagebutton xpos npc3x ypos npc3y idle "Setsuko/Walking/DLStanding1.png" hover "Setsuko/Walking/DLStanding2.png" action Return(3) #Setsuko
     imagebutton xpos 885 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Agastya
     imagebutton xpos 1400 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
@@ -3051,9 +3051,9 @@ screen PrincipalOfficeb:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
     if label008ahanya == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
-    imagebutton xpos 1350 ypos 130 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Ooishi
-    imagebutton xpos 840 ypos 140 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Hanya
-    imagebutton xpos 1600 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #Leave
+    imagebutton xpos npc1x ypos npc1y idle "Ooishi/Walking/DLStanding1.png" hover "Ooishi/Walking/DLStanding2.png" action Return(1) #Ooishi
+    imagebutton xpos npc2x ypos npc2y idle "Hanya/Walking/DLStanding1.png" hover "Hanya/Walking/DLStanding2.png" action Return(2) #Hanya
+    imagebutton xpos 1600 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen TeacherLoungeb:
     if label007ateacher == 0:
@@ -3176,5 +3176,6 @@ screen Gymnasiumc:
     imagebutton xpos 1500 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 #=========================Snow Queen Quest School=========================#
+
 
 
