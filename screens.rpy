@@ -2837,13 +2837,13 @@ screen YY2a: #Joystreet Yin-Yan after demons
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(6)
     if label055acustomer2 == 0:
         imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(7)
-    imagebutton xpos 840 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
-    imagebutton xpos 0 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
-    imagebutton xpos 425 ypos 200 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
-    imagebutton xpos 970 ypos -10 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
-    imagebutton xpos 1400 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
-    imagebutton xpos 970 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Man
-    imagebutton xpos 970 ypos 250 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(7) #Man
+    imagebutton xpos markx ypos marky idle "mark/walking/DRStanding1.png" hover "mark/walking/DRStanding2.png" action Return(1) #Mark
+    imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/DRStanding1.png" hover "yukino/walking/DRStanding2.png" action Return(2) #Yukino
+    imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/DRStanding1.png" hover "nanjo/walking/DRStanding2.png" action Return(3) #Nanjo
+    imagebutton xpos ellyx ypos ellyy idle "elly/walking/DRStanding1.png" hover "elly/walkering/DRStanding2.png" action Return(4) #Elly
+    imagebutton xpos npc1x ypos npc1y idle "merchants/yinyan/stand1.png" hover "merchants/yinyan/stand2.png" action Return(5) #Clerk
+    imagebutton xpos npc2x ypos npc2y idle "townies/man1/URStanding1.png" hover "townies/man1/URStanding2.png" action Return(6) #man
+    imagebutton xpos npc3x ypos npc3y idle "townies/man1/URStanding1.png" hover "townies/man1/URStanding2.png" action Return(7) #man
     imagebutton xpos 1770 ypos 480 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(8) #LeaveCity
 
 screen Clinic2a: #Joystreet Esumi Clinic after demons
@@ -2985,12 +2985,12 @@ screen YY1a: #World Map
     if label037aelly == 0:
         imagebutton xpos ellyx ypos ellyy-50 idle "exclamation" hover "exclamation" action Return(5)
     if label037ayy1 == 0:
-        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    imagebutton xpos 840 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
-    imagebutton xpos 0 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
-    imagebutton xpos 425 ypos 200 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
-    imagebutton xpos 970 ypos -10 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
-    imagebutton xpos 1400 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Clerk
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)    
+    imagebutton xpos markx ypos marky idle "mark/walking/DRStanding1.png" hover "mark/walking/DRStanding2.png" action Return(1) #Mark
+    imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/DRStanding1.png" hover "yukino/walking/DRStanding2.png" action Return(2) #Yukino
+    imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/DRStanding1.png" hover "nanjo/walking/DRStanding2.png" action Return(3) #Nanjo
+    imagebutton xpos ellyx ypos ellyy idle "elly/walking/DRStanding1.png" hover "elly/walkering/DRStanding2.png" action Return(4) #Elly
+    imagebutton xpos npc1x ypos npc1y idle "merchants/yinyan/stand1.png" hover "merchants/yinyan/stand2.png" action Return(5) #Clerk
     imagebutton xpos 1450 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(6) #LeaveCity
 
 screen Clinic1a: #worldmap
@@ -3006,12 +3006,12 @@ screen Clinic1a: #worldmap
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(5)
     if label039adoctor == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(6)
-    imagebutton xpos 1590 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Mark
-    imagebutton xpos 1190 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
-    imagebutton xpos 1375 ypos 440 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Nanjo
-    imagebutton xpos 900 ypos 600 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Elly
-    imagebutton xpos 830 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(5) #Doctor
-    imagebutton xpos 350 ypos 400 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(6) #Nurse
+    imagebutton xpos markx ypos marky idle "mark/walking/ULStanding1.png" hover "mark/walking/ULStanding2.png" action Return(1) #Mark
+    imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/ULStanding1.png" hover "yukino/walking/ULStanding2.png" action Return(2) #Yukino
+    imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/ULStanding1.png" hover "nanjo/walking/ULStanding2.png" action Return(3) #Nanjo
+    imagebutton xpos ellyx ypos ellyy idle "elly/walking/DRStanding1.png" hover "elly/walkering/DRStanding2.png" action Return(4) #Elly
+    imagebutton xpos npc1x ypos npc1y idle "hospital/physician/DRStanding1.png" hover "hospital/physician/DRStanding2.png" action Return(6) #Doctor
+    imagebutton xpos npc2x ypos npc2y idle "hospital/nurse2/DRStanding1.png" hover "hospital/nurse2/DRStanding2.png" action Return(5) #Nurse
     imagebutton xpos 1660 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #LeaveCity
 
 screen AlayaShrineb: #World Map
@@ -3023,8 +3023,8 @@ screen AlayaShrineb: #World Map
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(3)
     if label038asetsuko == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(4)
-    imagebutton xpos 980 ypos 580 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Elly
-    imagebutton xpos 960 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Yukino
+    imagebutton xpos ellyx ypos ellyy idle "elly/walking/DRStanding1.png" hover "elly/walkering/DRStanding2.png" action Return(4) #Elly
+    imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/ULStanding1.png" hover "yukino/walking/ULStanding2.png" action Return(2) #Yukino
     imagebutton xpos 625 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Butterfly
     imagebutton xpos 1095 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Setsuko
     imagebutton xpos 1450 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
@@ -3176,4 +3176,5 @@ screen Gymnasiumc:
     imagebutton xpos 1500 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 #=========================Snow Queen Quest School=========================#
+
 
