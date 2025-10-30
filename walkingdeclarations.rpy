@@ -222,6 +222,11 @@ image student9 downright stand = "students/9/DRStanding1.png"
 image student9 upleft stand = "students/9/ULStanding1.png"
 image student9 upright stand = "students/9/URStanding1.png"
 
+image teacher downleft stand = "students/teacher/DLStanding1.png"
+image teacher downright stand = "students/teacher/DRStanding1.png"
+image teacher upleft stand = "students/teacher/ULStanding1.png"
+image teacher upright stand = "students/teacher/URStanding1.png"
+
 image studentifm downleft stand = "students/ifm/DLStanding1.png"
 image studentifm downright stand = "students/ifm/DRStanding1.png"
 image studentifm upleft stand = "students/ifm/ULStanding1.png"
@@ -1220,6 +1225,35 @@ image studentifm downleft standmove:
     Image("students/ifm/DLStanding2.png")
     pause 2.25
     Image("students/ifm/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Teacher
+image teacher upright standmove:
+    Image("students/teacher/URStanding2.png")
+    pause 2.25
+    Image("students/teacher/URStanding1.png")
+    pause 1.75
+    repeat
+
+image teacher upleft standmove:
+    Image("students/teacher/ULStanding2.png")
+    pause 2.25
+    Image("students/teacher/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image teacher downright standmove:
+    Image("students/teacher/DRStanding2.png")
+    pause 2.25
+    Image("students/teacher/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image teacher downleft standmove:
+    Image("students/teacher/DLStanding2.png")
+    pause 2.25
+    Image("students/teacher/DLStanding1.png")
     pause 1.75
     repeat
 
