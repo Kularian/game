@@ -232,6 +232,21 @@ image studentifm downright stand = "students/ifm/DRStanding1.png"
 image studentifm upleft stand = "students/ifm/ULStanding1.png"
 image studentifm upright stand = "students/ifm/URStanding1.png"
 
+image copfsprite downleft stand = "townies/officerf/DLStanding1.png"
+image copfsprite downright stand = "townies/officerf/DRStanding1.png"
+image copfsprite upleft stand = "townies/officerf/ULStanding1.png"
+image copfsprite upright stand = "townies/officerf/URStanding1.png"
+
+image copmsprite downleft stand = "townies/officerm/DLStanding1.png"
+image copmsprite downright stand = "townies/officerm/DRStanding1.png"
+image copmsprite upleft stand = "townies/officerm/ULStanding1.png"
+image copmsprite upright stand = "townies/officerm/URStanding1.png"
+
+image lieutenantsprite downleft stand = "townies/lieutenant/DLStanding1.png"
+image lieutenantsprite downright stand = "townies/lieutenant/DRStanding1.png"
+image lieutenantsprite upleft stand = "townies/lieutenant/ULStanding1.png"
+image lieutenantsprite upright stand = "townies/lieutenant/URStanding1.png"
+
 image kanedasprite downleft stand = "kaneda/walking/DLStanding1.png"
 image kanedasprite downright stand = "kaneda/walking/DRStanding1.png"
 image kanedasprite upleft stand = "kaneda/walking/ULStanding1.png"
@@ -321,6 +336,15 @@ image takedasprite downleft stand = "takeda/walking/DLStanding1.png"
 image takedasprite downright stand = "takeda/walking/DRStanding1.png"
 image takedasprite upleft stand = "takeda/walking/ULStanding1.png"
 image takedasprite upright stand = "takeda/walking/URStanding1.png"
+
+image setsukosprite downleft stand = "setsuko/walking/DLStanding1.png"
+image setsukosprite downright stand = "setsuko/walking/DRStanding1.png"
+image setsukosprite upleft stand = "setsuko/walking/ULStanding1.png"
+image setsukosprite upright stand = "setsuko/walking/URStanding1.png"
+
+image setsukosprite sitting1 = "setsuko/walking/Sitting1.png"
+image setsukosprite sitting2 = "setsuko/walking/Sitting2.png"
+image setsukosprite bed = "setsuko/walking/Bed.png"
 
 #Emotion Indicators
 
@@ -1257,6 +1281,93 @@ image teacher downleft standmove:
     pause 1.75
     repeat
 
+#Female Officer
+image copfsprite upright standmove:
+    Image("townies/officerf/URStanding2.png")
+    pause 2.25
+    Image("townies/officerf/URStanding1.png")
+    pause 1.75
+    repeat
+
+image copfsprite upleft standmove:
+    Image("townies/officerf/ULStanding2.png")
+    pause 2.25
+    Image("townies/officerf/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image copfsprite downright standmove:
+    Image("townies/officerf/DRStanding2.png")
+    pause 2.25
+    Image("townies/officerf/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image copfsprite downleft standmove:
+    Image("townies/officerf/DLStanding2.png")
+    pause 2.25
+    Image("townies/officerf/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Male Officer
+image copmsprite upright standmove:
+    Image("townies/officerm/URStanding2.png")
+    pause 2.25
+    Image("townies/officerm/URStanding1.png")
+    pause 1.75
+    repeat
+
+image copmsprite upleft standmove:
+    Image("townies/officerm/ULStanding2.png")
+    pause 2.25
+    Image("townies/officerm/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image copmsprite downright standmove:
+    Image("townies/officerm/DRStanding2.png")
+    pause 2.25
+    Image("townies/officerm/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image copmsprite downleft standmove:
+    Image("townies/officerm/DLStanding2.png")
+    pause 2.25
+    Image("townies/officerm/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Lieutenant - Baldy
+image lieutenantsprite upright standmove:
+    Image("townies/lieutenant/URStanding2.png")
+    pause 2.25
+    Image("townies/lieutenant/URStanding1.png")
+    pause 1.75
+    repeat
+
+image lieutenantsprite upleft standmove:
+    Image("townies/lieutenant/ULStanding2.png")
+    pause 2.25
+    Image("townies/lieutenant/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image lieutenantsprite downright standmove:
+    Image("townies/lieutenant/DRStanding2.png")
+    pause 2.25
+    Image("townies/lieutenant/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image lieutenantsprite downleft standmove:
+    Image("townies/lieutenant/DLStanding2.png")
+    pause 2.25
+    Image("townies/lieutenant/DLStanding1.png")
+    pause 1.75
+    repeat
+
 #Kaneda
 image kanedasprite upright standmove:
     Image("kaneda/walking/URStanding2.png")
@@ -1427,6 +1538,35 @@ image kandorispriteb upright standmove:
     Image("kandori/walking/URStanding2b.png")
     pause 2.25
     Image("kandori/walking/URStanding1b.png")
+    pause 1.75
+    repeat
+
+#Setsuko
+image setsukosprite upright standmove:
+    Image("setsuko/walking/URStanding2.png")
+    pause 2.25
+    Image("setsuko/walking/URStanding1.png")
+    pause 1.75
+    repeat
+
+image setsukosprite upleft standmove:
+    Image("setsuko/walking/ULStanding2.png")
+    pause 2.25
+    Image("setsuko/walking/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image setsukosprite downright standmove:
+    Image("setsuko/walking/DRStanding2.png")
+    pause 2.25
+    Image("setsuko/walking/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image setsukosprite downleft standmove:
+    Image("setsuko/walking/DLStanding2.png")
+    pause 2.25
+    Image("setsuko/walking/DLStanding1.png")
     pause 1.75
     repeat
 
@@ -2146,5 +2286,82 @@ image reijisprite upleft walk:
     Image("reiji/walking/ULWalkR2.png")
     pause 0.15
     Image("reiji/walking/ULWalkR1.png")
+    pause 0.15
+    repeat
+
+#nanjo
+image nanjosprite downleft walk:
+    Image("nanjo/walking/DLStanding1.png")
+    pause 0.15
+    Image("nanjo/walking/DLWalkL1.png")
+    pause 0.15
+    Image("nanjo/walking/DLWalkL2.png")
+    pause 0.15
+    Image("nanjo/walking/DLWalkL1.png")
+    pause 0.15
+    Image("nanjo/walking/DLStanding1.png")
+    pause 0.15
+    Image("nanjo/walking/DLWalkR1.png")
+    pause 0.15
+    Image("nanjo/walking/DLWalkR2.png")
+    pause 0.15
+    Image("nanjo/walking/DLWalkR1.png")
+    pause 0.15
+    repeat
+
+image nanjosprite downright walk:
+    Image("nanjo/walking/DRStanding1.png")
+    pause 0.15
+    Image("nanjo/walking/DRWalkL1.png")
+    pause 0.15
+    Image("nanjo/walking/DRWalkL2.png")
+    pause 0.15
+    Image("nanjo/walking/DRWalkL1.png")
+    pause 0.15
+    Image("nanjo/walking/DRStanding1.png")
+    pause 0.15
+    Image("nanjo/walking/DRWalkR1.png")
+    pause 0.15
+    Image("nanjo/walking/DRWalkR2.png")
+    pause 0.15
+    Image("nanjo/walking/DRWalkR1.png")
+    pause 0.15
+    repeat
+
+image nanjosprite upright walk:
+    Image("nanjo/walking/URStanding1.png")
+    pause 0.15
+    Image("nanjo/walking/URWalkL1.png")
+    pause 0.15
+    Image("nanjo/walking/URWalkL2.png")
+    pause 0.15
+    Image("nanjo/walking/URWalkL1.png")
+    pause 0.15
+    Image("nanjo/walking/URStanding1.png")
+    pause 0.15
+    Image("nanjo/walking/URWalkR1.png")
+    pause 0.15
+    Image("nanjo/walking/URWalkR2.png")
+    pause 0.15
+    Image("nanjo/walking/URWalkR1.png")
+    pause 0.15
+    repeat
+
+image nanjosprite upleft walk:
+    Image("nanjo/walking/ULStanding1.png")
+    pause 0.15
+    Image("nanjo/walking/ULWalkL1.png")
+    pause 0.15
+    Image("nanjo/walking/ULWalkL2.png")
+    pause 0.15
+    Image("nanjo/walking/ULWalkL1.png")
+    pause 0.15
+    Image("nanjo/walking/ULStanding1.png")
+    pause 0.15
+    Image("nanjo/walking/ULWalkR1.png")
+    pause 0.15
+    Image("nanjo/walking/ULWalkR2.png")
+    pause 0.15
+    Image("nanjo/walking/ULWalkR1.png")
     pause 0.15
     repeat

@@ -53,8 +53,8 @@ label start:
     default label011nanjo = 0
     default label011mark = 0
     default label011yukino = 0
-    default label011astudent1 = 0
-    default label011astudent2 = 0
+    default label011student1 = 0
+    default label011student2 = 0
 
     default label012nanjo = 0
     default label012mark = 0
@@ -66,12 +66,12 @@ label start:
     default label013nanjo = 0
     default label013mark = 0
     default label013yukino = 0
-    default label013astudent1 = 0
+    default label013student1 = 0
 
     default label014nanjo = 0
     default label014mark = 0
     default label014yukino = 0
-    default label014astudent1 = 0
+    default label014student1 = 0
 
     default label015nanjo = 0
     default label015mark = 0
@@ -84,35 +84,35 @@ label start:
     default label016nanjo = 0
     default label016mark = 0
     default label016yukino = 0
-    default label016astudent1 = 0
-    default label016astudent2 = 0
+    default label016student1 = 0
+    default label016student2 = 0
 
     default label018nanjo = 0
     default label018mark = 0
     default label018yukino = 0
-    default label018astudent1 = 0
+    default label018student1 = 0
 
     default label019nanjo = 0
     default label019mark = 0
     default label019yukino = 0
-    default label019astudent1 = 0
+    default label019student1 = 0
 
     default label021nanjo = 0
     default label021mark = 0
     default label021yukino = 0
-    default label021astudent1 = 0
-    default label021astudent2 = 0
+    default label021student1 = 0
+    default label021student2 = 0
 
     default label022nanjo = 0
     default label022mark = 0
     default label022yukino = 0
-    default label022atoro = 0
-    default label022astudent2 = 0
+    default label022toro = 0
+    default label022student2 = 0
 
     default label023nanjo = 0
     default label023mark = 0
     default label023yukino = 0
-    default label023astudent = 0
+    default label023student = 0
 
     default label024nanjo = 0
     default label024mark = 0
@@ -121,52 +121,52 @@ label start:
     default label026nanjo = 0
     default label026mark = 0
     default label026yukino = 0
-    default label026astudent1 = 0
-    default label026astudent2 = 0
+    default label026student1 = 0
+    default label026student2 = 0
 
     default label027nanjo = 0
     default label027mark = 0
     default label027yukino = 0
-    default label027astudent1 = 0
-    default label027astudent2 = 0
+    default label027student1 = 0
+    default label027student2 = 0
 
     default label028nanjo = 0
     default label028mark = 0
     default label028yukino = 0
-    default label028astudent1 = 0
+    default label028student1 = 0
 
     default label029nanjo = 0
     default label029mark = 0
     default label029yukino = 0
-    default label029astudent1 = 0
-    default label029astudent2 = 0
+    default label029student1 = 0
+    default label029student2 = 0
 
     default label030nanjo = 0
     default label030mark = 0
     default label030yukino = 0
-    default label030atsutomu = 0
-    default label030astudent2 = 0
-    default label030astudent3 = 0
-    default label030astudent4 = 0
+    default label030tsutomu = 0
+    default label030student2 = 0
+    default label030student3 = 0
+    default label030student4 = 0
 
     default label031nanjo = 0
     default label031mark = 0
     default label031yukino = 0
-    default label031astudent1 = 0
-    default label031astudent2 = 0
-    default label031astudent3 = 0
-    default label031astudent4 = 0
+    default label031student1 = 0
+    default label031student2 = 0
+    default label031student3 = 0
+    default label031student4 = 0
 
     default label032nanjo = 0
     default label032mark = 0
     default label032yukino = 0
-    default label032astudent1 = 0
+    default label032student1 = 0
 
     default label033nanjo = 0
     default label033mark = 0
     default label033yukino = 0
-    default label033astudent1 = 0
-    default label033astudent2 = 0
+    default label033student1 = 0
+    default label033student2 = 0
 
     default label037nanjo = 0
     default label037mark = 0
@@ -450,6 +450,31 @@ label start:
     default label015atamaki = 0
     default label015atadashi = 0
 
+    default label011bstudent = 0
 
+    default label019astudent = 0
+
+    default label020astudent = 0
+
+    default label022atoro = 0
+    default label022astudent2 = 0
+
+    default label021astudent1 = 0
+    default label021astudent2 = 0
+
+    default label027astudent1 = 0
+    default label027astudent2 = 0
+
+    default label029astudent1 = 0
+    default label029astudent2 = 0
+
+    default label032astudent1 = 0
+
+    default label031astudent1 = 0
+    default label031astudent2 = 0
+
+    default label030atsutomu = 0
+    default label030astudent2 = 0
+    default label030astudent3 = 0
 
 jump start2

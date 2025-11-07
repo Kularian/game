@@ -1864,7 +1864,7 @@ screen TeacherLounge:
     if label007ayase == 0:
         imagebutton xpos ayasex ypos ayasey-50 idle "exclamation" hover "exclamation" action Return(6)
     imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/DRStanding1.png" hover "yukino/walking/DRStanding2.png" action Return(1) #Yukino
-    imagebutton xpos npc1x ypos npc1y idle "npcsprite downleft stand" hover "npcsprite downleft stand" action Return(2) #Teacher
+    imagebutton xpos npc1x ypos npc1y idle "students/teacher/DLStanding1.png" hover "students/teacher/DLStanding2.png" action Return(2) #Teacher
     imagebutton xpos markx ypos marky idle "mark/walking/URStanding1.png" hover "mark/walking/URStanding2.png" action Return(3) #Mark
     imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/DLStanding1.png" hover "nanjo/walking/DLStanding2.png" action Return(4) #Nanjo
     imagebutton xpos ellyx ypos ellyy idle "elly/walking/DLStanding1.png" hover "elly/walking/DLStanding2.png" action Return(5) #Elly
@@ -1902,15 +1902,15 @@ screen Passageway1F:
 screen Gymnasium:
     if label011nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label011astudent1 == 0:
+    if label011student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(5)
-    if label011astudent2 == 0:
+    if label011student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
     if label011yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(1)
     if label011mark == 0:
         imagebutton xpos markx ypos marky-50 idle "exclamation" hover "exclamation" action Return(3)
-    imagebutton xpos npc1x ypos npc1y idle "students/1/DLStanding1.png" hover "students/1/DLStanding1.png" action Return(5) #Student1
+    imagebutton xpos npc1x ypos npc1y idle "students/1/DLStanding1.png" hover "students/1/DLStanding2.png" action Return(5) #Student1
     imagebutton xpos npc2x ypos npc2y idle "students/3/DRStanding1.png" hover "students/3/DRStanding2.png" action Return(2) #Student2
     imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/URStanding1.png" hover "nanjo/walking/URStanding2.png" action Return(4) #Nanjo
     imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/URStanding1.png" hover "yukino/walking/URStanding2.png" action Return(1) #Yukino
@@ -1941,7 +1941,7 @@ screen DramaClub:
 screen BoxingClub:
     if label013nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label013astudent1 == 0:
+    if label013student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(2)
     if label013yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(1)
@@ -1956,7 +1956,7 @@ screen BoxingClub:
 screen ArcheryClub:
     if label014nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label014astudent1 == 0:
+    if label014student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(2)
     if label014yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(1)
@@ -1989,15 +1989,15 @@ screen FencingClub:
     imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/ULStanding1.png" hover "yukino/walking/ULStanding2.png" action Return(1) #Yukino
     imagebutton xpos markx ypos marky idle "mark/walking/ULStanding1.png" hover "mark/walking/ULStanding2.png" action Return(2) #Mark
     imagebutton xpos npc3x ypos npc3y idle "students/1/DRStanding1.png" hover "students/1/DRStanding2.png" action Return(6) #Student3
-    imagebutton xpos npc4x ypos npc4y idle "students/2/DRStanding1.png" hover "students/2/DRStanding2.png" action Return(6) #Student3
-    imagebutton xpos 1150 ypos 720 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(7) #Leave
+    imagebutton xpos npc4x ypos npc4y idle "students/2/DRStanding1.png" hover "students/2/DRStanding2.png" action Return(7) #Student3
+    imagebutton xpos 1150 ypos 720 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(8) #Leave
 
 screen BalletClub:
     if label016nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label016astudent1 == 0:
+    if label016student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(2)
-    if label016astudent2 == 0:
+    if label016student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
     if label016yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(1)
@@ -2013,7 +2013,7 @@ screen BalletClub:
 screen Class21:
     if label018nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label018astudent1 == 0:
+    if label018student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
     if label018yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2028,7 +2028,7 @@ screen Class21:
 screen Class22:
     if label019nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label019astudent1 == 0:
+    if label019student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
     if label019yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2043,9 +2043,9 @@ screen Class22:
 screen Class25:
     if label021nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label021astudent1 == 0:
+    if label021student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label021astudent2 == 0:
+    if label021student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
     if label021yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2073,9 +2073,9 @@ screen EmptyClass:
 screen Cafeteria:
     if label022nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label022atoro == 0:
+    if label022toro == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label022astudent2 == 0:
+    if label022student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
     if label022yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2091,7 +2091,7 @@ screen Cafeteria:
 screen HomeEcRoom:
     if label023nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label023astudent == 0:
+    if label023student == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
     if label023yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2107,9 +2107,9 @@ screen HomeEcRoom:
 screen Class31:
     if label026nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label026astudent1 == 0:
+    if label026student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label026astudent2 == 0:
+    if label026student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
     if label026yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2125,9 +2125,9 @@ screen Class31:
 screen Class33:
     if label027nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label027astudent1 == 0:
+    if label027student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label027astudent2 == 0:
+    if label027student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
     if label027yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2143,7 +2143,7 @@ screen Class33:
 screen Class36:
     if label028nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label028astudent1 == 0:
+    if label028student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
     if label028yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2158,9 +2158,9 @@ screen Class36:
 screen Class37:
     if label029nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label029astudent1 == 0:
+    if label029student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label029astudent2 == 0:
+    if label029student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
     if label029yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2176,13 +2176,13 @@ screen Class37:
 screen Library:
     if label030nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label030atsutomu == 0:
+    if label030tsutomu == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label030astudent2 == 0:
+    if label030student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
-    if label030astudent3 == 0:
+    if label030student3 == 0:
         imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(6)
-    if label030astudent4 == 0:
+    if label030student4 == 0:
         imagebutton xpos npc4x ypos npc4y-50 idle "exclamation" hover "exclamation" action Return(7)
     if label030yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2200,13 +2200,13 @@ screen Library:
 screen StudentCouncil:
     if label031nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label031astudent1 == 0:
+    if label031student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label031astudent2 == 0:
+    if label031student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
-    if label031astudent3 == 0:
+    if label031student3 == 0:
         imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(6)
-    if label031astudent4 == 0:
+    if label031student4 == 0:
         imagebutton xpos npc4x ypos npc4y-50 idle "exclamation" hover "exclamation" action Return(7)
     if label031yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2224,7 +2224,7 @@ screen StudentCouncil:
 screen ArtRoom:
     if label032nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label032astudent1 == 0:
+    if label032student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
     if label032yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2239,9 +2239,9 @@ screen ArtRoom:
 screen Entryway:
     if label033nanjo == 0:
         imagebutton xpos nanjox ypos nanjoy-50 idle "exclamation" hover "exclamation" action Return(3)
-    if label033astudent1 == 0:
+    if label033student1 == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(4)
-    if label033astudent2 == 0:
+    if label033student2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(5)
     if label033yukino == 0:
         imagebutton xpos yukinox ypos yukinoy-50 idle "exclamation" hover "exclamation" action Return(2)
@@ -2270,7 +2270,7 @@ screen YY1: #Worldmap
     imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/DRStanding1.png" hover "yukino/walking/DRStanding2.png" action Return(2) #Yukino
     imagebutton xpos nanjox ypos nanjoy idle "nanjo/walking/DRStanding1.png" hover "nanjo/walking/DRStanding2.png" action Return(3) #Nanjo
     imagebutton xpos npc1x ypos npc1y idle "merchants/yinyan/stand1.png" hover "merchants/yinyan/stand2.png" action Return(4) #Clerk
-    imagebutton xpos 1450 ypos 550 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveCity
+    imagebutton xpos 1450 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #LeaveCity
 
 screen Clinic1: #worldmap
     if label039nanjo == 0:
@@ -2954,7 +2954,7 @@ screen JD1a: #Mikage Mall
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(6)
     if label045ajd2 == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(7)
-    if label045astudent1 == 0:
+    if label045student1 == 0:
         imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(5)
     imagebutton xpos markx ypos marky idle "mark/walking/ULStanding1.png" hover "mark/walking/ULStanding2.png" action Return(1) #Mark
     imagebutton xpos yukinox ypos yukinoy idle "yukino/walking/ULStanding1.png" hover "yukino/walking/ULStanding2.png" action Return(2) #Yukino
@@ -3032,7 +3032,7 @@ screen Infirmaryb:
         imagebutton xpos npc4x ypos npc4y-50 idle "exclamation" hover "exclamation" action Return(4)
     imagebutton xpos npc1x ypos npc1y idle "Natsumi/Walking/DLStanding1.png" hover "Natsumi/Walking/DLStanding2.png" action Return(1) #Natsumi
     imagebutton xpos npc2x ypos npc2y idle "Saeko/Walking/DLStanding1.png" hover "Saeko/Walking/DLStanding2.png" action Return(2) #Saeko
-    imagebutton xpos npc3x ypos npc3y idle "Setsuko/Walking/DLStanding1.png" hover "Setsuko/Walking/DLStanding2.png" action Return(3) #Setsuko
+    imagebutton xpos npc3x ypos npc3y idle "Setsuko/Walking/Bed.png" hover "Setsuko/Walking/Bed.png" action Return(3) #Setsuko
     imagebutton xpos 885 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #Agastya
     imagebutton xpos 1400 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
@@ -3048,7 +3048,7 @@ screen PrincipalOfficeb:
 screen TeacherLoungeb:
     if label007ateacher == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
-    imagebutton xpos 315 ypos 370 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Teacher
+    imagebutton xpos 315 ypos 370 idle "students/teacher/DLStanding1.png" hover "students/teacher/DLStanding2.png" action Return(1) #Teacher
     imagebutton xpos 1280 ypos 740 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Courtyardb:
@@ -3056,38 +3056,38 @@ screen Courtyardb:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
     if label006asign == 0:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
-    imagebutton xpos 300 ypos 380 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
-    imagebutton xpos 1600 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Sign
+    imagebutton xpos npc1x ypos npc1y idle "students/4/DRStanding1.png" hover "students/4/DRStanding2.png" action Return(1) #Student
+    imagebutton xpos npc2x ypos npc2y idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Sign
     imagebutton xpos 0 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Class12b:
     if label002astudent == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
-    imagebutton xpos 660 ypos 430 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos npc1x ypos npc1y idle "students/7/DLStanding1.png" hover "students/7/DLStanding2.png" action Return(1) #Student
     imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Class13b:
     if label003astudent == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
-    imagebutton xpos 460 ypos 500 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos npc1x ypos npc1y idle "students/8/DLStanding1.png" hover "students/8/DLStanding2.png" action Return(1) #Student
     imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Class14b:
     if label004astudent == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
-    imagebutton xpos 840 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos npc1x ypos npc1y idle "students/6/DRStanding1.png" hover "students/6/DRStanding2.png" action Return(1) #Student
     imagebutton xpos 1500 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Class16b:
     if label005astudent == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
-    imagebutton xpos 520 ypos 230 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    imagebutton xpos npc1x ypos npc1y idle "students/9/DRStanding1.png" hover "students/9/DRStanding2.png" action Return(1) #Student
     imagebutton xpos 1450 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Gymnasiumb:
     if label011astudent == 0:
         imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
-    imagebutton xpos 1530 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student1
+    imagebutton xpos npc1x ypos npc1y idle "students/3/DRStanding1.png" hover "students/3/DRStanding2.png" action Return(1) #Student2
     imagebutton xpos 1500 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen DramaClubb:
@@ -3097,9 +3097,9 @@ screen DramaClubb:
         imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
     if label012astudent3 == 0:
         imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(3)
-    imagebutton xpos 770 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Club Leader
-    imagebutton xpos 950 ypos 330 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #ClubMember1
-    imagebutton xpos 1170 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #ClubMember2
+    imagebutton xpos npc2x ypos npc2y idle "students/6/DLStanding1.png" hover "students/6/DLStanding2.png" action Return(2) #Student2
+    imagebutton xpos npc1x ypos npc1y idle "students/4/DRStanding1.png" hover "students/4/DRStanding2.png" action Return(1) #Student1
+    imagebutton xpos npc3x ypos npc3y idle "students/3/URStanding1.png" hover "students/3/URStanding2.png" action Return(3) #Student3
     imagebutton xpos 1500 ypos 700 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #Leave
 
 screen FencingClubb:
@@ -3111,57 +3111,91 @@ screen FencingClubb:
         imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(3)
     if label015astudent2 == 0:
         imagebutton xpos npc4x ypos npc4y-50 idle "exclamation" hover "exclamation" action Return(4)
-    imagebutton xpos 880 ypos 120 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Tamaki
-    imagebutton xpos 1260 ypos 180 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Tadashi
-    imagebutton xpos 420 ypos 320 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #ClubMember1
-    imagebutton xpos 520 ypos 210 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(4) #ClubMember2
+    imagebutton xpos npc2x ypos npc2y idle "tadashi/walking/ULStanding1.png" hover "tadashi/walking/ULStanding2.png" action Return(5) #Tadashi
+    imagebutton xpos npc1x ypos npc1y idle "tamaki/walking/DRStanding1.png" hover "tamaki/walking/DRStanding2.png" action Return(4) #Tamaki
+    imagebutton xpos npc3x ypos npc3y idle "students/1/DRStanding1.png" hover "students/1/DRStanding2.png" action Return(6) #Student3
+    imagebutton xpos npc4x ypos npc4y idle "students/2/DRStanding1.png" hover "students/2/DRStanding2.png" action Return(6) #Student3
     imagebutton xpos 1550 ypos 650 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(5) #Leave
 
 screen Class22b:
-    imagebutton xpos 460 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    if label019astudent == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    imagebutton xpos npc1x ypos npc1y idle "students/8/DLStanding1.png" hover "students/8/DLStanding2.png" action Return(1) #Student1
     imagebutton xpos 1300 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Class24b:
-    imagebutton xpos 460 ypos 560 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    if label020astudent == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    imagebutton xpos npc1x ypos npc1y idle "students/8/DLStanding1.png" hover "students/8/DLStanding2.png" action Return(1) #Student1
     imagebutton xpos 1300 ypos 850 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen Cafeteriab:
-    imagebutton xpos 340 ypos 550 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Toro
-    imagebutton xpos 520 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student 2
+    if label022atoro == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    if label022astudent2 == 0:
+        imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
+    imagebutton xpos npc1x ypos npc1y idle "toro/walking/DLStanding1.png" hover "toro/walking/DLStanding2.png" action Return(1) #Toro
+    imagebutton xpos npc2x ypos npc2y idle "students/7/URStanding1.png" hover "students/7/URStanding2.png" action Return(2) #Student2
     imagebutton xpos 1340 ypos 770 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Class25b:
-    imagebutton xpos 940 ypos 0 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student 1
-    imagebutton xpos 890 ypos 280 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student 2
+    if label021astudent1 == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    if label021astudent2 == 0:
+        imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
+    imagebutton xpos npc1x ypos npc1y idle "students/0/DRStanding1.png" hover "students/0/DRStanding2.png" action Return(1) #Student1
+    imagebutton xpos npc2x ypos npc2y idle "students/9/DRStanding1.png" hover "students/9/DRStanding2.png" action Return(2) #Student2
     imagebutton xpos 1300 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Class33b:
-    imagebutton xpos 250 ypos 220 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
-    imagebutton xpos 630 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    if label027astudent1 == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    if label027astudent2 == 0:
+        imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
+    imagebutton xpos npc1x ypos npc1y idle "students/0/ULStanding1.png" hover "students/0/ULStanding2.png" action Return(1) #Student1
+    imagebutton xpos npc2x ypos npc2y idle "students/9/DLStanding1.png" hover "students/9/DLStanding2.png" action Return(2) #Student2
     imagebutton xpos 1340 ypos 770 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Class37b:
-    imagebutton xpos 90 ypos 160 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
-    imagebutton xpos 160 ypos 270 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student
+    if label029astudent1 == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    if label029astudent2 == 0:
+        imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
+    imagebutton xpos npc1x ypos npc1y idle "students/1/ULStanding1.png" hover "students/1/ULStanding2.png" action Return(1) #Student1
+    imagebutton xpos npc2x ypos npc2y idle "students/8/DRStanding1.png" hover "students/8/DRStanding2.png" action Return(2) #Student2
     imagebutton xpos 980 ypos 830 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen ArtRoomb:
-    imagebutton xpos 1090 ypos 100 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student
+    if label032astudent1 == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    imagebutton xpos npc1x ypos npc1y idle "students/9/DLStanding1.png" hover "students/9/DLStanding2.png" action Return(1) #Student
     imagebutton xpos 950 ypos 880 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #Leave
 
 screen StudentCouncilb:
-    imagebutton xpos 1280 ypos 290 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student2
-    imagebutton xpos 355 ypos 320 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student3
+    if label031student1 == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    if label031student2 == 0:
+        imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
+    imagebutton xpos npc1x ypos npc1y idle "students/6/DRStanding1.png" hover "students/6/DRStanding2.png" action Return(1) #Student1
+    imagebutton xpos npc2x ypos npc2y idle "students/7/ULStanding1.png" hover "students/7/ULStanding2.png" action Return(2) #Student2
     imagebutton xpos 1700 ypos 600 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
 screen Libraryb:
-    imagebutton xpos 1630 ypos 300 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Devilboy
-    imagebutton xpos -30 ypos 470 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(2) #Student1
-    imagebutton xpos 100 ypos 450 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(3) #Student2
+    if label030atsutomu == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    if label030astudent2 == 0:
+        imagebutton xpos npc2x ypos npc2y-50 idle "exclamation" hover "exclamation" action Return(2)
+    if label030astudent3 == 0:
+        imagebutton xpos npc3x ypos npc3y-50 idle "exclamation" hover "exclamation" action Return(3)
+    imagebutton xpos npc1x ypos npc1y idle "tsutomu/walking/DLStanding1.png" hover "tsutomu/walking/DLStanding2.png" action Return(1) #Tsutomu
+    imagebutton xpos npc2x ypos npc2y idle "students/5/DRStanding1.png" hover "students/5/DRStanding2.png" action Return(2) #Student1
+    imagebutton xpos npc3x ypos npc3y idle "students/3/ULStanding1.png" hover "students/3/ULStanding2.png" action Return(3) #Student2
     imagebutton xpos 1700 ypos 870 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(4) #Leave
 
 screen Gymnasiumc:
-    imagebutton xpos 1530 ypos 170 idle "gui/Talking/Talk_Idle.png" hover "gui/Talking/Talk_Hover.png" action Return(1) #Student1
+    if label011bstudent == 0:
+        imagebutton xpos npc1x ypos npc1y-50 idle "exclamation" hover "exclamation" action Return(1)
+    imagebutton xpos npc1x ypos npc1y idle "students/3/DRStanding1.png" hover "students/3/DRStanding2.png" action Return(1) #Student2
     imagebutton xpos 1700 ypos 150 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(2) #SQQ
     imagebutton xpos 1500 ypos 800 idle "gui/Talking/move_idle.png" hover "gui/Talking/move_hover.png" action Return(3) #Leave
 
