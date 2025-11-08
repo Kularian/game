@@ -93,19 +93,19 @@ label prologue:
     scene bg test with qdis
     $ location = "Maki's Room"
     show screen header with qdis
-    show maki with qdis
+    show maki animated sick sad with qleft
     stu "I'm sorry if I worried all of you..."
     "{color=#ebffdb}>Maki Sonomura (Nickname: Maki)\nA chronically ill classmate who's just been hospitalized.{/color}"
     hide ma
-    show mark animated neutral sad with qdis
+    show mark animated neutral sad with qleft
     stu "Worried ain't the half of it.  You passed right out in Phys Ed!"
     show mark ns
     "{color=#ebffdb}>Masao Inaba (Nickname: Mark)\nThe spoiled son of Inaba Dry Cleaning's owners. Earnest and exciteable.{/color}"
     hide mark
-    show maki with qdis
+    show maki animated sick sad with qleft
     ma "I'm not sure what happened...I was fine one minute and the next..."
     hide maki
-    show mark animated neutral smirk with qdis
+    show mark animated neutral smirk with qleft
     mk "Hey, I'm just glad you're okay.  You'll be outta here soon."
     show mark ns
     hide screen header with qdis
@@ -123,11 +123,11 @@ label prologue:
         hide nchoice onlayer screens
         hide nchoice
         with qdis
-        show screen header with qdis
+        show screen header with qleft
         show mark animated neutral smirk
         mk "See?  Even Naoya thinks so."
         hide mark
-        show maki with qdis
+        show maki animated sick sad with qleft
         ma "I don't know... the doctors couldn't figure out what was wrong."
         hide maki
     if _return == 2:
@@ -138,38 +138,38 @@ label prologue:
         hide nchoice
         with qdis
         show screen header with qdis
-        show mark animated neutral sad
+        show mark animated neutral sad with qleft
         mk "Wait what?  What'd they say?"
         hide mark
-        show maki with qdis
+        show maki animated sick sad with qleft
         ma "They said they're not sure what's wrong with me..."
         hide maki
-    show mark animated neutral serious
+    show mark animated neutral serious with qleft
     mk "What?  How the hell do they not know?  Aren't they doctors?  That's their whole job!"
     hide mark
-    show maki with qdis
+    show maki animated sick serious with qleft
     ma "But if I can get my strength back, I'll definitely be coming back to school."
     hide maki
-    show mark animated neutral smirk with qdis
+    show mark animated neutral smirk with qleft
     mk "Of course!  But until you do, I'll come visit you as much as I can."
     hide mark
-    show maki with qdis
+    show maki animated sick serious with qleft
     ma "Thank you, Masao..."
     "Maki lets out a very long yawn, her eyes fluttering closed."
     ma "I think I'm going to take a little rest.  I'll see you later?"
     hide maki
-    show mark animated neutral smirk with qdis
+    show mark animated neutral smirk with qleft
     mk "Yeah.  I'll try to come by tomorrow.  C'mon Naoya, we should let her rest."
 
     scene bghospital1 with qdis
     $ location = "Mikage Hospital"
     show screen header with qdis
-    show mark animated neutral serious with qdis
+    show mark animated neutral serious with qleft
     mk "Man.  I can't believe her mom didn't show up to help her."
     mk "I know she's busy working over at SEBEC, but c'mon.  What's more important than your kid?"
     hide mark with qdis
     pause 0.5
-    show mark animated neutral serious with qdis
+    show mark animated neutral serious with qleft
     mk "Anyway, we should get back to the school and tell Mrs. Ooishi the doctors got her on bed rest for awhile."
     show mark animated neutral sad
     mk "I figure they'll send something to the school, right?  Surprised Ooishi even let us first years go and check on her."
@@ -178,9 +178,10 @@ label prologue:
     pause 0.5
     show mark animated neutral serious with qdis
     mk "C'mon.  Let's get outta here, Naoya."
+    mk "And...hey.  Don't tell the others about me coming up here."
 
     scene courtyard with qdis
-    show mark animated neutral serious with qdis
+    show mark animated neutral serious with qleft
     mk "...and that kind of explains all of that.  They dunno when she'll be out."
     hide mark
     show ooishi at pleft with qdis
@@ -188,29 +189,205 @@ label prologue:
     "{color=#ebffdb}>Principal Ooishi\nThe principal of St. Hermelin High.  She adores children and flowers.{/color}"
     oo "I'll get the teachers together and see if we can't do something for her."
     hide ooishi
-    show mark animated neutral sad with qdis
+    show mark animated neutral sad with qleft
     mk "Cool.  Me an' Naoya are gonna try to visit her when we can, too."
     hide mark
-    show ooishi at pleft with qdis
+    show ooishi at pleft with qleft
     oo "I think that's wonderful!  Make sure to tell the other students about it too.  Let's get as many as we can to visit her and keep her spirits up!"
     oo "You two can head home for the day.  I'll talk to your teachers about it."
     hide ooishi
-    show mmark animated neutral smirk with qdis
+    show mmark animated neutral smirk with qleft
     mk "Even Hamya?"
     hide mark
-    show ooishi at pleft with qdis
+    show ooishi at pleft with qleft
     oo "Masao, that's Mr. Hanya.  Please don't make me regret my decision here."
     oo "I know you've had some run-ins with the police..."
     hide ooishi
-    show mark animated neutral serious with qdis
+    show mark animated neutral serious with qleft
     mk "Hey, Old Baldy just got mad 'cause I tagged a few walls.  It wasn't like I did anything serious."
     hide mark
-    show ooishi at pleft with qdis
+    show ooishi at pleft with qleft
     oo "That's the Chief of Police you're talking about, Masao.  And while I support your artistry...a less controversial outlet would be better, I feel."
+    hide ooishi
+    show mark animated neutral serious with qleft
+    mk "Yeesh, sorry.  I got the message.  Let's cheese it, Naoya."
+    hide mark
+    #show mark leaving update
+    show ooishi at pleft with qleft
+    oo "I'm not sure if you and Masao are truly friends with Maki or if you're just using it as an excuse to leave school early..."
+    hide screen header with qdis
+    $ choicetext = ""But please do try to visit her, at least occasionally."
+    show nchoice at pright zorder 15 with easeinright
+    show nchoice onlayer screens zorder 15 at pright
+    show fadeblack onlayer screens zorder 3 with qdis
+    $ choice1 = "You got it."
+    $ choice2 = "If it gets me out of class..."
+    call screen choices with qdis
+    if _return == 1:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show ooishi at pleft2 with qleft
+        oo "Thank you.  I'm sure she'll appreciate it."
+    if _return == 2:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide mark
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show ooishi at pleft2 with qleft
+        oo "Yes, it would...I suppose I'll need you to get a signed doctor's note when you attend..."
+    oo "So long as you actually go to the hospital and don't decide to take a detour."
+    oo "But I won't keep you further.  Thank you for going, today."
 
+    scene bg frontgate with qdis
+    show mark animated sad with qleft
+    mk "I don't know- we dumped her at the hospital and ditched."
+    hide mark
+    show brown animated smirk with qleft
+    stu "C'mon, Mark.  You and Naoya both went up with Sonomura.  You gotta know how she's doing."
+    $ tbnarrator = 1
+    show brown ns
+    n "{color=#ebffdb}>Hidehiko Uesugi (Nickname: Brown)\nCraves attention and doesn't take things very seriously.{/color}"
+    $ tbnarrator = 0
+    hide brown
+    show mark animated sad with qleft
+    mk "Man, forget this.  You just wanna spread rumors."
+    hide mark
+    #show mark leaving #update
+    show brown animated neutral serious with qleft
+    br "Man, I just wanna make sure she's all right."
+    show brown animated neutral smirk
+    br "Hey, Naoya!  You're not busy, right?"
+    hide screen header with qdis
+    show brown ns
+    $ choicetext = "I'm sure you've got a minute for your good buddy Hidehiko."
+    show nchoice at pright zorder 15 with easeinright
+    show nchoice onlayer screens zorder 15 at pright
+    show fadeblack onlayer screens zorder 3 with qdis
+    $ choice1 = "Yeah, I don't have anywhere to be."
+    $ choice2 = "I guess I can spare a little time."
+    call screen choices with qdis
+    if _return == 1:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show brown animated neutral smirk
+        br "Good mood today, eh?"
+    if _return == 2:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show brown animated neutral serious
+        br "How gracious of you."    
+    show brown animated neutral smirk
+    br "I just wanna make sure Sonomura's doing all right.  Freaked us all out, y'know?"
+    show brown ns
+    $ tbnarrator = 1
+    n "You explain Maki's situation to Brown."
+    $ tbnarrator = 0
+    show brown animated neutral sad with
+    br "Damn.  That's rough.  You and Mark took good care of her, I'm sure."
+    show brown animated neutral smirk
+    br "He didn't say, but he's a good guy even if he acts like a spoiled brat sometimes."
+    hide brown
+    #Ayase shows up
+    show ayase animated neutral sad with qleft
+    stu "Naoya!  Hidehiko!  C'mon, let's go!"
+    hide ayase
+    show brown animated neutral serious with qleft
+    br "Woah woah, what's up Yuka?"
+    hide brown
+    show ayase animated neutral serious with qleft
+    stu "I'll tell you later, let's go!"
+    hide ayase
 
-
-
+    scene bg peacediner with qdis
+    show ayase animated neutral serious with qleft
+    stu "And Toro would just *not* leave me alone!"
+    $ tbnarrator = 1
+    show ayase ns
+    n "{color=#ebffdb}>Yuka Ayase (Nickname: Ayase)\nA troublemaking member of the suntanned, bleach-blonde \"kogal\" set.{/color}"
+    $ tbnarrator = 0
+    show ayase animated neutral serious
+    ay "I don't know what his problem is."
+    hide ayase
+    show brown animated neutral smirk with qleft
+    br "Aw, he's got a crush on you.  That's hilarious."
+    hide brown
+    show ayase animated neutral serious with qleft
+    ay "Ugh, no way.  NOt in a million years."
+    show ayase animated neutral smirk
+    ay "So Naoya, how was the trip across town?
+    ay "You and Mark actually go to the hospital with Maki?"
+    hide ayase
+    show brown animated neutral sad with qleft
+    br "They did.  Naoya was saying she's actually pretty sick."
+    hide brown
+    show ayase animated neutral serious with qleft
+    ay "First she starts getting popular from her painting and now she pulls this."
+    ay "I don't know.  Maybe she's faking it?"
+    hide screen header with qdis
+    show ayase ns
+    $ choicetext = "You were there, what do you think?"
+    show nchoice at pright zorder 15 with easeinright
+    show nchoice onlayer screens zorder 15 at pright
+    show fadeblack onlayer screens zorder 3 with qdis
+    $ choice1 = "Kind of a shitty thing to think."
+    $ choice2 = "Doctors said she's sick, so she must be."
+    call screen choices with qdis
+    if _return == 1:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show ayase animated neutral sad
+        ay "Jeez, I was just asking."
+    if _return == 2:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show ayase animated neutral serious
+        ay "Hmmm...that sucks for her, then."    
+    show ayase animated neutral serious
+    ay "At least she can paint there or whatever."
+    hide ayase
+    #show nanjo coming in #update
+    show brown animated neutral serious with qleft
+    br "I gotta use the can.  I'll be back."
+    hide brown
+    #show nanjo approaching the table #update
+    show nanjo animated neutral serious with qleft
+    stu "Deplorable.  School is still in session, you know."
+    stu "What are you doing here?  Ms. Saeko sent me to find you."
+    $ tbnarrator = 1
+    show nanjo ns
+    n "{color=#ebffdb}>Kei Nanjo (Nickname: Nanjo)\nHeir to the Nanjo Group.  An utter pragmatist and skeptic.{/color}"
+    $ tbnarrator = 0
+    hide nanjo
+    show ayase animated netural serious with qleft
+    ay "No one is just letting me be, today, huh?  Fine, whatever, I'll go back."
+    hide ayase
+    #show ayase leaving
+    show nanjo animated neutral serious with qleft
+    na "Is this where you've been, rather than helping Sonomura?  Where is Masao?"
+    na "No matter.  I'll take you back myself, and make sure Ayase does not dawdle."
 
 label intro:
     scene bg black
@@ -9000,3 +9177,4 @@ label HospitalNav:
     call screen HospitalNav(_with_none=False)
 
 return
+
