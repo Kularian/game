@@ -271,8 +271,8 @@ label start:
     default label067guy1 = 0
     default label067guy2 = 0
     default label067sec = 0
-    default label067stu = 0
-    default label067girl = 0
+    default label067girl1 = 0
+    default label067girl2 = 0
     default label067yama = 0
 
     default label069nanjo = 0

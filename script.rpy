@@ -69,6 +69,8 @@ label start2:
     default thanatospersona = 0
     default marikoshard = False
     default jackfrostfriend = False
+    default clerk1x = 0
+    default clerk1y = 0
 
     scene bg black
     centered "Once, I dreamt I was a butterfly."
@@ -216,7 +218,7 @@ label prologue:
     show ooishi at pleft with qleft
     oo "I'm not sure if you and Masao are truly friends with Maki or if you're just using it as an excuse to leave school early..."
     hide screen header with qdis
-    $ choicetext = ""But please do try to visit her, at least occasionally."
+    $ choicetext = "But please do try to visit her, at least occasionally."
     show nchoice at pright zorder 15 with easeinright
     show nchoice onlayer screens zorder 15 at pright
     show fadeblack onlayer screens zorder 3 with qdis
@@ -290,14 +292,14 @@ label prologue:
         with qdis
         show screen header with qdis
         show brown animated neutral serious
-        br "How gracious of you."    
+        br "How gracious of you."
     show brown animated neutral smirk
     br "I just wanna make sure Sonomura's doing all right.  Freaked us all out, y'know?"
     show brown ns
     $ tbnarrator = 1
     n "You explain Maki's situation to Brown."
     $ tbnarrator = 0
-    show brown animated neutral sad with
+    show brown animated neutral sad with qleft
     br "Damn.  That's rough.  You and Mark took good care of her, I'm sure."
     show brown animated neutral smirk
     br "He didn't say, but he's a good guy even if he acts like a spoiled brat sometimes."
@@ -329,7 +331,7 @@ label prologue:
     show ayase animated neutral serious with qleft
     ay "Ugh, no way.  NOt in a million years."
     show ayase animated neutral smirk
-    ay "So Naoya, how was the trip across town?
+    ay "So Naoya, how was the trip across town?"
     ay "You and Mark actually go to the hospital with Maki?"
     hide ayase
     show brown animated neutral sad with qleft
@@ -364,7 +366,7 @@ label prologue:
         with qdis
         show screen header with qdis
         show ayase animated neutral serious
-        ay "Hmmm...that sucks for her, then."    
+        ay "Hmmm...that sucks for her, then."
     show ayase animated neutral serious
     ay "At least she can paint there or whatever."
     hide ayase
@@ -6904,7 +6906,7 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
                 show smdsprite downleft standmove at npc1loc
                 show naoyasprite upright stand at naoyaloc with qdis
                 show sennenmannendo 1 at pleft2 with qleft
-                "Clerk" "My, I'm grateful you came all this way.  Well, feel free to look around."
+                smd "My, I'm grateful you came all this way.  Well, feel free to look around."
                 $ tbnarrator = 1
                 "Naoya persues the sweets, but ultimately decides against it."
                 $ tbnarrator = 0
@@ -6919,9 +6921,9 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
                 $ naoyay = npc2y+25
                 show oldman1sprite downright standmove at npc2loc
                 show naoyasprite upleft stand at naoyaloc with qdis
-                "Customer" "There's this one strange store in this here mall..."
-                "Customer" "Whenever I go take a gander, it's closed, and I've never seen anyone go in or out."
-                "Customer" "But every now and then, you can hear music from in there... It's a funny old world, isn't it?"
+                yao "There's this one strange store in this here mall..."
+                yao "Whenever I go take a gander, it's closed, and I've never seen anyone go in or out."
+                yao "But every now and then, you can hear music from in there... It's a funny old world, isn't it?"
                 show oldman1sprite downright stand
                 hide naoyasprite
                 with qdis
@@ -7425,14 +7427,14 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
         $ npc1y = 410
         $ npc2x = 650
         $ npc2y = 500
-        label label052TalkA:
-            show screen Clinic1
+        label label058TalkA:
+            show screen Clinic2
             hide marksprite
             hide physiciansprite
             hide nurse2sprite
             hide nanjosprite
             hide yukinosprite
-            call screen Clinic1
+            call screen Clinic2
             if _return > 0:
                 show nanjosprite upleft stand at nanjoloc
                 show yukinosprite upleft stand at yukinoloc
@@ -7486,7 +7488,7 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
                 hide doctor
                 hide naoyasprite
                 with qdis
-                $ label058physician = 1
+                $ label058doctor = 1
             elif _return == 5:
                 $ naoyax = npc2x+60
                 $ naoyay = npc2y+25
@@ -7505,8 +7507,8 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
                 window hide
                 window auto
                 $ tbnarrator = 0
-                jump label052TalkA
-            jump label058
+                jump label052
+            jump label058TalkA
 
 label label059: #velvet room joy street
     $ tbnarrator = 1
@@ -7583,153 +7585,158 @@ label label061 (location = "Judgment 1999"): # Joy Street
         scene bg judgment with qdis
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
-        $ yukinox = 1250
-        $ yukinoy = 520
-        $ markx = 1050
-        $ marky = 650
-        $ nanjox = 1100
-        $ nanjoy = 500
-        $ npc1x = 760
-        $ npc1y = 410
-        $ npc2x = 650
-        $ npc2y = 500
-        $ npc3x = 500
-        $ npc3y = 600
-        $ npc4x = 750
-        $ npc4y = 500
-        $ npc5x = 1000
-        $ npc5y = 350
-        show screen jd2
-        hide marksprite
-        hide man1sprite
-        hide studentifm
-        hide student9
-        hide jd1sprite
-        hide jd2sprite
-        hide nanjosprite
-        hide yukinosprite
-        call screen jd2
-        if _return > 0:
-            show nanjosprite upleft stand at nanjoloc
-            show yukinosprite upleft stand at yukinoloc
-            show marksprite upleft stand at markloc
-            show man1sprite downright stand at npc1loc
-            show studentifm downright stand at npc2loc
-            show student9 downright stand at npc3loc
-            show jd1sprite downleft stand at npc4loc
-            show jd2sprite downleft stand at npc5loc
-        if _return == 1:
-            $ naoyax = markx-60
-            $ naoyay = marky-25
-            show marksprite upleft standmove at markloc
-            show naoyasprite downright stand at naoyaloc with qdis
-            show mark animated neutral serious with qleft
-            mk "You know, I like the slots too, but we should play after our checkup!"
-            show marksprite upleft stand
-            hide mark
-            hide naoyasprite
-            with qdis
-            $ label061mark = 1
-        elif _return == 2:
-            $ naoyax = yukinox-60
-            $ naoyay = yukinoy-25
-            show yukinosprite upleft stand at yukinoloc
-            show naoyasprite downright stand at naoyaloc with qdis
-            show yukino animated neutral serious with qleft
-            yu "Masao's pals are weird as ever."
-            show yukinosprite upleft stand
-            hide yukino
-            hide naoyasprite
-            with qdis
-            $ label061yukino = 1
-        elif _return == 3:
-            $ naoyax = nanjox-60
-            $ naoyay = nanjoy-25
-            show nanjosprite upleft standmove at nanjoloc
-            show naoyasprite downright stand at naoyaloc with qdis
-            show nanjo animated neutral serious with qleft
-            na "What's the matter, Naoya?  Have you suddenly cottoned to gambling?"
-            show nanjosprite upleft stand
-            hide nanjo
-            hide naoyasprite
-            with qdis
-            $ label061nanjo = 1
-        elif _return == 4:
-            $ naoyax = npc1x-60
-            $ naoyay = npc1y+25
-            show man1sprite downleft stand at npc1loc
-            show naoyasprite upright stand at naoyaloc with qdis
-            "Man" "Ya know, there's been this outsider lately hangin' around our place."
-            "Man" "Dude supposedly has a scar on his head.  He shouldn't mess with the Tailors!"
-            show mark animated neutral serious with qleft
-            mk "Just ignore those guys.  They'll get bored and wander off before too long."
-            $ reijicasino = True
-            hide naoyasprite
-            with qdis
-            $ label061guy1 = 1
-        elif _return == 5:
-            $ naoyax = npc2x+60
-            $ naoyay = npc2y+25
-            show studentifm downright stand at npc2loc
-            show naoyasprite upleft stand at naoyaloc with qdis
-            "Man" "Heehee... You guysh are Mark'sh friendsh?  Heeheeheeeeee!"
-            "Man" "Looksh like you guysh ain't the onesh!"
-            show studentifm downright stand
-            hide naoyasprite
-            with qdis
-            $ label061guy2 = 1
-        elif _return == 6:
-            $ naoyax = npc3x+60
-            $ naoyay = npc3y+25
-            show student9 downright stand at npc2loc
-            show naoyasprite upleft stand at naoyaloc with qdis
-            "Addict" "Dammit!  I'm broke again!  After all my losses, the next one who plays this machine oughtta win big..."
-            "Addict" "Wait, are you up next?  Aww, this sucks!"
-            show student9 downright stand
-            hide naoyasprite
-            with qdis
-            $ label061guy3 = 1
-        elif _return == 7:
-            $ naoyax = npc4x-60
-            $ naoyay = npc4y+55
-            show jd1sprite downleft standmove at npc4loc
-            show naoyasprite upright stand at naoyaloc with qdis
-            show jclerk 2 at pleft2 with qleft
-            jclerk "Hiiii!  SO nice to see you!"
-            jclerk "If you're looking to exchange money for coins, I'm your man."
-            jclerk "Won't you purchase some coins?  Hmmmm?"
-            hide jclerk 2 with qdis
-            $ tbnarrator = 1
-            "After some consideration, Naoya decided against it."
-            $ tbnarrator = 0
-            #coin purchase for gambling
-            show jd1sprite downleft stand1
-            hide naoyasprite
-            with qdis
-            $ label061jd1 = 1
-        elif _return == 8:
-            $ naoyax = npc5x-70
-            $ naoyay = npc5y+65
-            show jd2sprite downleft standmove at npc5loc
-            show naoyasprite upright stand at naoyaloc with qdis
-            show jclerk 1 at pleft2 with qleft
-            jclerk "I can exchange your coins for items, if that's what you're in the mood for..."
-            jclerk "Wanna see what I've got?"
-            hide jclerk 1 with qdis
-            $ tbnarrator = 1
-            "After some consideration, Naoya decided against it."
-            $ tbnarrator = 0
-            #coin exchange for gambling
-            show jd2sprite downleft stand1
-            hide naoyasprite
-            with qdis
-            $ label061jd2 = 1
-        elif _return == 9:
-            scene bg judgment with qdis
-            hide screen header
-            "You head back out into the mall."
-            jump label052
-        jump label061
+        $ yukinox = 800
+        $ yukinoy = 560
+        $ markx = 1070
+        $ marky = 350
+        $ nanjox = 1170
+        $ nanjoy = 570
+        $ npc2x = 560
+        $ npc2y = 310
+        $ npc1x = 1110
+        $ npc1y = 420
+        $ npc5x = 1530
+        $ npc5y = 315
+        $ npc4x = 1230
+        $ npc4y = 192
+        $ npc3x = 980
+        $ npc3y = 170
+        label label061TalkA:
+            show screen JD2
+            hide marksprite
+            hide man1sprite
+            hide studentifm
+            hide student9
+            hide jd1sprite
+            hide jd2sprite
+            hide nanjosprite
+            hide yukinosprite
+            call screen JD2
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite downright stand at yukinoloc
+                show man1sprite downleft stand at npc1loc
+                show studentifm downright stand at npc2loc
+                show student9 downright stand at npc3loc
+                show marksprite downleft stand at markloc
+                show jd1sprite downleft stand1 at npc4loc
+                show jd2sprite downleft stand1 at npc5loc
+            if _return == 1:
+                $ naoyax = markx-60
+                $ naoyay = marky+25
+                show marksprite downleft standmove at markloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "You know, I like the slots too, but we should play after our checkup!"
+                show marksprite downleft stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label061mark = 1
+            elif _return == 2:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy+25
+                show yukinosprite downright stand at yukinoloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Masao's pals are weird as ever."
+                show yukinosprite downright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label061yukino = 1
+            elif _return == 3:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy-25
+                show nanjosprite upleft standmove at nanjoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "What's the matter, Naoya?  Have you suddenly cottoned to gambling?"
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label061nanjo = 1
+            elif _return == 4:
+                $ naoyax = npc1x-60
+                $ naoyay = npc1y+25
+                show man1sprite downleft standmove at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                man "Ya know, there's been this outsider lately hangin' around our place."
+                man "Dude supposedly has a scar on his head.  He shouldn't mess with the Tailors!"
+                show man1sprite downleft stand at npc1loc
+                show marksprite downright standmove at markloc
+                show mark animated neutral serious with qleft
+                mk "Just ignore guys like those.  They'll get bored and wander off before too long."
+                show marksprite downleft stand
+                $ reijicasino = True
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label061guy1 = 1
+            elif _return == 5:
+                $ naoyax = npc3x+60
+                $ naoyay = npc3y+25
+                show student9 downright stand at npc3loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                man "Heehee... You guysh are Mark'sh friendsh?  Heeheeheeeeee!"
+                man "Looksh like you guysh ain't the onesh!"
+                show student9 downright stand
+                hide naoyasprite
+                with qdis
+                $ label061guy2 = 1
+            elif _return == 6:
+                $ naoyax = npc2x+60
+                $ naoyay = npc2y+25
+                show studentifm downright stand at npc2loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                stu "Dammit!  I'm broke again!  After all my losses, the next one who plays this machine oughtta win big..."
+                stu "Wait, are you up next?  Aww, this sucks!"
+                show studentifm downright stand
+                hide naoyasprite
+                with qdis
+                $ label061guy3 = 1
+            elif _return == 7:
+                $ naoyax = npc4x-60
+                $ naoyay = npc4y+55
+                show jd1sprite downleft standmove at npc4loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show jclerk 2 at pleft2 with qleft
+                jclerk "Hiiii!  SO nice to see you!"
+                jclerk "If you're looking to exchange money for coins, I'm your man."
+                jclerk "Won't you purchase some coins?  Hmmmm?"
+                hide jclerk 2 with qdis
+                $ tbnarrator = 1
+                "After some consideration, Naoya decided against it."
+                $ tbnarrator = 0
+                #coin purchase for gambling
+                show jd1sprite downleft stand1
+                hide naoyasprite
+                with qdis
+                $ label061jd1 = 1
+            elif _return == 8:
+                $ naoyax = npc5x-70
+                $ naoyay = npc5y+65
+                show jd2sprite downleft standmove at npc5loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show jclerk 1 at pleft2 with qleft
+                jclerk "I can exchange your coins for items, if that's what you're in the mood for..."
+                jclerk "Wanna see what I've got?"
+                hide jclerk 1 with qdis
+                $ tbnarrator = 1
+                "After some consideration, Naoya decided against it."
+                $ tbnarrator = 0
+                #coin exchange for gambling
+                show jd2sprite downleft stand1
+                hide naoyasprite
+                with qdis
+                $ label061jd2 = 1
+            elif _return == 9:
+                scene bg judgment with qdis
+                hide screen header
+                "You head back out into the mall."
+                jump label052
+            jump label061TalkA
 
 label label062 (location = "SEBEC Building"):
     if plotprogress == 2:
@@ -8213,115 +8220,364 @@ label label067 (location = "Mikage Hospital"): #Reception
     scene bg hospital1 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     show screen header
+    $ yukinox = 900
+    $ yukinoy = 300
+    $ markx = 1090
+    $ marky = 310
+    $ nanjox = 1150
+    $ nanjoy = 270
+    $ naoyax = 1000
+    $ naoyay = 330
+    $ clerk1x = 964
+    $ clerk1y = 218
+    $ clerk2x = 1230
+    $ clerk2y = 239
+    $ npc1x = 1170
+    $ npc1y = 420
+    $ npc2x = 1032
+    $ npc2y = 516
+    $ npc3x = 850
+    $ npc3y = 500
+    $ npc4x = 920
+    $ npc4y = 490
+    $ npc5x = 113
+    $ npc5y = 487
+    show nursesec2sprite downleft stand1 at clerk2loc
     if hospitalscene == 0:
+        show nanjosprite downleft standmove at nanjoloc
+        show yukinosprite upright stand at yukinoloc
+        show marksprite upleft stand at markloc
+        show naoyasprite upright stand at naoyaloc
+        show nursesecsprite downright stand1 at clerk1loc
+        show woman3sprite downleft stand at npc1loc
+        show injuredman at npc2loc
+        show man2sprite upright stand at npc3loc
+        show woman4sprite downleft stand at npc4loc
+        show yamaokasprite upright stand at npc5loc
+        with qdis
         show nanjo animated neutral serious with qleft
         na "There's some time until our examinations.  Let's visit Maki first, then."
         na "Best not be idle, after all."
         hide nanjo
+        show nanjosprite downleft stand
         show mark animated neutral serious with qleft
+        show marksprite upright standmove
         mk "Heh... Cold, man."
         mk "By the way, Maki's in {color=#800000}Room 302{/color}."
         hide mark
+        show marksprite upright stand
         show yukino animated neutral smirk with qleft
+        show yukinosprite downright standmove
         yu "You're pretty well-informed, Masao."
         hide yukino
+        show yukinosprite downright stand
         show mark animated neutral serious with qleft
+        show marksprite upleft standmove
         mk "Uh... Shut up!  A friend of mine told me!"
+        show marksprite downleft standmove
         mk "Yo Naoya, let's just go already!"
+        show marksprite downleft stand
         $ hospitalscene = 1
         jump label067
     else:
-        call screen Hospital1
-        if _return == 1:
-            show mark animated neutral serious with qleft
-            mk "What're you lookin' at me for?  Hurry and go!"
-        elif _return == 2:
-            show yukino animated neutral smirk with qleft
-            yu "Huh.  Interesting that Masao knew which room Maki was in."
-        elif _return == 3:
-            show nanjo animated neutral serious with qleft
-            na "Hospitals certainly enjoy keeping people waiting.  Don't they know time is money?"
-        elif _return == 5:
-            "Woman" "I'm sorry.  We're tied up right now, so please wait a little longer."
-            "Woman" "Hm?  Maki Sonomura?  Oh, yes, her... She's in room 302."
-        elif _return == 6:
-            stu "Hoo boy... Know where the police station is?"
-            stu "My boyfriend crashed his motorcycle."
-            show mark animated neutral serious with qleft
-            mk "What's this now?  The police?  You mean the place where Baldy works?"
-            mk "Yeah, just head north after you leave the hospital."
-            hide mark with qdis
-            stu "Exit the hospital and head north... Thanks a bunch!"
-        elif _return == 7:
-            "Man" "Oww... Testifying about accidents is such a pain.  Talk about bad luck."
-        elif _return == 8:
-            "Man" "I'm going to work!  To hell with fake hallways and stairs!"
-            "Man" "To hell with that little ghost girl!"
-            "Man" "If you can't handle such things, you have no place at SEBEC!  Honestly!"
-        elif _return == 9:
-            "Woman" "I wonder if my honey's okay... Isn't seeing things a sign of overwork?"
-        elif _return == 10:
-            show yamaoka animated neutral serious with qleft
-            ya "Oh dear, oh dear!  I've been spotted."
-            ya "I would ask that you keep my presence a secret from the young master..."
-        elif _return == 11:
-            jump calloverworld
-        elif _return == 12:
-            jump HospitalNav
-    jump label067
+        label label067TalkA:
+            show screen Hospital1
+            hide marksprite
+            hide nanjosprite
+            hide yukinosprite
+            hide nursesecsprite
+            hide nursesec2sprite
+            hide woman3sprite
+            hide injuredman
+            hide man2sprite
+            hide woman4sprite
+            hide yamaokasprite
+            call screen Hospital1
+            if _return > 0:
+                show nanjosprite upright stand at nanjoloc
+                show yukinosprite upright stand at yukinoloc
+                show marksprite upleft stand at markloc
+                show nursesecsprite downright stand1 at clerk1loc
+                show woman3sprite downleft stand at npc1loc
+                show injuredman at npc2loc
+                show man2sprite upright stand at npc3loc
+                show woman4sprite downleft stand at npc4loc
+                show yamaokasprite upright stand at npc5loc
+            if _return == 1:
+                $ naoyax = markx-60
+                $ naoyay = marky-25
+                show marksprite upleft standmove at markloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "What're you lookin' at me for?  Hurry and go!"
+                show marksprite upleft stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label067mark = 1
+            elif _return == 2:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy-25
+                show yukinosprite upright stand at yukinoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                show yukino animated neutral smirk with qleft
+                yu "Huh.  Interesting that Masao knew which room Maki was in."
+                show yukinosprite upright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label067yukino = 1
+            elif _return == 3:
+                $ naoyax = nanjox+60
+                $ naoyay = nanjoy+25
+                show nanjosprite downright standmove at nanjoloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show nanjo animated neutral serious with qleft
+                na "Hospitals certainly enjoy keeping people waiting.  Don't they know time is money?"
+                show nanjosprite downright stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label067nanjo = 1
+            elif _return == 4:
+                $ naoyax = clerk1x+60
+                $ naoyay = clerk1y+25
+                show nursesecsprite downright standmove at clerk1loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                sec "I'm sorry.  We're tied up right now, so please wait a little longer."
+                sec "Hm?  Maki Sonomura?  Oh, yes, her... She's in room 302."
+                show nursesecsprite downright stand1 at clerk1loc
+                hide naoyasprite
+                with qdis
+                $ label067sec = 1
+            elif _return == 5:
+                $ naoyax = npc1x-60
+                $ naoyay = npc1y-25
+                show woman3sprite upleft standmove at npc1loc
+                show naoyasprite downright stand at naoyaloc with qdis
+                woman "Hoo boy... Know where the police station is?"
+                woman "My boyfriend crashed his motorcycle."
+                show woman3sprite upleft stand at npc1loc
+                show marksprite downright standmove
+                show mark animated neutral serious with qleft
+                mk "What's this now?  The police?  You mean the place where Baldy works?"
+                mk "Yeah, just head north after you leave the hospital."
+                show marksprite upleft stand
+                hide mark with qdis
+                show woman3sprite upleft standmove
+                stu "Exit the hospital and head north... Thanks a bunch!"
+                show woman3sprite upleft stand
+                hide naoyasprite
+                with qdis
+                $ label067girl1 = 1
+            elif _return == 6:
+                $ naoyax = npc2x-60
+                $ naoyay = npc2y-25
+                show naoyasprite downright stand at naoyaloc with qdis
+                man "Oww... Testifying about accidents is such a pain.  Talk about bad luck."
+                hide naoyasprite
+                with qdis
+                $ label067guy1 = 1
+            elif _return == 7:
+                $ naoyax = npc3x-60
+                $ naoyay = npc3y-25
+                show man2sprite upleft standmove at npc3loc
+                show naoyasprite downright stand at naoyaloc with qdis
+                man "I'm going to work!  To hell with fake hallways and stairs!"
+                man "To hell with that little ghost girl!"
+                man "If you can't handle such things, you have no place at SEBEC!  Honestly!"
+                show man2sprite upleft stand
+                hide naoyasprite
+                with qdis
+                $ label067guy2 = 1
+            elif _return == 8:
+                $ naoyax = npc4x+60
+                $ naoyay = npc4y-25
+                show woman4sprite upright standmove at npc4loc
+                show naoyasprite downleft stand at naoyaloc with qdis
+                woman "I wonder if my honey's okay... Isn't seeing things a sign of overwork?"
+                show woman4sprite upright stand
+                hide naoyasprite
+                with qdis
+                $ label067girl2 = 1
+            elif _return == 9:
+                $ naoyax = npc5x+60
+                $ naoyay = npc5y+25
+                show yamaokasprite downright standmove at npc5loc
+                show yamaoka animated neutral serious zorder 1 with qleft
+                show naoyasprite upleft stand at naoyaloc with qdis
+                ya "Oh dear, oh dear!  I've been spotted."
+                ya "I would ask that you keep my presence a secret from the young master..."
+                hide yamaoka
+                show yamaokasprite downright stand
+                hide naoyasprite
+                with qdis
+                $ label067yama = 1
+            elif _return == 10:
+                scene bg hospital1 with qdis
+                hide screen header
+                $ tbnarrator = 1
+                "You go back out into Mikage-Cho."
+                window hide
+                window auto
+                $ tbnarrator = 0
+                jump calloverworld
+            elif _return == 11:
+                scene bg hospital1 with qdis
+                hide screen header
+                $ tbnarrator = 1
+                "You head into the hospital."
+                window hide
+                window auto
+                $ tbnarrator = 0
+                jump HospitalNav
+            jump label067TalkA
 
 label label068: #Examination Room
     scene bg hospital2 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
+    $ yukinox = 1200
+    $ yukinoy = 510
+    $ markx = 750
+    $ marky = 570
+    $ nanjox = 1150
+    $ nanjoy = 550
+    $ naoyax = 850
+    $ naoyay = 550
+    $ npc1x = 720
+    $ npc1y = 530
+    $ npc2x = 632
+    $ npc2y = 516
+    show yukinosprite upleft stand at yukinoloc
+    show nanjosprite upleft stand at nanjoloc
+    show marksprite upleft stand at markloc
+    show naoyasprite upleft stand at naoyaloc
+    show nurse1sprite downright standmove at npc1loc
+    show doctor2sprite downright stand at npc2loc
     nurse "Hey!  You have to wait your turn just like everyone else!"
     nurse "Now please leave!"
+    scene bg hospital2 with qdis
     jump HospitalNav
 
 label label069: #2F Lobby
     scene bg hospital3 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
-    call screen Hospital3
-    if _return == 1:
-        show mark animated neutral serious with qleft
-        mk "Man, what's with him calling you Hiroshi?"
-    elif _return == 2:
-        show yukino animated neutral sad with qleft
-        yu "It must be rough on the nurse."
-    elif _return == 3:
-        show nanjo animated neutral serious with qleft
-        na "Does that old man really believe such, or is he toying with us...?"
-    elif _return == 4:
-        "Old Man" "Look, Akiko, Hiroshi came to visit."
-        nurse "That's right, Hiroshi's here..."
-        "Old Man" "Thanks for coming all this way, Hiroshi."
-        $ choicetext = "Listen to the Old Man?"
-        show nchoice at pright zorder 15 with easeinright
-        show nchoice onlayer screens zorder 15 at pright
-        show fadeblack onlayer screens zorder 3 with qdis
-        $ choice1 = "Don't Listen"
-        $ choice2 = "Listen"
-        call screen choices with qdis
+    show screen header
+    $ yukinox = 490
+    $ yukinoy = 530
+    $ markx = 630
+    $ marky = 300
+    $ nanjox = 790
+    $ nanjoy = 280
+    $ npc1x = 880
+    $ npc1y = 425
+    $ npc2x = 990
+    $ npc2y = 425
+    label label069TalkA:
+        show screen Hospital3
+        hide marksprite
+        hide nurse2sprite
+        hide nanjosprite
+        hide yukinosprite
+        hide oldman1sprite
+        call screen Hospital3
+        if _return > 0:
+            show nanjosprite downleft stand at nanjoloc
+            show yukinosprite upright stand at yukinoloc
+            show marksprite upleft stand at markloc
+            show nurse2sprite downleft stand at npc2loc
+            show oldman1sprite downright stand at npc1loc
         if _return == 1:
-            hide screen choices with qdis
-            hide fadeblack onlayer screens
-            hide nchoice onlayer screens
-            hide nchoice
+            $ naoyax = markx+60
+            $ naoyay = marky+25
+            show marksprite downright standmove at markloc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show mark animated neutral serious with qleft
+            mk "Man, what's with him calling you Hiroshi?"
+            show marksprite downright stand
+            hide mark
+            hide naoyasprite
             with qdis
-            "Old Man" "I see.  I'm glad to hear you're enjoying school."
+            $ label069mark = 1
         elif _return == 2:
-            hide screen choices with qdis
-            hide fadeblack onlayer screens
-            hide nchoice onlayer screens
-            hide nchoice
+            $ naoyax = yukinox+60
+            $ naoyay = yukinoy-25
+            show yukinosprite upright stand at yukinoloc
+            show naoyasprite downleft stand at naoyaloc with qdis
+            show yukino animated neutral sad with qleft
+            yu "It must be rough on the nurse."
+            show yukinosprite upright stand
+            hide yukino
+            hide naoyasprite
             with qdis
-            "Old Man" "Now you listen here, Hiroshi.  A man's soul is a complex thing."
-            "Old Man" "The things a person shows to the outside world isn't necessarily what he thinks."
-            "Old Man" "You have to dig deep to find out the truth they're hiding..."
-    elif _return == 5:
-        nurse "Hiroshi seems to be his grandson.  He mistakes me for his daughter, too..."
-    elif _return == 6:
-        jump HospitalNav
-    jump label069
+            $ label069yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox+60
+            $ naoyay = nanjoy+25
+            show nanjosprite downright standmove at nanjoloc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show nanjo animated neutral serious with qleft
+            na "Does that old man really believe such, or is he toying with us...?"
+            show nanjosprite downright stand
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label069nanjo = 1
+        elif _return == 4:
+            $ naoyax = npc2x+60
+            $ naoyay = npc2y+25
+            show nurse2sprite downright standmove at npc2loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            nurse "Hiroshi seems to be his grandson.  He mistakes me for his daughter, too..."
+            show nurse2sprite downright stand
+            hide naoyasprite
+            with qdis
+            $ label069nurse = 1
+        elif _return == 5:
+            $ naoyax = npc1x+50
+            $ naoyay = npc1y+25
+            show oldman1sprite downright standmove at npc1loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            yao "Look, Akiko, Hiroshi came to visit."
+            nurse "That's right, Hiroshi's here..."
+            yao "Thanks for coming all this way, Hiroshi."
+            $ choicetext = "Listen to the Old Man?"
+            show nchoice at pright zorder 15 with easeinright
+            show nchoice onlayer screens zorder 15 at pright
+            show fadeblack onlayer screens zorder 3 with qdis
+            $ choice1 = "Don't Listen"
+            $ choice2 = "Listen"
+            call screen choices with qdis
+            if _return == 1:
+                hide screen choices with qdis
+                hide fadeblack onlayer screens
+                hide nchoice onlayer screens
+                hide nchoice
+                with qdis
+                yao "I see.  I'm glad to hear you're enjoying school."
+            elif _return == 2:
+                hide screen choices with qdis
+                hide fadeblack onlayer screens
+                hide nchoice onlayer screens
+                hide nchoice
+                with qdis
+                yao "Now you listen here, Hiroshi.  A man's soul is a complex thing."
+                yao "The things a person shows to the outside world isn't necessarily what he thinks."
+                yao "You have to dig deep to find out the truth they're hiding..."
+            show oldman1sprite downright stand
+            hide naoyasprite
+            with qdis
+            $ label069oldman = 1
+        elif _return == 6:
+            scene bg hospital3 with qdis
+            hide screen header
+            $ tbnarrator = 1
+            "You head into the hospital."
+            window hide
+            window auto
+            $ tbnarrator = 0
+            jump HospitalNav
+        jump label069TalkA
 
 label label070: #2F Nurse's Station
     scene bg hospital4 with qdis
@@ -9177,4 +9433,3 @@ label HospitalNav:
     call screen HospitalNav(_with_none=False)
 
 return
-

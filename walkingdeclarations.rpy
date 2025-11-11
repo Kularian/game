@@ -257,6 +257,11 @@ image physiciansprite downright stand = "hospital/physician/DRStanding1.png"
 image physiciansprite upleft stand = "hospital/physician/ULStanding1.png"
 image physiciansprite upright stand = "hospital/physician/URStanding1.png"
 
+image nurse1sprite downleft stand = "hospital/nurse1/DLStanding1.png"
+image nurse1sprite downright stand = "hospital/nurse1/DRStanding1.png"
+image nurse1sprite upleft stand = "hospital/nurse1/ULStanding1.png"
+image nurse1sprite upright stand = "hospital/nurse1/URStanding1.png"
+
 image nurse2sprite downleft stand = "hospital/nurse2/DLStanding1.png"
 image nurse2sprite downright stand = "hospital/nurse2/DRStanding1.png"
 image nurse2sprite upleft stand = "hospital/nurse2/ULStanding1.png"
@@ -272,10 +277,27 @@ image woman2sprite downright stand = "townies/woman2/DRStanding1.png"
 image woman2sprite upleft stand = "townies/woman2/ULStanding1.png"
 image woman2sprite upright stand = "townies/woman2/URStanding1.png"
 
+image woman3sprite downleft stand = "townies/woman3/DLStanding1.png"
+image woman3sprite downright stand = "townies/woman3/DRStanding1.png"
+image woman3sprite upleft stand = "townies/woman3/ULStanding1.png"
+image woman3sprite upright stand = "townies/woman3/URStanding1.png"
+
+image woman4sprite downleft stand = "townies/woman4/DLStanding1.png"
+image woman4sprite downright stand = "townies/woman4/DRStanding1.png"
+image woman4sprite upleft stand = "townies/woman4/ULStanding1.png"
+image woman4sprite upright stand = "townies/woman4/URStanding1.png"
+
 image man1sprite downleft stand = "townies/man1/DLStanding1.png"
 image man1sprite downright stand = "townies/man1/DRStanding1.png"
 image man1sprite upleft stand = "townies/man1/ULStanding1.png"
 image man1sprite upright stand = "townies/man1/URStanding1.png"
+
+image man2sprite downleft stand = "townies/businessman/DLStanding1.png"
+image man2sprite downright stand = "townies/businessman/DRStanding1.png"
+image man2sprite upleft stand = "townies/businessman/ULStanding1.png"
+image man2sprite upright stand = "townies/businessman/URStanding1.png"
+
+image injuredman = "townies/injuredman/ULSitting.png"
 
 image oldman1sprite downleft stand = "townies/oldman1/DLStanding1.png"
 image oldman1sprite downright stand = "townies/oldman1/DRStanding1.png"
@@ -284,6 +306,16 @@ image girl1sprite downleft stand = "townies/girl1/DLStanding1.png"
 image girl1sprite downright stand = "townies/girl1/DRStanding1.png"
 image girl1sprite upleft stand = "townies/girl1/ULStanding1.png"
 image girl1sprite upright stand = "townies/girl1/URStanding1.png"
+
+image doctor1sprite downleft stand = "hospital/doctor1/DLStanding1.png"
+image doctor1sprite downright stand = "hospital/doctor1/DRStanding1.png"
+image doctor1sprite upleft stand = "hospital/doctor1/ULStanding1.png"
+image doctor1sprite upright stand = "hospital/doctor1/URStanding1.png"
+
+image doctor2sprite downleft stand = "hospital/doctor2/DLStanding1.png"
+image doctor2sprite downright stand = "hospital/doctor2/DRStanding1.png"
+image doctor2sprite upleft stand = "hospital/doctor2/ULStanding1.png"
+image doctor2sprite upright stand = "hospital/doctor2/URStanding1.png"
 
 image yinyansprite downleft stand1 = "merchants/yinyan/stand1.png"
 image yinyansprite downleft stand2 = "merchants/yinyan/stand2.png"
@@ -311,6 +343,12 @@ image hssprite downright stand2 = "merchants/hs/stand2.png"
 
 image sebecsecsprite downleft stand1 = "merchants/sebec/stand1.png"
 image sebecsecsprite downleft stand2 = "merchants/sebec/stand2.png"
+
+image nursesecsprite downright stand1 = "merchants/nurse2/stand1.png"
+image nursesecsprite downright stand2 = "merchants/nurse2/stand2.png"
+
+image nursesec2sprite downleft stand1 = "merchants/nurse1/stand1.png"
+image nursesec2sprite downleft stand2 = "merchants/nurse1/stand2.png"
 
 image markmomsprite downleft stand = "townies/markmom/DLStanding1.png"
 image markmomsprite downright stand = "townies/markmom/DRStanding1.png"
@@ -1627,6 +1665,62 @@ image woman2sprite downleft standmove:
     pause 1.75
     repeat
 
+image woman3sprite upright standmove:
+    Image("townies/woman3/URStanding2.png")
+    pause 2.25
+    Image("townies/woman3/URStanding1.png")
+    pause 1.75
+    repeat
+
+image woman3sprite upleft standmove:
+    Image("townies/woman3/ULStanding2.png")
+    pause 2.25
+    Image("townies/woman3/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image woman3sprite downright standmove:
+    Image("townies/woman3/DRStanding2.png")
+    pause 2.25
+    Image("townies/woman3/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image woman3sprite downleft standmove:
+    Image("townies/woman3/DLStanding2.png")
+    pause 2.25
+    Image("townies/woman3/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image woman4sprite upright standmove:
+    Image("townies/woman4/URStanding2.png")
+    pause 2.25
+    Image("townies/woman4/URStanding1.png")
+    pause 1.75
+    repeat
+
+image woman4sprite upleft standmove:
+    Image("townies/woman4/ULStanding2.png")
+    pause 2.25
+    Image("townies/woman4/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image woman4sprite downright standmove:
+    Image("townies/woman4/DRStanding2.png")
+    pause 2.25
+    Image("townies/woman4/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image woman4sprite downleft standmove:
+    Image("townies/woman4/DLStanding2.png")
+    pause 2.25
+    Image("townies/woman4/DLStanding1.png")
+    pause 1.75
+    repeat
+
 image man1sprite upright standmove:
     Image("townies/man1/URStanding2.png")
     pause 2.25
@@ -1652,6 +1746,34 @@ image man1sprite downleft standmove:
     Image("townies/man1/DLStanding2.png")
     pause 2.25
     Image("townies/man1/DLStanding1.png")
+    pause 1.75
+    repeat
+
+image man2sprite upright standmove:
+    Image("townies/businessman/URStanding2.png")
+    pause 2.25
+    Image("townies/businessman/URStanding1.png")
+    pause 1.75
+    repeat
+
+image man2sprite upleft standmove:
+    Image("townies/businessman/ULStanding2.png")
+    pause 2.25
+    Image("townies/businessman/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image man2sprite downright standmove:
+    Image("townies/businessman/DRStanding2.png")
+    pause 2.25
+    Image("townies/businessman/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image man2sprite downleft standmove:
+    Image("townies/businessman/DLStanding2.png")
+    pause 2.25
+    Image("townies/businessman/DLStanding1.png")
     pause 1.75
     repeat
 
@@ -1728,6 +1850,35 @@ image physiciansprite downleft standmove:
     pause 1.75
     repeat
 
+#Nurse1
+image nurse1sprite upright standmove:
+    Image("Hospital/nurse1/URStanding2.png")
+    pause 2.25
+    Image("Hospital/nurse1/URStanding1.png")
+    pause 1.75
+    repeat
+
+image nurse1sprite upleft standmove:
+    Image("Hospital/nurse1/ULStanding2.png")
+    pause 2.25
+    Image("Hospital/nurse1/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image nurse1sprite downright standmove:
+    Image("Hospital/nurse1/DRStanding2.png")
+    pause 2.25
+    Image("Hospital/nurse1/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image nurse1sprite downleft standmove:
+    Image("Hospital/nurse1/DLStanding2.png")
+    pause 2.25
+    Image("Hospital/nurse1/DLStanding1.png")
+    pause 1.75
+    repeat
+
 #Nurse2
 image nurse2sprite upright standmove:
     Image("Hospital/nurse2/URStanding2.png")
@@ -1754,6 +1905,64 @@ image nurse2sprite downleft standmove:
     Image("Hospital/nurse2/DLStanding2.png")
     pause 2.25
     Image("Hospital/nurse2/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#Doctor1
+image doctor1sprite upright standmove:
+    Image("Hospital/doctor1/URStanding2.png")
+    pause 2.25
+    Image("Hospital/doctor1/URStanding1.png")
+    pause 1.75
+    repeat
+
+image doctor1sprite upleft standmove:
+    Image("Hospital/doctor1/ULStanding2.png")
+    pause 2.25
+    Image("Hospital/doctor1/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image doctor1sprite downright standmove:
+    Image("Hospital/doctor1/DRStanding2.png")
+    pause 2.25
+    Image("Hospital/doctor1/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image doctor1sprite downleft standmove:
+    Image("Hospital/doctor1/DLStanding2.png")
+    pause 2.25
+    Image("Hospital/doctor1/DLStanding1.png")
+    pause 1.75
+    repeat
+
+#doctor2
+image doctor2sprite upright standmove:
+    Image("Hospital/doctor2/URStanding2.png")
+    pause 2.25
+    Image("Hospital/doctor2/URStanding1.png")
+    pause 1.75
+    repeat
+
+image doctor2sprite upleft standmove:
+    Image("Hospital/doctor2/ULStanding2.png")
+    pause 2.25
+    Image("Hospital/doctor2/ULStanding1.png")
+    pause 1.75
+    repeat
+
+image doctor2sprite downright standmove:
+    Image("Hospital/doctor2/DRStanding2.png")
+    pause 2.25
+    Image("Hospital/doctor2/DRStanding1.png")
+    pause 1.75
+    repeat
+
+image doctor2sprite downleft standmove:
+    Image("Hospital/doctor2/DLStanding2.png")
+    pause 2.25
+    Image("Hospital/doctor2/DLStanding1.png")
     pause 1.75
     repeat
 
@@ -1819,6 +2028,13 @@ image sebecsecsprite downleft standmove:
     Image("merchants/sebec/Stand1.png")
     pause 2.25
     Image("merchants/sebec/Stand2.png")
+    pause 1.75
+    repeat
+
+image nursesecsprite downright standmove:
+    Image("merchants/nurse2/Stand1.png")
+    pause 2.25
+    Image("merchants/nurse2/Stand2.png")
     pause 1.75
     repeat
 
