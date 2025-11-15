@@ -390,6 +390,254 @@ label prologue:
     show nanjo animated neutral serious with qleft
     na "Is this where you've been, rather than helping Sonomura?  Where is Masao?"
     na "No matter.  I'll take you back myself, and make sure Ayase does not dawdle."
+    $ tbnarrator = 1
+    n "You begrudgingly follow along with Nanjo back to the school."
+    $ tbnarrator = 0
+
+    scene bg teacherlounge with qdis
+    show nanjo animated neutral serious with qleft
+    na "Here we are.  I-"
+    show nanjo ns
+    pause 0.8
+    show nanjo animated neutral serious
+    na "Where is Ayase?  I thought she was with us."
+    show nanjo ns
+    $ choicetext = "Did you see where she went?"
+    show nchoice at pright zorder 15 with easeinright
+    show nchoice onlayer screens zorder 15 at pright
+    show fadeblack onlayer screens zorder 3 with qdis
+    $ choice1 = "She ditched right when we got to the school."
+    $ choice2 = "I thought you were making sure she doesn't dawdle."
+    call screen choices with qdis
+    if _return == 1:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show nanjo animated neutral serious
+        na "It was right when she complimented my scarf..."
+    if _return == 2:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show nanjo animated neutral serious
+        na "I see you'll be of no help."
+    na "I suppose I will need to go and locate her.  You will remain here."
+    hide nanjo with qdis
+    #Show nanjo leaving update
+    #show yukino approaching
+    show yukino animated neutral smirk with qleft
+    stu "What are you doing here?  I thought you split with Mark already."
+    $ tbnarrator = 1
+    show yukino
+    n "{color=#ebffdb}>Yukino Mayuzumi (Nickname: Yukino)\nTrusted by everyone, she's like an older sister to all the students.{/color}"
+    $ tbnarrator = 0
+    show yukino animated neutral serious
+    yu "Nanjo was sent after Yuka and Brown, not you.  You didn't have to come back, you know."
+    hide yukino with qdis
+    tea "From the note that Mrs. Ooishi sent, he was to have the rest of the day off."
+    show yukino animated neutral smirk with qleft    
+    yu "Well then, looks like Nanjo missed that memo."
+    hide yukino with qdis
+    #show Ayase entering
+    show ayase animated neutral smirk with qleft
+    ay "And now to hide out here til the end of school."
+    show ayase animated neutral serious
+    ay "Oh, hey Yukino.  What're you here for?"
+    hide ayase
+    show yukino animated neutral serious with qleft
+    yu "Helped break up a fight."
+    show yukino animated neutral smirk
+    extend "  Mighta went too far, though."
+    hide yukino with qdis
+    tea "Ms. Ayase, might I ask why you're here?"
+    show ayase animated neutral smirk with qleft
+    ay "Ah, just checking in.  Looks like Ms. Saeko is busy.  I'll come back later!"
+    show ayase animated neutral serious
+    ay "Damn, didn't realize there was a teacher in here.  I'll see you."
+    hide ayase
+    #show ayase leaving #update
+    show yukino animated neutral smirk with qleft
+    yu "There she goes.  So how did it go?  You two get Maki up to the hospital?"
+    show yukino ns
+    $ choicetext = "Mark seemed pretty worried."
+    show nchoice at pright zorder 15 with easeinright
+    show nchoice onlayer screens zorder 15 at pright
+    show fadeblack onlayer screens zorder 3 with qdis
+    $ choice1 = "Yeah.  She's apparently pretty sick with something."
+    $ choice2 = "Mark's always been worried about her."
+    call screen choices with qdis
+    if _return == 1:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show yukino animated neutral sad
+        yu "Ugh, that's rough."
+    if _return == 2:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show yukino animated neutral smirk
+        yu "You know, that's true..."
+    show yukino animated neutral serious
+    yu "Well, anyway, I hope she gets better soon."
+    yu "Can't imagine if she's gotta be there for a few days."
+    hide yukino with qdis
+    #update show Eriko and Saeko coming into the room
+    show saeko animated neutral serious with qleft
+    tea "And that's the tour."
+    show saeko 
+    $ tbnarrator = 1
+    n "{color=#ebffdb}>Saeko Takami\nHomeroom teacher for Naoya and the others.  Very popular with the students.{/color}"
+    $ tbnarrator = 0
+    sa "Not that you needed it, I'm sure."
+    hide saeko
+    show elly animated neutral smirk with qleft
+    stu "No, thank you.  It was a grand refresher."
+    $ tbnarrator = 1
+    show elly
+    n "{color=#ebffdb}>Eriko Kirishima (Nickname: Elly)\nA ladylike student recently returned from abroad.  Beautiful and intelligent.{/color}"
+    $ tbnarrator = 0
+    show elly animated neutral smirk
+    el "It has only been a year but much has changed."
+    hide elly
+    show yukino animated neutral smirk
+    yu "Hey, Elly.  You back from...where'd you go off to, again?"
+    hide yukino
+    show elly animated neutral serious with qleft
+    el "To Europe.  And yes, we have returned and I'll be enrolling this year."
+    el "Good afternoon to you too, Naoya."
+    hide elly
+    show saeko animated neutral serious with qleft
+    sa "Naoya?  Yukino?  What are you two doing here?"
+    hide saeko
+    show yukino animated neutral smirk with qleft
+    yu "I broke up a fight a little too well.  Hamya had me come down here."
+    show yukino animated neutral serious
+    yu "Naoya got hauled back by Nanjo even though Ooishi gave him the day off."
+    hide yukino
+    show saeko animated neutral serious with qleft
+    sa "Honestly... all right.  Naoya, you're free to go."
+    sa "Yukino, let's go talk with Mrs. Ooishi."
+    hide saeko
+    show yukino animated neutral serious with qleft
+    yukino "All right.  See you two around. Good to see you back, Elly."
+    hide yukino
+    show elly animated neutral serious with qleft
+    el "You too, Yukino.  Good luck."
+    hide elly
+    #update show Saeko and Yukino leaving
+    show elly animated neutral serious with qleft
+    el "It's been some time, Naoya.  Only a year, but it feels like much longer."
+    el "How have you been?  And the rest?"
+    show elly ns
+    $ choicetext = "Hopefully everyone is doing well."
+    show nchoice at pright zorder 15 with easeinright
+    show nchoice onlayer screens zorder 15 at pright
+    show fadeblack onlayer screens zorder 3 with qdis
+    $ choice1 = "Everyone's been doing great, really."
+    $ choice2 = "Maki's sick.  Mark and I took her to the hospital."
+    call screen choices with qdis
+    if _return == 1:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show elly animated neutral smirk
+        el "Wonderful.  That's grand to hear.'
+    if _return == 2:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show elly animated neutral sad
+        el "I had heard...I didn't realize it was that bad..."
+    show elly animated neutral serious
+    el "As we've both been given leave to go home...shall we?"
+    hide elly
+    tea "If you happen to see a new student out there, send him in."
+    tea "I've been waiting here for almost thirty minutes for him."
+    show elly animated neutral serious with qleft
+    el "Of course, sir."
+
+    scene bg frontgate with qdis
+    show reiji animated neutral serious with qleft
+    stu "..."
+    hide reiji
+    show elly animated neutral sad with qleft
+    el "Oh!  Dear me, excuse me.  I didn't see you."
+    hide elly
+    show reiji animated neutral serious with qleft
+    stu "...It's fine."
+    show reiji ns
+    $ tbnarrator = 1
+    n "{color=#ebffdb}>Reiji Kido (Nickname: Reiji)\nA quiet loner who just transferred to St. Hermelin High.{/color}"
+    $ tbnarrator = 0
+    hide reiji
+    show elly animated neutral serious with qleft
+    el "I...just returned myself to St. Hermelin, but if you are new here, a teacher is waiting for you."
+    el "In the Teacher's Lounge, that is."
+    hide elly
+    show reiji animated neutral serious with qleft
+    re "Yeah."
+    hide reiji
+    show elly animated neutral sad with qleft
+    el "Well then, if you'll excuse us."
+    show reiji ns
+    $ choicetext = "..."
+    show nchoice at pright zorder 15 with easeinright
+    show nchoice onlayer screens zorder 15 at pright
+    show fadeblack onlayer screens zorder 3 with qdis
+    $ choice1 = "See you around."
+    $ choice2 = "..."
+    call screen choices with qdis
+    if _return == 1:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show reiji animated neutral smirk
+        re "Yeah."
+    if _return == 2:
+        hide screen choices with qdis
+        hide fadeblack onlayer screens
+        hide nchoice onlayer screens
+        hide nchoice
+        with qdis
+        show screen header with qdis
+        show reiji animated neutral serious
+        re "..."
+    #update show reiji going into the school
+    show elly animated neutral serious with qleft
+    el "What a strange boy.  He holds an air of mystery to him..."
+    show elly animated neutral smirk
+    el "I wonder if he's the sort to dabble in the occult."
+    show elly animated neutral serious
+    el "A-Anyway, our paths split here, as I recall.  I will see you in school tomorrow, Naoya."
+    el "Have a grand rest of your day."
+    #update show elly Leaving
+    $ tbnarrator = 1
+    n "You suppose it's time to go home..."
+    $ tbnarrator = 0
+    
+
 
 label intro:
     scene bg black
@@ -9433,3 +9681,4 @@ label HospitalNav:
     call screen HospitalNav(_with_none=False)
 
 return
+
