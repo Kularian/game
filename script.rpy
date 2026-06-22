@@ -21,7 +21,7 @@ label Introcutscenes:
         $ renpy.movie_cutscene("video/P1PSPOpening2.avi")
         $ introcutscene = True
     else:
-        #$ renpy.movie_cutscene("video/P1PSXOpening.avi")
+        $ renpy.movie_cutscene("video/P1PSOpening.avi")
         $ introcutscene = False
     call screen pre_menu
 
@@ -101,7 +101,7 @@ label prologue:
     hide ma
     show mark animated neutral sad with qleft
     stu "Worried ain't the half of it.  You passed right out in Phys Ed!"
-    show mark ns
+    show mark new
     "{color=#ebffdb}>Masao Inaba (Nickname: Mark)\nThe spoiled son of Inaba Dry Cleaning's owners. Earnest and exciteable.{/color}"
     hide mark
     show maki animated sick sad with qleft
@@ -109,7 +109,7 @@ label prologue:
     hide maki
     show mark animated neutral smirk with qleft
     mk "Hey, I'm just glad you're okay.  You'll be outta here soon."
-    show mark ns
+    show mark new
     hide screen header with qdis
     $ choicetext = "Right Naoya?"
     show nchoice at pright zorder 15 with easeinright
@@ -254,7 +254,7 @@ label prologue:
     show brown animated smirk with qleft
     stu "C'mon, Mark.  You and Naoya both went up with Sonomura.  You gotta know how she's doing."
     $ tbnarrator = 1
-    show brown ns
+    show brown new
     n "{color=#ebffdb}>Hidehiko Uesugi (Nickname: Brown)\nCraves attention and doesn't take things very seriously.{/color}"
     $ tbnarrator = 0
     hide brown
@@ -267,7 +267,7 @@ label prologue:
     show brown animated neutral smirk
     br "Hey, Naoya!  You're not busy, right?"
     hide screen header with qdis
-    show brown ns
+    show brown new
     $ choicetext = "I'm sure you've got a minute for your good buddy Hidehiko."
     show nchoice at pright zorder 15 with easeinright
     show nchoice onlayer screens zorder 15 at pright
@@ -295,7 +295,7 @@ label prologue:
         br "How gracious of you."
     show brown animated neutral smirk
     br "I just wanna make sure Sonomura's doing all right.  Freaked us all out, y'know?"
-    show brown ns
+    show brown new
     $ tbnarrator = 1
     n "You explain Maki's situation to Brown."
     $ tbnarrator = 0
@@ -319,7 +319,7 @@ label prologue:
     show ayase animated neutral serious with qleft
     stu "And Toro would just *not* leave me alone!"
     $ tbnarrator = 1
-    show ayase ns
+    show ayase new
     n "{color=#ebffdb}>Yuka Ayase (Nickname: Ayase)\nA troublemaking member of the suntanned, bleach-blonde \"kogal\" set.{/color}"
     $ tbnarrator = 0
     show ayase animated neutral serious
@@ -341,7 +341,7 @@ label prologue:
     ay "First she starts getting popular from her painting and now she pulls this."
     ay "I don't know.  Maybe she's faking it?"
     hide screen header with qdis
-    show ayase ns
+    show ayase new
     $ choicetext = "You were there, what do you think?"
     show nchoice at pright zorder 15 with easeinright
     show nchoice onlayer screens zorder 15 at pright
@@ -379,7 +379,7 @@ label prologue:
     stu "Deplorable.  School is still in session, you know."
     stu "What are you doing here?  Ms. Saeko sent me to find you."
     $ tbnarrator = 1
-    show nanjo ns
+    show nanjo new
     n "{color=#ebffdb}>Kei Nanjo (Nickname: Nanjo)\nHeir to the Nanjo Group.  An utter pragmatist and skeptic.{/color}"
     $ tbnarrator = 0
     hide nanjo
@@ -389,7 +389,7 @@ label prologue:
     #show ayase leaving
     show nanjo animated neutral serious with qleft
     na "Is this where you've been, rather than helping Sonomura?  Where is Masao?"
-    na "No matter.  I'll take you back myself, and make sure Ayase does not dawdle."
+    na "No matter.  I'll take you back myself, and ensure Ayase does not dawdle."
 
 label intro:
     scene bg black
@@ -408,7 +408,8 @@ label intro:
     $ ellyy = 500
     $ yukinox = 700
     $ yukinoy = 550
-    scene bg personagame
+    scene bg AbClass
+    show personagame
     show naoyasprite downleft stand at naoyaloc
     show nanjosprite upright stand at nanjoloc
     show marksprite downleft stand at markloc
@@ -436,7 +437,7 @@ label intro:
     show marksprite upleft standmove
     stu "You sure you ain't got the brain rot, Hidehiko?"
     $ tbnarrator = 1
-    show mark ns
+    show mark new
     n "{color=#ebffdb}>Masao Inaba (Nickname: Mark)\nThe spoiled son of Inaba Dry Cleaning's owners. Earnest and exciteable.{/color}"
     $ tbnarrator = 0
     show marksprite upleft stand
@@ -450,7 +451,7 @@ label intro:
     voice brown3
     stu "I'm willing to put my money where my mouth is if you are, Mark."
     $ tbnarrator = 1
-    show brown ns
+    show brown new
     n "{color=#ebffdb}>Hidehiko Uesugi (Nickname: Brown)\nCraves attention and doesn't take things very seriously.{/color}"
     $ tbnarrator = 0
     hide brown with qdis
@@ -468,7 +469,7 @@ label intro:
     voice ayase1
     stu "Woooo!  I'm with Hidehiko!"
     $ tbnarrator = 1
-    show ayase
+    show ayase new
     n "{color=#ebffdb}>Yuka Ayase (Nickname: Ayase)\nA troublemaking member of the suntanned, bleach-blonde \"kogal\" set.{/color}"
     $ tbnarrator = 0
     hide ayase with qdis
@@ -479,7 +480,7 @@ label intro:
     voice elly1
     stu "I'll throw my lot in with Brown, too."
     $ tbnarrator = 1
-    show elly
+    show elly new
     n "{color=#ebffdb}>Eriko Kirishima (Nickname: Elly)\nA ladylike student recently returned from abroad.  Beautiful and intelligent.{/color}"
     $ tbnarrator = 0
     hide elly with qdis
@@ -499,7 +500,7 @@ label intro:
     voice nanjo1
     stu "Hmph.  As if I cared one whit... It's absolute bunk."
     $ tbnarrator = 1
-    show nanjo
+    show nanjo new
     n "{color=#ebffdb}>Kei Nanjo (Nickname: Nanjo)\nHeir to the Nanjo Group.  An utter pragmatist and skeptic.{/color}"
     $ tbnarrator = 0
     hide nanjo with qdis
@@ -509,7 +510,7 @@ label intro:
     voice yukino1
     stu "What he said... This is all you."
     $ tbnarrator = 1
-    show yukino
+    show yukino new
     n "{color=#ebffdb}>Yukino Mayuzumi (Nickname: Yukino)\nTrusted by everyone, she's like an older sister to all the students.{/color}"
     $ tbnarrator = 0
     hide yukino with qdis
@@ -522,7 +523,7 @@ label intro:
     show mark animated neutral serious
     voice mark9
     mk "Hey, who're you with? It's gotta be me, right?  C'mon, what's it gonna be?"
-    show mark ns
+    show mark new
     hide screen header with qdis
     $ choicetext = "Will you bet on Mark or Brown?"
     show nchoice at pright zorder 15 with easeinright
@@ -580,7 +581,8 @@ label label000: #mark/brown choice
     $ yukinox = 900
     $ yukinoy = 500
     $ tbnarrator = 1
-    scene bg personagame
+    scene bg AbClass
+    show personagame
     show naoyasprite upright stand at naoyaloc
     show nanjosprite upright stand at nanjoloc
     show yukinosprite upright stand at yukinoloc
@@ -671,7 +673,7 @@ label label000: #mark/brown choice
     show brownsprite upright standmove
     voice brown7
     br "Alright! Here it comes!"
-    show brown ns
+    show brown new
     voice brown8
     extend "\n{w=0.3}...{w=0.3}...{w=0.3}...{w=0.3}...{w=0.3}...{w=0.3}..."
     show brown animated neutral sad
@@ -692,7 +694,8 @@ label label000: #mark/brown choice
     $ ellyy = 500
     $ yukinox = 700
     $ yukinoy = 550
-    scene bg personagame
+    scene bg AbClass
+    show personagame
     show naoyasprite upleft stand at naoyaloc
     show nanjosprite upright stand at nanjoloc
     show marksprite upleft stand at markloc
@@ -719,7 +722,7 @@ label label000: #mark/brown choice
     yu "*Sigh* Happy now?  Hurry up and go get the teacher."
     hide yukino with qdis
     show yukinosprite upright stand
-    show brown animated neutral sad with qdis
+    show brown animated neutral sad with qleft
     show brownsprite downright standmove
     voice brown10
     br "W-Wait!  Hold up!  One more time!  Please!?  Mark screwed it up!"
@@ -735,7 +738,8 @@ label label000: #mark/brown choice
     show marksprite upleft stand
     hide screen header
     scene bg black with qdis
-#    $ renpy.movie_cutscene("video/PSPCutscene1.avi")
+    "note the following video does not work (yet)"
+    $ renpy.movie_cutscene("video/Pain.avi")
 #    scene bg weirdgirl with qdis
 #    play music ohno fadein 0.5 fadeout 0.5
 #    $ tbnarrator = 1
@@ -774,31 +778,33 @@ label label000: #mark/brown choice
 #    ph "Welcome.  It's a pleasure to meet you."
 #    ph "I am Philemon, a dweller between consciousness and unconsciousness."
 #    ph "And now, a simple test: can you state your name?"
-    show naoya at pleft2 with qdis
-    mc "Naoya.  Naoya Toudou."
-    ph "Splendid."
-    ph "There aren't many who can remember their identity when in this domain."
-    ph "It seems you passed that test."
-    ph "Tell me this: are you aware of the many and varied selfs you harbor within you?"
-    ph "The selves effused with divine love, and the self capable of demonic cruelty..."
-    ph "People live by wearing different masks."
-    ph "Your current self may be only one of those innumerable masks."
-    ph "You, though... You have a very firm grip on your identity."
-    ph "I respect your strong will, and in return I grant this power - \"Persona.\""
-    ph "It is the power to summon the selves within you..."
-    ph "...The gods and the demons you harbor."
-    ph "The time is soon when you will need this power."
-    ph "Now you must return to your proper time and place."
+    "note the following video does not work (yet)"
+    $ renpy.movie_cutscene("video/Philemon1.avi")
+    # show naoya at pleft2 with qdis
+    # mc "Naoya.  Naoya Toudou."
+    # ph "Splendid."
+    # ph "There aren't many who can remember their identity when in this domain."
+    # ph "It seems you passed that test."
+    # ph "Tell me this: are you aware of the many and varied selfs you harbor within you?"
+    # ph "The selves effused with divine love, and the self capable of demonic cruelty..."
+    # ph "People live by wearing different masks."
+    # ph "Your current self may be only one of those innumerable masks."
+    # ph "You, though... You have a very firm grip on your identity."
+    # ph "I respect your strong will, and in return I grant this power - \"Persona.\""
+    # ph "It is the power to summon the selves within you..."
+    # ph "...The gods and the demons you harbor."
+    # ph "The time is soon when you will need this power."
+    # ph "Now you must return to your proper time and place."
     play music "<silence .5>" fadeout 0.5
     scene bg black with qdis
     $ markx = 1000
-    $ marky = 450
+    $ marky = 350
     $ nanjox = 925
-    $ nanjoy = 425
+    $ nanjoy = 325
     $ yukinox = 900
-    $ yukinoy = 550
+    $ yukinoy = 450
     $ npc1x = 700
-    $ npc1y = 500
+    $ npc1y = 400
     "Voice" "So you guys had the same dream..."
     "Voice" "Indeed.  It's rather extraordinary."
     "Voice" "Think he's seeing it now too?"
@@ -809,7 +815,8 @@ label label000: #mark/brown choice
     show natsumisprite downright stand at npc1loc
     with qdis
     $ location = "Infirmary"
-    play music schooldays volume 0.4 fadein 0.5
+    play music infirmary volume 0.6 if_changed
+    #play music schooldays volume 0.4 if_changed
     show screen header with qdis
     show natsumisprite downright standmove
     show natsumi animated neutral serious with qdis
@@ -823,7 +830,7 @@ label label000: #mark/brown choice
     hide natsumi with qdis
     show natsumisprite downright stand
     $ npc2x = 1200
-    $ npc2y = 600
+    $ npc2y = 500
     show saekosprite upleft standmove at npc2loc with qdis
     show saeko animated neutral serious with qleft
     show saekosprite upright standmove with move
@@ -957,17 +964,18 @@ label label001(location="Infirmary"):
         show screen header with qdis
         scene bg infirmary2
         $ markx = 1300
-        $ marky = 500
+        $ marky = 450
         $ nanjox = 850
-        $ nanjoy = 600
+        $ nanjoy = 550
         $ yukinox = 1100
-        $ yukinoy = 550
+        $ yukinoy = 500
         $ npc1x = 700
-        $ npc1y = 500
+        $ npc1y = 450
         $ npc2x = 800
-        $ npc2y = 450
+        $ npc2y = 400
         with qdis
-        play music schooldays volume 0.4 if_changed
+        play music infirmary volume 0.6 if_changed
+        #play music schooldays volume 0.4 if_changed
         label label001TalkA:
             show screen Infirmary
             hide marksprite
@@ -983,8 +991,8 @@ label label001(location="Infirmary"):
                 show saekosprite downright stand at npc2loc
                 show natsumisprite downright stand at npc1loc
             if _return == 1:
-                $ naoyax = 750
-                $ naoyay = 530
+                $ naoyax = npc1x+60
+                $ naoyay = npc1y+25
                 show natsumisprite downright standmove at npc1loc
                 show naoyasprite upleft stand at naoyaloc with qdis
                 show natsumi animated neutral smirk with qleft
@@ -996,8 +1004,8 @@ label label001(location="Infirmary"):
                 with qdis
                 $ label001natsumi = 1
             elif _return == 2:
-                $ naoyax = 850
-                $ naoyay = 480
+                $ naoyax = npc2x+60
+                $ naoyay = npc2y+25
                 show saekosprite downright standmove at npc2loc
                 show naoyasprite upleft stand behind nanjosprite at naoyaloc with qdis
                 show saeko animated neutral serious with qleft
@@ -1011,8 +1019,8 @@ label label001(location="Infirmary"):
                 with qdis
                 $ label001saeko = 1
             elif _return == 3:
-                $ naoyax = 800
-                $ naoyay = 570
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy-25
                 show nanjosprite upleft standmove at nanjoloc
                 show naoyasprite downright stand at naoyaloc
                 show nanjo animated neutral serious with qleft
@@ -1023,8 +1031,8 @@ label label001(location="Infirmary"):
                 with qdis
                 $ label001nanjo = 1
             elif _return == 4:
-                $ naoyax = 1050
-                $ naoyay = 580
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy+25
                 show yukinosprite downleft standmove at yukinoloc
                 show naoyasprite upright stand at naoyaloc with qdis
                 show yukino animated neutral serious with qleft
@@ -1037,8 +1045,8 @@ label label001(location="Infirmary"):
                 with qdis
                 $ label001yukino = 1
             elif _return == 5:
-                $ naoyax = 1350
-                $ naoyay = 530
+                $ naoyax = markx+60
+                $ naoyay = marky+25
                 show marksprite downright standmove at markloc
                 show naoyasprite upleft stand at naoyaloc with qdis
                 show mark animated neutral serious with qleft
@@ -1054,6 +1062,7 @@ label label001(location="Infirmary"):
             elif _return == 6:
                 ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
             elif _return == 7:
+                play music schooldays volume 0.4 if_changed
                 jump callHermelinFloor1
             jump label001TalkA
 
@@ -1385,13 +1394,13 @@ label label005(location="Class 1-6"):
         show screen header with qdis
         scene bg classroom with qdis
         $ yukinox = 1700
-        $ yukinoy = 400
+        $ yukinoy = 375
         $ markx = 1350
-        $ marky = 400
+        $ marky = 375
         $ nanjox = 1250
-        $ nanjoy = 250
+        $ nanjoy = 225
         $ npc1x = 700
-        $ npc1y = 280
+        $ npc1y = 250
         play music schooldays volume 0.4 if_changed
         label label005TalkA:
             show screen Class16
@@ -1623,17 +1632,17 @@ label label007(location="Teacher's Lounge"):
         show screen header with qdis
         scene bg teacherlounge with qdis
         $ yukinox = 450
-        $ yukinoy = 520
+        $ yukinoy = 430
         $ markx = 840
-        $ marky = 640
+        $ marky = 550
         $ nanjox = 1450
-        $ nanjoy = 410
+        $ nanjoy = 320
         $ npc1x = 670
-        $ npc1y = 520
+        $ npc1y = 430
         $ ellyx = 1150
-        $ ellyy = 320
+        $ ellyy = 230
         $ ayasex = 1000
-        $ ayasey = 300
+        $ ayasey = 210
         play music schooldays volume 0.4 if_changed
         label label007TalkA:
             show screen TeacherLounge
@@ -1813,11 +1822,11 @@ label label008(location="Principal's Office"):
         show screen header with qdis
         scene bg principaloffice with qdis
         $ yukinox = 1110
-        $ yukinoy = 420
+        $ yukinoy = 230
         $ markx = 490
-        $ marky = 440
+        $ marky = 250
         $ nanjox = 1410
-        $ nanjoy = 500
+        $ nanjoy = 310
         play music schooldays volume 0.4 if_changed
         label label008TalkA:
             show screen PrincipalOffice
@@ -1873,14 +1882,15 @@ label label009(location="1F Passageway"):
         show screen header with qdis
         scene bg 1FPassageway with qdis
         $ yukinox = 720
-        $ yukinoy = 670
+        $ yukinoy = 590
         $ markx = 540
-        $ marky = 590
+        $ marky = 510
         $ nanjox = 980
-        $ nanjoy = 620
+        $ nanjoy = 540
         $ npc1x = 1200
-        $ npc1y = 480
-        play music schooldays volume 0.4 if_changed
+        $ npc1y = 400
+        play music passageway
+        #play music schooldays volume 0.4 if_changed
         label label009TalkA:
             show screen Passageway1F
             hide marksprite
@@ -2011,15 +2021,15 @@ label label011(location="Gymnasium"):
         show screen header with qdis
         scene bg gym with qdis
         $ yukinox = 760
-        $ yukinoy = 850
+        $ yukinoy = 790
         $ markx = 810
-        $ marky = 580
+        $ marky = 520
         $ nanjox = 600
-        $ nanjoy = 770
+        $ nanjoy = 710
         $ npc1x = 1500
-        $ npc1y = 370
+        $ npc1y = 310
         $ npc2x = 550
-        $ npc2y = 430
+        $ npc2y = 370
         play music schooldays volume 0.4 if_changed
         label label011TalkA:
             show screen Gymnasium
@@ -2172,19 +2182,19 @@ label label012(location="Drama Club"):
             jump label012TalkB
     else:
         $ yukinox = 1320
-        $ yukinoy = 500
+        $ yukinoy = 430
         $ markx = 550
-        $ marky = 520
+        $ marky = 450
         $ nanjox = 880
-        $ nanjoy = 640
+        $ nanjoy = 570
         $ npc1x = 820
-        $ npc1y = 450
+        $ npc1y = 380
         $ npc2x = 940
-        $ npc2y = 460
+        $ npc2y = 390
         $ npc3x = 760
-        $ npc3y = 520
+        $ npc3y = 450
         $ naoyax = 1100
-        $ naoyay = 600
+        $ naoyay = 530
         scene bg dramaclub with qdis
         play music schooldays volume 0.4 if_changed
         if dramaclub == False:
@@ -2298,13 +2308,13 @@ label label013(location="Boxing Club"):
         jump callSportsBuilding
     else:
         $ yukinox = 1320
-        $ yukinoy = 500
+        $ yukinoy = 420
         $ markx = 1100
-        $ marky = 400
+        $ marky = 320
         $ nanjox = 880
-        $ nanjoy = 640
+        $ nanjoy = 560
         $ npc1x = 950
-        $ npc1y = 400
+        $ npc1y = 320
         scene bg boxingclub with qdis
         play music schooldays volume 0.4 if_changed
         show screen header with qdis
@@ -2376,13 +2386,13 @@ label label014(location="Archery Club"):
         jump callSportsBuilding
     else:
         $ yukinox = 980
-        $ yukinoy = 450
+        $ yukinoy = 360
         $ markx = 590
-        $ marky = 490
+        $ marky = 410
         $ nanjox = 1400
-        $ nanjoy = 500
+        $ nanjoy = 410
         $ npc1x = 1050
-        $ npc1y = 400
+        $ npc1y = 310
         scene bg archeryclub with qdis
         play music schooldays volume 0.4 if_changed
         show screen header with qdis
@@ -2556,22 +2566,22 @@ label label015(location="Fencing Club"):
             jump label015TalkB
     else:
         $ yukinox = 1370
-        $ yukinoy = 500
+        $ yukinoy = 420
         $ markx = 600
-        $ marky = 520
+        $ marky = 440
         $ nanjox = 850
-        $ nanjoy = 660
+        $ nanjoy = 580
         $ npc1x = 930
-        $ npc1y = 430
+        $ npc1y = 350
         $ npc2x = 990
-        $ npc2y = 460
+        $ npc2y = 360
         $ npc3x = 1110
-        $ npc3y = 520
+        $ npc3y = 440
         $ npc4x = 420
-        $ npc4y = 540
+        $ npc4y = 460
         scene bg fencingclub with qdis
-        play music schooldays volume 0.4 if_changed
         if fencingclub == False:
+            play music tessoa
             show nanjosprite upright stand at nanjoloc
             show yukinosprite upleft stand at yukinoloc
             show marksprite upleft stand at markloc
@@ -2622,6 +2632,7 @@ label label015(location="Fencing Club"):
             ". . ."
             $ tbnarrator = 0
         show screen header with qdis
+        play music schooldays volume 0.4 if_changed
         label label015TalkA:
             show screen FencingClub
             hide marksprite
@@ -2735,15 +2746,15 @@ label label016(location="Ballet Club"):
         show screen header with qdis
         scene bg balletclub with qdis
         $ yukinox = 1370
-        $ yukinoy = 520
+        $ yukinoy = 420
         $ markx = 1050
-        $ marky = 600
+        $ marky = 520
         $ nanjox = 1100
-        $ nanjoy = 420
+        $ nanjoy = 340
         $ npc1x = 900
-        $ npc1y = 380
+        $ npc1y = 300
         $ npc2x = 600
-        $ npc2y = 500
+        $ npc2y = 420
         play music schooldays volume 0.4 if_changed
         label label016TalkA:
             show screen BalletClub
@@ -2834,13 +2845,13 @@ label label018(location = "Class 2-1"):
         show screen header with qdis
         scene bg classroom with qdis
         $ yukinox = 1370
-        $ yukinoy = 520
+        $ yukinoy = 500
         $ markx = 680
-        $ marky = 380
+        $ marky = 360
         $ nanjox = 380
-        $ nanjoy = 360
+        $ nanjoy = 340
         $ npc1x = 850
-        $ npc1y = 335
+        $ npc1y = 315
         play music schooldays volume 0.4 if_changed
         label label018TalkA:
             show screen Class21
@@ -2949,13 +2960,13 @@ label label019(location="Class 2-2"):
         show screen header with qdis
         scene bg classroom with qdis
         $ yukinox = 500
-        $ yukinoy = 600
+        $ yukinoy = 580
         $ markx = 800
-        $ marky = 700
+        $ marky = 680
         $ nanjox = 1600
-        $ nanjoy = 400
+        $ nanjoy = 380
         $ npc1x = 1150
-        $ npc1y = 200
+        $ npc1y = 180
         play music schooldays volume 0.4 if_changed
         label label019TalkA:
             show screen Class22
@@ -3081,7 +3092,8 @@ label label020(location="Class 2-4"):
         $ naoyax = 1600
         $ naoyay = 400
         scene bg classroom with qdis
-        play music schooldays volume 0.4 if_changed
+        play music conversation1
+        #play music schooldays volume 0.4 if_changed
         show nanjosprite upleft stand at nanjoloc
         show yukinosprite downleft stand at yukinoloc
         show marksprite downright stand at markloc
@@ -3244,13 +3256,13 @@ label label021(location="Class 2-5"):
         show screen header with qdis
         scene bg classroom with qdis
         $ yukinox = 1130
-        $ yukinoy = 220
+        $ yukinoy = 200
         $ markx = 1100
         $ marky = 530
         $ nanjox = 1180
-        $ nanjoy = 400
+        $ nanjoy = 390
         $ npc1x = 880
-        $ npc1y = 350
+        $ npc1y = 330
         $ npc2x = 450
         $ npc2y = 550
         play music schooldays volume 0.4 if_changed
@@ -3385,15 +3397,15 @@ label label022(location="Cafeteria"):
         show screen header with qdis
         scene bg cafeteria with qdis
         $ yukinox = 1250
-        $ yukinoy = 570
+        $ yukinoy = 550
         $ markx = 1800
-        $ marky = 400
+        $ marky = 380
         $ nanjox = 1050
-        $ nanjoy = 220
+        $ nanjoy = 200
         $ npc1x = 1550
-        $ npc1y = 350
+        $ npc1y = 330
         $ npc2x = 700
-        $ npc2y = 800
+        $ npc2y = 780
         play music schooldays volume 0.4 if_changed
         label label022TalkA:
             show screen Cafeteria
@@ -3605,7 +3617,7 @@ label label024: #Empty Classroom (Reiji)
         hide mark
         show marksprite upleft stand
         show reijisprite downright stand
-        show reiji ns at pleft2 with qleft
+        show reiji new at pleft2 with qleft
         re "..."
         $ tbnarrator = 1
         n "{color=#ebffdb}>Reiji Kido (Nickname: Reiji)\nA quiet loner who transferred to St. Hermelin High six months ago.{/color}"
@@ -3654,7 +3666,7 @@ label label017: #Reiji after convo
     $ marky = 570
     $ nanjox = 1150
     $ nanjoy = 550
-    play music schooldays volume 0.4 if_changed
+    play music reiji if_changed
     label label024TalkA:
         show screen EmptyClass
         hide marksprite
@@ -3715,15 +3727,15 @@ label label026 (location="Class 3-1"):
         show screen header with qdis
         scene bg classroom with qdis
         $ yukinox = 1210
-        $ yukinoy = 550
+        $ yukinoy = 535
         $ markx = 1010
-        $ marky = 270
+        $ marky = 255
         $ nanjox = 1400
-        $ nanjoy = 300
+        $ nanjoy = 285
         $ npc1x = 1120
-        $ npc1y = 190
+        $ npc1y = 175
         $ npc2x = 1070
-        $ npc2y = 210
+        $ npc2y = 195
         play music schooldays volume 0.4 if_changed
         if label026 == False:
             show nanjosprite downright stand at nanjoloc
@@ -3862,15 +3874,15 @@ label label027 (location="Class 3-3"):
         show screen header with qdis
         scene bg classroom with qdis
         $ yukinox = 1010
-        $ yukinoy = 280
+        $ yukinoy = 265
         $ markx = 1370
-        $ marky = 420
+        $ marky = 405
         $ nanjox = 560
-        $ nanjoy = 540
+        $ nanjoy = 525
         $ npc1x = 540
-        $ npc1y = 330
+        $ npc1y = 315
         $ npc2x = 1730
-        $ npc2y = 375
+        $ npc2y = 360
         play music schooldays volume 0.4 if_changed
         label label027TalkA:
             show screen Class33
@@ -3957,13 +3969,13 @@ label label028 (location="Class 3-6"):
         show screen header with qdis
         scene bg classroom with qdis
         $ yukinox = 810
-        $ yukinoy = 700
+        $ yukinoy = 685
         $ markx = 390
-        $ marky = 370
+        $ marky = 355
         $ nanjox = 1700
-        $ nanjoy = 380
+        $ nanjoy = 365
         $ npc1x = 860
-        $ npc1y = 470
+        $ npc1y = 445
         play music schooldays volume 0.4 if_changed
         label label028TalkA:
             show screen Class36
@@ -4079,15 +4091,15 @@ label label029 (location="Class 3-7"):
         show screen header with qdis
         scene bg classroom with qdis
         $ yukinox = 850
-        $ yukinoy = 550
+        $ yukinoy = 535
         $ markx = 1380
-        $ marky = 500
-        $ nanjox = 1400
-        $ nanjoy = 300
+        $ marky = 485
+        $ nanjox = 1440
+        $ nanjoy = 270
         $ npc1x = 480
-        $ npc1y = 610
+        $ npc1y = 595
         $ npc2x = 400
-        $ npc2y = 580
+        $ npc2y = 565
         play music schooldays volume 0.4 if_changed
         label label029TalkA:
             show screen Class37
@@ -4264,19 +4276,19 @@ label label030 (location="Library"):
         show screen header with qdis
         scene bg library with qdis
         $ yukinox = 800
-        $ yukinoy = 580
+        $ yukinoy = 700
         $ markx = 1550
-        $ marky = 320
+        $ marky = 440
         $ nanjox = 1200
-        $ nanjoy = 350
+        $ nanjoy = 460
         $ npc1x = 860
-        $ npc1y = 290
+        $ npc1y = 400
         $ npc2x = 210
-        $ npc2y = 350
+        $ npc2y = 460
         $ npc3x = 280
-        $ npc3y = 360
+        $ npc3y = 470
         $ npc4x = 600
-        $ npc4y = 250
+        $ npc4y = 360
         play music schooldays volume 0.4 if_changed
         label label030TalkA:
             show screen Library
@@ -4459,19 +4471,19 @@ label label031 (location="Student Council"):
         show screen header with qdis
         scene bg studentcouncil with qdis
         $ yukinox = 480
-        $ yukinoy = 450
+        $ yukinoy = 360
         $ markx = 960
-        $ marky = 700
+        $ marky = 610
         $ nanjox = 1450
-        $ nanjoy = 520
+        $ nanjoy = 430
         $ npc1x = 1120
-        $ npc1y = 400
+        $ npc1y = 310
         $ npc2x = 810
-        $ npc2y = 440
+        $ npc2y = 350
         $ npc3x = 660
-        $ npc3y = 600
+        $ npc3y = 510
         $ npc4x = 1150
-        $ npc4y = 570
+        $ npc4y = 480
         play music schooldays volume 0.4 if_changed
         label label031TalkA:
             show screen StudentCouncil
@@ -4772,21 +4784,22 @@ label label033 (location="Entrance Hall"):
         jump label001
     else:
         scene bg entrancehall with qdis
-        play music schooldays volume 0.4 if_changed
+        play music conversation1
+        #play music schooldays volume 0.4 if_changed
         show screen header
         if yamaoka == False:
             $ yukinox = 850
-            $ yukinoy = 300
+            $ yukinoy = 280
             $ markx = 640
-            $ marky = 350
+            $ marky = 330
             $ nanjox = 700
-            $ nanjoy = 270
+            $ nanjoy = 250
             $ naoyax = 800
-            $ naoyay = 400
+            $ naoyay = 380
             $ npc1x = 1500
-            $ npc1y = 380
+            $ npc1y = 360
             $ npc2x = 1000
-            $ npc2y = 500
+            $ npc2y = 480
             show nanjosprite downright stand at nanjoloc
             show yukinosprite downleft stand at yukinoloc
             show marksprite upright stand at markloc
@@ -4917,15 +4930,15 @@ label label034 (location="Front Gate"):
     scene bg frontgate with qdis
     play music nanjo if_changed
     $ yukinox = 1100
-    $ yukinoy = 525
+    $ yukinoy = 475
     $ markx = 800
-    $ marky = 450
+    $ marky = 400
     $ nanjox = 900
-    $ nanjoy = 500
+    $ nanjoy = 450
     $ naoyax = 1050
-    $ naoyay = 450
+    $ naoyay = 400
     $ npc1x = 750
-    $ npc1y = 550
+    $ npc1y = 500
     show nanjosprite downleft stand at nanjoloc
     show yukinosprite downleft stand at yukinoloc
     show marksprite downleft stand at markloc
@@ -4934,7 +4947,7 @@ label label034 (location="Front Gate"):
     show yamaoka animated neutral serious with qleft
     show yamaokasprite upright standmove
     yao "Young Master!"
-    show yamaoka ns
+    show yamaoka new
     $ tbnarrator = 1
     n "{color=#ebffdb}>Yamaoka, the Nanjo family butler\nHe's taken care of Nanjo since the heir was an infant.{/color}"
     $ tbnarrator = 0
@@ -5021,6 +5034,24 @@ label label035 (location="Kaneda Mansion"):
         scene bg kanedamansion with qdis
         play music rich fadeout 0.5 fadein 0.5
         show screen header
+        $ markx = 925
+        $ marky = 440
+        $ nanjox = 1200
+        $ nanjoy = 340
+        $ yukinox = 1150
+        $ yukinoy = 415
+        $ ellyx = 990
+        $ ellyy = 410
+        $ naoyax = 1075
+        $ naoyay = 415
+        $ npc1x = 850
+        $ npc1y = 250
+        show yukinosprite upleft stand at yukinoloc
+        show marksprite upleft stand at markloc
+        show nanjosprite upleft stand at nanjoloc
+        show ellysprite upleft stand at ellyloc
+        show naoyasprite upleft stand at naoyaloc
+        show kanedasprite downright standmove at npc1loc
         show kaneda at pleft2 with qleft
         kaneda "What are the police doing!?  I pay more taxes than anyone else!"
         if kaneda == False:
@@ -5029,12 +5060,24 @@ label label035 (location="Kaneda Mansion"):
         kaneda "Shouldn't they come protect me first at times like these?"
         kaneda "If anything happens to my treasure, I'll sue!"
         hide kaneda
+        show kanedasprite downright stand
+        show ellysprite upleft standmove
         show elly animated neutral serious with qleft
         el "But everyone pays taxes.  There's no call to boast about it."
         hide elly
+        show ellysprite upleft stand
+        show kanedasprite downright standmove
         show kaneda at pleft2 with qleft
         kaneda "Don't act like such a know-it-all, missy!  Ugh, hurry up and get off my property!"
-        hide kaneda with qdis
+        show kanedasprite downright stand
+        hide screen header
+        hide nanjosprite
+        hide naoyasprite
+        hide marksprite
+        hide yukinosprite
+        hide kanedasprite
+        hide ellysprite
+        with qdis
         hide screen header
         jump calloverworld
     if plotprogress == 0:
@@ -5042,13 +5085,13 @@ label label035 (location="Kaneda Mansion"):
         play music rich fadeout 0.5 fadein 0.5
         show screen header
         $ yukinox = 1150
-        $ yukinoy = 425
+        $ yukinoy = 415
         $ markx = 925
-        $ marky = 450
+        $ marky = 440
         $ nanjox = 1200
-        $ nanjoy = 350
+        $ nanjoy = 340
         $ naoyax = 1075
-        $ naoyay = 425
+        $ naoyay = 415
         $ npc1x = 850
         $ npc1y = 250
         show nanjosprite upleft stand at nanjoloc
@@ -5113,13 +5156,13 @@ label label036 (location="Himeno Residence"):
     elif plotprogress == 0:
         scene bg himenoresidence with qdis
         $ yukinox = 1000
-        $ yukinoy = 425
+        $ yukinoy = 305
         $ markx = 925
-        $ marky = 450
+        $ marky = 330
         $ nanjox = 1050
-        $ nanjoy = 400
+        $ nanjoy = 280
         $ naoyax = 980
-        $ naoyay = 460
+        $ naoyay = 340
         show nanjosprite upleft stand at nanjoloc
         show yukinosprite upleft stand at yukinoloc
         show marksprite upleft stand at markloc
@@ -5175,60 +5218,152 @@ label label037 (location="Yin & Yan"):
         hide elly with qdis
         jump calloverworld
     if plotprogress == 1:
+        scene bg yinyan with qdis
+        play music yinyan fadeout 0.5 fadein 0.5 if_changed
         if yyyukino2 == False:
-            scene bg yinyan with qdis
-            play music yinyan fadeout 0.5 fadein 0.5 if_changed
+            $ ellyx = 1420
+            $ ellyy = 430
+            $ yukinox = 1290
+            $ yukinoy = 310
+            $ nanjox = 1475
+            $ nanjoy = 375
+            $ markx = 1300
+            $ marky = 475
+            $ naoyax = 1350
+            $ naoyay = 400
+            $ npc1x = 1335
+            $ npc1y = 260
+            show nanjosprite upleft stand at nanjoloc
+            show ellysprite upleft stand at ellyloc
+            show marksprite upleft stand at markloc
+            show yukinosprite upright stand at yukinoloc
+            show naoyasprite upleft stand at naoyaloc
+            show yinyansprite downleft standmove at npc1loc
             show screen header
             show yyclerk at pleft2 with qleft
             yyclerk "Y-Yukino!  Some monsters showed up!"
             yyclerk "Um, could you please stay with me here?"
             hide yyclerk
+            show yinyansprite downleft stand1
             show yukino animated neutral serious with qleft
+            show yukinosprite upright standmove
             yu "I'm really sorry, but there's somewhere I need to go."
             yu "But I'm pretty sure you'll be fine as long as you stay in the store."
             hide yukino
+            show yukinosprite upright stand
             $ yyyukino2 = True
             jump label037
-        if yyyukino == True:
+        label label037TalkB:
+            $ yukinox = 1350
+            $ yukinoy = 400
+            $ ellyx = 1400
+            $ ellyy = 450
+            $ markx = 275
+            $ marky = 470
+            $ nanjox = 350
+            $ nanjoy = 370
+            $ npc1x = 1335
+            $ npc1y = 260
+            show screen YY1a
+            hide nanjosprite
+            hide yukinosprite
+            hide marksprite
+            hide yinyansprite
+            hide ellysprite
             call screen YY1a
+            if _return > 0:
+                show nanjosprite downright stand at nanjoloc
+                show yukinosprite downright stand at yukinoloc
+                show marksprite downright stand at markloc
+                show yinyansprite downleft stand1 at npc1loc
+                show ellysprite downright stand at ellyloc
             if _return == 1:
-                show mark animated neutral serious with qleft
+                $ naoyax = markx+60
+                $ naoyay = marky+25
+                show marksprite downright standmove at markloc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                show mark animated neutral smirk with qleft
                 mk "Looks like the demons aren't comin' into the store.  That's a relief..."
+                hide mark
+                hide naoyasprite
+                show marksprite downright stand
+                with qdis
+                $ label037amark = 1
             elif _return == 2:
-                show yukino animated neutral serious with qleft
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy+25
+                show yukinosprite downleft standmove at yukinoloc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show yukino animated neutral smirk with qleft
                 yu "I wonder if I should've said that... I can't guarantee they won't come in."
+                hide yukino
+                hide naoyasprite
+                show yukinosprite downleft stand
+                with qdis
+                $ label037ayukino = 1
             elif _return == 3:
+                $ naoyax = nanjox+60
+                $ naoyay = nanjoy+25
+                show nanjosprite downright standmove at nanjoloc
+                show naoyasprite upleft stand at naoyaloc with qdis
                 show nanjo animated neutral serious with qleft
                 na "It's quite impressive that this place is still open in the midst of a demon attack."
-            elif _return == 4:
+                hide nanjo
+                hide naoyasprite
+                show nanjosprite downright stand
+                with qdis
+                $ label037ananjo = 1
+            elif _return == 5:
+                $ naoyax = npc1x-60
+                $ naoyay = npc1y+50
+                show yinyansprite downleft standmove at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
                 show yyclerk at pleft2 with qleft
                 yyclerk "I'll be okay if I'm here... Gotta keep the store open..."
                 yyclerk "We never close... Welcome!"
+                hide yyclerk
                 $ tbnarrator = 1
                 "Naoya perused the shop but ultimately bought nothing."
                 $ tbnarrator = 0
                 #shop here later
-            elif _return == 5:
+                hide naoyasprite with qdis
+                $ label037ayy1 = 1
+            elif _return == 4:
+                $ naoyax = ellyx-60
+                $ naoyay = ellyy+25
+                show ellysprite downleft standmove at ellyloc
+                show naoyasprite upright stand at naoyaloc with qdis
                 show elly animated neutral serious with qleft
                 el "What a curious feeling... It's as if everything is all a dream when I'm here."
+                hide elly
+                hide naoyasprite
+                show ellysprite downleft stand
+                with qdis
+                $ label037aelly = 1
             elif _return == 6:
+                hide marksprite
+                hide yinyansprite
+                hide nanjosprite
+                hide yukinosprite
+                hide naoyasprite
+                hide ellysprite
                 hide header
                 jump calloverworld
-            jump label037
+            jump label037TalkB
     if plotprogress == 0:
         scene bg yinyan with qdis
         play music yinyan fadeout 0.5 fadein 0.5 if_changed
         if yyyukino == False:
-            $ yukinox = 1300
-            $ yukinoy = 400
+            $ yukinox = 1290
+            $ yukinoy = 310
             $ markx = 1300
-            $ marky = 525
+            $ marky = 475
             $ nanjox = 1475
-            $ nanjoy = 425
+            $ nanjoy = 375
             $ naoyax = 1350
-            $ naoyay = 450
-            $ npc1x = 1350
-            $ npc1y = 350
+            $ naoyay = 400
+            $ npc1x = 1335
+            $ npc1y = 260
             show nanjosprite upleft stand at nanjoloc
             show yukinosprite upright stand at yukinoloc
             show marksprite upleft stand at markloc
@@ -5250,6 +5385,7 @@ label label037 (location="Yin & Yan"):
             show yinyansprite downleft standmove
             yyclerk "Oh, okay.  You're a real go-getter, y'know that?"
             yyclerk "I guess you have a reason to work."
+            hide yyclerk
             hide yinyansprite
             hide nanjosprite
             hide yukinosprite
@@ -5259,13 +5395,13 @@ label label037 (location="Yin & Yan"):
             $ yyyukino = True
     label label037TalkA:
         $ yukinox = 1350
-        $ yukinoy = 500
+        $ yukinoy = 400
         $ markx = 275
-        $ marky = 570
+        $ marky = 470
         $ nanjox = 350
-        $ nanjoy = 470
-        $ npc1x = 1350
-        $ npc1y = 350
+        $ nanjoy = 370
+        $ npc1x = 1335
+        $ npc1y = 260
         show screen YY1
         hide nanjosprite
         hide yukinosprite
@@ -5492,55 +5628,133 @@ label label039 (location="Esumi Clinic"):
         scene bg esumiclinic with qdis
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
-        call screen Clinic1a
-        if _return == 1:
-            show mark animated neutral serious with qleft
-            mk "Maki's mom is at the shrine, right?"
-            show mark animated neutral sad
-            mk "We should hurry and go get her."
-            jump label039
-        elif _return == 2:
-            show yukino animated neutral serious with qleft
-            yu "Don't sweat it too much, Naoya."
-            show yukino animated neutral smirk
-            yu "We're here for you."
-            jump label039
-        elif _return == 3:
-            show nanjo neutral sad with qleft
-            na "..."
-            show nanjo animated neutral serious
-            extend "Oh sorry, Naoya."
-            na "I was just lost in thought."
-            jump label039
-        elif _return == 4:
-            show elly animated neutral with qleft
-            el "This clinic's cheerful atmosphere is always relaxing, I find."
-            jump label039
-        elif _return == 5:
-            show doctor at pleft2 with qleft
-            doctor "Wish I could find a nurse who was less of a ditz."
-            jump label039
-        elif _return == 6:
-            nurse "I hear things are going haywire outside."
-            nurse "If I wasn't on the job, I'd go look!"
-            jump label039
-        elif _return == 7:
-            hide screen header
-            jump calloverworld
+        $ yukinox = 1250
+        $ yukinoy = 450
+        $ markx = 1050
+        $ marky = 580
+        $ nanjox = 1100
+        $ nanjoy = 430
+        $ ellyx = 800
+        $ ellyy = 550
+        $ npc1x = 760
+        $ npc1y = 340
+        $ npc2x = 650
+        $ npc2y = 430
+        label label039TalkB:
+            show screen Clinic1a
+            hide marksprite
+            hide physiciansprite
+            hide nurse2sprite
+            hide nanjosprite
+            hide yukinosprite
+            hide ellysprite
+            call screen Clinic1a
+            if _return > 0:
+                show nanjosprite upleft stand at nanjoloc
+                show yukinosprite upleft stand at yukinoloc
+                show marksprite upleft stand at markloc
+                show ellysprite upleft stand at ellyloc
+                show physiciansprite downright stand at npc1loc
+                show nurse2sprite downright stand at npc2loc
+            if _return == 1:
+                $ naoyax = markx-60
+                $ naoyay = marky-25
+                show marksprite upleft standmove at markloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show mark animated neutral serious with qleft
+                mk "Maki's mom is at the shrine, right?"
+                #show mark animated neutral sad
+                mk "We should hurry and go get her."
+                show marksprite upleft stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label039amark = 1
+            elif _return == 2:
+                $ naoyax = yukinox-60
+                $ naoyay = yukinoy-25
+                show yukinosprite upleft stand at yukinoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show yukino animated neutral serious with qleft
+                yu "Don't sweat it too much, Naoya."
+                #show yukino animated neutral smirk
+                yu "We're here for you."
+                show yukinosprite upleft stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label039ayukino = 1
+            elif _return == 3:
+                $ naoyax = nanjox-60
+                $ naoyay = nanjoy-25
+                show nanjosprite upleft standmove at nanjoloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show nanjo animated neutral serious
+                #show nanjo neutral sad with qleft
+                na "..."
+                show nanjo animated neutral serious
+                extend "Oh sorry, Naoya."
+                na "I was just lost in thought."
+                show nanjosprite upleft stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label039ananjo = 1
+            elif _return == 4:
+                $ naoyax = ellyx-60
+                $ naoyay = ellyy-25
+                show ellysprite upleft standmove at ellyloc
+                show naoyasprite downright stand at naoyaloc with qdis
+                show elly animated neutral serious
+                #show nanjo neutral sad with qleft
+                el "This clinic's cheerful atmosphere is always relaxing, I find."
+                show ellysprite upleft stand
+                hide elly
+                hide naoyasprite
+                with qdis
+                $ label039aelly = 1
+            elif _return == 6:
+                $ naoyax = npc1x-60
+                $ naoyay = npc1y+25
+                show physiciansprite downleft stand at npc1loc
+                show naoyasprite upright stand at naoyaloc with qdis
+                show doctor at pleft2 with qleft
+                doctor "Wish I could find a nurse who was less of a ditz."
+                show physiciansprite downleft stand
+                hide doctor
+                hide naoyasprite
+                with qdis
+                $ label039adoctor = 1
+            elif _return == 5:
+                $ naoyax = npc2x+60
+                $ naoyay = npc2y+25
+                show nurse2sprite downright stand at npc2loc
+                show naoyasprite upleft stand at naoyaloc with qdis
+                nurse "I hear things are going haywire outside."
+                nurse "If I wasn't on the job, I'd go look!"
+                show nurse2sprite downright stand
+                hide naoyasprite
+                with qdis
+                $ label039anurse = 1
+            elif _return == 7:
+                scene bg esumiclinic with qdis
+                hide screen header
+                jump calloverworld
+            jump label039TalkB
     elif plotprogress == 0:
         scene bg esumiclinic with qdis
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 1250
-        $ yukinoy = 520
+        $ yukinoy = 450
         $ markx = 1050
-        $ marky = 650
+        $ marky = 580
         $ nanjox = 1100
-        $ nanjoy = 500
+        $ nanjoy = 430
         $ npc1x = 760
-        $ npc1y = 410
+        $ npc1y = 340
         $ npc2x = 650
-        $ npc2y = 500
+        $ npc2y = 430
         label label039TalkA:
             show screen Clinic1
             hide marksprite
@@ -5659,7 +5873,7 @@ label label041 (location="Sennen Mannen-Do"): #Sennen Mannen-Do Mikage
             "Clerk" "Are you... truly human?"
             "Clerk" "Well, if you're a customer, I welcome you."
             $ tbnarrator = 1
-            "Naoya persues the sweets, but ultimately decides against it."
+            "Naoya perused the sweets, but ultimately decides against it."
             $ tbnarrator = 0
             #shop here later
         elif _return == 6:
@@ -5671,13 +5885,13 @@ label label041 (location="Sennen Mannen-Do"): #Sennen Mannen-Do Mikage
         play music sennen fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 1070
-        $ yukinoy = 540
+        $ yukinoy = 310
         $ markx = 625
-        $ marky = 550
+        $ marky = 320
         $ nanjox = 550
-        $ nanjoy = 480
-        $ npc1x = 1230
-        $ npc1y = 375
+        $ nanjoy = 250
+        $ npc1x = 1225
+        $ npc1y = 140
         label label041TalkA:
             show screen SMD1
             hide marksprite
@@ -5737,7 +5951,7 @@ label label041 (location="Sennen Mannen-Do"): #Sennen Mannen-Do Mikage
                 "Clerk" "One bite of Sennen Mannen-Do's sweets extends your life by 1,000 years..."
                 "Clerk" "A second bite gives you 10,000 years.  Would you like one?"
                 $ tbnarrator = 1
-                "Naoya persues the sweets, but ultimately decides against it."
+                "Naoya perused the sweets, but ultimately decides against it."
                 $ tbnarrator = 0
                 #shop here later
                 show smdsprite downleft stand1
@@ -5768,15 +5982,15 @@ label label042 (location="Peace Diner"): #Peace Diner Mikage
         play music diner fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 1060
-        $ yukinoy = 550
+        $ yukinoy = 540
         $ markx = 925
-        $ marky = 550
+        $ marky = 540
         $ nanjox = 800
-        $ nanjoy = 450
+        $ nanjoy = 440
         $ npc2x = 1350
-        $ npc2y = 253
+        $ npc2y = 243
         $ npc1x = 910
-        $ npc1y = 380
+        $ npc1y = 370
         label label042TalkA:
             show screen PD1
             hide marksprite
@@ -5890,17 +6104,17 @@ label label043 (location="Rosa Candida"): #Rosa Candida Mikage
         show screen header
         if rosacandidamark == False:
             $ yukinox = 1360
-            $ yukinoy = 550
+            $ yukinoy = 470
             $ markx = 1225
-            $ marky = 450
+            $ marky = 370
             $ nanjox = 1200
-            $ nanjoy = 550
+            $ nanjoy = 470
             $ naoyax = 1300
-            $ naoyay = 500
+            $ naoyay = 420
             $ npc2x = 970
-            $ npc2y = 270
+            $ npc2y = 190
             $ npc1x = 1470
-            $ npc1y = 410
+            $ npc1y = 330
             show yukinosprite upleft stand at yukinoloc
             show marksprite upleft stand at markloc
             show nanjosprite upleft stand at nanjoloc
@@ -5920,7 +6134,7 @@ label label043 (location="Rosa Candida"): #Rosa Candida Mikage
             pause 0.1
             scene bg rosacandida with qdis
             $ npc2x = 1280
-            $ npc2y = 425
+            $ npc2y = 360
             show markmomsprite downleft standmove at npc2loc
             show marksprite upright stand at markloc
             show yukinosprite upleft stand at yukinoloc
@@ -5964,14 +6178,14 @@ label label043 (location="Rosa Candida"): #Rosa Candida Mikage
             show marksprite downright standmove
             extend "C'mon, Naoya, let's go!"
             hide mark
-            $ newlocx = 1320
-            $ newlocy = 460
-            show marksprite downright walk at newloc with MoveTransition(0.5)
-            $ markx = 1320
-            $ marky = 460
-            $ newlocx = 1500
-            $ newlocy = 535
-            show marksprite downright walk at newloc with MoveTransition(1.25)
+            $ newlocx = 1260
+            $ newlocy = 480
+            show marksprite downright walk at newloc with MoveTransition(0.75)
+            $ markx = 1260
+            $ marky = 480
+            $ newlocx = 1340
+            $ newlocy = 520
+            show marksprite downright walk zorder 2 at newloc with MoveTransition(0.75)
             hide marksprite with qdis
             show markmomsprite downleft standmove
             mmom "Honestly, that boy... I hope you'll all stand by Massie, won't you?"
@@ -6059,15 +6273,15 @@ label label044 (location="Satomi Tadashi"): #Satomi Tadashi Mikage
         play music satomi volume 0.4 fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 690
-        $ yukinoy = 560
+        $ yukinoy = 280
         $ markx = 950
-        $ marky = 600
+        $ marky = 320
         $ nanjox = 550
-        $ nanjoy = 530
+        $ nanjoy = 250
         $ npc2x = 1180
-        $ npc2y = 457
+        $ npc2y = 177
         $ npc1x = 1210
-        $ npc1y = 550
+        $ npc1y = 270
         label label044TalkA:
             show screen ST1
             hide marksprite
@@ -6223,19 +6437,19 @@ label label045 (location="Judgment 1999"): #Judgment 1999 Mikage
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 800
-        $ yukinoy = 560
+        $ yukinoy = 545
         $ markx = 960
-        $ marky = 160
+        $ marky = 145
         $ nanjox = 1170
-        $ nanjoy = 570
+        $ nanjoy = 555
         $ npc2x = 560
-        $ npc2y = 310
+        $ npc2y = 295
         $ npc1x = 1100
-        $ npc1y = 350
+        $ npc1y = 335
         $ npc3x = 1530
-        $ npc3y = 315
+        $ npc3y = 300
         $ npc4x = 1230
-        $ npc4y = 192
+        $ npc4y = 180
         label label045TalkA:
             show screen JD1
             hide marksprite
@@ -6373,7 +6587,7 @@ label label046: #velvet room
     window hide
     window auto
     $ tbnarrator = 0
-    jump calloverworld
+    jump label040
 
 label label047: #agastya tree mikage mall
     scene bg agastyatree with qdis
@@ -6398,16 +6612,16 @@ label label048 (location="Historical Society"):
         jump calloverworld
     elif plotprogress == 0:
         scene bg historicalsociety1 with qdis
-        play music history fadeout 0.5 fadein 0.5 if_changed
+        #play music history fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 470
-        $ yukinoy = 550
+        $ yukinoy = 460
         $ markx = 760
-        $ marky = 420
+        $ marky = 330
         $ nanjox = 1400
-        $ nanjoy = 470
+        $ nanjoy = 380
         $ npc1x = 1015
-        $ npc1y = 403
+        $ npc1y = 313
         label label048TalkA:
             show screen HistoricalSociety1
             hide marksprite
@@ -6491,18 +6705,18 @@ label label048 (location="Historical Society"):
 
 label label049: #Historical society inside
     scene bg historicalsociety2 with qdis
-    play music history fadeout 0.5 fadein 0.5 if_changed
+    play music coversation1 volume 0.6 if_changed
     show screen header
     $ yukinox = 700
-    $ yukinoy = 650
+    $ yukinoy = 570
     $ markx = 1190
-    $ marky = 560
+    $ marky = 480
     $ nanjox = 1600
-    $ nanjoy = 420
+    $ nanjoy = 340
     $ npc1x = 760
-    $ npc1y = 380
+    $ npc1y = 300
     $ npc2x = 450
-    $ npc2y = 450
+    $ npc2y = 390
     label label049TalkA:
         show screen HistoricalSociety2
         hide marksprite
@@ -6643,13 +6857,13 @@ label label050: #police station
         $ location = "Police Station"
         show screen header
         $ markx = 350
-        $ marky = 350
+        $ marky = 500
         $ naoyax = 400
-        $ naoyay = 300
+        $ naoyay = 450
         $ npc1x = 575
-        $ npc1y = 325
+        $ npc1y = 475
         $ npc2x = 650
-        $ npc2y = 350
+        $ npc2y = 500
         scene bg policestation
         show marksprite downright stand at markloc
         show naoyasprite downright stand at naoyaloc
@@ -6712,13 +6926,13 @@ label label053 (location="Rosa Candida"): #Joy street
         play music rosa fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 970
-        $ yukinoy = 680
+        $ yukinoy = 600
         $ markx = 1000
-        $ marky = 300
-        $ nanjox = 600
-        $ nanjoy = 430
-        $ npc1x = 1460
-        $ npc1y = 408
+        $ marky = 220
+        $ nanjox = 580
+        $ nanjoy = 350
+        $ npc1x = 1470
+        $ npc1y = 330
         label label053TalkA:
             show screen RC2
             hide marksprite
@@ -6839,15 +7053,15 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
         play music sennen fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 590
-        $ yukinoy = 630
+        $ yukinoy = 395
         $ markx = 540
-        $ marky = 520
+        $ marky = 285
         $ nanjox = 1120
-        $ nanjoy = 550
+        $ nanjoy = 315
         $ npc1x = 1230
-        $ npc1y = 375
+        $ npc1y = 140
         $ npc2x = 440
-        $ npc2y = 520
+        $ npc2y = 285
         label label054TalkA:
             show screen SMD2
             hide marksprite
@@ -6908,7 +7122,7 @@ label label054 (location = "Sennen Mannen-Do"): #Joy Street
                 show sennenmannendo 1 at pleft2 with qleft
                 smd "My, I'm grateful you came all this way.  Well, feel free to look around."
                 $ tbnarrator = 1
-                "Naoya persues the sweets, but ultimately decides against it."
+                "Naoya perused the sweets, but ultimately decides against it."
                 $ tbnarrator = 0
                 #shop here later
                 show smdsprite downleft stand1
@@ -6981,15 +7195,15 @@ label label055 (location = "Yin & Yan"): #Joy Street
         play music yinyan fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 450
-        $ yukinoy = 630
+        $ yukinoy = 540
         $ markx = 540
-        $ marky = 585
+        $ marky = 495
         $ nanjox = 1540
-        $ nanjoy = 480
+        $ nanjoy = 390
         $ npc1x = 1450
-        $ npc1y = 390
+        $ npc1y = 297
         $ npc2x = 240
-        $ npc2y = 520
+        $ npc2y = 430
         label label055TalkA:
             show screen YY2
             hide marksprite
@@ -7141,15 +7355,15 @@ label label056 (location = "Peace Diner"): #Joy Street
         play music diner fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 1300
-        $ yukinoy = 470
+        $ yukinoy = 460
         $ markx = 425
-        $ marky = 520
+        $ marky = 510
         $ nanjox = 1170
-        $ nanjoy = 460
+        $ nanjoy = 450
         $ npc1x = 1350
-        $ npc1y = 253
+        $ npc1y = 243
         $ npc2x = 890
-        $ npc2y = 320
+        $ npc2y = 310
         label label056TalkA:
             show screen PD2
             hide marksprite
@@ -7287,15 +7501,15 @@ label label057 (location = "Satomi Tadashi"): #Joy Street
         play music satomi volume 0.4 fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 690
-        $ yukinoy = 560
+        $ yukinoy = 280
         $ markx = 950
-        $ marky = 600
+        $ marky = 320
         $ nanjox = 550
-        $ nanjoy = 530
+        $ nanjoy = 250
         $ npc2x = 1180
-        $ npc2y = 457
+        $ npc2y = 177
         $ npc1x = 1210
-        $ npc1y = 550
+        $ npc1y = 270
         label label057TalkA:
             show screen ST2
             hide marksprite
@@ -7418,15 +7632,15 @@ label label058 (location = "Esumi Clinic"): #Esumi Clinic Joy Street
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 1250
-        $ yukinoy = 520
+        $ yukinoy = 450
         $ markx = 1050
-        $ marky = 650
+        $ marky = 580
         $ nanjox = 1100
-        $ nanjoy = 500
+        $ nanjoy = 430
         $ npc1x = 760
-        $ npc1y = 410
+        $ npc1y = 340
         $ npc2x = 650
-        $ npc2y = 500
+        $ npc2y = 430
         label label058TalkA:
             show screen Clinic2
             hide marksprite
@@ -7586,21 +7800,21 @@ label label061 (location = "Judgment 1999"): # Joy Street
         play music judgment fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 800
-        $ yukinoy = 560
+        $ yukinoy = 545
         $ markx = 1070
-        $ marky = 350
+        $ marky = 335
         $ nanjox = 1170
-        $ nanjoy = 570
+        $ nanjoy = 555
         $ npc2x = 560
-        $ npc2y = 310
+        $ npc2y = 295
         $ npc1x = 1110
-        $ npc1y = 420
-        $ npc5x = 1530
-        $ npc5y = 315
-        $ npc4x = 1230
-        $ npc4y = 192
+        $ npc1y = 405
+        $ npc4x = 1530
+        $ npc4y = 300
+        $ npc5x = 1230
+        $ npc5y = 180
         $ npc3x = 980
-        $ npc3y = 170
+        $ npc3y = 155
         label label061TalkA:
             show screen JD2
             hide marksprite
@@ -7812,7 +8026,7 @@ label label062 (location = "SEBEC Building"):
                 jump calloverworld
             jump label062a
     elif plotprogress == 0:
-        play music sebec2 fadeout 0.5 fadein 0.5
+        play music conversation1 fadeout 0.5 fadein 0.5
         $ naoyax = 800
         $ naoyay = 475
         $ yukinox = 900
@@ -7822,7 +8036,7 @@ label label062 (location = "SEBEC Building"):
         $ nanjox = 950
         $ nanjoy = 450
         $ npc2x = 1260
-        $ npc2y = 160
+        $ npc2y = 170
         if Sebec1 == False:
             scene bg sebecreception with qdis
             show screen header
@@ -7849,6 +8063,7 @@ label label062 (location = "SEBEC Building"):
 #            "A well-dressed man steps into the room, and Nanjo confronts him immediately."
 #            $ tbnarrator = 0
             show kandorispritea upleft standmove at npc3loc
+            play music kandori0
             window hide
             $ newlocx = 1030
             $ newlocy = 400
@@ -8025,8 +8240,8 @@ label label063 (location = "Abandoned Factory"):
             jump calloverworld
         else:
             play music mark fadeout 0.5 fadein 0.5
-            scene bg factory with qdis
-            show screen header
+            #scene bg factory with qdis
+            #show screen header
             show mark animated neutral serious with qleft
             mk "You got business at our studio today, man?"
             mk "Don't think anyone's here today..."
@@ -8081,15 +8296,15 @@ label label064 (location = "Esumi Clinic"): #Ward 2 Clinic
         play music doctor fadeout 0.5 fadein 0.5 if_changed
         show screen header
         $ yukinox = 1250
-        $ yukinoy = 520
+        $ yukinoy = 450
         $ markx = 1050
-        $ marky = 650
+        $ marky = 580
         $ nanjox = 1100
-        $ nanjoy = 500
+        $ nanjoy = 430
         $ npc1x = 760
-        $ npc1y = 410
+        $ npc1y = 340
         $ npc2x = 650
-        $ npc2y = 500
+        $ npc2y = 430
         label label064TalkA:
             show screen Clinic3
             hide marksprite
@@ -8221,27 +8436,27 @@ label label067 (location = "Mikage Hospital"): #Reception
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     show screen header
     $ yukinox = 900
-    $ yukinoy = 300
+    $ yukinoy = 285
     $ markx = 1090
-    $ marky = 310
+    $ marky = 295
     $ nanjox = 1150
-    $ nanjoy = 270
+    $ nanjoy = 255
     $ naoyax = 1000
-    $ naoyay = 330
+    $ naoyay = 315
     $ clerk1x = 964
-    $ clerk1y = 218
+    $ clerk1y = 202
     $ clerk2x = 1230
-    $ clerk2y = 239
+    $ clerk2y = 223
     $ npc1x = 1170
-    $ npc1y = 420
+    $ npc1y = 405
     $ npc2x = 1032
-    $ npc2y = 516
+    $ npc2y = 500
     $ npc3x = 850
-    $ npc3y = 500
+    $ npc3y = 485
     $ npc4x = 920
-    $ npc4y = 490
+    $ npc4y = 475
     $ npc5x = 113
-    $ npc5y = 487
+    $ npc5y = 472
     show nursesec2sprite downleft stand1 at clerk2loc
     if hospitalscene == 0:
         show nanjosprite downleft standmove at nanjoloc
@@ -8292,12 +8507,14 @@ label label067 (location = "Mikage Hospital"): #Reception
             hide man2sprite
             hide woman4sprite
             hide yamaokasprite
+            show nursesec2sprite downleft stand1 at clerk2loc
             call screen Hospital1
             if _return > 0:
                 show nanjosprite upright stand at nanjoloc
                 show yukinosprite upright stand at yukinoloc
                 show marksprite upleft stand at markloc
                 show nursesecsprite downright stand1 at clerk1loc
+                show nursesec2sprite downleft stand1 at clerk2loc
                 show woman3sprite downleft stand at npc1loc
                 show injuredman at npc2loc
                 show man2sprite upright stand at npc3loc
@@ -8437,17 +8654,17 @@ label label068: #Examination Room
     scene bg hospital2 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     $ yukinox = 1200
-    $ yukinoy = 510
+    $ yukinoy = 460
     $ markx = 750
-    $ marky = 570
+    $ marky = 520
     $ nanjox = 1150
-    $ nanjoy = 550
+    $ nanjoy = 500
     $ naoyax = 850
-    $ naoyay = 550
+    $ naoyay = 500
     $ npc1x = 720
-    $ npc1y = 530
+    $ npc1y = 480
     $ npc2x = 632
-    $ npc2y = 516
+    $ npc2y = 466
     show yukinosprite upleft stand at yukinoloc
     show nanjosprite upleft stand at nanjoloc
     show marksprite upleft stand at markloc
@@ -8581,91 +8798,282 @@ label label069: #2F Lobby
 
 label label070: #2F Nurse's Station
     scene bg hospital4 with qdis
+    $ yukinox = 1020
+    $ yukinoy = 430
+    $ markx = 750
+    $ marky = 490
+    $ nanjox = 950
+    $ nanjoy = 450
+    $ naoyax = 850
+    $ naoyay = 470
+    $ npc1x = 670
+    $ npc1y = 450
+    $ npc2x = 802
+    $ npc2y = 296
+    show yukinosprite upleft stand at yukinoloc
+    show nanjosprite upleft stand at nanjoloc
+    show marksprite upleft stand at markloc
+    show naoyasprite upleft stand at naoyaloc
+    show nurse1sprite downright standmove at npc1loc
+    show nurse2sprite downright stand at npc2loc
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
     nurse "Hm? Aren't you Maki Sonomura's friend?"
+    show nurse1sprite downright stand
+    show marksprite upleft standmove
     show mark animated neutral serious with qleft
     mk "Uh..."
+    show marksprite upleft stand
     hide mark with qdis
+    show nurse1sprite downright standmove
     nurse "You visited her last week too didn't you?  And the week before..."
+    show nurse1sprite downright stand
+    show nanjosprite downleft standmove
     show nanjo animated neutral smirk with qleft
     na "Is that so...?  You're unexpectedly nice to her, I see."
     hide nanjo
+    show nanjosprite upright stand
     show yukino animated neutral smirk with qleft
+    show yukinosprite downleft standmove
     yu "Leave him alone, Nanjo."
     hide yukino with qdis
+    scene bg hospital4 with qdis
     jump HospitalNav
 
 label label071: #3F Waiting Room
     scene bg hospital5 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
-    call screen Hospital5
-    if _return == 1:
-        show mark animated neutral smirk with qleft
-        mk "Maki's room is the second one, straight down from here."
-    elif _return == 2:
-        show yukino animated neutral smirk with qleft
-        yu "It was a good call, coming here.  I'm sure Maki will be glad to see us."
-    elif _return == 3:
-        show nanjo animated neutral serious with qleft
-        na "There aren't many at this hospital whom Maki could converse with."
-        na "Small wonder she doesn't feel like leaving her room, if that's the case..."
-    elif _return == 4:
-        "Old Man" "There's a girl on this floor who looked like she was in high school..."
-        "Old Man" "But sometimes I hear a little girl's voice from her room."
-        "Old Man" "There's only one bed in there... Does she have a sister or someone visiting her?"
-    elif _return == 5:
-        jump HospitalNav
-    jump label071
+    show screen header
+    $ yukinox = 490
+    $ yukinoy = 470
+    $ markx = 680
+    $ marky = 290
+    $ nanjox = 1090
+    $ nanjoy = 320
+    $ npc1x = 880
+    $ npc1y = 415
+    label label071TalkA:
+        show screen Hospital5
+        hide marksprite
+        hide nanjosprite
+        hide yukinosprite
+        hide oldman1sprite
+        call screen Hospital5
+        if _return > 0:
+            show nanjosprite downleft stand at nanjoloc
+            show yukinosprite upright stand at yukinoloc
+            show marksprite upleft stand at markloc
+            show oldman1sprite downright stand at npc1loc
+        if _return == 1:
+            $ naoyax = markx+60
+            $ naoyay = marky+25
+            show marksprite downright standmove at markloc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show mark animated neutral smirk with qleft
+            mk "Maki's room is the second one, straight down from here."
+            show marksprite downright stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label071mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox+60
+            $ naoyay = yukinoy-25
+            show yukinosprite upright stand at yukinoloc
+            show naoyasprite downleft stand at naoyaloc with qdis
+            show yukino animated neutral smirk with qleft
+            yu "It was a good call, coming here.  I'm sure Maki will be glad to see us."
+            show yukinosprite upright stand
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label071yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox-60
+            $ naoyay = nanjoy+25
+            show nanjosprite downleft standmove at nanjoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show nanjo animated neutral serious with qleft
+            na "There aren't many at this hospital whom Maki could converse with."
+            show nanjo animated neutral sad
+            na "Small wonder she doesn't feel like leaving her room, if that's the case..."
+            show nanjosprite downleft stand
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label071nanjo = 1
+        elif _return == 4:
+            $ naoyax = npc1x+50
+            $ naoyay = npc1y+25
+            show oldman1sprite downright standmove at npc1loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            yao "There's a girl on this floor who looked like she was in high school..."
+            yao "But sometimes I hear a little girl's voice from her room."
+            yao "There's only one bed in there... Does she have a sister or someone visiting her?"
+            hide naoyasprite with qdis
+            $ label071oldman = 1
+        elif _return == 5:
+            scene bg hospital5 with qdis
+            hide screen header
+            $ tbnarrator = 1
+            "You head into the hospital."
+            window hide
+            window auto
+            $ tbnarrator = 0
+            jump HospitalNav
+        jump label071TalkA
 
 label label072: #3F Nurse's Station
     scene bg hospital6 with qdis
     play music hospital0 fadeout 0.5 fadein 0.5 if_changed
-    call screen Hospital6
-    if _return == 1:
-        show mark animated neutral sad with qleft
-        mk "Oh, crap!  Y'think I should've brought flowers or something?  Well, too late now!"
-    elif _return == 2:
-        show yukino animated neutral serious with qleft
-        yu "C'mon, Maki's waiting."
-    elif _return == 3:
-        show nanjo animated neutral serious with qleft
-        na "Why is Maki's mother working at THAT company, of all places!?"
-    elif _return == 4:
-        nurse "I can hardly believe it!  Her only daughter is in the hospital and she hasn't visited even once!"
-        nurse "I don't care how busy she is at SEBEC!  She's a failure as a mother!  Poor Maki..."
-    elif _return == 5:
-        nurse "Are you Maki's friends?  I'm glad you came."
-        nurse "You know she's been in and out of the hospital since she was a child, right?"
-        nurse "I always worried about her keeping up her friendships..."
-    elif _return == 6:
-        jump HospitalNav
-    jump label072
+    show screen header
+    $ yukinox = 1100
+    $ yukinoy = 570
+    $ markx = 1450
+    $ marky = 400
+    $ nanjox = 400
+    $ nanjoy = 400
+    $ npc1x = 680
+    $ npc1y = 325
+    $ npc2x = 600
+    $ npc2y = 350
+    label label072TalkA:
+        show screen Hospital6
+        hide marksprite
+        hide nanjosprite
+        hide yukinosprite
+        hide nurse1sprite
+        hide nurse2sprite
+        call screen Hospital6
+        if _return > 0:
+            show nanjosprite upright stand at nanjoloc
+            show yukinosprite upleft stand at yukinoloc
+            show marksprite downleft stand at markloc
+            show nurse1sprite upright stand at npc2loc
+            show nurse2sprite downleft stand at npc1loc
+        if _return == 1:
+            $ naoyax = markx-60
+            $ naoyay = marky+25
+            show marksprite downleft standmove at markloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show mark animated neutral sad with qleft
+            mk "Oh, crap!  Y'think I should've brought flowers or something?  Well, too late now!"
+            show marksprite downleft stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label072mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox-60
+            $ naoyay = yukinoy-25
+            show yukinosprite upleft stand at yukinoloc
+            show naoyasprite downright stand at naoyaloc with qdis
+            show yukino animated neutral serious with qleft
+            yu "C'mon, Maki's waiting."
+            show yukinosprite upleft stand
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label072yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox+60
+            $ naoyay = nanjoy-25
+            show nanjosprite upright standmove at nanjoloc
+            show naoyasprite downleft stand at naoyaloc with qdis
+            show nanjo animated neutral serious with qleft
+            na "Why is Maki's mother working at THAT company, of all places!?"
+            show nanjosprite upright stand
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label072nanjo = 1
+        elif _return == 4:
+            $ naoyax = npc2x-50
+            $ naoyay = npc2y-25
+            show nurse1sprite upleft standmove at npc2loc
+            show naoyasprite downright stand at naoyaloc with qdis
+            nurse "Are you Maki's friends?  I'm glad you came."
+            nurse "You know she's been in and out of the hospital since she was a child, right?"
+            nurse "I always worried about her keeping up her friendships..."
+            show nurse1sprite upleft stand
+            hide naoyasprite with qdis
+            $ label072nurse2 = 1
+        elif _return == 5:
+            $ naoyax = npc1x-50
+            $ naoyay = npc1y-25
+            show nurse2sprite upleft standmove at npc1loc
+            show naoyasprite downright stand at naoyaloc with qdis
+            nurse "I can hardly believe it!  Her only daughter is in the hospital and she hasn't visited even once!"
+            nurse "I don't care how busy she is at SEBEC!  She's a failure as a mother!  Poor Maki..."
+            hide naoyasprite with qdis
+            $ label072nurse1 = 1
+        elif _return == 6:
+            scene bg hospital6 with qdis
+            hide screen header
+            $ tbnarrator = 1
+            "You head into the hospital."
+            window hide
+            window auto
+            $ tbnarrator = 0
+            jump HospitalNav
+        jump label072TalkA
 
 label label073: #Maki's Room
     scene bg hospitalmaki1 with qdis
-    play music maki0 fadeout 0.5 fadein 0.5
-    show doctor at pleft2 with qleft
+    #play music maki0 fadeout 0.5 fadein 0.5
+    play music infirmary volume 0.6
+    $ yukinox = 800
+    $ yukinoy = 450
+    $ markx = 820
+    $ marky = 370
+    $ nanjox = 870
+    $ nanjoy = 480
+    $ naoyax = 900
+    $ naoyay = 420
+    $ npc1x = 1180
+    $ npc1y = 285
+    $ npc2x = 1100
+    $ npc2y = 310
+    show marksprite upright stand at markloc
+    show naoyasprite upright stand at naoyaloc
+    show nanjosprite upright stand at nanjoloc
+    show yukinosprite upright stand at yukinoloc
+    show doctor1sprite upleft standmove at npc1loc
+    show nurse1sprite upleft stand at npc2loc
     doctor "I have to go...but you should try to get some fresh air sometimes."
     doctor "It's good for you."
-    hide doctor with qdis
+    show doctor1sprite upleft stand
+    show nurse1sprite upleft standmove
     nurse "That's right, Maki.  Why don't we go for a walk tomorrow?"
+    show nurse1sprite upleft stand
     show maki with qleft
     ma "..."
     $ tbnarrator = 1
     n "{color=#ebffdb}>Maki Sonomura (Nickname: Maki)\nA chronically ill classmate who's been hospitalized for over a year now.{/color}"
     $ tbnarrator = 0
     hide maki
-    show doctor at pleft2 with qleft
+    show doctor1sprite downleft standmove
     doctor "Oho, it seems your real medication has arrived.  I'll leave you kids be."
     scene bg black with qdis
     scene bg hospitalmaki2 with qdis
-    play music maki1 fadeout 0.5 fadein 0.5
+    #play music maki1 fadeout 0.5 fadein 0.5
+    $ yukinox = 1100
+    $ yukinoy = 310
+    $ markx = 920
+    $ marky = 290
+    $ nanjox = 990
+    $ nanjoy = 300
+    $ naoyax = 1180
+    $ naoyay = 285
+    show marksprite upright stand at markloc
+    show naoyasprite upleft stand at naoyaloc
+    show nanjosprite upright stand at nanjoloc
+    show yukinosprite upleft stand at yukinoloc
     show maki animated sick smirk with qleft
     ma "Naoya... you all came... Thank you."
     ma "You're so thoughtful, Masao."
     hide maki
     show nanjo animated neutral serious with qleft
-    na "What do you mean?"
+    na @ standmove "What do you mean?"
     hide nanjo
     show maki animated sick serious with qleft
     ma "I told Masao I wanted to see everyone when he was here last time..."
@@ -8673,17 +9081,17 @@ label label073: #Maki's Room
     ma "Isn't that why you all came?"
     hide maki
     show yukino animated neutral smirk with qleft
-    yu "...Yes it is."
+    yu @ standmove "...Yes it is."
     if Yuko == True:
         show yukino animated neutral serious
         extend "  Oh, and Yuko said she'll come by to return the book she borrowed."
-        yu "\"Gate to Paradise,\" I think it was."
+        yu @ standmove "\"Gate to Paradise,\" I think it was."
         hide yukino
-        show maki animated with qleft
+        show maki animated sick serious with qleft
         ma "Ah... That's okay.  I've read it so many times, I practically have it memorized."
         hide maki
         show yukino animated neutral serious with qleft
-        yu "Alright, I'll tell her next time I see her."
+        yu @ standmove "Alright, I'll tell her next time I see her."
     show yukino animated neutral serious
     extend "  So how've you been?  You doing okay?"
     hide yukino
@@ -8692,248 +9100,529 @@ label label073: #Maki's Room
     ma "It's hard to remember, but I keep dreaming of a really nice man... He's like a father..."
     hide maki
     show yukino animated neutral smirk with qleft
-    yu "Like that doctor?  He seemed nice."
+    yu @ standmove "Like that doctor?  He seemed nice."
     hide yukino
     show maki animated sick sad with qleft
     ma "...I don't like him..."
     hide maki
     show mark animated neutral sad with qleft
-    mk "Did he do somethin' to you!?"
+    mk @ standmove "Did he do somethin' to you!?"
     hide mark
     show maki animated sick sad with qleft
     ma "No, that's not it... I just...don't like doctors..."
     hide maki
     show mark animated neutral serious with qleft
-    mk "Well, let's talk about other stuff, then.  Hey, how about your mom? How's she doin' at SEBEC?"
+    mk @ standmove "Well, let's talk about other stuff, then.  Hey, how about your mom? How's she doin' at SEBEC?"
     hide mark
     show maki animated sick serious with qleft
     ma "She's not my mom!  She cares more about her job than me!  She doesn't care about me at all..."
     hide maki
     show mark animated neutral sad with qleft
-    mk "S-Sorry..."
+    mk @ standmove "S-Sorry..."
     hide mark
     show maki animated sick sad with qleft
     ma "Oh... it's all right."
     show maki animated sick serious
     ma "Ngh!"
     scene bg hospitalmaki3
+    show marksprite upright stand at markloc
+    show naoyasprite upleft stand at naoyaloc
+    show nanjosprite upright stand at nanjoloc
+    show yukinosprite upleft stand at yukinoloc
     play music uhoh fadeout 0.5 fadein 0.5
     show maki animated sick sad with qleft
     ma "N-Noooo!"
     hide maki
     show mark animated neutral sad with qleft
-    mk "Maki!? What's wrong? Hey!"
+    mk @ standmove "Maki!? What's wrong? Hey!"
     hide mark
     show yukino animated neutral sad with qleft
-    yu "This isn't good! Call a doctor!"
+    yu @ standmove "This isn't good! Call a doctor!"
     hide screen header
     scene bg black with qdis
-    scene bg icu1 with qdis
-    play music maki0 fadeout 0.5 fadein 0.5
-    $ tbnarrator = 1
-    "The group waits outside the ICU, with Maki just inside after the doctors had taken her within."
-    $ tbnarrator = 0
-    na "I do hope it's nothing serious."
-    mk "...Dammit..."
-    $ tbnarrator = 1
-    "As the group waits, the building starts to rumble."
-    $ tbnarrator = 0
-    scene bg icu2 with qdis
-    na "Hm? An earthquake?"
-    $ tbnarrator = 1
-    "The benches shake and the items on the wall rattle before one falls to the ground, shattering."
-    $ tbnarrator = 0
-    scene bg icu3 with qdis
-    play music uhoh fadeout 0.5 fadein 0.5
-    mk "Woah! It's a big one!"
-    yu "The hell!?  Hold on!"
-    $ tbnarrator = 1
-    "After a few moments, the rumbling stops."
-    $ tbnarrator = 0
-    na "It seems to have subsided."
-    $ tbnarrator = 1
-    "Fearing for Maki, Mark rushes to the ICU doors."
-    $ tbnarrator = 0
-    scene bg icu4 with qdis
-    mk "Maki!"
-    $ tbnarrator = 1
-    "After pushing the door open, Mark finds there's just a wall behind the door."
-    $ tbnarrator = 0
-    mk "Whoa! Wh-what the hell!? Where'd the room go?"
-    na "What...How is that...?  No, I was positive that was the ICU a moment ago!"
-    scene bg icu5 with qdis
-    $ tbnarrator = 1
-    "In the distance, a woman screams, and everyone turns to face the source."
-    $ tbnarrator = 0
-    na "That scream...It came from downstairs!  Let's go!"
-    $ tbnarrator = 1
-    "Everyone darts downstairs after the source of the scream."
-    $ tbnarrator = 0
+    $ renpy.movie_cutscene("video/Hospital3.avi")
     scene bg black with qdis
-    scene bg awakening with qdis
-    play music hospital1 fadeout 0.5 fadein 0.5
+    scene bg IHospital
+    show idealhospital0
+    with qdis
+    $ yukinox = 550
+    $ yukinoy = 375
+    $ markx = 585
+    $ marky = 400
+    $ nanjox = 625
+    $ nanjoy = 360
+    $ naoyax = 675
+    $ naoyay = 420
+    $ npc1x = 800
+    $ npc1y = 425
+    $ npc2x = 900
+    $ npc2y = 300
+    $ npc3x = 950
+    $ npc3y = 325
+    $ npc4x = 1000
+    $ npc4y = 400
+    $ npc5x = 1100
+    $ npc5y = 300
+    $ clerk1x = 500
+    $ clerk1y = 375
+    show marksprite upright stand at markloc
+    show nanjosprite upright stand at nanjoloc
+    show naoyasprite upright stand at naoyaloc
+    show yukinosprite upright stand at yukinoloc
+    show yamaokasprite down at npc1loc
+    show mrzombie idle1 at npc2loc
+    show mrzombie idle1 as mrzombie2 at npc3loc
+    show mrzombie idle1 as mrzombie3 at npc4loc
+    show nursezombie idle1 at npc5loc
+    show nurse1sprite upright stand at clerk1loc
     show screen header
     $ location = "Mikage Hospital?"
-    "Man" "F-Fresh meat... Meat is heeeeere!"
+    show mrzombie standmove
+    man "F-Fresh meat... Meat is heeeeere!"
+    $ npc2x = 873
+    $ npc2y = 278
+    show mrzombie idle1 at npc2loc
     show yukino animated neutral serious with qleft
-    yu "Wh-What's with these guys?"
+    yu @ standmove "Wh-What's with these guys?"
     hide yukino
+    show nurse1sprite upright standmove
     nurse "Th-The dead patients suddenly got up and walked..."
     nurse "That old man rescued me and...Nooooo!"
-    $ tbnarrator = 1
-    "The nurse panicks and runs off."
-    $ tbnarrator = 0
-#    scene bg awakening2 with qdis
+    show nurse1sprite upleft stand
+    hide nurse1sprite with qdis
     show mark animated neutral serious with qleft
-    mk "What!?  These guys were dead?  Is this for real!?"
+    mk @ standmove "What!?  These guys were dead?  Is this for real!?"
     hide mark
-#    scene bg awakening3 with qdis
     show nanjo animated neutral sad with qleft
     na "Y...Yamaoka...?  Yamaoka!"
+    $ newlocx = 750
+    $ newlocy = 350
+    show nanjosprite upright walk at newloc with MoveTransition(0.7)
+    show nanjosprite hurt
+    $ nanjox = 750
+    $ nanjoy = 350
     show nanjo animated neutral serious
     na "You bastards...How DARE you!?"
     hide nanjo
-    $ tbnarrator = 1
-    "Filled with anger, Nanjo attacks the undead, and his friends come to support him."
-    $ tbnarrator = 0
-#    show awakening4 at pright with zoomin
+    scene bg black
     play music awakening fadeout 0.5 fadein 0.5
-    show nanjo animated neutral serious with qleft
+    show idealhospital0 zorder 2
+    show marksprite upright stand zorder 3 at markloc
+    show nanjosprite upright stand zorder 3 at nanjoloc
+    show naoyasprite upright stand zorder 3 at naoyaloc
+    show yukinosprite upright stand zorder 3 at yukinoloc
+    show yamaokasprite down zorder 3 at npc1loc
+    show mrzombie idle1 zorder 3 at npc2loc
+    show mrzombie idle1 as mrzombie2 zorder 3 at npc3loc
+    show mrzombie idle1 as mrzombie3 zorder 3 at npc4loc
+    show nursezombie idle1 zorder 3 at npc5loc
+    show AwakeningWarble zorder 0 with dissolve
+    $ newlocx = 750
+    $ newlocy = 440
+    show nanjosprite upright walk at newloc with MoveTransition(0.5)
+    $ nanjox = 750
+    $ nanjoy = 440
+    show nanjosprite fight zorder 5
+    show naoyasprite fight
+    show yukinosprite fight
+    show marksprite fight
+    show mrzombie idle2
+    show mrzombie idle2 as mrzombie2
+    show mrzombie idle2 as mrzombie3
+    show nursezombie idle2
+    show nanjo animated neutral serious zorder 4 with qleft
     na "I'll never forgive you bastards!"
     hide nanjo
-    show yukino animated neutral serious with qleft
+    show yukino animated neutral serious zorder 4 with qleft
     yu "Careful, guys!"
     hide yukino
-    show mark animated neutral serious with qleft
+    show mark animated neutral serious zorder 4 with qleft
     mk "How the hell are we supposed to fight somethin' that's already dead!?"
     hide mark
-    $ tbnarrator = 1
-    "As one of the undead comes forward to attack Naoya, something incredible happens."
-#    hide awakening4 with zoomout
-#    show awakening5 at pright with zoominout
-    "A ghostly presence emerges from Naoya."
+    show mrzombie idle1
+    $ newlocx = 750
+    $ newlocy = 390
+    show mrzombie idle1 at newloc with MoveTransition(0.5)
+    show mrzombie attack
+    pause 0.8
+    show mrzombie idle1 at npc2loc with MoveTransition(0.5)
+    $ newlocx = naoyax-30
+    $ newlocy = naoyay-70
+    show personasummon1 zorder 4 at newloc
+    pause 0.4
+    show personasummon2 zorder 4 at newloc
+    pause 0.6
+    hide personasummon2
+    show personasummon3 zorder 4 at newloc
+    show seimen zorder 4 at personasummonnaoya
+    pause 0.7
+    show seimen1 zorder 4 at personasummonnaoya2
+    pause 1.5
+    show seimen2 zorder 4 at personasummonnaoya3
+    pause 0.2
+    show seimen3 zorder 4 at personasummonnaoya4
+    $ newlocx = naoyax+70
+    $ newlocy = naoyay-150
+    show seimendmg1 zorder 4 at newloc
+    pause 0.1
+    hide seimendmg1
+    show seimendmg2 zorder 4 at newloc
+    pause 0.1
+    hide seimendmg2
+    show seimendmg3 zorder 4 at newloc
+    pause 0.1
+    hide seimendmg3
+    hide personasummon1
+    hide personasummon3
+    with qdis
+    show seimen3 zorder 4 at personasummonnaoyatalk
+    $ newlocx = npc2x-60
+    $ newlocy = npc2y+55
+    show garuspell zorder 4 at Garuspell
+    hide mrzombie with qdis
     $ tbnarrator = 0
-    "Persona" "Thou art I... and I am thou..."
-    "Persona" "From the sea of thy soul, I cometh... I shall lend you my strength..."
+    persona "Thou art I... and I am thou..."
+    persona "From the sea of thy soul, I cometh... I shall lend you my strength..."
+    seimen "I am Seimen Kongou..!"
     $ tbnarrator = 1
-    "Somehow, the 'persona' attacks, striking and destroying one of the undead patients."
-#    hide awakening5 with zoomout
-#    show awakening6 at pright with zoominout
-    "A similar-but-different presence emerges from Mark, and strikes down another of the undead."
-#    hide awakening6 with zoomout
-#    show awakening7 at pright with zoominout
-    "From within Yukino, a new form emerges, energy emerging from it to destroy another."
-#    hide awakening7 with zoomout
-#    show awakening8 at pright with zoominout
-    "Lastly, Nanjo himself summons one, reddish energy surrounding the last undead before it too, vanishes."
-    $ tbnarrator = 0
-#    hide awakening8 with zoomout
-    scene bg nanjoyamaoka with qdis
+    hide seimen3 with qdis
+    pause 0.5
+    $ newlocx = markx-30
+    $ newlocy = marky-70
+    show personasummon1 zorder 4 at newloc
+    pause 0.4
+    show personasummon2 zorder 4 at newloc
+    pause 0.6
+    hide personasummon2
+    show personasummon3 zorder 4 at newloc
+    show ogun zorder 4 at personasummonmark1
+    pause 0.7
+    show ogun 1 zorder 4 at personasummonmark2
+    pause 0.2
+    show ogun 2 zorder 4 at personasummonmark3
+    pause 0.5
+    show ogun 3 zorder 4 at personasummonmark4
+    pause 0.5
+    show ogun 2 zorder 4 at personasummonmark3
+    pause 0.5
+    show ogun 3 zorder 4 at personasummonmark4
+    pause 0.5
+    show ogun 2 zorder 4 at personasummonmark3
+    pause 0.5
+    show ogun 3 zorder 4 at personasummonmark5
+    pause 0.4
+    $ newlocx = npc3x-40
+    $ newlocy = npc3y+60
+    show attackspell zorder 4 at Attackspell
+    pause 0.3
+    hide mrzombie2 with qdis
+    pause 0.3
+    hide ogun
+    hide personasummon1
+    hide personasummon3
+    with qdis
+
+    $ newlocx = yukinox-30
+    $ newlocy = yukinoy-70
+    show personasummon1 zorder 4 at newloc
+    pause 0.4
+    show personasummon2 zorder 4 at newloc
+    pause 0.6
+    hide personasummon2
+    show personasummon3 zorder 4 at newloc
+    show vesta zorder 4 at personasummonyukino1
+    pause 1.2
+    show vesta 1 zorder 4 at personasummonyukino2
+    pause 0.2
+    show vesta 2 zorder 4 at personasummonyukino3
+    pause 0.6
+    $ newlocx = npc4x-15
+    $ newlocy = npc4y+30
+    show freispell zorder 4 at Freispell
+    pause 0.3
+    hide mrzombie3 with qdis
+    pause 0.3
+    hide vesta
+    hide personasummon1
+    hide personasummon3
+    with qdis
+
+    $ nanjox = 750
+    $ nanjoy = 440
+    $ newlocx = nanjox-30
+    $ newlocy = nanjoy-70
+    show personasummon1 zorder 4 at newloc
+    pause 0.4
+    show personasummon2 zorder 4 at newloc
+    pause 0.6
+    hide personasummon2
+    show personasummon3 zorder 4 at newloc
+    show aizen zorder 4 at personasummonnanjo1
+    pause 1.0
+    show aizen 1 zorder 4 at personasummonnanjo2
+    pause 0.3
+    show aizen 2 zorder 4 at personasummonnanjo3
+    pause 0.3
+    show aizen 3 zorder 4 at personasummonnanjo4
+    pause 0.6
+    $ newlocx = npc5x
+    $ newlocy = npc5y-100
+    show hamaspell zorder 4 at Hamaspell
+    pause 3.3
+    hide nursezombie with qdis
+    pause 0.3
+    hide aizen
+    hide personasummon1
+    hide personasummon3
+    with qdis
+    show nanjo animated neutral sad zorder 4 with qleft
     play music ohno fadeout 0.5 fadein 0.5
-#    show nanjo animated neutral sad with qleft
+    na "Yamaoka..!"
+    scene bg nanjoyamaoka with ldis
     na "Yamaoka... Don't go... You wouldn't leave me behind, right? Right, Yamaoka?"
-#    hide nanjo
-#    show yamaoka animated bloody serious with qleft
     ya "Oh, young master... Don't be so sad... It spoils your handsome face..."
     ya "You're a fine Japanese man... And a man must stand on his own someday..."
     ya "It seems that this... will be the last service I can provide for you..."
-#    hide yamaoka
-#    show nanjo animated neutral sad with qleft
     na "No!  No no no!  I won't let you leave me!  Hang in there, Yamaoka!"
-#    hide nanjo
-#    show yamaoka animated bloody sad with qleft
     ya "It's time I said farewell... Just one last thing... Please promise me, young master..."
     ya "Promise to become the No. 1 man in the country and carry Japan on your back! *cough*"
-#    hide yamaoka
-#    show nanjo animated neutral sad with qleft
     na "...Of course... Of course I will.  When that time comes, you'll see. So, until then--"
-#    hide nanjo
-#    show yamaoka animated bloody sad with qleft
     ya "That's my young master... I will always be... in your heart..."
-#    hide yamaoka
-#    show nanjo animated neutral sad with qleft
     na "Yamaoka?  Hey!  Answer me... I'm begging you... Yamaoka!"
-#    hide nanjo
-    scene bg awakening with qdis
+    scene bg IHospital
+    show idealhospital0
+    with qdis
+    $ nanjox = 780
+    $ nanjoy = 330
+    $ markx = 1150
+    $ marky = 255
+    $ naoyax = 1280
+    $ naoyay = 280
+    $ yukinox = 1175
+    $ yukinoy = 320
+    show yamaokasprite down at npc1loc
+    show nanjosprite hurt at nanjoloc
+    show marksprite upleft sad at markloc
+    show yukinosprite downleft stand at yukinoloc
+    show naoyasprite upright sad at naoyaloc
     show yukino animated neutral sad with qleft
     yu "Nanjo..."
     hide yukino
+    $ newlocx = 1000
+    $ newlocy = 320
+    show yukinosprite downleft walk at newloc with MoveTransition(1.5)
+    show yukinosprite stand
     show mark animated neutral sad with qleft
-    mk "Let him be alone..."
+    mk @ standmove "Let him be alone..."
     hide mark with qdis
-    pause 1.5
-    play music hospital1 fadeout 0.5 fadein 0.5
+    show yukinosprite upleft sad
+    pause 2.5
+    #play music hospital1 fadeout 0.5 fadein 1.5
     show mark animated neutral serious with qleft
-    mk "Hey Naoya... Could you hear their voices?  That thing said it was me."
+    show marksprite downright stand
+    show naoyasprite upleft stand
+    show yukinosprite upright stand
+    mk @ standmove "Hey Naoya... Could you hear their voices?  That thing said it was me."
     hide mark
+    show yukinosprite upright walk at yukinoloc with MoveTransition(0.8)
+    show yukinosprite upright stand
     show yukino animated neutral serious with qleft
-    yu "I heard it, too...Think it was that Persona thing?"
+    yu @ standmove "I heard it, too...Think it was that Persona thing?"
     hide yukino
     show mark animated neutral serious with qleft
-    mk "It said it would lend us power, so I kinda doubt it's hostile."
-    mk "If we're lucky, maybe it'll listen to what we tell it..."
-    mk "I guess we might as well go on calling it '{color=#800000}Persona{/color}'."
+    mk @ standmove "It said it would lend us power, so I kinda doubt it's hostile."
+    mk @ standmove "If we're lucky, maybe it'll listen to what we tell it..."
+    mk @ standmove "I guess we might as well go on calling it '{color=#800000}Persona{/color}'."
     hide mark
     show yukino animated neutral serious with qleft
-    yu "That's how it felt to me, too."
-    yu "...I have a bad feeling about this. Let's go."
+    yu @ standmove "That's how it felt to me, too."
+    yu @ standmove "...I have a bad feeling about this. Let's go."
+    hide yukino
+    hide yukinosprite
+    hide marksprite
+    hide nanjosprite
+    hide naoyasprite
+    hide yamaokasprite
+    with qdis
 
 label label074: #Ideal 2F Waiting Room
-    scene bg idealhospital0 with qdis
-    play music hospital2 fadeout 0.5 fadein 0.5
-    call screen IHospital0
-    if _return == 1:
-        show mark animated neutral sad with qleft
-        mk "I didn't think he was gonna cry... He must've really loved that old guy."
-    elif _return == 2:
-        show yukino animated neutral sad with qleft
-        yu "Nanjo seemed like a little boy in front of that old guy..."
-        yu "Failing to protect the ones you love... Nothing hurts worse than that."
-    elif _return == 3:
-        show nanjo animated neutral sad with qleft
-        na "Yamaoka... What should I do?  Without you, I'm all alone... No one is here to encourage me..."
-        na "No one...will stand by me..."
-    elif _return == 4:
-        scene bg black
-        play music hospital1 fadeout 0.5 fadein 0.5
-        $ tbnarrator = 1
-        "Naoya and the others leave the room, with Yukino ensuring Nanjo stays moving."
-        "They are attacked by more of the undead patients as they traverse the hallways."
-        "Soon, they arrive at a door and let themselves inside, thankful for the slight reprieve."
-        jump label075
-    jump label074
+    #scene bg IHospital with qdis
+    #show idealhospital0
+    play music ohno fadeout 0.5 fadein 0.5 if_changed
+    show screen header
+    $ nanjox = 780
+    $ nanjoy = 330
+    $ markx = 1150
+    $ marky = 255
+    $ npc1x = 800
+    $ npc1y = 425
+    $ yukinox = 1175
+    $ yukinoy = 320
+    show yamaokasprite down at npc1loc
+    label label074TalkA:
+        show screen IHospital0
+        hide marksprite
+        hide nanjosprite
+        hide yukinosprite
+        call screen IHospital0
+        if _return > 0:
+            show nanjosprite upright sad at nanjoloc
+            show marksprite downleft stand at markloc
+            show yukinosprite downleft stand at yukinoloc
+        if _return == 1:
+            $ naoyax = markx-60
+            $ naoyay = marky+25
+            show marksprite downleft standmove at markloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show mark animated neutral sad with qleft
+            mk "I didn't think he was gonna cry... He must've really loved that old guy."
+            show marksprite downleft stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label074mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox-60
+            $ naoyay = yukinoy+25
+            show yukinosprite downleft stand at yukinoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show yukino animated neutral sad with qleft
+            yu "Nanjo seemed like a little boy in front of that old guy..."
+            yu "Failing to protect the ones you love... Nothing hurts worse than that."
+            show yukinosprite downleft stand
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label074yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox-60
+            $ naoyay = nanjoy+25
+            show nanjosprite upright sad at nanjoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show nanjo animated neutral sad with qleft
+            na "Yamaoka... What should I do?  Without you, I'm all alone... No one is here to encourage me..."
+            na "No one...will stand by me..."
+            show nanjosprite upright sad
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label074nanjo = 1
+        elif _return == 4:
+            scene bg black
+            play music hospital1 fadeout 0.5 fadein 0.5
+            $ tbnarrator = 1
+            "Naoya and the others leave the room, with Yukino ensuring Nanjo stays moving."
+            "They are attacked by more of the undead patients as they traverse the hallways."
+            "Soon, they arrive at a door and let themselves inside, thankful for the slight reprieve."
+            jump label075
+        jump label074TalkA
 
 label label075: #Ideal Hospital Room 1
     scene bg idealhospital1 with qdis
-    play music hospital2 fadeout 0.5 fadein 0.5
-    call screen IHospital1
-    if _return == 1:
-        show mark animated neutral smirk with qleft
-        mk "With this power, we should be able to find out why this is happenin'!"
-    elif _return == 2:
-        show yukino animated neutral serious with qleft
-        yu "What is this bullshit!?  Whoever's doing this is gonna pay!  I'll get this place back to normal or die trying!"
-    elif _return == 3:
-        show nanjo animated neutral sad with qleft
-        na "If only... if only I'd made certain he went home..."
-    elif _return == 4:
-        show doctor at pleft2 with qleft
-        doctor "Dammit, why can't I get to the ICU!?  There's a patient in there! I have to treat the Sonomura girl...!"
-    elif _return == 5:
-        nurse "The TV's not working, and the phone's dead too!  What in the world is going on!?"
-    elif _return == 6:
-        nurse "I'd treat your wounds at the examination room, but... I can't find it!"
-        nurse "Nothing in this hospital is where I remember it!"
-    elif _return == 7:
-        scene black with qdis
-        play music hospital1 fadeout 0.5 fadein 0.5
-        $ tbnarrator = 1
-        "After the stop in the nurse's office, Naoya and his allies move further into the Hospital."
-        n "Surprisingly, they find themselves able to hold a few conversations with some of the demons, and Mark manages to get a 'Spell Card'."
-        "However, they manage to find shelter within a room that, strangely, holds an Agastya Tree."
-        $ tbnarrator = 0
-        jump label076
-    jump label075
+    play music hospital2 fadeout 0.5 fadein 0.5 if_changed
+    show screen header
+    $ nanjox = 1450
+    $ nanjoy = 400
+    $ markx = 1250
+    $ marky = 455
+    $ npc1x = 650
+    $ npc1y = 450
+    $ npc2x = 500
+    $ npc2y = 400
+    $ npc3x = 1100
+    $ npc3y = 320
+    $ yukinox = 1150
+    $ yukinoy = 550
+    label label075TalkA:
+        show screen IHospital1
+        hide marksprite
+        hide nanjosprite
+        hide yukinosprite
+        hide nurse1sprite
+        hide nurse2sprite
+        hide doctor1sprite
+        call screen IHospital1
+        if _return > 0:
+            show nanjosprite upright sad at nanjoloc
+            show yukinosprite upleft stand at yukinoloc
+            show marksprite upleft stand at markloc
+            show doctor1sprite downright stand at npc1loc
+            show nurse1sprite downright stand at npc2loc
+            show nurse2sprite downright stand at npc3loc
+        if _return == 1:
+            $ naoyax = markx-60
+            $ naoyay = marky-25
+            show marksprite upleft standmove at markloc
+            show naoyasprite downright stand at naoyaloc with qdis
+            show mark animated neutral smirk with qleft
+            mk "With this power, we should be able to find out why this is happenin'!"
+            show marksprite upleft stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label075mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox-60
+            $ naoyay = yukinoy-25
+            show yukinosprite upleft stand at yukinoloc
+            show naoyasprite downright stand at naoyaloc with qdis
+            show yukino animated neutral serious with qleft
+            yu @ standmove "What is this bullshit!?  Whoever's doing this is gonna pay!  I'll get this place back to normal or die trying!"
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label075yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox-60
+            $ naoyay = nanjoy+25
+            show nanjosprite upright sad at nanjoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show nanjo animated neutral sad with qleft
+            na "If only... if only I'd made certain he went home..."
+            show nanjosprite upright sad
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label075nanjo = 1
+        elif _return == 4:
+            $ naoyax = npc1x+60
+            $ naoyay = npc1y+25
+            show doctor1sprite downright standmove at npc1loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            doctor "Dammit, why can't I get to the ICU!?  There's a patient in there! I have to treat the Sonomura girl...!"
+            show doctor1sprite downright stand at npc1loc
+            hide naoyasprite
+            with qdis
+            $ label075doctor = 1
+        elif _return == 5:
+            $ naoyax = npc2x+60
+            $ naoyay = npc2y+25
+            show nurse1sprite downright stand at npc2loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            nurse @ standmove "The TV's not working, and the phone's dead too!  What in the world is going on!?"
+            hide naoyasprite
+            with qdis
+            $ label075nurse1 = 1
+        elif _return == 6:
+            $ naoyax = npc3x+60
+            $ naoyay = npc3y+25
+            show nurse2sprite downright stand at npc3loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            nurse @ standmove "I'd treat your wounds at the examination room, but... I can't find it!"
+            nurse @ standmove "Nothing in this hospital is where I remember it!"
+            hide naoyasprite
+            with qdis
+            $ label075nurse2 = 1
+        elif _return == 7:
+            scene black with qdis
+            play music hospital1 fadeout 0.5 fadein 0.5
+            $ tbnarrator = 1
+            "After the stop in the nurse's office, Naoya and his allies move further into the Hospital."
+            n "Surprisingly, they find themselves able to hold a few conversations with some of the demons, and Mark manages to get a 'Spell Card'."
+            "Despite being on the second floor, the students cannot find a way down, and head back upstairs."
+            "After fighting through a few more demons, they manage to make it to another nurse's station..."
+            jump label077
+        jump label075TalkA
 
 label label076 (location = "Agastya Tree"):
     scene bg agastyatree with qdis
@@ -8949,92 +9638,266 @@ label label076 (location = "Agastya Tree"):
     $ tbnarrator = 0
     jump label077
 
-label label077 (location = "Mikage Hospital?"):
+label label077: #Ideal Hospital Room 2
     scene bg idealhospital2 with qdis
-    play music hospital2 fadeout 0.5 fadein 0.5
-    call screen IHospital2
-    if _return == 1:
-        show mark animated neutral serious with qleft
-        mk "Dammit!  If only we had a hint or something!"
-    elif _return == 2:
-        show yukino animated neutral serious with qleft
-        yu "It's like even the air's changed... I'm finding it hard to breathe."
-    elif _return == 3:
-        show nanjo animated neutral sad with qleft
-        na "...I'm sorry, Naoya.  I'm not...thinking as quickly as usual."
-    elif _return == 4:
-        nurse "There's a strange haze I can see through the window... It's covering the town."
-        nurse "You don't think we're trapped here like in the horror novels, do you?"
-    elif _return == 5:
-        "Old Man" "Oh, hello again, Hiroshi!  Did you come to listen to my stories?"
-        "Old Man" "I have something to say that I think you may need to hear."
-        "Old Man" "Stay calm, and think carefully before making a move."
-        "Old Man" "If you do... you'll arrive at the truth come what may."
-        "Old Man" "Say, Akiko?  Is lunch ready yet?"
-    elif _return == 6:
-        scene black with qdis
-        play music hospital1 fadeout 0.5 fadein 0.5
-        $ tbnarrator = 1
-        n "After leaving the room with the nurse and the old man, the group navigate the twisted hallways of the hospital."
-        n "Dead ends abound, and nothing seems to lead anywhere that makes sense, but eventually they end up back where they started."
-        "They come across Maki's now-empty room..."
-        $ tbnarrator = 0
-        jump label078
-    jump label077
+    play music hospital2 fadeout 0.5 fadein 0.5 if_changed
+    show screen header
+    $ nanjox = 1200
+    $ nanjoy = 320
+    $ markx = 880
+    $ marky = 440
+    $ npc1x = 600
+    $ npc1y = 290
+    $ npc2x = 620
+    $ npc2y = 450
+    $ yukinox = 1150
+    $ yukinoy = 550
+    label label077TalkA:
+        show screen IHospital2
+        hide marksprite
+        hide nanjosprite
+        hide yukinosprite
+        hide nurse2sprite
+        hide oldman1sprite
+        call screen IHospital2
+        if _return > 0:
+            show nanjosprite upright sad at nanjoloc
+            show yukinosprite upleft stand at yukinoloc
+            show marksprite upleft stand at markloc
+            show oldman1sprite downright stand at npc2loc
+            show nurse2sprite upleft stand at npc1loc
+        if _return == 1:
+            $ naoyax = markx+60
+            $ naoyay = marky+25
+            show marksprite downright standmove at markloc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show mark animated neutral serious with qleft
+            mk "Dammit!  If only we had a hint or something!"
+            show marksprite upleft stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label077mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox-60
+            $ naoyay = yukinoy+25
+            show yukinosprite downleft stand at yukinoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show yukino animated neutral serious with qleft
+            yu @ standmove "It's like even the air's changed... I'm finding it hard to breathe."
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label077yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox-60
+            $ naoyay = nanjoy+25
+            show nanjosprite downleft standmove at nanjoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show nanjo animated neutral sad with qleft
+            na "...I'm sorry, Naoya.  I'm not...thinking as quickly as usual."
+            show nanjosprite upright sad
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label077nanjo = 1
+        elif _return == 4:
+            $ naoyax = npc1x+60
+            $ naoyay = npc1y+25
+            show nurse2sprite downright standmove at npc1loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            nurse "There's a strange haze I can see through the window... It's covering the town."
+            show nurse2sprite upleft stand
+            nurse "You don't think we're trapped here like in the horror novels, do you?"
+            hide naoyasprite
+            with qdis
+            $ label077nurse = 1
+        elif _return == 5:
+            $ naoyax = npc2x+60
+            $ naoyay = npc2y+25
+            show oldman1sprite downright standmove at npc2loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            yao "Oh, hello again, Hiroshi!  Did you come to listen to my stories?"
+            yao "I have something to say that I think you may need to hear."
+            yao "Stay calm, and think carefully before making a move."
+            yao "If you do... you'll arrive at the truth come what may."
+            yao "Say, Akiko?  Is lunch ready yet?"
+            show oldman1sprite downright stand
+            hide naoyasprite
+            with qdis
+            $ label077patient = 1
+        elif _return == 6:
+            scene black with qdis
+            play music hospital1 fadeout 0.5 fadein 0.5
+            $ tbnarrator = 1
+            n "After leaving the room with the nurse and the old man, the group navigate the twisted hallways of the hospital."
+            n "Dead ends abound, and nothing seems to lead anywhere that makes sense, but eventually they end up back where they started."
+            "They come across Maki's now-empty room..."
+            $ tbnarrator = 0
+            jump label078
+        jump label077TalkA
 
 label label078: #Maki's Room (Ideal Hospital)
-    scene bg idealhospital3 with qdis
-    play music maki0 fadeout 0.5 fadein 0.5 if_changed
-    call screen IHospital3
-    if _return == 1:
-        show mark animated neutral sad with qleft
-        mk "I can still feel Maki here... Hang on, Maki.  We'll find you."
-    elif _return == 2:
-        show yukino animated neutral serious with qleft
-        yu "I'm worried about Maki too, but let's get to the streets.  I have a bad feeling..."
-    elif _return == 3:
-        show nanjo animated neutral sad with qleft
-        na "...Yamaoka."
-    elif _return == 4:
-        $ tbnarrator = 1
-        ">It's the painting called 'Gate To Paradise' that Maki won an award for."
-        ">You can sense Maki's pain just by looking at it..."
-        $ tbnarrator = 0
-    elif _return == 5:
-        scene black with qdis
-        play music hospital1 fadeout 0.5 fadein 0.5
-        $ tbnarrator = 1
-        n "Leaving Maki's room with heavy hearts, the group passes by a set of stairs down, and Nanjo seems to regain some of his usual airs as they walk."
-        n "Still, the demons present a constant threat, reaching another dead end, they enter into another waiting room for a breather."
-        $ tbnarrator = 0
-        jump label079
-    jump label078
+    scene bg MakiRoom
+    show idealhospital3
+    with qdis
+    play music hospital2 fadeout 0.5 fadein 0.5 if_changed
+    show screen header
+    $ nanjox = 1360
+    $ nanjoy = 510
+    $ markx = 1200
+    $ marky = 420
+    $ yukinox = 600
+    $ yukinoy = 500
+    label label078TalkA:
+        show screen IHospital3
+        hide marksprite
+        hide nanjosprite
+        hide yukinosprite
+        call screen IHospital3
+        if _return > 0:
+            show nanjosprite upright sad at nanjoloc
+            show yukinosprite upleft stand at yukinoloc
+            show marksprite upleft stand at markloc
+        if _return == 1:
+            $ naoyax = markx+60
+            $ naoyay = marky+25
+            show marksprite downright standmove at markloc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show mark animated neutral sad with qleft
+            mk @ standmove "I can still feel Maki here... Hang on, Maki.  We'll find you."
+            show marksprite upleft stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label078mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox+60
+            $ naoyay = yukinoy+25
+            show yukinosprite downright stand at yukinoloc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show yukino animated neutral serious with qleft
+            yu @ standmove "I'm worried about Maki too, but let's get to the streets."
+            show yukinosprite upleft stand
+            yu @ standmove "I have a bad feeling..."
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label078yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox-60
+            $ naoyay = nanjoy+25
+            show nanjosprite upright sad at nanjoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show nanjo animated neutral sad with qleft
+            na "...Yamaoka."
+            show nanjosprite upright sad
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label078nanjo = 1
+        elif _return == 4:
+            $ naoyax = 1280
+            $ naoyay = 470
+            show naoyasprite upright stand at naoyaloc with qdis
+            $ tbnarrator = 1
+            ">It's the painting called 'Gate To Paradise' that Maki won an award for."
+            ">You can sense Maki's pain just by looking at it..."
+            $ tbnarrator = 0
+            hide naoyasprite
+            with qdis
+            $ label078painting = 1
+        elif _return == 5:
+            scene black with qdis
+            play music hospital1 fadeout 0.5 fadein 0.5
+            $ tbnarrator = 1
+            n "Leaving Maki's room with heavy hearts, the group passes by a set of stairs down, and Nanjo seems to regain some of his usual airs as they walk."
+            n "Still, the demons present a constant threat, reaching another dead end, they enter into another waiting room for a breather."
+            $ tbnarrator = 0
+            jump label079
+        jump label078TalkA
+
 
 label label079: #2nd Floor Waiting Room (Ideal Hospital)
-    scene bg idealhospital4 with qdis
+    scene bg IHospital
+    show idealhospital0
+    with qdis
     play music hospital2 fadeout 0.5 fadein 0.5
-    call screen IHospital4
-    if _return == 1:
-        show mark animated neutral serious with qleft
-        mk "Hey, you think the other guys have this power too?"
-    elif _return == 2:
-        show yukino animated neutral serious with qleft
-        yu "This power's kinda unnerving, but it looks like it'll come in handy."
-    elif _return == 3:
-        show nanjo animated neutral serious with qleft
-        na "I'll figure this out... There's nothing I can't do if I put my mind to it!"
-    elif _return == 4:
-        "Old Man" "I'm prepared for the worst, but I'm worried about my little grandson..."
-        "Old Man" "He should be at school... I hope nothing's happened there."
-    elif _return == 5:
-        scene black with qdis
-        play music hospital1 fadeout 0.5 fadein 0.5
-        $ tbnarrator = 1
-        n "Now concerned about their school as well, the group sets back down the stairs they'd passed by before as there is no other path."
-        n "Confronted with multiple dead ends, they finally manage to make their way into another room with yet another one of those strange trees."
-        $ tbnarrator = 0
-        jump label080
-    jump label079
+    show screen header
+    $ nanjox = 900
+    $ nanjoy = 330
+    $ markx = 400
+    $ marky = 550
+    $ npc1x = 700
+    $ npc1y = 320
+    $ yukinox = 450
+    $ yukinoy = 480
+    label label079TalkA:
+        show screen IHospital4
+        hide marksprite
+        hide nanjosprite
+        hide yukinosprite
+        hide oldman1sprite
+        call screen IHospital4
+        if _return > 0:
+            show nanjosprite downleft stand at nanjoloc
+            show yukinosprite downright stand at yukinoloc
+            show marksprite upright stand at markloc
+            show oldman1sprite downright stand at npc1loc
+        if _return == 1:
+            $ naoyax = markx+60
+            $ naoyay = marky-25
+            show marksprite upright stand at markloc
+            show naoyasprite downleft stand at naoyaloc with qdis
+            show mark animated neutral smirk with qleft
+            mk @ standmove "Hey, you think the other guys have this power too?"
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label079mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox+60
+            $ naoyay = yukinoy+25
+            show yukinosprite downright stand at yukinoloc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            show yukino animated neutral serious with qleft
+            yu @ standmove "This power's kinda unnerving, but it looks like it'll come in handy."
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label079yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox-60
+            $ naoyay = nanjoy+25
+            show nanjosprite downleft stand at nanjoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show nanjo animated neutral serious with qleft
+            na @ standmove "I'll figure this out... There's nothing I can't do if I put my mind to it!"
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label079nanjo = 1
+        elif _return == 4:
+            $ naoyax = npc1x+60
+            $ naoyay = npc1y+25
+            show oldman1sprite downright standmove at npc1loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            yao "I'm prepared for the worst, but I'm worried about my little grandson..."
+            yao "He should be at school... I hope nothing's happened there."
+            show oldman1sprite downright stand
+            hide naoyasprite
+            with qdis
+            $ label079oldman = 1
+        elif _return == 5:
+            scene black with qdis
+            play music hospital1 fadeout 0.5 fadein 0.5
+            $ tbnarrator = 1
+            n "Now concerned about their school as well, the group sets back up a new set of stairs, fighting demons as they come closer."
+            n "They're starting to become uncomfortably used to wielding their personas, and another flight of stairs down yields another set of dead ends."
+            n "Eventually, the four of them manage to get into the very exam room they had signed in to access when they'd arrived here."
+            $ tbnarrator = 0
+            jump label081
+        jump label079TalkA
 
 label label080 (location = "Agastya Tree"):
     scene bg agastyatree with qdis
@@ -9052,54 +9915,143 @@ label label080 (location = "Agastya Tree"):
     jump label081
 
 label label081 (location = "Mikage Hospital?"):
-    scene bg idealhospital5 with qdis
+    scene bg hospital2 with qdis
     play music hospital2 fadeout 0.5 fadein 0.5
-    call screen IHospital5
-    if _return == 1:
-        show mark animated neutral serious with qleft
-        mk "I wonder if there are other patients besides Maki in trouble right now..."
-    elif _return == 2:
-        show yukino animated neutral smirk with qleft
-        yu "I always thought you were a pushover, Naoya... I'm surprised how calm you are."
-    elif _return == 3:
-        show nanjo animated neutral serious with qleft
-        na "...Hm?  Yes, what is it?"
-    elif _return == 4:
-        nurse "I can't get in touch with the patients!  What am I supposed to do? Can't you do something!?"
-        nurse "...I'm sorry.  I'm asking the impossible.  I'm just so confused."
-    elif _return == 5:
-        show doctor at pleft2 with qleft
-        doctor "Are you all right?  Here, let me take a look... I want to save as many people as I can."
-        $ tbnarrator = 1
-        "HP, SP and Status restored!  Or at least they would be if you had those!"
-        $ tbnarrator = 0
-        doctor "Try not to push yourself too hard."
-    elif _return == 6:
-        scene black with qdis
-        play music hospital1 fadeout 0.5 fadein 0.5
-        $ tbnarrator = 1
-        n "With only one path left to follow once they leave, the group makes their way through the twisted passages of the hospital."
-        n "More demons rise up to stop them, but by now, the students are capable at dealing with the threats, and make their way to the exit."
-        $ tbnarrator = 0
-        jump label082
-    jump label081
+    show screen header
+    $ nanjox = 850
+    $ nanjoy = 550
+    $ markx = 1250
+    $ marky = 480
+    $ npc1x = 1110
+    $ npc1y = 430
+    $ npc2x = 760
+    $ npc2y = 430
+    $ yukinox = 1350
+    $ yukinoy = 380
+    label label081TalkA:
+        show screen IHospital5
+        hide marksprite
+        hide nanjosprite
+        hide yukinosprite
+        hide nurse1sprite
+        hide doctor1sprite
+        call screen IHospital5
+        if _return > 0:
+            show nanjosprite upright stand at nanjoloc
+            show yukinosprite downleft stand at yukinoloc
+            show marksprite downright stand at markloc
+            show doctor1sprite downright stand at npc2loc
+            show nurse1sprite downright stand at npc1loc
+        if _return == 1:
+            $ naoyax = markx-60
+            $ naoyay = marky+25
+            show marksprite downleft stand at markloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show mark animated neutral serious with qleft
+            mk @ standmove "I wonder if there are other patients besides Maki in trouble right now..."
+            show marksprite downright stand
+            hide mark
+            hide naoyasprite
+            with qdis
+            $ label081mark = 1
+        elif _return == 2:
+            $ naoyax = yukinox-60
+            $ naoyay = yukinoy+25
+            show yukinosprite downleft stand at yukinoloc
+            show naoyasprite upright stand at naoyaloc with qdis
+            show yukino animated neutral smirk with qleft
+            yu @ standmove "I always thought you were a pushover, Naoya... I'm surprised how calm you are."
+            hide yukino
+            hide naoyasprite
+            with qdis
+            $ label081yukino = 1
+        elif _return == 3:
+            $ naoyax = nanjox+60
+            $ naoyay = nanjoy-25
+            show nanjosprite upright stand at nanjoloc
+            show naoyasprite downleft stand at naoyaloc with qdis
+            show nanjo animated neutral serious with qleft
+            na @ standmove "...Hm?  Yes, what is it?"
+            hide nanjo
+            hide naoyasprite
+            with qdis
+            $ label081nanjo = 1
+        elif _return == 4:
+            $ naoyax = npc1x+60
+            $ naoyay = npc1y+25
+            show nurse1sprite downright standmove at npc1loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            nurse "I can't get in touch with the patients!  What am I supposed to do? Can't you do something!?"
+            nurse "...I'm sorry.  I'm asking the impossible.  I'm just so confused."
+            show nurse1sprite downright stand
+            hide naoyasprite
+            with qdis
+            $ label081nurse = 1
+        elif _return == 5:
+            $ naoyax = npc2x+60
+            $ naoyay = npc2y+25
+            show doctor1sprite downright standmove at npc2loc
+            show naoyasprite upleft stand at naoyaloc with qdis
+            doctor "Are you all right?  Here, let me take a look... I want to save as many people as I can."
+#            $ tbnarrator = 1
+#            "HP, SP and Status restored!  Or at least they would be if you had those!"
+            $ tbnarrator = 0
+            doctor "Try not to push yourself too hard."
+            show doctor1sprite downright stand
+            hide naoyasprite
+            with qdis
+            $ label081doctor = 1
+        elif _return == 6:
+            scene black with qdis
+            play music hospital1 fadeout 0.5 fadein 0.5
+            $ tbnarrator = 1
+            n "With only one path left to follow once they leave, the group makes their way through the twisted passages of the hospital."
+            n "More demons rise up to stop them, but by now, the students are capable at dealing with the threats, and make their way to the exit."
+            $ tbnarrator = 0
+            jump label082
+        jump label081TalkA
 
 label label082 (location="Hospital Entrance"): #iHospital Entrance
-    scene bg idealhospital6a with qdis
+    scene bg IHospital
+    show idealhospital6
+    with qdis
     play music uhoh fadeout 0.5 fadein 0.5
+    $ nanjox = 500
+    $ nanjoy = 610
+    $ markx = 610
+    $ marky = 330
+    $ npc1x = 450
+    $ npc1y = 586
+    $ yukinox = 550
+    $ yukinoy = 450
+    $ naoyax = 620
+    $ naoyay = 530
+    show marksprite upleft stand at markloc
+    show yukinosprite downright stand at yukinoloc
+    show naoyasprite upleft stand zorder 5 at naoyaloc
+    show nurse1sprite down at npc1loc
+    show nanjosprite upright stand zorder 6 at nanjoloc
+    with qdis
     show yukino animated neutral serious with qleft
-    yu "Naoya! This one's still alive!  Gimme a hand here!"
+    yu @ standmove "Naoya! This one's still alive!  Gimme a hand here!"
     hide yukino
     show nanjo animated neutral serious with qleft
-    na "We haven't time to waste here, Naoya!  It's too late for her, but not for us!"
+    show naoyasprite downleft stand
+    show yukinosprite downleft stand
+    na @ standmove "We haven't time to waste here, Naoya!  It's too late for her, but not for us!"
     hide nanjo
     show mark animated neutral serious with qleft
-    mk "Yo, Naoya!  The monsters are just around the corner!"
+    show yukinosprite upright stand
+    show naoyasprite upleft stand
+    show marksprite downleft stand
+    mk @ standmove "Yo, Naoya!  The monsters are just around the corner!"
     hide mark with qdis
+    show yukinosprite downleft stand
     nurse "I...I'm not going to make it... You kids... g-get out of here..."
     show yukino animated neutral sad with qleft
-    yu "Don't give up!"
+    yu @ standmove "Don't give up!"
     show yukino
+    $ lines = 1
     $ choicetext = "I could really use a hand, Naoya!"
     show nchoice at pright zorder 15 with easeinright
     show nchoice onlayer screens zorder 15 at pright
@@ -9122,11 +10074,11 @@ label label082 (location="Hospital Entrance"): #iHospital Entrance
         hide nchoice
         with qdis
         show yukino animated neutral serious
-        yu "Are you serious!?  But she's still alive!"
-        yu "You're telling me to abandon her!?"
+        yu @ standmove "Are you serious!?  But she's still alive!"
+        yu @ standmove "You're telling me to abandon her!?"
         hide yukino
         show nanjo animated neutral sad with qleft
-        na "...I don't want to leave Yamaoka behind, either.  But we don't have a choice!"
+        na @ standmove "...I don't want to leave Yamaoka behind, either.  But we don't have a choice!"
         show nanjo neutral
         $ choicetext = "We have to go!"
         show nchoice at pright zorder 15 with easeinright
@@ -9142,7 +10094,7 @@ label label082 (location="Hospital Entrance"): #iHospital Entrance
             hide nchoice
             with qdis
             show nanjo animated neutral serious
-            na "Tsk... Don't blame me when you end up part of the problem instead of the solution."
+            na @ standmove "Tsk... Don't blame me when you end up part of the problem instead of the solution."
         if _return == 2:
             hide screen choices with qdis
             hide fadeblack onlayer screens
@@ -9150,18 +10102,51 @@ label label082 (location="Hospital Entrance"): #iHospital Entrance
             hide nchoice
             with qdis
             show nanjo animated neutral serious
-            na "Yukino!  Masao!  Let's go!"
+            na @ standmove "Yukino!  Masao!  Let's go!"
     hide yukino
     hide nanjo
+    show marksprite upleft stand
     show mark animated neutral serious with qleft
-    mk "It's no good!  They're coming!"
-    scene bg idealhospital6b with qdis
-    play music elly fadeout 0.5 fadein 0.5
+    mk @ standmove "It's no good!  They're coming!"
+    hide mark with qdis
+    $ newlocx = 700
+    $ newlocy = 500
+    show marksprite downright walk at newloc with MoveTransition(0.6)
+    $ markx = 700
+    $ marky = 500
+    show marksprite upright stand at markloc
+    $ newlocx = 750
+    $ newlocy = 540
+    show nanjosprite upright walk at newloc with MoveTransition(0.4)
+    $ nanjox = 750
+    $ nanjoy = 540
+    show yukinosprite fight
+    show naoyasprite fight
+    show nanjosprite fight at nanjoloc
+    show marksprite fight
+    with None
+    $ npc2x = 800
+    $ npc2y = 350
+    $ npc3x = 950
+    $ npc3y = 375
+    show mrzombie idle1 at npc2loc
+    show mrzombie idle1 as mrzombie2 at npc3loc
+    with dissolve
+    $ ellyx = 475
+    $ ellyy = 550
+    #play music elly fadeout 0.5 fadein 0.5
+    show ellysprite upright standmove at ellyloc with qdis
     show elly animated neutral smirk with qleft
     el "Oh, good day."
     show elly animated neutral serious
     el "Oh, my!  There are demons here too?"
     hide elly
+    $ newlocx = 650
+    $ newlocy = 400
+    show ellysprite upright walk at newloc with MoveTransition(0.5)
+    $ ellyx = 650
+    $ ellyy = 400
+    show ellysprite fight at ellyloc
     show nanjo animated neutral serious with qleft
     na "Eriko!  Get back!"
     hide nanjo
@@ -9175,73 +10160,142 @@ label label082 (location="Hospital Entrance"): #iHospital Entrance
     mk "Sheesh, that girl's crazy!"
     hide mark with qdis
     play music awakening fadeout 0.5 fadein 0.5
-    $ tbnarrator = 1
-    n "Mark strikes one of the undead with his persona, knocking it down and into pieces, while the remaining one comes for Elly."
-    "As it does, she feels a similar rush of energy to the rest."
-    show idealhospital6c at pright with zoomin
-    n "Her persona manifests, unleashing a wave of energy toward the remaining zombie, searing it with bright light and vanquishing it."
-    $ tbnarrator = 0
-    hide idealhospital6c with zoomout
-    scene bg idealhospital6 with qdis
-    play music hospital1 fadeout 0.5 fadein 0.5
+    $ newlocx = markx-30
+    $ newlocy = marky-70
+    show personasummon1 at newloc
+    pause 0.4
+    show personasummon2 at newloc
+    pause 0.6
+    hide personasummon2
+    show personasummon3 at newloc
+    show ogun at personasummonmark1
+    pause 0.7
+    show ogun 1 at personasummonmark2
+    pause 0.2
+    show ogun 2 at personasummonmark3
+    pause 0.5
+    show ogun 3 at personasummonmark4
+    pause 0.5
+    show ogun 2 at personasummonmark3
+    pause 0.5
+    hide nurse1sprite with qdis
+    show ogun 3 at personasummonmark4
+    pause 0.5
+    show ogun 2 at personasummonmark3
+    pause 0.5
+    show ogun 3 at personasummonmark5
+    pause 0.4
+    $ newlocx = npc3x-40
+    $ newlocy = npc3y+60
+    show attackspell at Attackspell
+    pause 0.3
+    hide mrzombie2 with qdis
+    pause 0.3
+    hide ogun
+    hide personasummon1
+    hide personasummon3
+    with qdis
+    $ newlocx = ellyx-30
+    $ newlocy = ellyy-70
+    show personasummon1 at newloc
+    pause 0.4
+    show personasummon2 at newloc
+    pause 0.6
+    hide personasummon2
+    show personasummon3 at newloc
+    show nike at personasummonelly1
+    pause 0.6
+    show nike 1 at personasummonelly2
+    pause 0.6
+    show nike 2 at personasummonelly3
+    pause 0.4
+    $ newlocx = npc2x-40
+    $ newlocy = npc2y+60
+    show kouhaspell at Kouhaspell
+    pause 2.0
+    hide mrzombie with qdis
+    pause 0.3
+    hide nike
+    hide personasummon1
+    hide personasummon3
+    with qdis
+#    $ tbnarrator = 1
+#    n "Mark strikes one of the undead with his persona, knocking it down and into pieces, while the remaining one comes for Elly."
+#    "As it does, she feels a similar rush of energy to the rest."
+#    show idealhospital6c at pright with zoomin
+#    n "Her persona manifests, unleashing a wave of energy toward the remaining zombie, searing it with bright light and vanquishing it."
+#    $ tbnarrator = 0
+#    hide idealhospital6c with zoomout
+#    scene bg idealhospital6 with qdis
+    play music elly fadeout 0.5 fadein 0.5
     show elly animated neutral serious with qleft
-    el "Was that Nike...?  The Greek goddess of victory... It's me... and I'm it..."
+    show ellysprite upright stand
+    el @ standmove "Was that Nike...?  The Greek goddess of victory... It's me... and I'm it..."
     hide elly
     show yukino animated neutral serious with qleft
-    yu "Eriko?  Hey!  Are you okay?"
+    show yukinosprite upright stand
+    show naoyasprite upright stand
+    show marksprite upleft stand
+    show nanjosprite upleft stand
+    yu @ standmove "Eriko?  Hey!  Are you okay?"
     hide yukino
     show elly animated neutral serious with qleft
-    el "Nike... The archetypal portrayal of Christian angels... It's me... and I'm it..."
+    el @ standmove "Nike... The archetypal portrayal of Christian angels... It's me... and I'm it..."
     hide elly
     show mark animated neutral serious with qleft
-    mk "No good. She's completely gone."
+    mk @ standmove "No good. She's completely gone."
     hide mark
     show yukino animated neutral serious with qleft
-    yu "Eriko!  Snap out of it!"
+    yu @ standmove "Eriko!  Snap out of it!"
     hide yukino
+    show ellysprite downleft stand
     show elly animated neutral serious with qleft
-    el "*gasp* I-I'm sorry... I'm all right.  I am an angelic bringer of victory!"
+    el @ standmove "*gasp* I-I'm sorry... I'm all right.  I am an angelic bringer of victory!"
+    show ellysprite downleft victory
     show elly animated neutral smirk
     el "From now on, you have my protection!"
     hide elly
     show mark animated neutral smirk with qleft
-    mk "...You idiot.  We can do it too."
+    mk @ standmove "...You idiot.  We can do it too."
     hide mark
+    show ellysprite downright stand
     show elly animated neutral serious with qleft
-    el "R-Really...?  So I'm not the only one who was chosen..."
+    el @ standmove "R-Really...?  So I'm not the only one who was chosen..."
     hide elly
     show nanjo animated neutral serious with qleft
-    na "Eriko... you dreamt of the butterfly, didn't you?"
+    na @ standmove "Eriko... you dreamt of the butterfly, didn't you?"
     hide nanjo
+    show ellysprite downright stand
     show elly animated neutral serious with qleft
-    el "How do you know about that?  I've seen it quite often in my dreams..."
+    el @ standmove "How do you know about that?  I've seen it quite often in my dreams..."
     show elly animated neutral sad
-    el "Ever since I played the Persona game."
+    el @ standmove "Ever since I played the Persona game."
     hide elly
     show nanjo animated neutral serious with qleft
-    na "Just as I thought.  That dream must be the cause of the phenomenon..."
+    na @ standmove "Just as I thought.  That dream must be the cause of the phenomenon..."
     hide nanjo
     show mark animated neutral serious with qleft
-    mk "That aside, why'd you come here?  Is it like this outside too?"
+    mk @ standmove "That aside, why'd you come here?  Is it like this outside too?"
     hide mark
     show elly animated neutral sad with qleft
-    el "Yes... There are demons everywhere.  And it's impossible to leave town."
-    el "I looked everywhere, but it seems that the school is the only safe place."
+    el @ standmove "Yes... There are demons everywhere.  And it's impossible to leave town."
+    el @ standmove "I looked everywhere, but it seems that the school is the only safe place."
     hide elly
     show yukino animated neutral serious with qleft
-    yu "Oh?  The school's safe?  Let's go back there, Naoya."
+    yu @ standmove "Oh?  The school's safe?  Let's go back there, Naoya."
     hide yukino
     show elly animated neutral serious with qleft
-    el "Oh, but I nearly forgot!  We should go to the {color=#800000}Alaya Shrine{/color} first."
+    el @ standmove "Oh, but I nearly forgot!  We should go to the {color=#800000}Alaya Shrine{/color} first."
     show elly animated neutral sad
-    el "Maki's mother is hurt.  She collapsed there..."
+    el @ standmove "Maki's mother is hurt.  She collapsed there..."
     hide elly
     show mark animated neutral serious with qleft
-    mk "What!?  Dude, why didn't you say so before!?  C'mon Naoya, let's go!"
+    mk @ standmove "What!?  Dude, why didn't you say so before!?  C'mon Naoya, let's go!"
 
 label label083: #Hospital Reception
-    scene bg idealhospital6 with qdis
-    play music hospital2 fadeout 0.5 fadein 0.5
+    scene bg IHospital
+    show idealhospital6
+    play music elly fadeout 0.5 fadein 0.5 if_changed
     call screen IHospital6
     $ plotprogress = 1
     if _return == 1:
@@ -9259,10 +10313,10 @@ label label083: #Hospital Reception
         el "Alaya Shrine isn't far from the school.  We should have no problems."
     elif _return == 5:
         jump calloverworld
-        #scene black with qdis
-        #"End of the demo~!"
-        #$ MainMenu(confirm=False)()
-        $ plotprogress = 1
+        scene black with qdis
+#        "End of the demo~!"
+#        $ MainMenu(confirm=False)()
+#        $ plotprogress = 1
     jump label083
 
 ####Navigation Labels######
@@ -9273,7 +10327,7 @@ label calloverworld:
         show bg wardone with qdis
         call screen OverworldMap1(_with_none=False) with qdis
     if ward == 2:
-        play music overworld2 if_changed
+        play music overworld1 if_changed
         show bg wardtwo with qdis
         call screen OverworldMap2(_with_none=False) with qdis
 

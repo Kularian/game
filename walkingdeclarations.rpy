@@ -74,21 +74,25 @@ image naoyasprite downleft stand = "naoya/walking/DLStanding1.png"
 image naoyasprite downright stand = "naoya/walking/DRStanding1.png"
 image naoyasprite upleft stand = "naoya/walking/ULStanding1.png"
 image naoyasprite upright stand = "naoya/walking/URStanding1.png"
+image naoyasprite upright sad = "naoya/walking/URSad.png"
 
 image marksprite downleft stand = "mark/walking/DLStanding1.png"
 image marksprite downright stand = "mark/walking/DRStanding1.png"
 image marksprite upleft stand = "mark/walking/ULStanding1.png"
 image marksprite upright stand = "mark/walking/URStanding1.png"
+image marksprite upleft sad = "mark/walking/ULSad.png"
 
 image nanjosprite downleft stand = "nanjo/walking/DLStanding1.png"
 image nanjosprite downright stand = "nanjo/walking/DRStanding1.png"
 image nanjosprite upleft stand = "nanjo/walking/ULStanding1.png"
 image nanjosprite upright stand = "nanjo/walking/URStanding1.png"
+image nanjosprite upright sad = "nanjo/walking/URSad.png"
 
 image yukinosprite downleft stand = "yukino/walking/DLStanding1.png"
 image yukinosprite downright stand = "yukino/walking/DRStanding1.png"
 image yukinosprite upleft stand = "yukino/walking/ULStanding1.png"
 image yukinosprite upright stand = "yukino/walking/URStanding1.png"
+image yukinosprite upleft sad = "yukino/walking/ULSad.png"
 
 image brownsprite downleft stand = "brown/walking/DLStanding1.png"
 image brownsprite downright stand = "brown/walking/DRStanding1.png"
@@ -114,6 +118,7 @@ image ellysprite downleft stand = "elly/walking/DLStanding1.png"
 image ellysprite downright stand = "elly/walking/DRStanding1.png"
 image ellysprite upleft stand = "elly/walking/ULStanding1.png"
 image ellysprite upright stand = "elly/walking/URStanding1.png"
+image ellysprite downleft victory = "elly/walking/DLVictory.png"
 
 #NPC Standing Declarations
 
@@ -171,6 +176,7 @@ image yamaokasprite downleft stand = "yamaoka/walking/DLStanding1.png"
 image yamaokasprite downright stand = "yamaoka/walking/DRStanding1.png"
 image yamaokasprite upleft stand = "yamaoka/walking/ULStanding1.png"
 image yamaokasprite upright stand = "yamaoka/walking/URStanding1.png"
+image yamaokasprite down = "yamaoka/walking/down.png"
 
 image student1 downleft stand = "students/1/DLStanding1.png"
 image student1 downright stand = "students/1/DRStanding1.png"
@@ -261,6 +267,7 @@ image nurse1sprite downleft stand = "hospital/nurse1/DLStanding1.png"
 image nurse1sprite downright stand = "hospital/nurse1/DRStanding1.png"
 image nurse1sprite upleft stand = "hospital/nurse1/ULStanding1.png"
 image nurse1sprite upright stand = "hospital/nurse1/URStanding1.png"
+image nurse1sprite down = "hospital/nurse1/down.png"
 
 image nurse2sprite downleft stand = "hospital/nurse2/DLStanding1.png"
 image nurse2sprite downright stand = "hospital/nurse2/DRStanding1.png"
@@ -383,6 +390,12 @@ image setsukosprite upright stand = "setsuko/walking/URStanding1.png"
 image setsukosprite sitting1 = "setsuko/walking/Sitting1.png"
 image setsukosprite sitting2 = "setsuko/walking/Sitting2.png"
 image setsukosprite bed = "setsuko/walking/Bed.png"
+
+image mrzombie idle1 = "battlers/mrzombie/fight1.png"
+image mrzombie idle2 = "battlers/mrzombie/fight4.png"
+
+image nursezombie idle1 = "battlers/nursezombie/idle1.png"
+image nursezombie idle2 = "battlers/nursezombie/idle2.png"
 
 #Emotion Indicators
 
@@ -2038,6 +2051,20 @@ image nursesecsprite downright standmove:
     pause 1.75
     repeat
 
+image mrzombie standmove:
+    Image("battlers/mrzombie/mrzombieidle1.png")
+    pause 2.25
+    Image("battlers/mrzombie/mrzombieidle4.png")
+    pause 1.75
+    repeat
+
+image nursezombie standmove:
+    Image("battlers/nursezombie/idle1.png")
+    pause 2.25
+    Image("battlers/nursezombie/idle2.png")
+    pause 1.75
+    repeat
+
 #Walking Declarations
 #Naoya
 
@@ -2579,5 +2606,82 @@ image nanjosprite upleft walk:
     Image("nanjo/walking/ULWalkR2.png")
     pause 0.15
     Image("nanjo/walking/ULWalkR1.png")
+    pause 0.15
+    repeat
+
+#yukino
+image yukinosprite downleft walk:
+    Image("yukino/walking/DLStanding1.png")
+    pause 0.15
+    Image("yukino/walking/DLWalkL1.png")
+    pause 0.15
+    Image("yukino/walking/DLWalkL2.png")
+    pause 0.15
+    Image("yukino/walking/DLWalkL1.png")
+    pause 0.15
+    Image("yukino/walking/DLStanding1.png")
+    pause 0.15
+    Image("yukino/walking/DLWalkR1.png")
+    pause 0.15
+    Image("yukino/walking/DLWalkR2.png")
+    pause 0.15
+    Image("yukino/walking/DLWalkR1.png")
+    pause 0.15
+    repeat
+
+image yukinosprite downright walk:
+    Image("yukino/walking/DRStanding1.png")
+    pause 0.15
+    Image("yukino/walking/DRWalkL1.png")
+    pause 0.15
+    Image("yukino/walking/DRWalkL2.png")
+    pause 0.15
+    Image("yukino/walking/DRWalkL1.png")
+    pause 0.15
+    Image("yukino/walking/DRStanding1.png")
+    pause 0.15
+    Image("yukino/walking/DRWalkR1.png")
+    pause 0.15
+    Image("yukino/walking/DRWalkR2.png")
+    pause 0.15
+    Image("yukino/walking/DRWalkR1.png")
+    pause 0.15
+    repeat
+
+image yukinosprite upright walk:
+    Image("yukino/walking/URStanding1.png")
+    pause 0.15
+    Image("yukino/walking/URWalkL1.png")
+    pause 0.15
+    Image("yukino/walking/URWalkL2.png")
+    pause 0.15
+    Image("yukino/walking/URWalkL1.png")
+    pause 0.15
+    Image("yukino/walking/URStanding1.png")
+    pause 0.15
+    Image("yukino/walking/URWalkR1.png")
+    pause 0.15
+    Image("yukino/walking/URWalkR2.png")
+    pause 0.15
+    Image("yukino/walking/URWalkR1.png")
+    pause 0.15
+    repeat
+
+image yukinosprite upleft walk:
+    Image("yukino/walking/ULStanding1.png")
+    pause 0.15
+    Image("yukino/walking/ULWalkL1.png")
+    pause 0.15
+    Image("yukino/walking/ULWalkL2.png")
+    pause 0.15
+    Image("yukino/walking/ULWalkL1.png")
+    pause 0.15
+    Image("yukino/walking/ULStanding1.png")
+    pause 0.15
+    Image("yukino/walking/ULWalkR1.png")
+    pause 0.15
+    Image("yukino/walking/ULWalkR2.png")
+    pause 0.15
+    Image("yukino/walking/ULWalkR1.png")
     pause 0.15
     repeat

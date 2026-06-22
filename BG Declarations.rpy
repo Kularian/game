@@ -1,4 +1,24 @@
 #BG/CG Declarations
+
+#Parallax
+image bg AbClass:
+    "bg/Parallax/Abandoned Classroom.png"
+    xalign 0.0
+    linear 40 xalign 1.0
+    repeat
+image bg IHospital:
+    "bg/Parallax/Hospital.png"
+    xalign 0.0
+    linear 40 xalign 1.0
+    repeat
+image bg MakiRoom:
+    "bg/Parallax/MakiRoom.png"
+    yalign 0.0
+    linear 40 yalign 1.0
+    repeat
+image AwakeningWarble = WaveImage("images/bg/Parallax/Awakening.png", 20, 10, 0.0, 20, -1, 640, True, True, 2, True, True)
+
+#BGs
 image bg personagame = "bg/personagame.png"
 image bg personagame2 = "bg/Personagame2.png"
 image bg weirdgirl = "bg/weirdgirl.png"
@@ -22,7 +42,7 @@ image bg cafeteria = "bg/cafeteria3.png"
 image bg homeecroom = "bg/Homeecroom.png"
 image bg emptyclassroom = "bg/personagame.png"
 image bg artroom = "bg/artroom.png"
-image bg library = "bg/Library.png"
+image bg library = "bg/Library3.png"
 image bg studentcouncil = "bg/StudentCouncilRoom.png"
 image bg entrancehall = "bg/EntranceHall.png"
 image bg frontgate = "bg/FrontGate.png"
@@ -42,8 +62,8 @@ image bg policestation = "bg/policestation3.png"
 image bg sennenmannendojoy = "bg/sennenmannendo.png"
 image bg peacediner = "bg/peacediner.png"
 image bg satomitadashi = "bg/satomitadashi.png"
-image bg sebecreception = "bg/sebecreception3.png"
-image bg sebecreception2 = "bg/sebecreception3.png"
+image bg sebecreception = "bg/sebecreception.png"
+image bg sebecreception2 = "bg/sebecreception.png"
 image bg factory = "bg/factory3.png"
 image bg factoryreiji = "bg/factoryreiji.png"
 image bg hospital1 = "bg/HospitalReception.png"
@@ -62,16 +82,14 @@ image bg icu4 = "bg/ICU Vid 4.png"
 image bg icu5 = "bg/ICU Vid 5.png"
 image bg awakening = "bg/HospitalLobbyB.png"
 image bg nanjoyamaoka = "cg/NanjoYamaoka.png"
-image bg idealhospital0 = "bg/HospitalLobbyB.png"
+image idealhospital0 = "bg/HospitalLobbyB.png"
 image bg idealhospital1 = "bg/HospitalNurse.png"
 image bg idealhospital2 = "bg/HospitalNurse.png"
-image bg idealhospital3 = "bg/HospitalMaki4.png"
+image idealhospital3 = "bg/HospitalMaki4.png"
 image bg idealhospital4 = "bg/ihospital4.png"
 image bg idealhospital5 = "bg/ihospital5.png"
-image bg idealhospital6a = "bg/ihospital6-1.png"
-image bg idealhospital6b = "bg/ihospital6-2.png"
+image idealhospital6 = "bg/HospitalReceptionB.png"
 image idealhospital6c = "bg/ihospital6-3.png"
-image bg idealhospital6 = "bg/ihospital6.png"
 image bg SQ1 = "bg/SnowQueen1.png"
 image bg SQ2 = "bg/SnowQueen2.png"
 image bg SQ3 = "bg/SnowQueen3.png"

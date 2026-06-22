@@ -2,15 +2,17 @@
 
 define full = Character(_('nar'), color="#ebffbd")
 define n = Character(_(' '), what_ypos=-54)
-define mc = Character(_('Naoya'), color="#ebffbd", image="naoya")
-define ma = Character(_('Maki'), color="#ebffbd", image="maki")
-define mk = Character(_('Mark'), color="#ebffbd", image="masao")
-define na = Character(_('Nanjo'), color="#ebffbd", image="nanjo")
-define yu = Character(_('Yukino'), color="#ebffbd", image="yukino")
-define ay = Character(_('Ayase'), color="#ebffbd", image="ayase")
-define el = Character(_('Elly'), color="#ebffbd", image="elly")
-define br = Character(_('Brown'), color="#ebffbd", image="brown")
-define re = Character(_('Reiji'), color="#ebffbd", image="reiji")
+define persona = Character(_('Persona'), color="#ebffbd")
+define seimen = Character(_('Seimen Kongou'), color="ebffbd")
+define mc = Character(_('Naoya'), color="#ebffbd", image="naoyasprite")
+define ma = Character(_('Maki'), color="#ebffbd", image="makisprite")
+define mk = Character(_('Mark'), color="#ebffbd", image="marksprite")
+define na = Character(_('Nanjo'), color="#ebffbd", image="nanjosprite")
+define yu = Character(_('Yukino'), color="#ebffbd", image="yukinosprite")
+define ay = Character(_('Ayase'), color="#ebffbd", image="ayasesprite")
+define el = Character(_('Elly'), color="#ebffbd", image="ellysprite")
+define br = Character(_('Brown'), color="#ebffbd", image="brownsprite")
+define re = Character(_('Reiji'), color="#ebffbd", image="reijisprite")
 define mai = Character(_('Mai'), color="#ebffbd", image="mai")
 define aki = Character(_('Aki'), color="#ebffbd", image="aki")
 define ph = Character(_('Philemon'), color="#ebffbd")
@@ -32,7 +34,7 @@ define tea = Character(_('Teacher'), color="ebffdb")
 define kaneda = Character(_('Kaneda'), color="ebffdb", image="kaneda")
 define yyclerk = Character(_('Clerk'), color="ebffdb", image="yyclerk")
 define doctor = Character(_('Doctor'), color="ebffdb", image="doctor")
-define nurse = Character(_('Nurse'), color="ebffdb")
+define nurse = Character(_('Nurse'), color="ebffdb", image="nurse")
 define sec = Character(_('Secretary'), color="ebffdb")
 define smd = Character(_('Shopkeeper'), color="ebffdb", image="sennenmannendo")
 define pdclerk = Character(_('Clerk'), color="ebffdb", image="pdclerk")
@@ -104,13 +106,13 @@ transform choice2:
     xpos 700
     ypos 500
 
-transform choicetext:
-    xpos 752
-    ypos 880
+#transform choicetext:
+#    xpos 752
+#    ypos 880
 
-transform choicetext2:
-    xpos 752
-    ypos 882
+#transform choicetext2:
+#    xpos 752
+#    ypos 882
 
 transform anybuttonfade:
     xalign 0.5
@@ -124,6 +126,7 @@ transform bottom:
     yalign 1.0
 
 define qdis = Dissolve(0.2)
+define ldis = Dissolve(1.0)
 define qleft = MoveTransition(0.2, enter=offscreenleft, enter_time_warp=_warper.easein)
 define qright = MoveTransition(0.2, enter=offscreenright, enter_time_warp=_warper.easein)
 define qzoom = OldMoveTransition(0.2, enter_factory=ZoomInOut(0.01, 1.0))
@@ -171,7 +174,6 @@ image ooishi = "ooishi.png"
 image hanya ns = "hanya/neutrtal/serious.png"
 image tamaki ns = "tamaki/neutral/smirk.png"
 image tadashi = "tadashi.png"
-image yuko = "yuko.png"
 image toro ns = "toro/neutral/serious.png"
 image devilboy ns = "tsutomu/neutral/smirk.png"
 image yamaoka ns = "yamaoka/neutral/serious.png"
@@ -188,754 +190,797 @@ image rcclerk = "rosacandidaworker.png"
 image takeda = "takeda.png"
 image kandori = "kandori/neutral/serious.png"
 image flair = "flair.png"
-image setsuko = "setsuko.png"
+
+
+image ayase new = "new/ayase.png"
+image brown new = "new/brown.png"
+image elly new = "new/elly.png"
+image igor new = "new/igor.png"
+image mai new = "new/mai.png"
+image maki new = "new/maki.png"
+image makisick new = "new/makisick.png"
+image mark new = "new/mark.png"
+image nanjo new = "new/nanjo.png"
+image reiji new = "new/reiji.png"
+image setsuko = "new/makimom.png"
+image yamaoka new = "new/yamaoka.png"
+image yukino new = "new/yukino.png"
+image yuko = "new/yuko.png"
 
 #Animated Declarations
 #naoya
 image nchoice:
-    Image("naoya/naoya choice 1.png")
-    pause 1.6
-    Image("naoya/naoya choice 2.png")
-    pause 0.2
-    repeat
+    Image("new/naoya.png")
+#    Image("naoya/naoya choice 1.png")
+#    pause 1.6
+#    Image("naoya/naoya choice 2.png")
+#    pause 0.2
+#    repeat
 
 #Mark
 image mark animated neutral serious:
-    Image("mark/neutral/serious.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/serious et1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/serious t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/serious t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/serious t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/serious.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/serious et2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/serious t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/serious.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/serious t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/serious.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/serious t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/mark.png", xalign=-0.02, yalign=1.0)
+#    Image("mark/neutral/serious.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/serious et1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/serious t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/serious t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/serious t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/serious.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/serious et2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/serious t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/serious.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/serious t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/serious.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/serious t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image mark animated neutral smirk:
-    Image("mark/neutral/smirk.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/smirk t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/smirk t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/smirk et1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/smirk t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/smirk.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/smirk t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/smirk t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/smirk e.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/smirk t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/smirk.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/smirk t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/mark.png", xalign=-0.02, yalign=1.0)
+#    Image("mark/neutral/smirk.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/smirk t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/smirk t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/smirk et1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/smirk t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/smirk.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/smirk t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/smirk t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/smirk e.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/smirk t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/smirk.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/smirk t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image mark animated neutral sad:
-    Image("mark/neutral/sad.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/sad t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/sad t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/sad t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/sad et2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/sad.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/sad t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/sad t1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/sad.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/sad et1.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    Image("mark/neutral/sad.png", xalign=-0.02, yalign=1.0)
-    pause 0.27
-    Image("mark/neutral/sad t2.png", xalign=-0.02, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/mark.png", xalign=-0.02, yalign=1.0)
+#    Image("mark/neutral/sad.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/sad t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/sad t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/sad t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/sad et2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/sad.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/sad t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/sad t1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/sad.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/sad et1.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    Image("mark/neutral/sad.png", xalign=-0.02, yalign=1.0)
+#    pause 0.27
+#    Image("mark/neutral/sad t2.png", xalign=-0.02, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 #nanjo
 image nanjo animated neutral serious:
-    Image("nanjo/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/serious et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/nanjo.png", xalign=-0.02, yalign=1.0)
+#    Image("nanjo/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/serious et2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/serious et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image nanjo animated neutral smirk:
-    Image("nanjo/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/smirk e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/nanjo.png", xalign=0, yalign=1.0)
+#    Image("nanjo/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/smirk t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/smirk t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/smirk e.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/smirk t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/smirk et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image nanjo animated neutral sad:
-    Image("nanjo/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/sad et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("nanjo/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("nanjo/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/nanjo.png", xalign=0, yalign=1.0)
+#    Image("nanjo/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/sad et2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/sad et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("nanjo/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("nanjo/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 #yukino
 image yukino animated neutral serious:
-    Image("yukino/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/serious e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/yukino.png", xalign=0, yalign=1.0)
+#    Image("yukino/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/serious et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/serious e.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image yukino animated neutral smirk:
-    Image("yukino/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/yukino.png", xalign=0, yalign=1.0)
+#    Image("yukino/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/smirk t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/smirk et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/smirk et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/smirk t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image yukino animated neutral sad:
-    Image("yukino/neutral/sad e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yukino/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yukino/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/yukino.png", xalign=0, yalign=1.0)
+#    Image("yukino/neutral/sad e.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/sad et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("yukino/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("yukino/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 #ayase
 image ayase animated neutral serious:
-    Image("ayase/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/serious et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/ayase.png", xalign=0, yalign=1.0)
+#    Image("ayase/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/serious et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/serious et2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image ayase animated neutral smirk:
-    Image("ayase/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/smirk e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/ayase.png", xalign=0, yalign=1.0)
+#    Image("ayase/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/smirk t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/smirk t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/smirk e.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/smirk t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/smirk et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/smirk.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/smirk t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image ayase animated neutral sad:
-    Image("ayase/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/sad et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("ayase/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("ayase/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/ayase.png", xalign=0, yalign=1.0)
+#    Image("ayase/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/sad et2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/sad t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/sad et1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("ayase/neutral/sad.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("ayase/neutral/sad t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 #brown
 image brown animated neutral serious:
-    Image("brown/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/serious et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/serious e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/brown.png", xalign=0, yalign=1.0)
+#    Image("brown/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("brown/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("brown/neutral/serious et2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("brown/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("brown/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("brown/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("brown/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("brown/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("brown/neutral/serious e.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("brown/neutral/serious t1.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    Image("brown/neutral/serious.png", xalign=0, yalign=1.0)
+#    pause 0.27
+#    Image("brown/neutral/serious t2.png", xalign=0, yalign=1.0)
+#    pause 0.16
+#    repeat
 
 image brown animated neutral smirk:
-    Image("brown/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/brown.png", xalign=0, yalign=1.0)
+    # Image("brown/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("brown/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/smirk et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("brown/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/smirk et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("brown/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("brown/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image brown animated neutral sad:
-    Image("brown/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/sad et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("brown/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("brown/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/brown.png", xalign=0, yalign=1.0)
+    # Image("brown/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("brown/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/sad et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("brown/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("brown/neutral/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("brown/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("brown/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 #elly
 image elly animated neutral serious:
-    Image("elly/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/serious et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/elly.png", xalign=0, yalign=1.0)
+    # Image("elly/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/serious et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/serious et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image elly animated neutral smirk:
-    Image("elly/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/smirk e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/elly.png", xalign=0, yalign=1.0)
+    # Image("elly/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/smirk et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/smirk e.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image elly animated neutral sad:
-    Image("elly/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/sad et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("elly/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("elly/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/elly.png", xalign=0, yalign=1.0)
+    # Image("elly/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/sad et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("elly/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("elly/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 #maki
 image maki animated neutral serious:
-    Image("maki/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/serious et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/maki.png", xalign=0, yalign=1.0)
+    # Image("maki/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/serious et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/serious et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image maki animated neutral smirk:
-    Image("maki/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/smirk et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/maki.png", xalign=0, yalign=1.0)
+    # Image("maki/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/smirk et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/smirk et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image maki animated neutral sad:
-    Image("maki/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/maki.png", xalign=0, yalign=1.0)
+    # Image("maki/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image maki animated sick serious:
-    Image("maki/sick/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/serious et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/makisick.png", xalign=0, yalign=1.0)
+    # Image("maki/sick/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image maki animated sick smirk:
-    Image("maki/sick/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/smirk e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/makisick.png", xalign=0, yalign=1.0)
+    # Image("maki/sick/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/smirk et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/smirk e.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image maki animated sick sad:
-    Image("maki/sick/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("maki/sick/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("maki/sick/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/makisick.png", xalign=0, yalign=1.0)
+    # Image("maki/sick/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("maki/sick/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("maki/sick/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 #Reiji
 
 image reiji animated neutral serious:
-    Image("reiji/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/serious et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/serious e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/reiji.png", xalign=0, yalign=1.0)
+    # Image("reiji/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/serious et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/serious e.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image reiji animated neutral smirk:
-    Image("reiji/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/smirk t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/smirk et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/smirk.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/smirk t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/reiji.png", xalign=0, yalign=1.0)
+    # Image("reiji/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/smirk et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/smirk t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/smirk et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/smirk.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/smirk t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image reiji animated neutral sad:
-    Image("reiji/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/sad et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("reiji/neutral/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("reiji/neutral/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/reiji.png", xalign=0, yalign=1.0)
+    # Image("reiji/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/sad et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("reiji/neutral/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("reiji/neutral/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 #NPCS
 
@@ -1071,85 +1116,88 @@ image kandori animated neutral smirk:
 #Yamaoka
 
 image yamaoka animated neutral serious:
-    Image("yamaoka/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/neutral/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/neutral/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/neutral/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/neutral/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/neutral/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/yamaoka.png", xalign=0, yalign=1.0)
+    # Image("yamaoka/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/neutral/serious et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/neutral/serious et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/neutral/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/neutral/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/neutral/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image yamaoka animated bloody serious:
-    Image("yamaoka/bloody/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/bloody/serious et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/bloody/serious et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/serious.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/bloody/serious t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/serious e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/bloody/serious t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/yamaoka.png", xalign=0, yalign=1.0)
+    # Image("yamaoka/bloody/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/bloody/serious et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/bloody/serious et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/serious.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/bloody/serious t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/serious e.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/bloody/serious t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 image yamaoka animated bloody sad:
-    Image("yamaoka/bloody/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/bloody/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/sad et2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/bloody/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/sad et1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/sad.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/bloody/sad t1.png", xalign=0, yalign=1.0)
-    pause 0.16
-    Image("yamaoka/bloody/sad e.png", xalign=0, yalign=1.0)
-    pause 0.27
-    Image("yamaoka/bloody/sad t2.png", xalign=0, yalign=1.0)
-    pause 0.16
-    repeat
+    Image("new/yamaoka.png", xalign=0, yalign=1.0)
+    # Image("yamaoka/bloody/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/bloody/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/sad et2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/bloody/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/sad et1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/sad.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/bloody/sad t1.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # Image("yamaoka/bloody/sad e.png", xalign=0, yalign=1.0)
+    # pause 0.27
+    # Image("yamaoka/bloody/sad t2.png", xalign=0, yalign=1.0)
+    # pause 0.16
+    # repeat
 
 #natsumi
 image natsumi animated neutral serious:
