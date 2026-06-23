@@ -7960,10 +7960,36 @@ label label062 (location = "SEBEC Building"):
         hide elly with qdis
         jump calloverworld
     if plotprogress == 1:
+        #scene bg SebecOutside with qdis
+        scene bg black with qdis
+        #play music Appearance! fadeout 0.5 fadein 0.5 if_changed
+        show screen header
+        $ yukinox = 800
+        $ yukinoy = 545
+        $ markx = 1070
+        $ marky = 335
+        $ nanjox = 1170
+        $ nanjoy = 555
+        $ naoyax = 560
+        $ naoyay = 295
+        $ ellyx = 1110
+        $ ellyy = 405
+        $ npc1x = 1530
+        $ npc1y = 300
+        $ npc2x = 1230
+        $ npc2y = 180
+        $ npc3x = 980
+        $ npc3y = 155
+        show nanjosprite upright stand at nanjoloc
+        show yukinosprite upright stand at yukinoloc
+        show marksprite upright stand at markloc
+        show ellysprite upright stand at ellyloc
+        show naoyasprite upright stand at naoyaloc
+        show sebecgoon downleft stand1 at npc1loc
+        show sebecgoon downleft stand1 as sebecgoon2 at npc2loc
+        show sebecgoon downleft stand1 as sebecgoon2 at npc3loc
         if reijisebec == False:
-            #Play BGM: Appearance! (or similar)
-            #Reiji outside Sebec building
-            scene bg black with qdis
+            show reijisprite upright stand at reijiloc
             show elly animated serious with qleft
             el "Mm? Isn't he that transfer student?"
             hide elly
@@ -7986,7 +8012,7 @@ label label062 (location = "SEBEC Building"):
             show reiji animated neutral serious with qleft
             re "Tch... You guys again."
             hide reiji
-            "Reiji leaves."
+            "Reiji leaves.  Update this later."
             show mark animated sad with qleft
             mk "Sheesh... What is that dude up to?"
             hide mark
@@ -8000,23 +8026,76 @@ label label062 (location = "SEBEC Building"):
         elif reijisebec == True:
             man "Who're youse?"
             man "Past here is SEBEC territory.  No entry."
-        label label062a:
+        label label062TalkA:
+            show screen Sebec2
+            hide marksprite
+            hide nanjosprite
+            hide ellysprite
+            hide yukinosprite
+            hide naoyasprite
+            hide sebecgoon sprite
+            hide sebecgoon2 sprite
+            hide sebecgoon3 sprite
             call screen Sebec2
+            if _return > 0:
+                show nanjosprite upright stand at nanjoloc
+                show yukinosprite upright stand at yukinoloc
+                show marksprite upright stand at markloc
+                show ellysprite upright stand at ellyloc                
+                show sebecgoon downleft stand1 at npc1loc
+                show sebecgoon downleft stand1 as sebecgoon2 at npc2loc
+                show sebecgoon downleft stand1 as sebecgoon2 at npc3loc            
             if _return == 1:
+                $ naoyax = markx-60
+                $ naoyay = marky-25
+                show marksprite upleft standmove at markloc
+                show naoyasprite downright stand at naoyaloc with qdis
                 show mark animated neutral serious with qleft
                 mk "Hey, doesn't Maki's mom work for SEBEC?  What in the world's going on...?"
-            elif _return == 2:
+                show marksprite upright stand
+                hide mark
+                hide naoyasprite
+                with qdis
+                $ label062mark = 1
+            if _return == 2:
+                $ naoyax = yukinox+60
+                $ naoyay = yukinoy-25
+                show yukinosprite upright standmove at yukinoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
                 show yukino animated neutral serious with qleft
                 yu "I don't like this... This isn't how an ordinary company acts."
-            elif _return == 3:
+                show yukinosprite upright stand
+                hide yukino
+                hide naoyasprite
+                with qdis
+                $ label062yukino = 1
+            if _return == 3: 
+                $ naoyax = nanjox+60
+                $ naoyay = nanjoy-25
+                show nanjosprite upright standmove at nanjoloc
+                show naoyasprite downleft stand at naoyaloc with qdis
                 show nanjo animated neutral serious with qleft
                 na "SEBEC... What's Kandori's game?"
-            elif _return == 4:
+                show nanjosprite upright stand
+                hide nanjo
+                hide naoyasprite
+                with qdis
+                $ label062nanjo = 1
+            if _return == 4:
+                $ naoyax = ellyx-60
+                $ naoyay = ellyy-25
+                show ellysprite upleft standmove at ellyloc
+                show naoyasprite downright stand at naoyaloc with qdis
                 show elly animated neutral serious with qleft
                 el "What could this mean?  I heard SEBEC was a Fortuna 500 company..."
                 show elly animated neutral sad
                 el "But this may as well be a Mafia front operation."
-            elif _return == 5:
+                show ellysprite upright stand
+                hide elly
+                hide naoyasprite
+                with qdis
+                $ label062elly = 1
+            if _return == 5:
                 hide screen header
                 $ tbnarrator = 1
                 "You go back out into Mikage-Cho."
@@ -8024,7 +8103,7 @@ label label062 (location = "SEBEC Building"):
                 window auto
                 $ tbnarrator = 0
                 jump calloverworld
-            jump label062a
+            jump label062TalkA
     elif plotprogress == 0:
         play music conversation1 fadeout 0.5 fadein 0.5
         $ naoyax = 800
