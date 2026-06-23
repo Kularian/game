@@ -8273,15 +8273,37 @@ label label063 (location = "Abandoned Factory"):
         hide elly with qdis
         jump calloverworld
     if plotprogress == 1:
-        scene bg factoryreiji with qdis
-        play music reiji fadeout 0.5 fadein 0.5
-        $ location = "Abandoned Factory"
+        #scene bg factoryreiji with qdis
+        scene bg black with qdis
+        #play music reiji fadeout 0.5 fadein 0.5 if_changed
         show screen header
+        $ yukinox = 800
+        $ yukinoy = 545
+        $ markx = 1070
+        $ marky = 335
+        $ nanjox = 1170
+        $ nanjoy = 555
+        $ naoyax = 560
+        $ naoyay = 295
+        $ ellyx = 1110
+        $ ellyy = 405
+        $ npc1x = 1530
+        $ npc1y = 300
+        $ npc2x = 1230
+        $ npc2y = 180
+        $ npc3x = 980
+        $ npc3y = 155
+        show nanjosprite downright stand at nanjoloc
+        show yukinosprite upright stand at yukinoloc
+        show marksprite upleft stand at markloc
+        show ellysprite upright stand at ellyloc
+        show naoyasprite upright stand at naoyaloc
         show nanjo animated neutral smirk with qleft
         na "I don't recall having anything to do at such a shabby place."
         hide nanjo
         show mark animated neutral serious with qleft
         mk "Nanjo, you dick..."
+        jump calloverworld
     if plotprogress == 0:
         $ reijicheck = reijiflags
         if reijicasino == True:
