@@ -259,6 +259,11 @@ label start:
     default label061jd1 = 0
     default label061jd2 = 0
 
+    default label062nanjo = 0
+    default label062mark = 0
+    default label062yukino = 0
+    default label062elly = 0
+
     default label064nanjo = 0
     default label064mark = 0
     default label064yukino = 0
