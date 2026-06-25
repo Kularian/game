@@ -1203,6 +1203,10 @@ label label003(location="Class 1-3"):
                 stu "Hey, isn't this the curse of the haunted mansion at work?"
                 stu "I bet the spirits are angry that SEBEC built their HQ on top of it!"
                 stu "It must be the ghost of a Sengoku-era general or something!"
+                show student2sprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label003astudent = 1
             elif _return == 2:
                 jump callHermelinFloor1
             jump label003TalkB
@@ -1304,6 +1308,10 @@ label label004(location="Class 1-4"):
                 show student6sprite downleft standmove
                 stu "Oh, hey!  It looks like Reiji went outside a minute ago!"
                 stu "Aww... that was the perfect chance for me to talk to him!"
+                show student6sprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label004astudent = 1
             elif _return == 2:
                 jump callHermelinFloor1
             jump label004TalkB
@@ -1406,6 +1414,10 @@ label label005(location="Class 1-6"):
                 stu "Things have really gotten out of hand.  It's even put me off gambling."
                 stu "I wonder when it'll all be over..."
                 stu "Hey, wanna bet on when they'll fix it?"
+                show student9sprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label005astudent = 1
             elif _return == 2:
                 jump callHermelinFloor1
             jump label005TalkB
@@ -2028,6 +2040,9 @@ label label011(location="Gymnasium"):
                 stu "This fuss'll die down by the time the festival starts, right?"
                 stu "It'd suck if the school festival was cancelled in all this chaos!"
                 $ label011astudent = 1
+                show student3sprite downright stand
+                hide naoyasprite
+                with qdis
             elif _return == 2:
                 jump SnowQueenMask
             elif _return == 3:
@@ -2054,6 +2069,9 @@ label label011(location="Gymnasium"):
                     stu "This fuss'll die down by the time the festival starts, right?"
                     stu "It'd suck if the school festival was cancelled in all this chaos!"
                     $ label011astudent = 1
+                    show student3sprite downright stand
+                    hide naoyasprite
+                    with qdis
                 elif _return == 2:
                     jump callSportsBuilding
                 jump label008TalkB
@@ -4117,7 +4135,7 @@ label label029 (location="Class 3-7"):
                 $ naoyax = npc2x-70
                 $ naoyay = npc2y-30
                 show student8 downright standmove at npc2loc
-                show naoyasprite downright stand at naoyaloc with qdis
+                show naoyasprite upleft stand at naoyaloc with qdis
                 stu "Doesn't that idiot get what kind of trouble we're in!?"
                 stu "Forget the entrance exams!  We could die here!"
                 show student8 downright stand
