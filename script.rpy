@@ -938,6 +938,11 @@ label label001(location="Infirmary"):
                 pause 0.1
                 hide bg white
                 nat "There, all better.  Be careful out there."
+                show natsumisprite downright stand
+                hide natsumi
+                hide naoyasprite
+                with qdis
+                $ label001anatsumi = 1
             elif _return == 2:
                 $ naoyax = npc1x-60
                 $ naoyay = npc1y+25
@@ -946,17 +951,27 @@ label label001(location="Infirmary"):
                 show saekosprite downright standmove
                 sa "Masao and Kei know about the hole in the wall, right?"
                 sa "The gates are sealed, so that's the only way they'll be able to get in."
+                show saekosprite downright stand
+                hide saeko
+                hide naoyasprite
+                with qdis
+                $ label001asaeko = 1
             elif _return == 3:
                 $ naoyax = npc1x-60
                 $ naoyay = npc1y+25
                 show naoyasprite upright stand at naoyaloc with qdis
                 show setsuko at pleft2 with qdis
                 set "I don't know what to say... I've caused so much trouble for everyone."
+                hide setsuko
+                hide naoyasprite
+                with qdis
+                $ label001asetsuko = 1
             elif _return == 4:
                 $ naoyax = npc1x-60
                 $ naoyay = npc1y+25
                 show naoyasprite upright stand at naoyaloc with qdis
                 ag "Young ones... Your presence is welcome. \nTake care on your journey, young ones..."
+                $ label001aagastya = 1
             elif _return == 5:
                 jump callHermelinFloor1
             jump label001Talkb
