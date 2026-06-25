@@ -1100,6 +1100,10 @@ label label002(location="Class 1-2"):
                 show naoyasprite upright stand at naoyaloc with qdis
                 show student1sprite downleft standmove
                 stu "See!?  I told you so!  SEBEC really was waging biological warfare!"
+                show student1sprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label002astudent = 1
             elif _return == 2:
                 jump callHermelinFloor1
             jump label002Talkb
@@ -1502,12 +1506,19 @@ label label006(location="Courtyard"):
                 show student4sprite downleft standmove
                 stu "It's a madhouse outside, but it's so calm here... I wonder why the demons won't come here."
                 stu "Could it be divine protection?"
+                show student4sprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label006astudent = 1
             elif _return == 2:
+                show naoyasprite upright stand at naoyaloc with qdis
                 $ tbnarrator = 1
                 n "{color=#ebffdb}>Hiremon Stone\nThis megalith was excavated when the school was first built in 1963."
                 n "{color=#ebffdb}It's made of thamatite and possesses an abnormal magnetism.{/color}"
                 n "{color=#ebffdb}Legend has it that a heavenly being known as Hiremon dropped it from the sky to be  Mikage-cho's guardian stone.{/color}"
                 $ tbnarrator = 0
+                hide naoyasprite with qdis
+                $ label006asign = 1
             elif _return == 3:
                 jump callHermelinFloor1
             jump label006TalkB
@@ -1640,6 +1651,10 @@ label label007(location="Teacher's Lounge"):
                 show teachersprite downleft standmove
                 tea "Oh, it's you, Naoya.  Hey, go patrol around the school!"
                 tea "Me? I-I can't leave this spot... I have to sort out all the reports I get!"
+                show teachersprite downleft stand
+                hide naoyasprite
+                with qdis
+                $ label007ateacher = 1
             elif _return == 2:
                 jump callHermelinFloor1
             jump label007TalkB
@@ -1793,10 +1808,10 @@ label label008(location="Principal's Office"):
         $ npc2y = 600
         #play appropriate music #update
         label label008TalkB:
-            show screen PrincipalOffice
+            show screen PrincipalOfficeb
             hide ooishisprite
             hide hanyasprite
-            call screen PrincipalOffice
+            call screen PrincipalOfficeb
             if _return > 0:
                 show ooishisprite downleft stand at npc1loc
                 show hanyaspreite downleft stand at npc2loc
@@ -1816,6 +1831,11 @@ label label008(location="Principal's Office"):
                     n "{color=#ebffdb}>Principal Ooishi\nThe principal of St. Hermelin High.  She adores children and flowers.{/color}"
                     $ tbnarrator = 0
                     $ ooishiintro = True
+                show ooishisprite downleft stand
+                hide ooishi
+                hide naoyasprite
+                with qdis
+                $ label008aooishi = 1
             elif _return == 2:
                 $ naoyax = npc2x-60
                 $ naoyay = npc2y+25
@@ -1830,6 +1850,11 @@ label label008(location="Principal's Office"):
                     ha "Why is my luck so terrible!?"
                 else:
                     ha "Huh? You're still here? I'm busy! Get outta my sight already!"
+                show hanyasprite downleft stand
+                hide hanya
+                hide naoyasprite
+                with qdis
+                $ label008ahanya = 1
             elif _return == 3:
                 jump callHermelinFloor1
             jump label008TalkB
