@@ -220,158 +220,258 @@ label label084: #Snow Queen full start
     "the cutscene will eventually play here."
     scene bg black #update with frozen courtyard
     #play creepy music
-    show ayase animated neutral sad with dissolve
+    $ ayasex = 300
+    $ ayasey = 500
+    $ yukinox = 350
+    $ yukinoy = 475
+    $ naoyax = 350
+    $ naoyay = 500
+    $ npc1x = 800
+    $ npc1y = 250
+    show ayasesprite downright standmove at ayaseloc
+    show naoyasprite upleft stand at naoyaloc
+    show yukinosprite downleft stand at yukinoloc
+    show saekosprite downleft stand at npc1loc
+    with qdis
+    show ayase animated neutral sad with qleft
     ay "Owww... Huh?  Uh... where am I?"
+    show ayasesprite downright stand
     hide ayase
-    show yukino animated neutral serious with dissolve
+    show yukino animated neutral serious with qleft
+    show yukinosprite downleft standmove
     yu "Hey... This is the courtyard!  What the hell's going on here!?"
     hide yukino
-    show ayase animated neutral serious with dissolve
+    show yukinosprite downleft stand
+    show ayase animated neutral serious with qleft
+    show ayasesprite upright standmove
     ay "Whoa!  Look!"
     hide ayase
+    show ayasesprite upright stand
+    show yukinosprite upright standmove
+    show naoyasprite upright stand
     #update with showing Ms. Saeko as the Snow queen again
-    show yukino animated neutral sad with dissolve
+    show yukino animated neutral sad with qleft
     yu "Ms. Saeko!"
     hide yukino
+    show yukinosprite upright stand
+    $ newlocx = 700
+    $ newlocy = 325
+    show yukinosprite upright walk at newloc with MoveTransition(0.5)
     n "Yukino attempts to approach Ms. Saeko, but large pillars of ice prevent her from getting closer."
-    show yukino animated neutral serious with dissolve
+    show yukinosprite at yukinoloc with MoveTransition(0.4)
+    show yukino animated neutral serious with qleft
     yu "What the--!?"
     hide yukino
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show saekosprite downleft standmove
+    show saeko animated neutral serious with qleft #update with Snow Queen
     sa "Hahaha... Finally!  I've been waiting so long!"
     hide saeko
-    show yukino animated neutral sad with dissolve
+    show saekosprite downleft stand
+    show yukino animated neutral sad with qleft
+    show yukinosprite upright standmove
     yu "Ms. Saeko...?"
+    show yukinosprite upright stand
     hide yukino
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show saeko animated neutral serious with qleft #update with Snow Queen
+    show saekosprite downleft standmove
     sa "Saeko?  Oh... I see what's happening.  Poor Saeko... Hahahah."
     hide saeko
-    show yukino animated neutral sad with dissolve
+    show saekosprite downleft stand
+    show yukino animated neutral sad with qleft
+    show yukinosprite upright standmove
     yu "Huh?  But you are Saeko!  Are you okay!?"
     show yukino animated neutral serious
     yu "Did you trip and hit your head or something?"
     hide yukino
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show yukinosprite upright stand
+    show saeko animated neutral serious with qleft #update with Snow Queen
+    show saekosprite downleft standmove
     sa "Hahaha... 'I wore it, and I'm okay,' eh?  Teeheehee... Ahahaha!"
     sa "That's the Saeko I remember so well.  Self-confident... self-centered..."
     sa "She'd step on anyone to get to be the center of attention."
+    show saekosprite downleft stand
     hide saeko
-    show yukino animated neutral serious with dissolve
+    show yukino animated neutral serious with qleft
+    show yukinosprite upright standmove
     yu "What's wrong with you!?  Stop with the jokes, 'cause they aren't funny!"
     hide yukino
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show yukinosprite upright stand
+    show saeko animated neutral serious with qleft #update with Snow Queen
+    show saekosprite downleft standmove
     sa "Jokes?  Look around you.  Hahaha... you think this is a joke?"
+    show saekosprite upleft standmove
     sa "Beautiful, isn't it?  A peaceful, perfectly still landscape."
+    show saekosprite downright standmove
     sa "You'll all be dressed in ice and stay beautiful forever.  So come on over..."
+    show saekosprite downleft stand
     hide saeko
-    show ayase animated neutral sad with dissolve
+    show ayasesprite upright standmove
+    show ayase animated neutral sad with qleft
     ay "What are you saying!?  You're our teacher!  This is just..."
     hide ayase
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show ayasesprite upright stand
+    show saeko animated neutral serious with qleft #update with Snow Queen
+    show saekosprite downleft standmove
     sa "Oh, what a lovely girl.  Hahaha... Come closer, girl, and I'll give you ageless beauty."
     hide saeko
-    show yukino animated neutral serious with dissolve
+    show saekosprite downleft stand
+    show yukino animated neutral serious with qleft
+    show yukinosprite downright standmove
     yu "Don't do it, Ayase!  It's the mask... It must have taken her over!"
+    show yukinosprite upright standmove
     yu "Okay, monster, you lay one finger on Ms. Saeko and your ass is grass!"
+    show yukinosprite upright stand
     hide yukino
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show saeko animated neutral serious with qleft #update with Snow Queen
+    show saekosprite downleft standmove
     msk "'Taken her over'?  That's not very nice.  Tell me, who was it who undid the seal on the mask?"
     msk "Who put it on without thinking twice?  Not to mention...isn't it rude to go around calling people monsters?"
     msk "I think I'd prefer... the Snow Queen.  Very fitting for this mask, isn't it?"
     sq "Hahaha..."
+    show saekosprite downleft stand
     hide saeko
-    show yukino animated neutral serious with dissolve
+    show yukino animated neutral serious with qleft
+    show yukinosprite upright standmove
     yu "Can it!  What do you want with Ms. Saeko!?"
     hide yukino
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show yukinosprite upright stand
+    show saeko animated neutral serious with qleft #update with Snow Queen
+    show saekosprite downleft standmove
     sq "What a reckless young lady.  Your teacher is going to be... a sacrfice."
     hide saeko
-    show ayase animated neutral sad with dissolve
+    show saekosprite downleft stand
+    show ayasesprite upright standmove
+    show ayase animated neutral sad with qleft
     ay "A... A sacrifice?"
     hide ayase
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show ayasesprite upright stand
+    show saeko animated neutral serious with qleft #update with Snow Queen
+    show saekosprite downleft standmove
     sq "Yes, that's right.  Saeko is so full of hope.  If I offer her as a sacrifice..."
     sq "The stillness of despair--the Eternal Night--is sure to descend."
     hide saeko
-    show ayase animated neutral serious with dissolve
+    show saekosprite downleft stand
+    show ayase animated neutral serious with qleft
+    show ayasesprite upright standmove
     ay "Huh...?  Does that mean everyone's gonna get frozen?  I hate being cold!"
     hide ayase
-    show yukino animated neutral serious with dissolve
+    show ayasesprite upright stand
+    show yukino animated neutral serious with qleft
+    show yukinosprite upright standmove
     yu "That's not gonna happen!  I'm taking back Ms. Saeko, right now!"
     hide yukino
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show yukinosprite upright stand
+    show saeko animated neutral serious with qleft #update with Snow Queen
+    show saekosprite downleft standmove
     sq "Well, aren't you brave?  Fine... you can have her.  But Saeko will stay frozen as long as she has this mask on."
     sq "So will the school.  And don't think you can leave.  You'll see what I mean if you walk around a little."
     sq "There's no escape.  You only have two choices... Welcome the Eternal Night, or take the mask off Saeko."
     hide saeko
-    show ayase animated neutral sad with dissolve
+    show saekosprite downleft stand
+    show ayase animated neutral sad with qleft
+    show ayasesprite upright standmove
     ay "Okay, but like, how do we do that?"
     hide ayase
-    show saeko animated neutral serious with dissolve #update with Snow Queen
+    show ayasesprite upright stand
+    show saekosprite downleft standmove
+    show saeko animated neutral serious with qleft #update with Snow Queen
     sq "Hahaha, keep fighting it.  Nothing's more beautiful than despair after a struggle."
     sq "I can't wait to bask in your beautiful despair..."
+    show saekosprite downleft stand
     hide saeko
-    show ayase animated neutral serious with dissolve
+    show ayase animated neutral serious with qleft
+    show ayasesprite upright standmove
     ay "Hey!  I asked you a question!"
     hide ayase
-    n "Saeko becomes fully encased in ice."
-    show yukino animated neutral sad with dissolve
+    show ayasesprite upright stand
+    n "Saeko becomes fully encased in ice." #update sprite showing this
+    show yukino animated neutral sad with qleft
+    show yukinosprite upright standmove
     yu "*gasp* Ms. Saeko!"
     hide yukino
+    show yukinosprite upright stand
     n "The Snow Queen's voice echoes around the area."
     sq "Hahaha... Watch it, or Saeko and the mask will both shatter into smithereens."
     sq "I have a few rituals to perform, so there is still time before the Eternal Night."
     sq "Why don't we pass the time with a game?"
-    show yukino animated neutral serious with dissolve
+    show yukino animated neutral serious with qleft
+    show yukinosprite upright standmove
     yu "A game!?"
     hide yukino
+    show yukinosprite upright stand
     sq "This school is now a castle of ice.  There are three towers, each with a guardian."
     sq "If you can defeat them before I've finished my rituals... I'll turn Saeko and the school back to normal."
     sq "I must leave this mask now and prepare to call down the Eternal Night."
     sq "I hope you enjoy yourselves while I'm gone.  Hahaha... I'll see you later."
     n "The presence of the Snow Queen fades away..."
-    show ayase animated neutral sad with dissolve
+    show ayase animated neutral sad with qleft
+    show ayasespright downright standmove
     ay "Hey, wait!  Don't leave...!  Omigod... Wh-What're we gonna do!?"
     show ayase animated neutral serious
+    show yukinosprite downleft
     ay "This is all your fault, Naoya!  If you never found that stupid mask, this wouldn't have happened!"
     ay "You better own up!  Are you a man or not!?  Say something!"
     hide ayase
-    show yukino animated neutral serious with dissolve
+    show ayasesprite downright stand
+    show yukino animated neutral serious with qleft
+    show yukinosprite downleft standmove
     yu "Stop it, Ayase!  Pointing fingers won't help the situation any.  It's not like Naoya knew what was gonna happen."
     hide yukino
-    show ayase animated neutral sad with dissolve
+    show yukinosprite downleft stand
+    show ayase animated neutral sad with qleft
+    show ayasesprite downright standmove
     ay "But Yukino..."
+    show ayasesprite downright stand
     hide ayase
     show bg black
     pause 0.1
     hide bg black
-    show ayase animated neutral serious with dissolve
+    show ayase animated neutral serious with qleft
+    show ayasesprite upright standmove
     ay "Whoa!  What was that!?"
     hide ayase
+    show ayasesprite upright stand
+    # show butterfly at newloc with dissolve
     n "A golden butterfly appears in the courtyard."
-    show yukino animated neutral serious with dissolve
+    show yukinosprite upright standmove
+    show naoyasprite upright stand
+    show yukino animated neutral serious with qleft
     yu "That thing again..."
     hide yukino
-    show ayase animated neutral serious with dissolve
+    show yukinosprite upright stand
+    show ayase animated neutral serious with qleft
+    show ayasesprite upright standmove
     ay "Huh...?  What do you mean 'Again'?"
     hide ayase
+    show ayasesprite upright stand
     n "Philemon cutscene shows up here."
     #Update with philemon cutscene
     n "Obtained 'Mirror Frame'."
-    show yukino animated neutral serious with dissolve
+    show yukinosprite downleft standmove
+    show ayasesprite downright stand
+    show naoyasprite upelft stand
+    show yukino animated neutral serious with qleft
     yu "So our job's to find the Mirror Shards and put them in this frame, huh?"
+    show yukinosprite downleft stand
     hide yukino
-    show ayase animated neutral sad with dissolve
+    show ayase animated neutral sad with qleft
+    show ayasesprite downright standmove
     ay "Umm, Yukino?  You know the towers are guarded by demons, right?"
     ay "Aren't we a little, y'know, shorthanded?"
     hide ayase
-    show yukino animated neutral serious with dissolve
+    show ayasesprite downright stand
+    show yukino animated neutral serious with qleft
+    show yukinosprite downleft standmove
     yu "You can stay here if you want.  We don't force you to come, not when we don't know what we're up against."
     hide yukino
-    show ayase animated neutral sad with dissolve
+    show yukinosprite downleft stand
+    show ayase animated neutral sad with qleft
+    show ayasesprite downright standmove
     ay "Uh, no, I meant... It's just..."
     hide ayase
-    show yukino animated neutral serious with dissolve
+    show ayasesprite downright stand
+    show yukino animated neutral serious with qleft
+    show yukinosprite downleft standmove
     yu "I'll do whatever it takes to save Ms. Saeko.  I used to be a lousy delinquent."
     yu "Even my parents gave up on me... but not her.  "
     show yukino animated neutral sad
@@ -379,20 +479,28 @@ label label084: #Snow Queen full start
     show yukino animated neutral serious
     yu "Now it's my turn to help her, and my... expertise can be put to a good cause."
     hide yukino
-    show ayase animated neutral sad with dissolve
+    show yukinosprite downleft stand
+    show ayase animated neutral sad with qleft
+    show ayasesprite downright standmove
     ay "Hey, Yukino... You're not planning on leaving me here all alone, are you...?"
     show ayase animated neutral serious
     ay "'Cause I'm going with you!  I feel much safer around you and Naoya."
     hide ayase
-    show yukino animated neutral smirk with dissolve
+    show ayasesprite downright stand
+    show yukino animated neutral smirk with qleft
+    show yukinosprite downleft standmove
     yu "Haha, sure... whatever floats your boat."
     yu "If we get stuck in a bad situation, I'm sure you'll help lighten the mood."
-    hide yukino with dissolve
+    hide yukino
+    show yukinosprite downleft stand
     n "Yukino finally notices the weapon that Ayase is carrying."
-    show yukino animated neutral serious with dissolve
+    show yukinosprite downleft standmove
+    show yukino animated neutral serious with qleft
     yu "Hey!  Holy crap, Ayase, where did you get a gun!?"
     hide yukino
+    show yukinosprite downleft stand
     show ayase animated neutral smirk with dissolve
+    show ayasesprite downright standmove
     ay "Kei gave it to me.  Him and Masao went tot he police station for some weapons."
     show ayase animated neutral sad
     ay "But Kei got hurt, so they came back to school."
@@ -401,25 +509,40 @@ label label084: #Snow Queen full start
     show ayase animated neutral smirk
     ay "So I kept one for myself!  Hehehe... I always wanted to try shooting one of these things!"
     hide ayase
-    show yukino with dissolve
+    show ayasesprite downright stand
+    show yukino with qleft
     yu "......"
     hide yukino
-    show ayase animated neutral sad with dissolve
+    show ayasesprite downright standmove
+    show ayase animated neutral sad with qleft
     ay "Gah!  The wind's picking up!  Brrrr, it's cooooooooold... My ears hurt!"
     ay "C'mon, let's go inside, quick!"
     hide ayase
-    show yukino animated neutral serious with dissolve
+    show ayasesprite downright stand
+    show yukino animated neutral serious with qleft
+    show yukinosprite downleft standmove
     yu "Yeah, standing here won't do anyone any good."
     yu "Y'think the three of us can handle the demons and get those *Mirror Shards*...?"
     yu "I dunno, maybe we should grab a couple of more people, like Ayase said."
     show yukino animated neutral smirk
     yu "I bet Elly would have some information.  We should check the library."
     hide yukino
-    show ayase animated neutral sad with dissolve
+    show yukinosprite downleft stand
+    show ayase animated neutral sad with qleft
+    show ayasesprite downright standmove
     ay "Good, let's get inside!  I'm freezing to death here!"
     hide ayase
-    n "You and Ayase go into the school, seeking some warmth."
-    show yukino animated neutral sad with dissolve
+    show ayasesprite downleft stand
+    $ newlocx = 0
+    $ newlocy = 700
+    show ayasesprite downleft walk at newloc with MoveTransition(0.5)
+    show naoyasprite downleft walk at newloc with MoveTransition(0.5)
+    pause 0.5
+    hide ayasesprite
+    hide naoyasprite
+    with qdis
+    show yukinosprite upright standmove
+    show yukino animated neutral sad with qleft
     yu "Ms. Saeko... We'll be back for you."
     jump callSQHermelinFloor1
 
