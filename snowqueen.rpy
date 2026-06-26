@@ -19,7 +19,14 @@ label SnowQueenMask:
         show screen header with dissolve
         "Obtained the Snow Queen Mask!"
         $ plotprogress = 7
-        scene bg black with dissolve #update with Gymnasium and 1 teacher
+        scene bg gymnasium with dissolve
+        $ npc1x = 600
+        $ npc1y = 500
+        $ naoyax = 500
+        $ naoyay = 450
+        show naoyasprite downright stand at naoyaloc
+        show teachersprite upleft standmove at npc1loc
+        with qdis
         #play music #update
         tea "Oh, Naoya!  You're still here!?  I'm closing off the gym."
         tea "You should head to the main building."
@@ -29,58 +36,109 @@ label SnowQueenMask:
         scene bg black with dissolve
         n "Naoya makes his way back to the school from the Club Building..."
     if _return == 2:
-        n "Naoya leaves the box alone."
+        n "You leave the box alone."
         jump label011
 
 label label084: #Snow Queen full start
-    scene bg black with dissolve #update with Passageway and Maki/Mark leaving
+    scene bg 1FPassageway with qdis
     #play music #update
-    n "As Naoya enters the passageway back to the main part of the school, he sees several of his friends by the hole in the wall."
-    show yukino animated neutral serious with dissolve
+    $ markx = 750
+    $ marky = 300
+    $ makix = 700
+    $ makiy = 350
+    $ ayasex = 500
+    $ ayasey = 500
+    $ yukinox = 450
+    $ yukinoy = 475
+    $ naoyax = 750
+    $ naoyay = 600
+    show marksprite upright stand
+    show makisprite upright stand
+    show ayasesprite upright stand
+    show yukinosprite upright standmove
+    #n "As Naoya enters the passageway back to the main part of the school, he sees several of his friends by the hole in the wall."
+    show yukino animated neutral serious with qleft
     yu "Hey Masao!  Wait!"
     hide yukino
-    show ayase animated neutral sad with dissolve
+    show yukinosprite upright stand
+    show marksprite downleft
+    show makisprite downleft
+    show ayase animated neutral sad with qleft
+    show ayasesprite upright standmove
     ay "You don't even know if that's really Maki!"
     hide ayase with dissolve
-    n "Mark and Maki leave through the hole in the wall without another word."
-    n "Ayase runs over to Naoya."
-    show ayase animated neutral sad with dissolve
+    show ayasesprite upright stand
+    show marksprite upright stand
+    show makisprite upright stand
+    $ newlocx = 800
+    $ newlocy = 350
+    show marksprite upright walk at newloc with MoveTransition(0.3)
+    hide marksprite
+    show makisprite upright walk at newloc with MoveTransition(0.3)
+    hide makisprite
+    with qdis
+    $ newlocx = 700
+    $ newlocy = 550
+    show ayasesprite downright walk at newloc with MoveTransition(0.5)
+    #n "Ayase runs over to Naoya."
+    show ayase animated neutral sad with qleft
+    show ayasesprite downright standmove
     ay "Omigod, Naoya!  Mark's in big trouble!"
     hide ayase with dissolve
-    n "Yukino moves closer to Naoya as well."
-    show yukino animated neutral serious with dissolve
+    show ayasesprite downright stand
+    $ newlocx = 690
+    $ newlocy = 525
+    show yukinosprite downright walk at newloc with MoveTransition(0.5)
+    show yukino animated neutral serious with qleft
+    show yukinosprite downright standmove
     yu "Kei was hurt, so Masao, Hidehiko, and Eriko brought him back here."
     show yukino animated neutral sad
     yu "But then..."
     hide yukino
-    show ayase animated neutral serious with dissolve
+    show yukinosprite downright stand
+    show ayase animated neutral serious with qleft
+    show ayasesprite downright standmove
     ay "Maki showed up out of nowhere!  Isn't she supposed to be in the hospital!?"
     ay "Something's seriously wrong here!"
-    hide ayase with dissolve
-    n "Ms. Saeko enters the passageway from the school."
-    show saeko animated neutral serious with dissolve
+    hide ayase
+    show ayasesprite downright stand
+    $ npc1x = 300
+    $ npc1y = 200
+    show saekosprite downright standmove at npc1loc with qdis
+    show saeko animated neutral serious with qleft
     sa "I heard Masao came back!"
     hide saeko
-    show yukino animated neutral sad with dissolve
+    show saekosprite downright stand
+    show ayasesprite upleft stand
+    show yukinosprite upleft standmove
+    show yukino animated neutral sad with qleft
     yu "Y-yeah, but..."
-    hide yukino with dissolve
+    hide yukino
+    show yukinosprite upleft stand
     show fadeblack onlayer screens zorder 3 with dissolve
-    n "Yukino explains the situation to Ms. Saeko."
+    n "Yukino explains the situation to Ms. Saeko." #update positions
     hide fadeblack onlayer screens
-    show saeko animated neutral sad with dissolve
+    show saeko animated neutral sad with qleft
+    show saeksosprite downright standmove
     sa "So he and Maki went outside together?  Oh, I have to bring them back!"
     hide saeko
-    show yukino animated neutral serious with dissolve
+    show saekosprite downright stand
+    show yukino animated neutral serious with qleft
+    show yukinosprite upleft standmove
     yu "Wait, Ms. Saeko!  If something happens to you, what'll the people here do?  Let us go instead!"
     hide yukino
-    show saeko animated neutral smirk with dissolve
+    show yukinosprite upleft stand
+    show saeko animated neutral smirk with qleft
+    show saekosprite downright standmove
     sa "Oh, good point, Yukino!  Thanks...  Hm?"
     show saeko animated neutral serious
     sa "What's that you have there, Naoya...?  That... that mask...!"
     sa "Goodness... I didn't think it was still lying around here..."
     hide saeko
+    show saekosprite downright stand
     n "Ms. Saeko takes the mask from you."
-    show saeko animated neutral serious with dissolve
+    show saeko animated neutral serious with qleft
+    show saekosprite downright standmove
     sa "It reminds me of my high school days... I wore this mask when I was in a play called, 'The Snow Queen'."
     scene bg SQ1 with dissolve
     #play music #update
@@ -107,41 +165,59 @@ label label084: #Snow Queen full start
     n "Gerda's warm tears gently covered him, melting his heart."
     n "Upon regaining himself, Kay burst into tears, washing away the splinter of the mirror in his eye."
     n "Hand in hand, the two left Ice Castle... And lived at home happlily ever after."
-    scene bg black with dissolve #update with Passageway and Maki/Mark leaving
+    scene bg 1FPassageway with qdis
     #play music #update
-    show ayase animated neutral serious with dissolve
+    show saekosprite downright stand at npc1loc
+    show ayasesprite upleft standmove at ayaseloc
+    show yukinosprite upleft stand at yukinoloc
+    show naoyasprite upleft stand at naoyaloc
+    show ayase animated neutral serious with qleft
     ay "It's a neat-looking mask."
     hide ayase
-    show saeko animated neutral serious with dissolve
+    show ayasesprite upleft stand
+    show saeko animated neutral serious with qleft
+    shoe saekosprite downright standmove
     sa "Yes, but some say it's cursed.  ...I guess I can see why."
     show saeko animated neutral sad
     sa "It's because of this that my friend was..."
     hide saeko
-    show ayase animated neutral sad with dissolve
+    show saekosprite downright stand
+    show ayase animated neutral sad with qleft
+    show ayasesprite upleft standmove
     ay "C-C'mon, Ms. Saeko!  Cut it out!  We've got enough to be scared of..."
     ay "That mask gives me the creeps!  Why don't you just throw it away?"
     hide ayase
-    show saeko animated neutral smirk with dissolve
+    show ayasesprite upleft stand
+    show saeko animated neutral smirk with qleft
+    show saekosprite downright standmove
     sa "Oh, sorry about that!  It's just a silly school legend.  'Whoever wears it, dies'?  Ha!"
     sa "I wore it, and I'm okay, aren't I?  See?  So it's better if I went looking for those two!"
     hide saeko
-    n "Ms. Saeko, to illustrate the point, dons the mask."
-    show saeko animated neutral smirk with dissolve #update with mask
+    show saekosprite downright stand
+    n "Ms. Saeko, to illustrate the point, dons the mask." #update to show sprite doing this
+    show saeko animated neutral smirk with qleft #update with mask
+    show saekosprite downright standmove
     sa "I've got Lady Luck on my side."
     pause 0.3
+    show saekosprite downright stand
     sa "......?"
     pause 0.3
     #play updated scary music
-    n "Ms. Saeko suddenly gasps, reaching her hands up toward the mask."
-    show saeko animated neutral sad with dissolve #update with mask
+    n "Ms. Saeko suddenly gasps, reaching her hands up toward the mask." #update see if there's a sprite for this??
+    show saeko animated neutral sad with qleft #update with mask
     sa "Aaaaaaaaaaaaagh!"
     hide saeko
-    show yukino animated neutral sad with dissolve
+    show yukino animated neutral sad with qleft
+    show yukinosprite upleft standmove
     yu "Ms. Saeko!?  What's wrong!?"
     hide yukino
-    show ayase animated neutral sad with dissolve
+    show yukinosprite upleft stand
+    show ayase animated neutral sad with qleft
+    show ayasesprite upleft standmove
     ay "Wh-What's going on!?"
+    show ayasesprite upleft stand
     #update with Snow Queen Cutscene
+    "the cutscene will eventually play here."
     scene bg black #update with frozen courtyard
     #play creepy music
     show ayase animated neutral sad with dissolve
